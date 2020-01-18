@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Türkçe - Soru 1</title>
+	<link rel="stylesheet" href="css/StyleSheet1.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body class="soru">
+
+<div id="header-soru">
+<div id="skip-link" align="center">
+<a href="#soru" class="element-invisible element-focusable" tabindex="1">Soruya git</a>
+<a href="#secenekler" class="element-invisible element-focusable" tabindex="1">Seçeneklere git</a>
+<br>
+<br>
+</div>
+
+<div style="position:absolute;top:15px;left:150px">
+<p style="display:inline;color:midnightblue"><i class="fas fa-user-alt" style="float:left;font-size: 30px;color:midnightblue"></i>Adı Soyadı</p>
+</div>
+
+<div id="clock" style="">
+<table>
+<caption>Geçen ve kalan süreyi gösteren tablo</caption>
+<tr>
+<td class="clock1">
+<i class="far fa-clock" aria-label="Geçen Süre"></i>
+</td>
+<td class="clock2"><h4 style="display:inline">Geçen Süre<br>
+<span class="clock3">10:30</span>
+</h4></td>
+<td class="clock1">
+<i class="fas fa-hourglass-start" aria-label="Kalan Süre"></i>
+</td>
+<td class="clock2"><h4 style="display:inline">Kalan Süre<br>
+<span class="clock3">19:30</span>
+</h4></td>
+</tr>
+</table>
+</div>
+
+<nav aria-label="Kontrol paneli">
+<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()" title="Açılır menü">
+  <i class="fas fa-eye"></i>
+  Gözden Geçir
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#"><i class="fas fa-flag"></i>İşaret koyduğum sorular</a>
+    <a href="#"><i class="far fa-circle"></i>Boş bıraktığım sorular</a>
+    <a href="#"><i class="fas fa-list-ol"></i>Yanıtlarımı göster</a>
+  </div>
+  </div> 
+  <div class="dropdown">
+  <button class="dropbtn" title="Erişilebilirlik ayarlarına gider.">
+  <i class="fab fa-accessible-icon"></i>
+  Erişilebilirlik
+    <i class="fa fa-caret-down"></i>
+  </button>
+  </div> 
+  <div class="dropdown">
+  <button class="dropbtn" title="Yardım metnini görüntüler.">
+  <i class="far fa-question-circle"></i>
+  Yardım
+    <i class="fa fa-caret-down"></i>
+  </button>
+  </div> 
+  <form style="position:absolute;top:52px;right:40%">
+    <input type="text" class="navbar-search" placeholder="Soruya git...">
+      <button class="navbar-button" type="submit" aria-label="Soruya git">
+        <i class="fas fa-arrow-circle-right"></i>
+      </button>
+  </form>
+<div class="custom-select" style="position:absolute;top:64px;right:30%">
+  <select>
+    <option value="0">--Soru seç--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </select>
+</div>
+</div>
+</nav>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</div>
+
+<div id="main-content">
+
+<!-- dinleme bölgesi -->
+<div id="listen">
+<button type="button" class="button-listen"><i class="fas fa-volume-up" style="font-size:36px;float:left"></i>Soruyu<br>Dinle</button>
+<button type="button" class="button-listen"><i class="fas fa-volume-up" style="font-size:36px;float:left"></i>Seçenekleri<br>Dinle</button>
+</div>
+
+<!--Soru bölgesi-->
+<div id="soru" role="region" aria-label="Soru">
+<h1 class="soru">Soru 1</h1>
+<p class="soru">
+Aşağıda bazı söz sanatlarının açıklaması verilmiştir:
+</p>
+<p class="soru">
+<ul type="disc">
+<li><p class="soru">
+Mübalağa (abartma); bir niteliği, olduğundan çok üstün veya aşağı gösterme sanatıdır.</p></li>
+<li><p class="soru">
+Tezat (karşıtlık), birbirine zıt kavram veya durumların bir arada kullanılmasıyla oluşan sanattır.</p></li>
+<li><p class="soru">
+İntak (konuşturma), insan dışındaki bir varlığın konuşturulmasıyla oluşan sanattır.</p></li>
+</ul>
+<p class="soru">
+Aşağıdakilerin hangisinde, açıklaması verilen sanatlardan herhangi birine yer verilmemiştir?
+</p>
+</div>
+
+<!--Seçenekler bölgesi-->
+<div id="secenekler" role="region" aria-label="Seçenekler" style="margin:30px">
+<form>
+<label class="container2">
+<p>Gözümde bir damla su, deniz olup taşıyor<br> Çöllerde kalmış gibi yanıyor, yanıyorum</p>
+<input type="radio" name="soru1" checked="checked"
+aria-label="A) Gözümde bir damla su, deniz olup taşıyor. Çöllerde kalmış gibi yanıyor, yanıyorum">
+<span class="checkmark2">A</span>
+</label>
+<label class="container2">
+<p>Özlediğin hayatı buldun mu bilmem<br> Gözlerinde hâlâ hüzün var gibi</p>
+<input type="radio" name="soru1" checked="checked" 
+aria-label="B) Özlediğin hayatı buldun mu bilmem. Gözlerinde hâlâ hüzün var gibi">
+<span class="checkmark2">B</span>
+</label>
+<label class="container2">
+<p>Nazlı yârdan kem haberler geliyor<br>Dostlarım ağlıyor, düşman gülüyor</p>
+<input type="radio" name="soru1" checked="checked" 
+aria-label="C) Nazlı yârdan kem haberler geliyor. Dostlarım ağlıyor, düşman gülüyor">
+<span class="checkmark2">C</span>
+</label>
+<label class="container2">
+<p>Küçük bir çeşmeyim yurdumun<br>Unutulmuş bir dağında</p>
+<input type="radio" name="soru1" checked="checked" 
+aria-label="D) Küçük bir çeşmeyim yurdumun. Unutulmuş bir dağında">
+<span class="checkmark2">D</span>
+</label>
+</form>
+
+<div align="center">
+<button type="button" class="button" title="Sonraki soruya gider"><i class="fas fa-arrow-right" style="font-size:52px"></i><br>Sonraki</button>
+<button type="button" class="button" title="Önceki soruya gider"><i class="fas fa-arrow-left" style="font-size:52px"></i><br>Önceki</button>
+<button type="button" class="button" title="Soruya daha sonra tekrar bakmak için işaret koyun"><i class="fas fa-flag" style="font-size:52px"></i><br>İşaret Koy</button>
+<button type="button" class="button" title="Seçimi kaldırır ve soruyu boş bırakır"><i class="far fa-circle" style="font-size:52px"></i><br>Boş Bırak</button>
+</div>
+</div>
+
+<form>
+<label for="note"><h3>Not ekle:</h3></label>
+<input type="text" id="note" name="note" placeHolder="Soru veya seçeneklerle ilgili not ekle...">
+</form>
+</div>
+
+<a href="index.html">Ana sayfaya dön</a>
+</body>
+</html>
