@@ -1,0 +1,19 @@
+
+DONE
+--------------------------------------------------
+* proje altyapısı 19/01/20 3
+
+
+
+TODO
+--------------------------------------------------
+* anasayfa oluşturulacak
+* soru dizini oluşturulacak sorular buradan index ile alınacak. sorular div olacak
+* soruların cevaplarını seçip sırası ile ilerlenecek.
+* yanıtları göster sayfası oluşturulacak.
+* işaret koyduğum sorular sayfası oluşturulacak.
+* boş bıraktığım sorular sayfası oluşturulacak.
+* soruya git menüsü kullanılabilir hale getirilecek.
+* combo dan soru seçimi yapılarak soruya gidilebilecek.
+* geçen süre, kalan süre aktif hale getirilecek.
+
