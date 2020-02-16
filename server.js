@@ -9,4 +9,4 @@ app.use('/images', express.static(__dirname + '/Images'));
 
 console.log("Starting server:"+__dirname);
 
-var server = app.listen(5000);
+var server = app.listen(process.env.PORT || 5000);
