@@ -1,0 +1,56 @@
+﻿
+#eso-menu-tabs .ui-tabs-panel{
+
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.eso-empty{
+  float: left;
+  width:10%;
+  height: 100px;
+}
+
+.eso-count-cont{
+  float: right;
+  width:300px;
+  height: 150px;
+  border: 1px solid #007fff;
+  border-radius: 15px;
+  transform: scale(0.7);
+  background: #e9e9e9;
+  padding: 5px;
+}
+
+.eso-count-header{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #007fff;
+}
+
+.eso-header{
+  display: inline-block;
+  width: 100%;
+}
+
+#markButtonLabel{
+  height: 22px;
+}
+#questions-div{
+  /* height: 333px; */
+}
+
+.wizard .steps{
+  overflow-y: auto;
+}
+
+#empty-questions, #marked-questions{
+  max-height: 250px;
+  overflow: auto;
+}
+
+#empty-questions a, #marked-questions a{
+  font-weight: bold;
+  
+}

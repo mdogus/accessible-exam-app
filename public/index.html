@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 
 <html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Ana Sayfa</title>
 
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="lib/jquery-steps/jquery.steps.css">
     <link rel="stylesheet" href="lib/jquery-steps/main.css">
     <link rel="stylesheet" href="lib/jquery-steps/normalize.css">
+    <link rel="stylesheet" href="lib/clock2/compiled/flipclock.css">
+    <link rel="stylesheet" href="css/eso.css">
+
     <script src="lib/jquery-3.4.1.min.js"></script>
     <script src="lib/jquery-ui/jquery-ui.js"></script>
-    <script src="lib/jquery-steps/jquery.steps.min.js"></script>
+    <script src="lib/jquery-steps/jquery.steps.js"></script>
+    <script src="lib/clock2/compiled/flipclock.js"></script>
     <script src="js/eso.js"></script>
 </head>
+
 <body>
 
+    <div class="eso-header">
+        <div class="eso-empty">
+            <span></span>
+        </div>
+        <div class="eso-count-cont">
+            <div class="eso-count-header">
+                GEÇEN SÜRE
+            </div>
+            <div class="eso-countup">
+            </div>
+        </div>
+        <div class="eso-empty">
+        </div>
+        <div class="eso-count-cont">
+            <div class="eso-count-header">
+                KALAN SÜRE
+            </div>
+            <div class="eso-countdown">
+            </div>
+        </div>
+    </div>
 
-    <div id="questionsDiv"></div>
+    <div style="height: 90%; max-height: 90%; ">
+        <div id="eso-menu-tabs">
+            <ul>
+                <li><a href="#questions-div"><span>Sorular</span></a></li>
+                <li><a href="#empty-questions"><span>Boş Bıraktığım Sorular</span></a></li>
+                <li><a href="#marked-questions"><span>İşaretlediğim Sorular</span></a></li>
+            </ul>
+            <div id="questions-div"></div>
+            <div id="empty-questions"></div>
+            <div id="marked-questions"></div>
+        </div>
+    </div>
+
+
 
 </body>
+
 </html>

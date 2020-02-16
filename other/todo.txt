@@ -1,9 +1,18 @@
 
 DONE
 --------------------------------------------------
-* proje altyapısı 19/01/20 3
+* 19/01/20 3 proje altyapısı  
+* 20/01/20 2 + 2
+    * stepper eklendi, sorular için ayrı sayfadan soruları alır hale getirildi, seçebenekler için jquery kullanıldı (radio buttons.) 
+    * tab yapısı kurarak menüler seçildiğinde tek sayfa içinde navigasyon
+    * geçen süre, kalan süre aktif hale getirilecek.
+    
+* 25/01/20 3
+* 01/02/20 3
+go to question
 
-
+*16/02/20 1
+empty questions
 
 TODO
 --------------------------------------------------
@@ -15,5 +24,5 @@ TODO
 * boş bıraktığım sorular sayfası oluşturulacak.
 * soruya git menüsü kullanılabilir hale getirilecek.
 * combo dan soru seçimi yapılarak soruya gidilebilecek.
-* geçen süre, kalan süre aktif hale getirilecek.
+
 
