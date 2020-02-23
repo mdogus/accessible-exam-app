@@ -15,15 +15,16 @@ go to question
 empty questions
 deploy
 
+*23/02/20 3
+metin boyutu, responsive
+
 TODO
 --------------------------------------------------
-* anasayfa oluşturulacak
-* soru dizini oluşturulacak sorular buradan index ile alınacak. sorular div olacak
-* soruların cevaplarını seçip sırası ile ilerlenecek.
+
 * yanıtları göster sayfası oluşturulacak.
-* işaret koyduğum sorular sayfası oluşturulacak.
-* boş bıraktığım sorular sayfası oluşturulacak.
-* soruya git menüsü kullanılabilir hale getirilecek.
-* combo dan soru seçimi yapılarak soruya gidilebilecek.
+
+
+
+
 
 

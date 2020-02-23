@@ -49,9 +49,15 @@ function createQuestions(){
 
 function resizeJquerySteps() {
     // $('.wizard .content, .wizard .steps').animate({ height: $('.body.current').outerHeight() - 10 }, "slow");
-    var headerHeight = 362;
+    // var headerHeight = 280;
+    var headerHeight = parseInt($('.eso-header').outerHeight());
+    headerHeight += parseInt($('#eso-menu-tabs .ui-tabs-nav').outerHeight());
+    headerHeight += parseInt($('#questions-div .actions').outerHeight());
+    headerHeight += 50;
     $('.wizard .content, .wizard .steps').animate({ height: ($(window).height() - headerHeight)+"px" }, "slow");
     $('#empty-questions, #marked-questions').animate({ "max-height": ($(window).height() - headerHeight)+"px" }, "slow");
+
+
 }
 
 $(window).resize(resizeJquerySteps);
@@ -192,6 +198,15 @@ $(function () {
             $("section.current.body ").attr("marked", $(this).is(":checked"));
         });
 
+
+        //font size
+        jQuery(document).ready(function($) {
+            $('#eso-cont').fontsizes({ 
+                fontSizes: ['100%', '125%', '150%', '200%', '250%'],
+                menuContainer: $('#font-size-menu'),
+                includeChildren: ['h1', 'h2', 'h3', 'h4', 'h5']
+                });
+        });
 
     });
 
