@@ -18,6 +18,9 @@ deploy
 *23/02/20 3
 metin boyutu, responsive
 
+*28/06/20 1
+mouse cursor size
+
 TODO
 --------------------------------------------------
 

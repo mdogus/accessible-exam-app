@@ -1,4 +1,19 @@
 ﻿
+
+
+body.cursor16 div, body.cursor16 label, body.cursor16 span, body.cursor16 a{
+  cursor: url(../img/cursor16.png) 3 8, auto !important;
+}
+body.cursor24 div, body.cursor24 label, body.cursor24 span, body.cursor24 a{
+  cursor: url(../img/cursor24.png) 4 0, auto !important;
+}
+body.cursor32 div, body.cursor32 label, body.cursor32 span, body.cursor32 a{
+  cursor: url(../img/cursor32.png) 6 0, auto !important;
+}
+body.cursor64 div, body.cursor64 label, body.cursor64 span, body.cursor64 a{
+  cursor: url(../img/cursor64.png) 12 0, auto !important;
+}
+
 #eso-menu-tabs .ui-tabs-panel{
 
   padding-left: 0px;

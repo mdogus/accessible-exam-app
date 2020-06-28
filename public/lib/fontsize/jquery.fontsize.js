@@ -91,8 +91,23 @@
 		if(resizeJquerySteps){
 			resizeJquerySteps();
 		}
+		// '100%', '125%', '150%', '200%', '250%'
+		var cursorClass = "cursor32";
 
-		
+		if(options.fontSize == "100%"){
+			cursorClass = "cursor16";
+		}else if(options.fontSize == "125%"){
+			cursorClass = "cursor24";
+		}else if(options.fontSize == "150%"){
+			cursorClass = "cursor32";
+		}else if(options.fontSize == "200%"){
+			cursorClass = "cursor64";
+		}else if(options.fontSize == "250%"){
+			cursorClass = "cursor64";
+		}
+
+		$("body").removeClass();
+		$("body").addClass(cursorClass);
 
 		return this;
 	};

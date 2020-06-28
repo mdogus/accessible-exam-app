@@ -13,6 +13,18 @@ var o2Text = 'B) Özlediğin hayatı buldun mu bilmem Gözlerinde hâlâ hüzün
 var o3Text = 'C) Nazlı yârdan kem haberler geliyor Dostlarım ağlıyor, düşman gülüyor';
 var o4Text = 'D) Küçük bir çeşmeyim yurdumun Unutulmuş bir dağında';
 
+
+// $(function () {
+//     $("#eso-cont").mousemove(function (e) {
+//       $(".cursor").show().css({
+//         "left": e.clientX,
+//         "top": e.clientY
+//       });
+//     }).mouseout(function () {
+//       $(".cursor").hide();
+//     });
+//   });
+
 function createQuestions(){
     
     var $qdiv = $("#questions-div")
