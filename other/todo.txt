@@ -26,6 +26,12 @@ TODO
 
 * yanıtları göster sayfası oluşturulacak.
 
+heroku git:remote -a eso123
+--
+heroku login
+git add -A 
+git commit -m "..."
+git push heroku master
 
 
 
