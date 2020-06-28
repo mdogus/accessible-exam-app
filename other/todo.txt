@@ -18,13 +18,15 @@ deploy
 *23/02/20 3
 metin boyutu, responsive
 
-*28/06/20 1
+*28/06/20 2
 mouse cursor size
+header responsive
 
 TODO
 --------------------------------------------------
 
 * yanıtları göster sayfası oluşturulacak.
+* high contrast  theme selector
 
 heroku git:remote -a eso123
 --

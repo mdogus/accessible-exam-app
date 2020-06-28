@@ -14,16 +14,6 @@ var o3Text = 'C) Nazlı yârdan kem haberler geliyor Dostlarım ağlıyor, düş
 var o4Text = 'D) Küçük bir çeşmeyim yurdumun Unutulmuş bir dağında';
 
 
-// $(function () {
-//     $("#eso-cont").mousemove(function (e) {
-//       $(".cursor").show().css({
-//         "left": e.clientX,
-//         "top": e.clientY
-//       });
-//     }).mouseout(function () {
-//       $(".cursor").hide();
-//     });
-//   });
 
 function createQuestions(){
     
@@ -35,7 +25,7 @@ function createQuestions(){
         $h3.html("Soru "+i);
         var $section = $("<section>").appendTo($qdiv);
         
-        var $div1 = $("<div>").appendTo($section);
+        var $div1 = $('<div class="ui-widget-content question-div ui-widget-content ui-state-default">').appendTo($section);
         var $h4 = $("<h4>").appendTo($div1);
         $h4.html("Soru "+i);
         var $p = $("<p>").appendTo($div1);
@@ -218,6 +208,12 @@ $(function () {
                 menuContainer: $('#font-size-menu'),
                 includeChildren: ['h1', 'h2', 'h3', 'h4', 'h5']
                 });
+
+                
+            $('#themes').change(function(){
+                $("#stylesheet").attr({href : $('#themes').find(":selected").val()});
+            });
+
         });
 
     });

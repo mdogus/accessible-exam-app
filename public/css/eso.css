@@ -15,6 +15,13 @@
 }
 
 
+#themes-label{
+  font-size: 35px;
+}
+
+.question-div{
+  margin-bottom: 10px;
+}
 
 body.cursor16 div, body.cursor16 label, body.cursor16 span, body.cursor16 a{
   cursor: url(../img/cursor16.png) 3 8, auto !important;
@@ -74,7 +81,7 @@ body.cursor64 div, body.cursor64 label, body.cursor64 span, body.cursor64 a{
 
 .eso-header li > div {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 span.fontsize-title{
@@ -128,7 +135,6 @@ span.fontsize-title{
 
 #font-size-menu{
   float: left;
-  height: 100px;
 }
 
 
