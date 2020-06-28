@@ -25,7 +25,7 @@ function createQuestions(){
         $h3.html("Soru "+i);
         var $section = $("<section>").appendTo($qdiv);
         
-        var $div1 = $('<div class="ui-widget-content question-div ui-widget-content ui-state-default">').appendTo($section);
+        var $div1 = $('<div class="question-div ui-state-default">').appendTo($section);
         var $h4 = $("<h4>").appendTo($div1);
         $h4.html("Soru "+i);
         var $p = $("<p>").appendTo($div1);
