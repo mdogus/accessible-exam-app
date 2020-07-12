@@ -1055,7 +1055,7 @@ function renderPagination(wizard, options, state)
     if (options.enablePagination)
     {
         var pagination = "<{0} class=\"actions {1}\"><ul role=\"menu\" aria-label=\"{2}\">{3}</ul></{0}>",
-            buttonTemplate = "<li><a href=\"#{0}\" role=\"menuitem\">{1}</a></li>",
+            buttonTemplate = "<li role=\"button\"><a href=\"#{0}\" role=\"button\" aria-label=\"{1}\">{1}</a></li>",
             buttons = "";
 
         if (!options.forceMoveForward)
@@ -1137,7 +1137,7 @@ function renderTitle(wizard, options, state, header, index)
             title: header.html()
         }),
         stepItem = $("<li role=\"tab\"><a id=\"" + uniqueStepId + "\" href=\"#" + uniqueHeaderId + 
-            "\" aria-controls=\"" + uniqueBodyId + "\">" + title + "</a></li>");
+            "\" aria-controls=\"" + uniqueBodyId + "\" >" + title + "</a></li>");
         
     stepItem._enableAria(options.enableAllSteps || state.currentIndex > index);
 
@@ -1330,12 +1330,9 @@ $.fn.steps = function (method)
 
 $.fn.steps.goto = function (step)
 {
-    debugger;
-
     var wizard = $(this),
         options = getOptions(wizard),
         state = getState(wizard);
-    
         
     goToStep(wizard, options, state, step);
     

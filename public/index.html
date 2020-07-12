@@ -7,7 +7,7 @@
     <title>Ana Sayfa</title>
 
     <link id="stylesheet" rel="stylesheet" href="lib/jquery-ui/themes/base/jquery-ui.css">
-  
+
 
     <!-- <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css"> -->
     <link rel="stylesheet" href="lib/jquery-steps/jquery.steps.css">
@@ -29,10 +29,45 @@
         <!-- <img src="img/cursor_.png" alt="Cursor" class="cursor" /> -->
 
         <ul class="eso-header">
-            <li >
+            <li class="eso-count-cont">
+                <div class="eso-count-header" id="passingTimeDiv" role="heading">
+                    GEÇEN SÜRE
+                </div>
+                <div class="eso-countup">
+                </div>
+            </li>
+            <li class="eso-count-cont">
+                <div class="eso-count-header" id="remainingTimeDiv" role="heading">
+                    KALAN SÜRE
+                </div>
+                <div class="eso-countdown">
+                </div>
+            </li>
+            <li>
                 <div id="font-size-menu"></div>
+            </li>
+            <li>
+
                 <div>
-                    <label id="themes-label" for="themes">Tema:</label>
+                    <label id="fonts-label" for="fonts" role="heading">Yazı Tipi:</label>
+                    <select id="fonts">
+                        <option>Verdana</option>
+                        <option>Arial</option>
+                        <option>Arial Black</option>
+                        <option>Times New Roman</option>
+                        <option>Helvetica</option>
+                        <option>Book Antiqua</option>
+                        <option>Georgia</option>
+                        <option>Tahoma</option>
+                        <option>Palatino Linotype</option>
+                        <option>Impact</option>
+                        <option>Lucida Sans Unicode</option>
+                        <option>Courier New</option>
+                        <option>Lucida Console</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="themes-label" for="themes" role="heading">Tema:</label>
                     <select id="themes">
                         <option value="lib/jquery-ui/themes/base/jquery-ui.css">base</option>
                         <option value="lib/jquery-ui/themes/black-tie/jquery-ui.css">black-tie</option>
@@ -44,43 +79,24 @@
                         <option value="lib/jquery-ui/themes/excite-bike/jquery-ui.css">excite-bike</option>
                         <option value="lib/jquery-ui/themes/flick/jquery-ui.css">flick</option>
                         <option value="lib/jquery-ui/themes/hot-sneaks/jquery-ui.css">hot-sneaks</option>
-                        <option value="lib/jquery-ui/themes/hummanity/jquery-ui.css">hummanity</option>
                         <option value="lib/jquery-ui/themes/mint-choc/jquery-ui.css">mint-choc</option>
-                        <option value="lib/jquery-ui/themes/overcast/jquery-ui.css">overcast</option>
                         <option value="lib/jquery-ui/themes/pepper-grinder/jquery-ui.css">pepper-grinder</option>
                         <option value="lib/jquery-ui/themes/south-street/jquery-ui.css">south-street</option>
                         <option value="lib/jquery-ui/themes/swanky-purse/jquery-ui.css">swanky-purse</option>
-                        <option value="lib/jquery-ui/themes/trontastic/jquery-ui.css">trontastic</option>
                         <option value="lib/jquery-ui/themes/ui-darkness/jquery-ui.css">ui-darkness</option>
                         <option value="lib/jquery-ui/themes/ui-lightness/jquery-ui.css">ui-lightness</option>
                         <option value="lib/jquery-ui/themes/vader/jquery-ui.css">vader</option>
-                        <option value="lib/jquery-ui/themes/le-frog/jquery-ui.css">Le Frog</option>
-                        <option value="lib/jquery-ui/themes/start/jquery-ui.css">Start</option>
                         <option value="lib/jquery-ui/themes/smoothness/jquery-ui.css">smoothness</option>
-                        <option value="lib/jquery-ui/themes/redmond/jquery-ui.css">redmond</option>
                         <option value="lib/jquery-ui/themes/sunny/jquery-ui.css">sunny</option>
-                        <option value="lib/jquery-ui/themes/smoothness/jquery-ui.css">smoothness</option>
-                      </select>  
+                    </select>
                 </div>
-
+                
             </li>
-            <li class="eso-count-cont">
-                <div class="eso-count-header">
-                    GEÇEN SÜRE
-                </div>
-                <div class="eso-countup">
-                </div>
-            </li>
-            <li class="eso-count-cont">
-                <div class="eso-count-header">
-                    KALAN SÜRE
-                </div>
-                <div class="eso-countdown">
-                </div>
-            </li>
+            
+            
         </ul>
 
-        <div style="height: 90%; max-height: 90%; ">
+        <div id="eso-content" style="height: 90%; max-height: 90%; ">
             <div id="eso-menu-tabs">
                 <ul>
                     <li><a href="#questions-div"><span>Sorular</span></a></li>

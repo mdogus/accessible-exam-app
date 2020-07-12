@@ -1,4 +1,52 @@
 ﻿
+#eso-cont.font_0 *{
+  font-family: Verdana !important;
+}
+#eso-cont.font_1 *{
+  font-family: Arial !important;
+}
+#eso-cont.font_2 *{
+  font-family: 'Arial Black' !important;
+}
+#eso-cont.font_3 *{
+  font-family: 'Times New Roman' !important;
+}
+#eso-cont.font_4 *{
+  font-family: Helvatica !important;
+}
+#eso-cont.font_5 *{
+  font-family: 'Book Antiqua' !important;
+}
+#eso-cont.font_6 *{
+  font-family: Georgia !important;
+}
+#eso-cont.font_7 *{
+  font-family: Tahoma !important;
+}
+#eso-cont.font_8 *{
+  font-family: Platino !important;
+}
+#eso-cont.font_9 *{
+  font-family: Impact !important;
+}
+#eso-cont.font_10 *{
+  font-family: 'Lucida Sans Unicode' !important;
+}
+#eso-cont.font_11 *{
+  font-family: 'Courier New' !important;
+}
+#eso-cont.font_12 *{
+  font-family: 'Lucida Console' !important;
+}
+
+
+
+#empty-questions ul li:focus a, #eso-content a:hover, .eso-options label:hover, #markButtonLabel:hover,
+ .fontsize-selector:hover,
+ select option:hover, select:hover{
+  border:6px solid red;
+}
+
  .eso-empty{
   float: left;
   width:10%;
@@ -15,24 +63,21 @@
 }
 
 
-#themes-label{
-  font-size: 35px;
-}
 
 .question-div{
   margin-bottom: 10px;
 }
 
-body.cursor16 div, body.cursor16 label, body.cursor16 span, body.cursor16 a{
+body.cursor16 *{
   cursor: url(../img/cursor16.png) 3 8, auto !important;
 }
-body.cursor24 div, body.cursor24 label, body.cursor24 span, body.cursor24 a{
+body.cursor24 *{
   cursor: url(../img/cursor24.png) 4 0, auto !important;
 }
-body.cursor32 div, body.cursor32 label, body.cursor32 span, body.cursor32 a{
+body.cursor32 *{
   cursor: url(../img/cursor32.png) 6 0, auto !important;
 }
-body.cursor64 div, body.cursor64 label, body.cursor64 span, body.cursor64 a{
+body.cursor64 *{
   cursor: url(../img/cursor64.png) 12 0, auto !important;
 }
 
@@ -84,10 +129,14 @@ body.cursor64 div, body.cursor64 label, body.cursor64 span, body.cursor64 a{
   text-align: left;
 }
 
-span.fontsize-title{
+span.fontsize-title, #fonts-label, #themes-label{
   font-size: 33px !important;
 }
 
+
+#fonts-label, #themes-label{
+  padding-left: 20px;
+}
 
 #markButtonLabel{
   /* height: 22px; */

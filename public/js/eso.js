@@ -22,13 +22,14 @@ function createQuestions(){
 
     for(var i=1;i<=numOfGenQuestions;i++){
         var $h3 = $("<h3>").appendTo($qdiv);
-        $h3.html("Soru "+i);
+        $h3.html("Soru ");
         var $section = $("<section>").appendTo($qdiv);
         
-        var $div1 = $('<div class="question-div ui-state-default">').appendTo($section);
+        var $div1 = $('<div role="main" class="question-div ui-state-default">').appendTo($section);
         var $h4 = $("<h4>").appendTo($div1);
         $h4.html("Soru "+i);
-        var $p = $("<p>").appendTo($div1);
+        // var $a = $("<a>").appendTo($div1);
+        var $p = $('<main role="main">').appendTo($div1);
         $p.html(questionText);
         
         var $div2 = $('<div class="eso-options"   >').appendTo($section);
@@ -79,13 +80,25 @@ $(function () {
     var clock = $('.eso-countup').FlipClock({
         // ... your options here
         clockFace: 'MinuteCounter',
-        autoPlay: false
+        autoPlay: false,
+        callbacks: {
+            interval: function() {
+              let time = this.factory.getTime().time;
+              $("#passingTimeDiv").html("GEÇEN SÜRE "+parseInt(time/60)+" DAKİKA "/*+time%60+" SANİYE"*/);
+            }
+        }
     });
-
+    
     var clock = $('.eso-countdown').FlipClock(remainingTime, {
         countdown: true,
         clockFace: 'MinuteCounter',
-        autoPlay: false
+        autoPlay: false,
+        callbacks: {
+            interval: function() {
+                let time = this.factory.getTime().time;
+                $("#remainingTimeDiv").html("KALAN SÜRE "+ parseInt(time/60)+" DAKİKA "/*+time%60+" SANİYE"*/);
+            }
+        }
     });
 
     //soruları html dosyasından anasayfaya yükle
@@ -107,8 +120,11 @@ $(function () {
                     $("section[marked=true]").each(function(){
                         var linkId = $(this).attr("aria-labelledby");
                         var $li = $("<li>").appendTo($ul);
-                        var $a = $('<a href="#'+linkId+'" >').appendTo($li);
-                        $a.html($("#"+linkId).html());
+                        var $a = $('<a role="button" href="#'+linkId+'" >').appendTo($li);
+                        var tmparr = linkId.split("-");
+                        var qNum = parseInt(tmparr[tmparr.length-1])+1;
+                        $a.html("Soru "+ qNum);
+                        // $a.html($("#"+linkId).html());
                         
                         // "questions-div-t-"
                         $a.click(()=>{
@@ -130,7 +146,7 @@ $(function () {
                     
                     var $emptyQues = $("#empty-questions");
                     $emptyQues.html("");
-                    var $ul = $("<ul>").appendTo($emptyQues);
+                    var $ul = $('<ul  >').appendTo($emptyQues);
                     
                     $.each(a, function(index, qid){
                         $radiogroup = $("input[name="+qid+"]");
@@ -138,10 +154,12 @@ $(function () {
                             
                             var $section = $radiogroup.parent().parent();
                             var linkId = $section.attr("aria-labelledby");
-                            var $li = $("<li>").appendTo($ul);
-                            var $a = $('<a href="#'+linkId+'" >').appendTo($li);
+                            var $li = $('<li >').appendTo($ul);
+                            var $a = $('<a  role="button" href="#'+linkId+'" >').appendTo($li);
 
-                            $a.html($("#"+linkId).html());
+                            var tmparr = linkId.split("-");
+                            var qNum = parseInt(tmparr[tmparr.length-1])+1;
+                            $a.html("Soru "+ qNum);
                             
                             // "questions-div-t-"
                             $a.click(()=>{
@@ -170,7 +188,7 @@ $(function () {
             stepsOrientation:"vertical",
             enableAllSteps: true,
             labels: {
-                current: "Adım:",
+                current: " ",
                 pagination: "Sayfalama",
                 finish: "Bitir",
                 next: "Sonraki",
@@ -194,7 +212,7 @@ $(function () {
 
         //işaretle butonu ekle
 
-        var $input = $('<li><label id="' + markId + 'Label" for="' + markId + '">İşaretle</label><input type="checkbox" name="" id="' + markId + '"></li>');
+        var $input = $('<li><label id="' + markId + 'Label" aria-label="İşaretle" for="' + markId + '">İşaretle</label><input type="checkbox"  name="" id="' + markId + '"></li>');
         $input.prependTo($('ul[aria-label=Sayfalama]'));
         $("#" + markId).checkboxradio().click(function (event) {
             $("section.current.body ").attr("marked", $(this).is(":checked"));
@@ -203,7 +221,14 @@ $(function () {
 
         //font size
         jQuery(document).ready(function($) {
+
+            let fontSizeLabelMap = {
+                '100%': "çok küçük", '125%':"küçük", '150%':"orta", '200%':"büyük", '250%':"çok büyük"
+            };
+
+
             $('#eso-cont').fontsizes({ 
+                fontSizeLabelMap: fontSizeLabelMap,
                 fontSizes: ['100%', '125%', '150%', '200%', '250%'],
                 menuContainer: $('#font-size-menu'),
                 includeChildren: ['h1', 'h2', 'h3', 'h4', 'h5']
@@ -214,6 +239,33 @@ $(function () {
                 $("#stylesheet").attr({href : $('#themes').find(":selected").val()});
             });
 
+
+            //select font
+            $('#fonts').change(function(){
+                $("#eso-cont").removeClass();
+		        $("#eso-cont").addClass("font_"+this.selectedIndex);
+            });
+
+            //key bind
+            $(document).keydown(function(event){
+                
+   //             console.log(event.keyCode);
+                if(event.ctrlKey === true){
+                    if(event.keyCode == 117){
+                        $( "#eso-menu-tabs" ).tabs({ active: 0 });
+                        $( ".steps ul .current a").click();
+                    }
+                    if(event.keyCode == 118){
+                        // $( "section.current div.question-div a").click();
+                        $( "#eso-menu-tabs" ).tabs({ active: 1 });
+                    }
+                    if(event.keyCode == 119){
+                        $( "#eso-menu-tabs" ).tabs({ active: 2 });
+                    }
+                    if(event.keyCode == 120){
+                    }
+                }
+            });
         });
 
     });

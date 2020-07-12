@@ -18,13 +18,36 @@ deploy
 *23/02/20 3
 metin boyutu, responsive
 
-*28/06/20 3
+*28/06/20 4
 mouse cursor size
 header responsive
 themes
 
+
+*11/07/20 3
+linkler hover kırmızı
+kalan geçen süre metin olarak yazıldı
+klavye kısayolları eklendi F5 F7 F8 F9
+
+*12/07/20 3
+Metin boyutu aria-label, role=button ve "label" için role=heading eklendi. 
+Bazı temalar listeden çıkarıldı.
+Kısayol ile soru okumak için soruya role=main eklendi.
+Önceki sonraki butona role=button eklendi.
+Pointer değiştirildi siyah-beyaz yapıldı
+Font seçenekleri eklendi
+
+TODO: Sayfayı ilk açtığımda bu kısayol tuşu çalışıyor. Ama sol taraftaki listeden bir soru seçtiğimde ilginç bir biçimde bu kısayol tuşları çalışmıyor. 
+
+
 TODO
 --------------------------------------------------
+R: radyo düğmelerini (yani şıkları) okur. Şu anda şıkları bu tuşla okutabiliyoruz.
+C: combobox'ları okur. Şu an temayı seçebiliyorum bu tuşla.
+B: butonları okur. 
+X: checkbox'ları okur. İşartle düğmesini okuyor şu an.
+H: Başlıkları okur. 
+
 
 * yanıtları göster sayfası oluşturulacak.
 * high contrast  theme selector

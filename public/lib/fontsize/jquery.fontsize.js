@@ -22,7 +22,7 @@
 		thisElement.fixLineHeight();
 			
 		var menuHtml = $('<div class="jquery-fontsize-menu"></div>'),
-			menuTitle = $('<span class="fontsize-title">'+options.menuTitleText+'</span>'),
+			menuTitle = $('<span class="fontsize-title" role="heading">'+options.menuTitleText+'</span>'),
 			menuItem = '',
 			largestValue = 0;
 		$.each( options.fontSizes, function( key, value ) {
@@ -33,7 +33,7 @@
 			if( largestValue < computedValue )
 				largestValue = computedValue;
 			
-			menuItem = $('<span class="fontsize-selector" data-fontsize="'+value+'" style="font-size: '+computedValue+'px">'+options.sampleChar+'</span>');
+			menuItem = $('<span class="fontsize-selector" role="button" aria-label="Metin boyutu '+options.fontSizeLabelMap[value]+'" data-fontsize="'+value+'" style="font-size: '+computedValue+'px">'+options.sampleChar+'</span>');
 			menuItem.on('click', function(e) {
 				var menuItemElement = $(this),
 					fontsize = menuItemElement.data('fontsize');
