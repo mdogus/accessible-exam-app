@@ -36,6 +36,7 @@ function saveQuestion(){
         q.marked = $("#ismarked").is(':checked');
         q.answer = $("input[name=qValue]:checked").val();
     }
+    return qid;
 }
 function loadQuestion(qid){
     
@@ -58,13 +59,14 @@ function loadQuestion(qid){
         $("#oB").text(q.o2Text);
         $("#oC").text(q.o3Text);
         $("#oD").text(q.o4Text);
-        let sum = "Soru " + q.id + ", İşaretlenen Seçenek " + q.answer ? q.answer : "Yok" + ", Tekrar bakılacak mı "+ q.marked ? "Evet" : "Hayır";
+        let sum = "Soru " + q.id + ", İşaretlenen Seçenek " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı "+ (q.marked ? "Evet" : "Hayır");
         $("#qSummaryDiv").text(sum);
     }
 }
 
 function markQuestion(){
-    saveQuestion();
+    let qid = saveQuestion();
+    loadQuestion(qid);
 }
 
 function nextQuestion(){

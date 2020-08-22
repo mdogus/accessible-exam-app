@@ -42,10 +42,9 @@ TODO: Sayfayı ilk açtığımda bu kısayol tuşu çalışıyor. Ama sol taraft
 16/08/2020 2
 yeni sade altyapıya baslangıc
 
-22/08/2020 2
+22/08/2020 4
 v2 soru üret
 v2 sorular arası geçiş
-jaws functions ???
 soru raporu hidden
 
 TODO
@@ -55,6 +54,7 @@ C: combobox'ları okur. Şu an temayı seçebiliyorum bu tuşla.
 B: butonları okur. 
 X: checkbox'ları okur. İşartle düğmesini okuyor şu an.
 H: Başlıkları okur. 
+D: Landmark - main
 
 
 * yanıtları göster sayfası oluşturulacak.

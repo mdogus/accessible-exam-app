@@ -1,3 +1,6 @@
+div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover{
+  border:6px solid red !important;
+}
 
 
 

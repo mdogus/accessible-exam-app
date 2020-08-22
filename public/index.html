@@ -13,47 +13,9 @@
 
     <link rel="stylesheet" href="css/eso2.css">
 
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            // bindJAWSFunctions();
-        });
-    </script>
 </head>
 
 <body>
-    <div id="jawsControls" class="hiddenLink">
-        <button id="jawsSonrakiSoru" href="#"> Sonraki soru</button>
-        <button id="jawsOncekiSoru" href="#"> Önceki soru</button>
-
-        <button id="jawsTekrarBak" href="#"> Tekrar bak işareti koy</button>
-
-
-        <button id="jawsSecenekBos" href="#"> Seçimi kaldır</button>
-
-
-        <a id="jawsSoruNoGir2" href="/adaycontroller/jump2sorucb" data-toggle="modal">
-            Soruya geç - comboBox
-        </a>
-        <a id="jawsSoruNoGir3" href="/adaycontroller/jump2sorutb" data-toggle="modal">
-            Soruya geç - textBox
-        </a>
-
-        <a id="jawsAnlikDurum" href="#"> Anlık durum raporu</a>
-
-
-        <a id="jawsModHepsi" href="#"> Tüm sorular listesinde gez</a>
-        <a id="jawsModBos" href="#"> Boş sorular listesinde gez</a>
-        <a id="jawsModTekrarBak" href="#"> Tekrar bakılacak sorular listesinde gez</a>
-        <a id="jawsModIsaretli" href="#"> Cevaplanmış sorular listesinde gez</a>
-
-
-
-        <a id="jawsModSinaviSonlandir" href="#">Sınavı kalıcı olarak sonlandır</a>
-        <a id="jawsDecreaseFont" href="#">Yazı fontunu küçült</a>
-        <a id="jawsIncreaseFont" href="#">Yazı fontunu büyüt</a>
-    </div>
-
 
     <div id="pageTitleDiv" class="page-title">
         <span class="header-text middle">ESO (8 Soru)</span>
@@ -139,28 +101,28 @@
 
             <div class="container-fluid" id="wrapper" style="height: 732px;">
                 <div class="sidebar left">
-                    <div class="hiddenLink" >
-                        <h5 id="qSummaryDiv"> 
+                    <div class="hiddenLink">
+                        <h5 id="qSummaryDiv">
                         </h5>
                     </div>
                     <div aria-live="assertive" class="question-number" id="qNumDiv">
                         6
                     </div>
-                    <div aria-hidden="true" id="markDiv" data-content="Tekrar bakmak için işaret bırakabilirsiniz."
+                    <div aria-hidden="false" id="markDiv" role="button" data-content="Tekrar bakmak için işaret bırakabilirsiniz."
                         data-placement="bottom" rel="popover" class="star" data-original-title="">
-                        <input type="checkbox" id="ismarked">
+                        <input type="checkbox" id="ismarked"  >
                         <span></span>
                     </div>
-                    <div aria-hidden="true" class="question-nav">
-                        <a href="#" id="prevQuestion" data-content="Önceki test için Gözden Geçir ekranını kullanınız."
+                    <div aria-hidden="false" class="question-nav">
+                        <a href="#" id="prevQuestion" data-content="Önceki test için Gözden Geçir ekranını kullanınız." role="button"
                             data-placement="bottom">
                             <img src="/img/arrow-left-big.png">Önceki Soru</a>
                     </div>
                 </div>
 
                 <div class="sidebar right">
-                    <div aria-hidden="true" class="question-nav">
-                        <a href="#" id="nextQuestion" data-content="Sonraki test için Gözden Geçir ekranını kullanınız."
+                    <div aria-hidden="false" class="question-nav">
+                        <a href="#" id="nextQuestion" data-content="Sonraki test için Gözden Geçir ekranını kullanınız." role="button"
                             data-placement="bottom">
                             <img src="/img/arrow-right-big.png">Sonraki Soru</a>
                     </div>
@@ -175,8 +137,8 @@
                         <div aria-live="assertive" id="soruAlaniDiv" class="content" style="height: 702px;">
 
                             <div class="soru-ifadesi">
-                                <p ></p>
-                                <p class="question" id="question"></p>
+                                <p></p>
+                                <p class="question" id="question" role="main"></p>
                                 <p></p>
                             </div>
 
@@ -185,12 +147,12 @@
                             <div class="secenekler">
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
-                                        <input id="-1242060530" type="radio" name="qValue"
-                                            class="answer-radio left" value="A">
+                                        <input id="-1242060530" type="radio" name="qValue" class="answer-radio left"
+                                            value="A">
                                         <label class="unselectable" for="-1242060530">A</label>
                                     </div>
 
-                                    <div class="secenek " >
+                                    <div class="secenek ">
                                         <p><span class="highlighted" id="oA"></span></p>
                                     </div>
                                 </div>
@@ -198,42 +160,42 @@
 
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
-                                        <input id="1602747788" type="radio" name="qValue"
-                                            class="answer-radio left" value="B">
+                                        <input id="1602747788" type="radio" name="qValue" class="answer-radio left"
+                                            value="B">
 
                                         <label class="unselectable" for="1602747788">B</label>
                                     </div>
 
-                                    <div class="secenek  eliminated" >
-                                        <p><span class="highlighted"  id="oB"></span></p>
+                                    <div class="secenek  eliminated">
+                                        <p><span class="highlighted" id="oB"></span></p>
                                     </div>
                                 </div>
 
 
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
-                                        <input id="1648887921" type="radio" name="qValue"
-                                            class="answer-radio left" value="C">
+                                        <input id="1648887921" type="radio" name="qValue" class="answer-radio left"
+                                            value="C">
 
                                         <label class="unselectable" for="1648887921">C</label>
                                     </div>
 
-                                    <div class="secenek" >
-                                        <p><span class="highlighted"  id="oC"></span></p>
+                                    <div class="secenek">
+                                        <p><span class="highlighted" id="oC"></span></p>
                                     </div>
                                 </div>
 
 
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
-                                        <input id="653678293" type="radio" name="qValue"
-                                            class="answer-radio left" value="D">
+                                        <input id="653678293" type="radio" name="qValue" class="answer-radio left"
+                                            value="D">
 
                                         <label class="unselectable" for="653678293">D</label>
                                     </div>
 
-                                    <div class="secenek " >
-                                        <p><span class="highlighted"  id="oD"></span></p>
+                                    <div class="secenek ">
+                                        <p><span class="highlighted" id="oD"></span></p>
                                     </div>
                                 </div>
 
