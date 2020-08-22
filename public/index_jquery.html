@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ana Sayfa</title>
+
+    <link id="stylesheet" rel="stylesheet" href="lib/jquery-ui/themes/base/jquery-ui.css">
+
+
+    <!-- <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css"> -->
+    <link rel="stylesheet" href="lib/jquery-steps/jquery.steps.css">
+    <link rel="stylesheet" href="lib/jquery-steps/main.css">
+    <link rel="stylesheet" href="lib/jquery-steps/normalize.css">
+    <link rel="stylesheet" href="lib/clock2/compiled/flipclock.css">
+    <link rel="stylesheet" href="css/eso.css">
+
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <script src="lib/jquery-steps/jquery.steps.js"></script>
+    <script src="lib/clock2/compiled/flipclock.js"></script>
+    <script src="lib/fontsize/jquery.fontsize.js"></script>
+    <script src="js/eso.js"></script>
+</head>
+
+<body class="cursor32">
+    <div id="eso-cont">
+        <!-- <img src="img/cursor_.png" alt="Cursor" class="cursor" /> -->
+
+        <ul class="eso-header">
+            <li class="eso-count-cont">
+                <div class="eso-count-header" id="passingTimeDiv" role="heading">
+                    GEÇEN SÜRE
+                </div>
+                <div class="eso-countup">
+                </div>
+            </li>
+            <li class="eso-count-cont">
+                <div class="eso-count-header" id="remainingTimeDiv" role="heading">
+                    KALAN SÜRE
+                </div>
+                <div class="eso-countdown">
+                </div>
+            </li>
+            <li>
+                <div id="font-size-menu"></div>
+            </li>
+            <li>
+
+                <div>
+                    <label id="fonts-label" for="fonts" role="heading">Yazı Tipi:</label>
+                    <select id="fonts">
+                        <option>Verdana</option>
+                        <option>Arial</option>
+                        <option>Arial Black</option>
+                        <option>Times New Roman</option>
+                        <option>Helvetica</option>
+                        <option>Book Antiqua</option>
+                        <option>Georgia</option>
+                        <option>Tahoma</option>
+                        <option>Palatino Linotype</option>
+                        <option>Impact</option>
+                        <option>Lucida Sans Unicode</option>
+                        <option>Courier New</option>
+                        <option>Lucida Console</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="themes-label" for="themes" role="heading">Tema:</label>
+                    <select id="themes">
+                        <option value="lib/jquery-ui/themes/base/jquery-ui.css">base</option>
+                        <option value="lib/jquery-ui/themes/black-tie/jquery-ui.css">black-tie</option>
+                        <option value="lib/jquery-ui/themes/blitzer/jquery-ui.css">blitzer</option>
+                        <option value="lib/jquery-ui/themes/cupertino/jquery-ui.css">cupertino</option>
+                        <option value="lib/jquery-ui/themes/dark-hive/jquery-ui.css">dark-hive</option>
+                        <option value="lib/jquery-ui/themes/dot-luv/jquery-ui.css">dot-luv</option>
+                        <option value="lib/jquery-ui/themes/eggplant/jquery-ui.css">eggplant</option>
+                        <option value="lib/jquery-ui/themes/excite-bike/jquery-ui.css">excite-bike</option>
+                        <option value="lib/jquery-ui/themes/flick/jquery-ui.css">flick</option>
+                        <option value="lib/jquery-ui/themes/hot-sneaks/jquery-ui.css">hot-sneaks</option>
+                        <option value="lib/jquery-ui/themes/mint-choc/jquery-ui.css">mint-choc</option>
+                        <option value="lib/jquery-ui/themes/pepper-grinder/jquery-ui.css">pepper-grinder</option>
+                        <option value="lib/jquery-ui/themes/south-street/jquery-ui.css">south-street</option>
+                        <option value="lib/jquery-ui/themes/swanky-purse/jquery-ui.css">swanky-purse</option>
+                        <option value="lib/jquery-ui/themes/ui-darkness/jquery-ui.css">ui-darkness</option>
+                        <option value="lib/jquery-ui/themes/ui-lightness/jquery-ui.css">ui-lightness</option>
+                        <option value="lib/jquery-ui/themes/vader/jquery-ui.css">vader</option>
+                        <option value="lib/jquery-ui/themes/smoothness/jquery-ui.css">smoothness</option>
+                        <option value="lib/jquery-ui/themes/sunny/jquery-ui.css">sunny</option>
+                    </select>
+                </div>
+                
+            </li>
+            
+            
+        </ul>
+
+        <div id="eso-content" style="height: 90%; max-height: 90%; ">
+            <div id="eso-menu-tabs">
+                <ul>
+                    <li><a href="#questions-div"><span>Sorular</span></a></li>
+                    <li><a href="#empty-questions"><span>Boş Bıraktığım Sorular</span></a></li>
+                    <li><a href="#marked-questions"><span>İşaretlediğim Sorular</span></a></li>
+                </ul>
+                <div id="questions-div"></div>
+                <div id="empty-questions"></div>
+                <div id="marked-questions"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
