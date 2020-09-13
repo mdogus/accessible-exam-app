@@ -1,4 +1,4 @@
-div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover{
+.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover{
   border:6px solid red !important;
 }
 
@@ -1173,4 +1173,65 @@ button[readonly="readonly"].numberbox{
     overflow:hidden;
     margin-bottom: -1px;
 
+}
+
+
+/* .bottom-bar{
+    display: table;
+}
+
+.bottom-bar > div{
+    display: table-cell;
+} */
+
+.btn-footer {
+    cursor:pointer;
+    width: 250px;
+    border: 3px solid darkgray;
+    margin-right: 40px;
+    float: left;
+
+}
+
+
+.btn-footer:active, .btn-mark:active{
+    background-color: grey;
+}
+
+.btn-mark {
+    height: 74px !important;
+    width: 224px;   
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+}
+.btn-mark > input {
+    height: 50px;
+    line-height: 50px ;
+    width: 50px;
+}
+.btn-mark > label {
+    margin-left: 33px;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.btn-prev{
+    height: 80px !important;
+    background:url(/img/arrow-left-big.png) no-repeat;
+    background-position: 5 5;
+}
+
+.btn-next{
+    height: 80px !important;
+    background:url(/img/arrow-right-big.png) no-repeat;
+    background-position: 175 5;
+}
+
+.btn-finish{
+    height: 80px !important;
 }

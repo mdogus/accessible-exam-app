@@ -2,12 +2,11 @@ var examHour = 1;
 var examMinute = 30;
 var numOfGenQuestions = 11;
 
-var questionText = ' Yazarın hikâyelerindeki karakterler, çoğunlukla zor koşullar altında yaşayan insanlardır. O, var olma '+
-'mücadelesi içindeki bu karakterleri, güçlü bir gözlem yeteneğine ve içgörüye dayanarak son derece '+
-'kanlı canlı biçimde betimler. Hatta yakın arkadaşı olan Cemal Süreya, onun hikâyelerindeki kişiler '+
-'için şöyle der: “Onun kişilerine iğne batırsan kan çıkar.” ';
 
-var o1Text = 'A) Gözümde bir damla su, deniz olup taşıyor Çöllerde kalmış gibi yanıyor, yanıyorum';
+//var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
+var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
+
+var o1Text = 'A) Gözümde bir damla su, güçlü deniz olup taşıyor Çöllerde kalmış gibi yanıyor, yanıyorum';
 var o2Text = 'B) Özlediğin hayatı buldun mu bilmem Gözlerinde hâlâ hüzün var gibi';
 var o3Text = 'C) Nazlı yârdan kem haberler geliyor Dostlarım ağlıyor, düşman gülüyor';
 var o4Text = 'D) Küçük bir çeşmeyim yurdumun Unutulmuş bir dağında';
@@ -38,7 +37,7 @@ function saveQuestion(){
     }
     return qid;
 }
-function loadQuestion(qid){
+function loadQuestion(qid, focus){
     
     $('input[name="qValue"]').prop('checked', false);
     $('#ismarked').prop('checked', false);
@@ -59,14 +58,35 @@ function loadQuestion(qid){
         $("#oB").text(q.o2Text);
         $("#oC").text(q.o3Text);
         $("#oD").text(q.o4Text);
-        let sum = "Soru " + q.id + ", İşaretlenen Seçenek " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı "+ (q.marked ? "Evet" : "Hayır");
+        
+        
+        $("#ismarkedlabel").text("Soru " + q.id + " Tekrar Bakılacak Mı?");
+
+        updateSummary(q.id);
+
+        if(focus !== false){
+            document.getElementById('qSummaryDiv').focus();
+        }
+    }
+}
+
+
+function updateSummary(qid){
+    let q = qArr[qid];
+    if(q){
+        let sum = "Soru " + q.id + ", Cevaplanan Seçenek " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı "+ (q.marked ? "Evet" : "Hayır");
         $("#qSummaryDiv").text(sum);
     }
 }
 
 function markQuestion(){
     let qid = saveQuestion();
-    loadQuestion(qid);
+    updateSummary(qid);
+}
+
+function answerQuestion(){
+    var qid = saveQuestion();
+    updateSummary(qid);
 }
 
 function nextQuestion(){
@@ -89,14 +109,20 @@ $(function () {
         $("#nextQuestion").on("click", nextQuestion);
         $("#prevQuestion").on("click", prevQuestion);
         $("#ismarked").on("click", markQuestion);
+        $("#radioA").on("click", answerQuestion);
+        $("#radioB").on("click", answerQuestion);
+        $("#radioC").on("click", answerQuestion);
+        $("#radioD").on("click", answerQuestion);
 
 
         createQuestions();
 
         saveQuestion();
-        loadQuestion(1);
+        loadQuestion(1, false);
 
 
-
+        setTimeout(function(){
+            document.getElementById('pageTitleSpan').focus();
+        },250)
 
 });

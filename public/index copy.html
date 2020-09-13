@@ -1,0 +1,263 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ESO</title>
+
+
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
+
+    <script src="lib/jaws.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/eso2.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="css/eso2.css">
+
+</head>
+
+<body>
+
+    <div id="pageTitleDiv" class="page-title">
+        <span class="header-text middle">Engelsiz Sınav Ortamı</span>
+
+        </span>
+
+        <div class="hiddenLink" id="anlikDurumDiv">
+            <h6>Anlık durum bilgisi yok. Anlık durum bilgilerini güncellemek için link listesindeki anlık durum raporu
+                linkine tıklayınız.</h6>
+            <input type="hidden" value="İNGİLİZCE" id="currentTestAdi">
+        </div>
+
+        <div class="hiddenLink">
+            Şu an Tüm sorular listesini taramaktasınız.
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="nav-icons">
+
+                <div aria-hidden="true" class="nav-button">
+                    <a id="anlikDurumA" href="/adaycontroller/anlikdurum" data-toggle="modal"
+                        data-content="İstatistik bilgileriniz." data-placement="right" rel="popover"
+                        data-original-title="">
+                        <img src="/img/clock-grey.png"><span>ANLIK DURUM</span>
+                    </a>
+                </div>
+                <div aria-hidden="true" class="nav-button">
+                    <a id="gozdenGecirA" href="/adaycontroller/gozdengecir" data-toggle="modal"
+                        data-content="Sorulara hızlıca erişmek veya kısıtlı listeler halinde taramak için kullanılır."
+                        data-placement="right" rel="popover" data-original-title="">
+                        <img src="/img/magnifier-grey.png"><span>GÖZDEN GEÇİR</span>
+                    </a>
+                </div>
+
+
+
+
+                <div aria-hidden="true" class="nav-button">
+                    <button id="sinaviTamamlaButton" type="button" data-toggle="modal" data-target="#SinavTamamlaModal"
+                        data-content="Sınav kalıcı olarak sonlandırılır. (Süre bitiminde otomatik sonlanır.)"
+                        data-placement="right" rel="popover" data-original-title="">
+                        <img src="/img/check-grey.png"><span>SINAVI TAMAMLA</span>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div aria-hidden="false" class="info-panel">
+                <div id="top">
+                    <div class="left-part">
+                        <div>Kalan Süre</div>
+                    </div>
+                    <div class="right-part">
+                        <div>Aday Bilgileri</div>
+                    </div>
+                </div>
+                <div id="middle">
+                    <div class="left-part">
+                        <div class="time-info"><span id="seansSureSpan">174<span
+                                    style="font-size: 15px">:54</span></span></div>
+                        <div class="info-title">Saat</div>
+                        <div class="time-info"><span id="timeSpan">21:06</span></div>
+                    </div>
+
+                    <div class="right-part">
+                        <div>Oğuzhan</div>
+                        <div>Metehan</div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" id="bottom">
+                    <div class="left-part">
+                        <div><a id="changeTimeVisibility" href="#">Süreyi Gizle</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <div class="container-fluid" id="wrapper" style="height: 732px;">
+                <div class="sidebar left">
+                    <div class="hiddenLink">
+                        <h5 id="qSummaryDiv">
+                        </h5>
+                    </div>
+                    <div aria-live="assertive" class="question-number" id="qNumDiv">
+                        6
+                    </div>
+                    <div aria-hidden="false" id="markDiv" role="button" data-content="Tekrar bakmak için işaret bırakabilirsiniz."
+                        data-placement="bottom" rel="popover" class="star" data-original-title="">
+                        <input type="checkbox" id="ismarked"  >
+                        <span></span>
+                    </div>
+                    <div aria-hidden="false" class="question-nav">
+                        <a href="#" id="prevQuestion" data-content="Önceki test için Gözden Geçir ekranını kullanınız." role="button"
+                            data-placement="bottom">
+                            <img src="/img/arrow-left-big.png">Önceki Soru</a>
+                    </div>
+                </div>
+
+                <div class="sidebar right">
+                    <div aria-hidden="false" class="question-nav">
+                        <a href="#" id="nextQuestion" data-content="Sonraki test için Gözden Geçir ekranını kullanınız." role="button"
+                            data-placement="bottom">
+                            <img src="/img/arrow-right-big.png">Sonraki Soru</a>
+                    </div>
+                </div>
+
+                <div aria-live="assertive" id="soruTemplateDiv" class="textSelectable"
+                    style="font-size: 18px; line-height: 22.5px;">
+
+                    <div id="soruContainer">
+
+
+                        <div aria-live="assertive" id="soruAlaniDiv" class="content" style="height: 702px;">
+
+                            <div class="soru-ifadesi">
+                                <p></p>
+                                <p class="question" id="question" role="main"></p>
+                                <p></p>
+                            </div>
+
+
+
+                            <div class="secenekler">
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="-1242060530" type="radio" name="qValue" class="answer-radio left"
+                                            value="A">
+                                        <label class="unselectable" for="-1242060530">A</label>
+                                    </div>
+
+                                    <div class="secenek ">
+                                        <p><span class="highlighted" id="oA"></span></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="1602747788" type="radio" name="qValue" class="answer-radio left"
+                                            value="B">
+
+                                        <label class="unselectable" for="1602747788">B</label>
+                                    </div>
+
+                                    <div class="secenek  eliminated">
+                                        <p><span class="highlighted" id="oB"></span></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="1648887921" type="radio" name="qValue" class="answer-radio left"
+                                            value="C">
+
+                                        <label class="unselectable" for="1648887921">C</label>
+                                    </div>
+
+                                    <div class="secenek">
+                                        <p><span class="highlighted" id="oC"></span></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="653678293" type="radio" name="qValue" class="answer-radio left"
+                                            value="D">
+
+                                        <label class="unselectable" for="653678293">D</label>
+                                    </div>
+
+                                    <div class="secenek ">
+                                        <p><span class="highlighted" id="oD"></span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <style type="text/css">
+                        #clausetest6,
+                        #isaretlenmemisClausetest6 {
+                            color: blue;
+                        }
+
+                        span p {
+                            display: inherit;
+                        }
+
+                        .soru-ifadesi {
+                            font-weight: bold;
+                        }
+
+                        .soru-ifadesi ol {
+                            font-weight: normal;
+                            padding-left: 40px;
+                        }
+                    </style>
+                </div>
+
+            </div>
+            <div class="page-info">
+            </div>
+        </div>
+    </div>
+
+    <div id="pageFooterDiv" class="footer">
+        <div class="middle uyari">
+
+            <div class="date right text-right">
+
+                16 Ağustos 2020
+            </div>
+            <div class="middle" aria-hidden="true">
+                <div class="nav-button">
+                    <button id="decreaseFont" data-content="Fontu Küçült" data-placement="top" rel="popover"
+                        alt="font küçült" data-original-title="">
+                        <img src="/img/textSmaller.png">
+                    </button>
+                </div>
+                <div class="nav-button">
+                    <span id="fontSize" style="color: #ffffff; vertical-align: middle;">18 px</span>
+                </div>
+                <div class="nav-button">
+                    <button id="increaseFont" data-content="Fontu Büyüt" data-placement="top" rel="popover"
+                        alt="font büyüt" data-original-title="">
+                        <img src="/img/textBigger.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

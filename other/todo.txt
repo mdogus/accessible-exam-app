@@ -47,6 +47,8 @@ v2 soru üret
 v2 sorular arası geçiş
 soru raporu hidden
 
+13/09/2020 4
+
 TODO
 --------------------------------------------------
 R: radyo düğmelerini (yani şıkları) okur. Şu anda şıkları bu tuşla okutabiliyoruz.
