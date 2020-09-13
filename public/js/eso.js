@@ -219,9 +219,9 @@ $(function () {
         });
 
 
-        //font size
         jQuery(document).ready(function($) {
-
+            
+            //font size
             let fontSizeLabelMap = {
                 '100%': "çok küçük", '125%':"küçük", '150%':"orta", '200%':"büyük", '250%':"çok büyük"
             };

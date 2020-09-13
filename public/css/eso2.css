@@ -1,4 +1,6 @@
-.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover{
+.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover,
+
+#increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus{
   border:6px solid red !important;
 }
 
@@ -74,7 +76,7 @@ a
 
 .page-title
 {
-    height: 32px;
+    height: 164px;
     font-family: 'Segoe UI', Arial;
     font-size: 18px;
     background-color: #333333;
@@ -452,8 +454,8 @@ input[type="checkbox"]
 
 .question
 {
-    font-size: 18px;
-    line-height: 30px;
+    font-weight: 500;
+    font-family: "Segoe UI Semibold";
 }
 
 .question-number

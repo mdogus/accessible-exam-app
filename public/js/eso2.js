@@ -101,7 +101,23 @@ function prevQuestion(){
     loadQuestion(parseInt(id)-1);
 }
 
+var fontSize = 19;
+function changeFontSize(fontSize) {
+    console.log("cfs: "+fontSize);
+    if (fontSize <= 40 && fontSize >= 10) {
+        $('#soruTemplateDiv').css("font-size", fontSize + "px");
+        $('#soruTemplateDiv').css("line-height", (fontSize * 1.25) + "px");
+        $('#fontSize').html(fontSize + " px");
+    }
+}
 
+function getFontSize() {
+    var fontText = $("#fontSize").text();
+    if (fontText == "") {
+        fontText = 18;
+    }
+    return parseInt(fontText);
+}
 
 $(function () {
 
@@ -124,5 +140,32 @@ $(function () {
         setTimeout(function(){
             document.getElementById('pageTitleSpan').focus();
         },250)
+
+
+
+        $("#increaseFont").click(function (e) {
+            var fontSize = getFontSize();
+            changeFontSize(fontSize + 2);
+            // resizeImagesAccordingToFontSize(fontSize);
+        });
+
+        $("#decreaseFont").click(function (e) {
+            var fontSize = getFontSize();
+            changeFontSize(fontSize - 2);
+            // resizeImagesAccordingToFontSize(fontSize);
+        });
+
+        // //font size
+        // let fontSizeLabelMap = {
+        //     '100%': "çok küçük", '125%':"küçük", '150%':"orta", '200%':"büyük", '250%':"çok büyük"
+        // };
+
+
+        // $('#eso-cont').fontsizes({ 
+        //     fontSizeLabelMap: fontSizeLabelMap,
+        //     fontSizes: ['100%', '125%', '150%', '200%', '250%'],
+        //     menuContainer: $('#font-size-menu'),
+        //     includeChildren: ['h1', 'h2', 'h3', 'h4', 'h5']
+        //     });
 
 });

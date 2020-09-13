@@ -1,6 +1,6 @@
 <html lang="tr">
 
-<head >
+<head>
     <meta charset="utf-8">
     <title>Engelsiz Sınav Ortamı</title>
 
@@ -9,121 +9,134 @@
     <script src="lib/jquery-ui/jquery-ui.js"></script>
 
     <!-- <script src="lib/jaws.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="lib/fontsize/jquery.fontsize.js"></script>
     <script src="js/eso2.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="stylesheet" href="css/eso2.css">
 
 </head>
 
-<body>
+<body id="eso-cont">
 
-    <div id="pageTitleDiv" class="page-title" aria-hidden="false" >
-        <span class="header-text left" tabindex="0" id="pageTitleSpan">Engelsiz Sınav Ortamı</span>
-        <span>Aday Bilgileri: Metehan Oğuzhan</span>
+    <div id="pageTitleDiv" class="page-title" aria-hidden="false">
+        <span class="header-text left" tabindex="0" id="pageTitleSpan">ENGELSİZ SINAV ORTAMI</span>
+        <br>
+        <span class="header-text left">Aday Bilgileri: Metehan Oğuzhan</span>
+        <br>
+        <div class="left" aria-hidden="false">
+            <div class="nav-button" style="color: #ffffff;">Font Büyüklüğü:</div>
+            <div class="nav-button">
+                <span id="fontSize" style="color: #ffffff; vertical-align: middle;" >18 px</span>
+            </div>
+            <div class="nav-button">
+                <button id="decreaseFont" data-content="Fontu Küçült" data-placement="top" rel="popover"
+                    alt="font küçült" data-original-title="" aria-label="Fontu Küçült">
+                    <img src="/img/textSmaller.png">
+                </button>
+            </div>
+            <div class="nav-button">
+                <button id="increaseFont" data-content="Fontu Büyüt" data-placement="top" rel="popover" alt="font büyüt"
+                    data-original-title="" aria-label="Fontu Büyüt">
+                    <img src="/img/textBigger.png">
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="container">
-        <div class="header">
-            <div class="nav-icons">
+        <div>
+            <div id="soruTemplateDiv" class="textSelectable" style="font-size: 18px; line-height: 22.5px;">
+
+                <div id="soruContainer">
+
+
+                    <div id="soruAlaniDiv" class="content" style="height: 600px">
+
+                        <div class="hiddenLink" aria-hidden="false">
+                            <span id="qSummaryDiv" tabindex="1">
+                            </span>
+                        </div>
+                        <div class="question-number" id="qNumDiv" role="main">
+                            6
+                        </div>
+                        <div class="soru-ifadesi">
+                            <p></p>
+                            <span class="question" id="question"></span>
+                            <p></p>
+                        </div>
+
+
+
+                        <div class="secenekler">
+                            <div class="answerBox" aria-checked="false">
+                                <div class="secenek-baslik">
+                                    <input id="radioA" type="radio" name="qValue" class="answer-radio left" value="A">
+                                    <label class="unselectable" for="radioA">A</label>
+                                </div>
+
+                                <div class="secenek ">
+                                    <p><span class="highlighted" id="oA"></span></p>
+                                </div>
+                            </div>
+
+
+                            <div class="answerBox" aria-checked="false">
+                                <div class="secenek-baslik">
+                                    <input id="radioB" type="radio" name="qValue" class="answer-radio left" value="B">
+
+                                    <label class="unselectable" for="radioB">B</label>
+                                </div>
+
+                                <div class="secenek  eliminated">
+                                    <p><span class="highlighted" id="oB"></span></p>
+                                </div>
+                            </div>
+
+
+                            <div class="answerBox" aria-checked="false">
+                                <div class="secenek-baslik">
+                                    <input id="radioC" type="radio" name="qValue" class="answer-radio left" value="C">
+
+                                    <label class="unselectable" for="radioC">C</label>
+                                </div>
+
+                                <div class="secenek">
+                                    <p><span class="highlighted" id="oC"></span></p>
+                                </div>
+                            </div>
+
+
+                            <div class="answerBox" aria-checked="false">
+                                <div class="secenek-baslik">
+                                    <input id="radioD" type="radio" name="qValue" class="answer-radio left" value="D">
+
+                                    <label class="unselectable" for="radioD">D</label>
+                                </div>
+
+                                <div class="secenek ">
+                                    <p><span class="highlighted" id="oD"></span></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-bar">
+                    <input id="prevQuestion" type="button" value="Önceki Soru" class="btn-footer btn-prev" role="button"
+                        aria-hidden="false" aria-label="Önceki Soru" aria-labelledby="prevLabel">
+                    <div class="btn-footer btn-mark" data-content="Tekrar Bakılacak" aria-labelledby="ismarkedlabel">
+                        <input type="checkbox" id="ismarked" role="checkbox" aria-hidden="false">
+                        <label aria-hidden="true" class="unselectable" for="ismarked" id="ismarkedlabel">Tekrar
+                            Bakılacak</label>
+                    </div>
+                    <input id="nextQuestion" type="button" value="Sonraki Soru" class="btn-footer btn-next"
+                        role="button" aria-hidden="false" data-content="Sonraki Soru">
+                    <input id="finishButton" type="button" value="Sınavı Bitir" class="btn-footer btn-finish"
+                        role="button" aria-hidden="false" data-content="Sınavı Bitir">
+                </div>
+
 
             </div>
-        </div>
-        <div>
-                
-
-            <div  id="soruTemplateDiv" class="textSelectable"
-            style="font-size: 18px; line-height: 22.5px;">
-            
-            <div id="soruContainer">
-                
-                
-                <div  id="soruAlaniDiv" class="content" style="height: 600px">
-                    
-                    <div class="hiddenLink" aria-hidden="false" >
-                        <span id="qSummaryDiv"    tabindex="1">
-                        </span>
-                    </div>
-                    <div class="question-number" id="qNumDiv" role="main">
-                        6
-                    </div>
-                            <div class="soru-ifadesi" >
-                                <p></p>
-                                <span class="question" id="question" ></span>
-                                <p></p>
-                            </div>
-
-
-
-                            <div class="secenekler">
-                                <div class="answerBox" aria-checked="false" >
-                                    <div class="secenek-baslik">
-                                        <input id="radioA" type="radio" name="qValue" class="answer-radio left" 
-                                            value="A">
-                                        <label class="unselectable" for="radioA">A</label>
-                                    </div>
-
-                                    <div class="secenek ">
-                                        <p><span class="highlighted" id="oA" ></span></p>
-                                    </div>
-                                </div>
-
-
-                                <div class="answerBox" aria-checked="false"  >
-                                    <div class="secenek-baslik">
-                                        <input id="radioB" type="radio" name="qValue" class="answer-radio left"
-                                            value="B">
-
-                                        <label class="unselectable" for="radioB" >B</label>
-                                    </div>
-
-                                    <div class="secenek  eliminated">
-                                        <p><span class="highlighted" id="oB" ></span></p>
-                                    </div>
-                                </div>
-
-
-                                <div class="answerBox" aria-checked="false" >
-                                    <div class="secenek-baslik">
-                                        <input id="radioC" type="radio" name="qValue" class="answer-radio left" 
-                                            value="C">
-
-                                        <label class="unselectable" for="radioC">C</label>
-                                    </div>
-
-                                    <div class="secenek">
-                                        <p><span class="highlighted" id="oC" ></span></p>
-                                    </div>
-                                </div>
-
-
-                                <div class="answerBox" aria-checked="false" > 
-                                    <div class="secenek-baslik">
-                                        <input id="radioD" type="radio" name="qValue" class="answer-radio left" 
-                                            value="D">
-
-                                        <label class="unselectable" for="radioD">D</label>
-                                    </div>
-
-                                    <div class="secenek ">
-                                        <p><span class="highlighted" id="oD" ></span></p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div  class="bottom-bar">
-                        <input  id="prevQuestion"  type="button" value="Önceki Soru" class="btn-footer btn-prev" role="button" aria-hidden="false" aria-label="Önceki Soru" aria-labelledby="prevLabel">
-                        <div class="btn-footer btn-mark" data-content="Tekrar Bakılacak" aria-labelledby="ismarkedlabel">
-                            <input  type="checkbox" id="ismarked"  role="checkbox" aria-hidden="false"  >
-                            <label aria-hidden="true" class="unselectable" for="ismarked" id="ismarkedlabel" >Tekrar Bakılacak</label>
-                        </div>
-                        <input id="nextQuestion"  type="button" value="Sonraki Soru" class="btn-footer btn-next" role="button" aria-hidden="false" data-content="Sonraki Soru">
-                        <input  id="finishButton"  type="button" value="Sınavı Bitir" class="btn-footer btn-finish" role="button" aria-hidden="false" data-content="Sınavı Bitir">
-                    </div>
-
-
-                </div>
 
         </div>
     </div>
