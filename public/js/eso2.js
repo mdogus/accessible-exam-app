@@ -3,8 +3,8 @@ var examMinute = 30;
 var numOfGenQuestions = 11;
 
 
-//var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
-var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
+var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
+// var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
 
 var o1Text = 'A) Gözümde bir damla su, güçlü deniz olup taşıyor Çöllerde kalmış gibi yanıyor, yanıyorum';
 var o2Text = 'B) Özlediğin hayatı buldun mu bilmem Gözlerinde hâlâ hüzün var gibi';
@@ -104,9 +104,15 @@ function prevQuestion(){
 var fontSize = 19;
 function changeFontSize(fontSize) {
     console.log("cfs: "+fontSize);
-    if (fontSize <= 40 && fontSize >= 10) {
-        $('#soruTemplateDiv').css("font-size", fontSize + "px");
-        $('#soruTemplateDiv').css("line-height", (fontSize * 1.25) + "px");
+    if (fontSize <= 36 && fontSize >= 20) {
+        $('#eso-cont').css("font-size", fontSize + "px");
+        $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
+        $('#eso-cont .question-number').css("font-size", fontSize * 1.5 + "px");
+        $('#eso-cont .question-number').css("line-height", (fontSize * 1.5 * 1.4) + "px");
+        $('#eso-cont input[type=button]').css("font-size", fontSize + "px");
+        $('#eso-cont input[type=button]').css("line-height", (fontSize * 1.4) + "px");
+        $('#eso-cont button img').css("width", fontSize * 1.2 + "px");
+        // $('#eso-cont button img').css("line-height", (fontSize * 1.4) + "px");
         $('#fontSize').html(fontSize + " px");
     }
 }
