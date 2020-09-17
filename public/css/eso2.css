@@ -1,6 +1,6 @@
 .btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover,
 
-#increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus{
+#increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover{
   border:6px solid red !important;
 }
 
@@ -46,10 +46,6 @@ body
     user-select: text;
 }
 
-a
-{
-    text-decoration: none !important;
-}
 
 .left
 {
@@ -72,23 +68,24 @@ a
     width: 960px;
 }
 
+#eso-cont, #eso-cont input, #eso-cont select{
+    line-height: 32px;
+    font-size: 20px;
+    font-family: Verdana;
+}
+
 .page-title
 {
     height: 164px;
     background-color: #333333;
     color: #FFFFFF;
     font-weight: bold;
-    /* line-height: 32px; */
     padding-left: 10px;
     top: 0px;
     left: 0px;
     padding-top: 5px;
 }
 
-.danger
-{
-    background-color: #C1272D !important;
-}
 
 .header
 {
@@ -106,15 +103,6 @@ a
 }
 
 
-.nav-icons div span
-{
-    display: inline-block;
-    width: 5em;
-    vertical-align: middle;
-    color: #807F7F;
-    font-weight: bold;
-}
-
 .nav-icons div img
 {
     padding: 0 2px 0 0;
@@ -131,15 +119,6 @@ a
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.nav-icons div span.green
-{
-    color: #8CC63F;
-}
-
-.nav-icons div span.red
-{
-    color: #EE423B;
-}
 
 #soruAlaniDiv {
     padding: 0px 30px 0px 30px !important;
@@ -158,18 +137,9 @@ a
 
 }
 
-
-/* .bottom-bar{
-    display: table;
-}
-
-.bottom-bar > div{
-    display: table-cell;
-} */
-
 .btn-footer {
     cursor:pointer;
-    min-width: 250px;
+    min-width: 275px;
     border: 3px solid darkgray;
     margin-right: 40px;
     float: left;
@@ -206,13 +176,13 @@ a
 .btn-prev{
     height: 80px !important;
     background:url(/img/arrow-left-big.png) no-repeat;
-    background-position: 5 5;
+    background-position: 0 5;
 }
 
 .btn-next{
     height: 80px !important;
     background:url(/img/arrow-right-big.png) no-repeat;
-    background-position: 175 5;
+    background-position: 205 5;
 }
 
 .btn-finish{
@@ -363,15 +333,12 @@ a
     opacity: 1;
 }
 
-
 .nav-button
 {
     padding: 0 15px 0 0;
-    color: #807F7F;
     font-weight: bold;
     float: left;
 }
-
 .question-number
 {
     color: #888888;
@@ -385,4 +352,189 @@ a
 
 #increaseFont,  #decreaseFont {
     padding-top: 5px;
+}
+
+
+#eso-cont.font_0 *{
+    font-family: Verdana !important;
+  }
+  #eso-cont.font_1 *{
+    font-family: Arial !important;
+  }
+  #eso-cont.font_2 *{
+    font-family: 'Arial Black' !important;
+  }
+  #eso-cont.font_3 *{
+    font-family: 'Times New Roman' !important;
+  }
+  #eso-cont.font_4 *{
+    font-family: Helvatica !important;
+  }
+  #eso-cont.font_5 *{
+    font-family: 'Book Antiqua' !important;
+  }
+  #eso-cont.font_6 *{
+    font-family: Georgia !important;
+  }
+  #eso-cont.font_7 *{
+    font-family: Tahoma !important;
+  }
+  #eso-cont.font_8 *{
+    font-family: Platino !important;
+  }
+  #eso-cont.font_9 *{
+    font-family: Impact !important;
+  }
+  #eso-cont.font_10 *{
+    font-family: 'Lucida Sans Unicode' !important;
+  }
+  #eso-cont.font_11 *{
+    font-family: 'Courier New' !important;
+  }
+  #eso-cont.font_12 *{
+    font-family: 'Lucida Console' !important;
+  }
+
+  .bottom-bar input,  .bottom-bar label,  .bottom-bar .btn-mark{
+      color: black;
+  }
+
+  
+  /* THEME 1 */
+  body.theme2{
+    background-color: black;
+    color: azure;
+  }
+  .theme2 .page-title{
+    background-color: #111111;
+    color: #FFFFFF;
+  }
+  .theme2 .header {
+      background-color: #F2F2F2;
+  }
+
+  .theme2 .bottom-bar input, .theme2 .bottom-bar label, .theme2 .bottom-bar .btn-mark, .theme2 select, .theme2 button{
+    background-color: black;
+    border: 3px solid  cyan;
+    color: white;
+  }
+
+  .theme2 .btn-footer {
+    border: 3px solid darkgray;
+  }
+
+  .theme2 .btn-footer:active, .theme2 .btn-mark:active{
+    background-color: cyan; 
+  }
+
+.theme2 .secenek-baslik input + label{
+    color: black;
+}
+
+.theme2 .secenek-baslik input:checked + label{
+    color: white;
+}
+
+.theme2 .answerBox input + label>span{
+    color: white;
+}
+
+.theme2 .answerBox input:checked + label>span{
+    color: white;
+}
+
+.theme2 .question-number{
+    color: white;
+}
+  /* THEME 3 */
+  body.theme3{
+    background-color: black;
+    color: yellow;
+  }
+  .theme3 .page-title{
+    background-color: #111111;
+    color: yellow;
+  }
+  .theme3 .header {
+      background-color: #F2F2F2;
+  }
+
+  .theme3 .bottom-bar input, .theme3 .bottom-bar label, .theme3 .bottom-bar .btn-mark, .theme3 select, .theme3 button{
+      background-color: black;
+      color: yellow;
+      border: 3px solid  green;
+  }
+
+  .theme3 .btn-footer {
+    border: 3px solid darkgray;
+  }
+
+  .theme3 .btn-footer:active, .theme3 .btn-mark:active{
+    background-color: green; 
+  }
+
+.theme3 .secenek-baslik input + label{
+    color: black;
+}
+
+.theme3 .secenek-baslik input:checked + label{
+    color: white;
+}
+
+.theme3 .answerBox input + label>span{
+    color: white;
+}
+
+.theme3 .answerBox input:checked + label>span{
+    color: white;
+}
+
+.theme3 .question-number{
+    color: white;
+}
+  /* THEME 4 */
+  body.theme4{
+    background-color: black;
+    color: green;
+  }
+  .theme4 .page-title{
+    background-color: #111111;
+    color: green;
+  }
+  .theme4 .header {
+      background-color: #F2F2F2;
+  }
+
+  .theme4 .bottom-bar input, .theme4 .bottom-bar label, .theme4 .bottom-bar .btn-mark, .theme4 select, .theme4 button{
+      background-color: black;
+      color: green;
+      border: 3px solid  blue;
+  }
+
+  .theme4 .btn-footer {
+    border: 3px solid darkgray;
+  }
+
+  .theme4 .btn-footer:active, .theme4 .btn-mark:active{
+    background-color: blue; 
+  }
+
+.theme4 .secenek-baslik input + label{
+    color: black;
+}
+
+.theme4 .secenek-baslik input:checked + label{
+    color: white;
+}
+
+.theme4 .answerBox input + label>span{
+    color: white;
+}
+
+.theme4 .answerBox input:checked + label>span{
+    color: white;
+}
+
+.theme4 .question-number{
+    color: white;
 }

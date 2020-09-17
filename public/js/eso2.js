@@ -107,12 +107,18 @@ function changeFontSize(fontSize) {
     if (fontSize <= 36 && fontSize >= 20) {
         $('#eso-cont').css("font-size", fontSize + "px");
         $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
+
         $('#eso-cont .question-number').css("font-size", fontSize * 1.5 + "px");
         $('#eso-cont .question-number').css("line-height", (fontSize * 1.5 * 1.4) + "px");
+
         $('#eso-cont input[type=button]').css("font-size", fontSize + "px");
         $('#eso-cont input[type=button]').css("line-height", (fontSize * 1.4) + "px");
+
         $('#eso-cont button img').css("width", fontSize * 1.2 + "px");
-        // $('#eso-cont button img').css("line-height", (fontSize * 1.4) + "px");
+
+        $('#eso-cont select').css("font-size", (fontSize) + "px");
+        $('#eso-cont select').css("line-height", (fontSize * 1.4) + "px");
+
         $('#fontSize').html(fontSize + " px");
     }
 }
@@ -161,17 +167,16 @@ $(function () {
             // resizeImagesAccordingToFontSize(fontSize);
         });
 
-        // //font size
-        // let fontSizeLabelMap = {
-        //     '100%': "çok küçük", '125%':"küçük", '150%':"orta", '200%':"büyük", '250%':"çok büyük"
-        // };
+         //select font
+         $('#fonts').change(function(){
+            $("#eso-cont").removeClass();
+            $("#eso-cont").addClass("font_"+this.selectedIndex);
+        });
 
-
-        // $('#eso-cont').fontsizes({ 
-        //     fontSizeLabelMap: fontSizeLabelMap,
-        //     fontSizes: ['100%', '125%', '150%', '200%', '250%'],
-        //     menuContainer: $('#font-size-menu'),
-        //     includeChildren: ['h1', 'h2', 'h3', 'h4', 'h5']
-        //     });
-
+        //theme
+        $('#themes').change(function(){
+            let selectedTheme = $('#themes').find(":selected").val();
+            $("body").removeClass();
+            $("body").addClass(selectedTheme);
+        });
 });

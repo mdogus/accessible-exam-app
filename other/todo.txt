@@ -51,6 +51,8 @@ soru raporu hidden
 
 15/09/2020 1
 
+17/09/2020 2
+
 TODO
 --------------------------------------------------
 R: radyo düğmelerini (yani şıkları) okur. Şu anda şıkları bu tuşla okutabiliyoruz.

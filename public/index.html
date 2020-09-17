@@ -16,21 +16,48 @@
 
 </head>
 
-<body >
+<body class="theme3">
 
-    <div id="eso-cont">
-
-
+    <div id="eso-cont" >
 
         <div id="pageTitleDiv" class="page-title" aria-hidden="false">
             <span class="header-text left" tabindex="0" id="pageTitleSpan">ENGELSİZ SINAV ORTAMI</span>
             <br>
             <span class="header-text left">Aday Bilgileri: Metehan Oğuzhan</span>
             <br>
+            <div>
+                <label id="themes-label" for="themes" role="heading">Tema:</label>
+                <select id="themes" sele>
+                    <option value="themeDefault">Tema 1</option>
+                    <option value="theme2">Tema 2</option>
+                    <option value="theme3" selected>Tema 3</option>
+                    <option value="theme4">Tema 4</option>
+                </select>
+            </div>
+            <div>
+                <label id="fonts-label" for="fonts" role="heading">Yazı Tipi:</label>
+                <select id="fonts">
+                    <optgroup>
+                        <option>Verdana</option>
+                        <option>Arial</option>
+                        <option>Arial Black</option>
+                        <option>Times New Roman</option>
+                        <option>Helvetica</option>
+                        <option>Book Antiqua</option>
+                        <option>Georgia</option>
+                        <option>Tahoma</option>
+                        <option>Palatino Linotype</option>
+                        <option>Impact</option>
+                        <option>Lucida Sans Unicode</option>
+                        <option>Courier New</option>
+                        <option>Lucida Console</option>
+                    </optgroup>
+                </select>
+            </div>
             <div class="left" aria-hidden="false">
-                <div class="nav-button" style="color: #ffffff;">Font Büyüklüğü:</div>
+                <div class="nav-button" >Yazı Büyüklüğü:</div>
                 <div class="nav-button">
-                    <span id="fontSize" style="color: #ffffff; vertical-align: middle;">18 px</span>
+                    <span id="fontSize" style=" vertical-align: middle;">18 px</span>
                 </div>
                 <div class="nav-button">
                     <button id="decreaseFont" data-content="Fontu Küçült" data-placement="top" rel="popover"
@@ -49,7 +76,7 @@
 
         <div class="container">
             <div>
-                <div id="soruTemplateDiv" class="textSelectable" >
+                <div id="soruTemplateDiv" class="textSelectable">
 
                     <div id="soruContainer">
 
@@ -130,13 +157,18 @@
                         </div>
                     </div>
                     <div class="bottom-bar">
-                        <input id="prevQuestion" type="button" value="Önceki Soru" class="btn-footer btn-prev" role="button" aria-hidden="false" aria-label="Önceki Soru" aria-labelledby="prevLabel">
-                        <div class="btn-footer btn-mark" data-content="Tekrar Bakılacak" aria-labelledby="ismarkedlabel">
+                        <input id="prevQuestion" type="button" value="Önceki Soru" class="btn-footer btn-prev"
+                            role="button" aria-hidden="false" aria-label="Önceki Soru" aria-labelledby="prevLabel">
+                        <div class="btn-footer btn-mark" data-content="Tekrar Bakılacak"
+                            aria-labelledby="ismarkedlabel">
                             <input type="checkbox" id="ismarked" role="checkbox" aria-hidden="false">
-                            <label aria-hidden="true" class="unselectable" for="ismarked" id="ismarkedlabel">Tekrar Bakılacak</label>
+                            <label aria-hidden="true" class="unselectable" for="ismarked" id="ismarkedlabel">Tekrar
+                                Bakılacak</label>
                         </div>
-                        <input id="nextQuestion" type="button" value="Sonraki Soru" class="btn-footer btn-next" role="button" aria-hidden="false" data-content="Sonraki Soru">
-                        <input id="finishButton" type="button" value="Sınavı Bitir" class="btn-footer btn-finish" role="button" aria-hidden="false" data-content="Sınavı Bitir">
+                        <input id="nextQuestion" type="button" value="Sonraki Soru" class="btn-footer btn-next"
+                            role="button" aria-hidden="false" data-content="Sonraki Soru">
+                        <input id="finishButton" type="button" value="Sınavı Bitir" class="btn-footer btn-finish"
+                            role="button" aria-hidden="false" data-content="Sınavı Bitir">
                     </div>
 
 
