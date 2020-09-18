@@ -1,7 +1,7 @@
 var examHour = 1;
 var examMinute = 30;
 var numOfGenQuestions = 11;
-
+var countdowntime = 1000 * 60 * 60;
 
 var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
 // var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
@@ -179,4 +179,17 @@ $(function () {
             $("body").removeClass();
             $("body").addClass(selectedTheme);
         });
+
+        
+        setInterval(() => {
+            countdowntime -= 1000;
+            var minutes = Math.floor((countdowntime % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((countdowntime % (1000 * 60)) / 1000);
+            if(seconds < 10){
+                seconds = "0"+seconds;
+            }
+            $("#remainingTime").html( "KALAN SÜRE "+ minutes+":"+seconds);
+            $("#remainingTimeLabel").html("KALAN SÜRE"+ minutes+" DAKİKA");
+
+        }, 1000);
 });

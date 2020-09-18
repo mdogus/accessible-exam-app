@@ -538,3 +538,7 @@ body
 .theme4 .question-number{
     color: white;
 }
+
+#remTimeDiv{
+    width: 100%;
+}

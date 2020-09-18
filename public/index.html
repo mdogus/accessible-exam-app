@@ -28,10 +28,10 @@
             <div>
                 <label id="themes-label" for="themes" role="heading">Tema:</label>
                 <select id="themes" sele>
-                    <option value="themeDefault">Tema 1</option>
-                    <option value="theme2">Tema 2</option>
-                    <option value="theme3" selected>Tema 3</option>
-                    <option value="theme4">Tema 4</option>
+                    <option value="themeDefault">Beyaz Üzeri Siyah</option>
+                    <option value="theme2">Siyah Üzeri Beyaz</option>
+                    <option value="theme3" selected>Siyah Üzeri Sarı</option>
+                    <option value="theme4">Siyah Üzeri Yeşil</option>
                 </select>
             </div>
             <div>
@@ -54,7 +54,7 @@
                     </optgroup>
                 </select>
             </div>
-            <div class="left" aria-hidden="false">
+            <div  aria-hidden="false">
                 <div class="nav-button" >Yazı Büyüklüğü:</div>
                 <div class="nav-button">
                     <span id="fontSize" style=" vertical-align: middle;">18 px</span>
@@ -70,6 +70,12 @@
                         alt="font büyüt" data-original-title="" aria-label="Fontu Büyüt">
                         <img src="/img/textBigger.png">
                     </button>
+                </div>
+            </div>
+            <div class="left"  aria-hidden="false" id="remTimeDiv">
+                <span id="remainingTime" aria-hidden="true"></span>
+                <div class="hiddenLink" aria-hidden="false">
+                    <span id="remainingTimeLabel" aria-hidden="false" ></span>
                 </div>
             </div>
         </div>
@@ -167,6 +173,8 @@
                         </div>
                         <input id="nextQuestion" type="button" value="Sonraki Soru" class="btn-footer btn-next"
                             role="button" aria-hidden="false" data-content="Sonraki Soru">
+                        <input id="markedQuestionsButton" type="button" value="Tekrar Bakılacak Sorular" class="btn-footer btn-finish" 
+                            role="button" aria-hidden="false" data-content="Tekrar bakılacak sorular">
                         <input id="finishButton" type="button" value="Sınavı Bitir" class="btn-footer btn-finish"
                             role="button" aria-hidden="false" data-content="Sınavı Bitir">
                     </div>
