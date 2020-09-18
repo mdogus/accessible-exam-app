@@ -13,97 +13,97 @@ var o4Text = 'D) Küçük bir çeşmeyim yurdumun Unutulmuş bir dağında';
 
 var qArr = [];
 
-function createQuestions(){
-    for(var i=1;i<=numOfGenQuestions;i++){
-       qArr[i] = {
+function createQuestions() {
+    for (var i = 1; i <= numOfGenQuestions; i++) {
+        qArr[i] = {
             id: i,
-            text : questionText  + " " + i,
+            text: questionText + " " + i,
             o1Text: o1Text + " " + i,
-            o2Text: o2Text  + " " + i,
+            o2Text: o2Text + " " + i,
             o3Text: o3Text + " " + i,
             o4Text: o4Text + " " + i,
             answer: undefined,
             marked: false
-       };
+        };
     }
 }
 
-function saveQuestion(){
+function saveQuestion() {
     let qid = $("#qNumDiv").text();
     let q = qArr[parseInt(qid)];
-    if(q){
+    if (q) {
         q.marked = $("#ismarked").is(':checked');
         q.answer = $("input[name=qValue]:checked").val();
     }
     return qid;
 }
-function loadQuestion(qid, focus){
-    
+function loadQuestion(qid, focus) {
+
     $('input[name="qValue"]').prop('checked', false);
     $('#ismarked').prop('checked', false);
     // $('#ismarked').removeAttr('checked');
-    
+
     let q = qArr[qid];
-    if(q){
-        if(q.answer){
-            $("input[name=qValue][value=" +q.answer + "]").prop('checked', true);
+    if (q) {
+        if (q.answer) {
+            $("input[name=qValue][value=" + q.answer + "]").prop('checked', true);
         }
-        if(q.marked){
+        if (q.marked) {
             $("#ismarked").prop('checked', q.marked);
         }
-        
+
         $("#qNumDiv").text(q.id);
         $("#question").text(q.text);
         $("#oA").text(q.o1Text);
         $("#oB").text(q.o2Text);
         $("#oC").text(q.o3Text);
         $("#oD").text(q.o4Text);
-        
-        
+
+
         $("#ismarkedlabel").text("Soru " + q.id + " Tekrar Bakılacak Mı?");
 
         updateSummary(q.id);
 
-        if(focus !== false){
+        if (focus !== false) {
             document.getElementById('qSummaryDiv').focus();
         }
     }
 }
 
 
-function updateSummary(qid){
+function updateSummary(qid) {
     let q = qArr[qid];
-    if(q){
-        let sum = "Soru " + q.id + ", Cevaplanan Seçenek " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı "+ (q.marked ? "Evet" : "Hayır");
+    if (q) {
+        let sum = "Soru " + q.id + ", Cevaplanan Seçenek " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı " + (q.marked ? "Evet" : "Hayır");
         $("#qSummaryDiv").text(sum);
     }
 }
 
-function markQuestion(){
+function markQuestion() {
     let qid = saveQuestion();
     updateSummary(qid);
 }
 
-function answerQuestion(){
+function answerQuestion() {
     var qid = saveQuestion();
     updateSummary(qid);
 }
 
-function nextQuestion(){
+function nextQuestion() {
     saveQuestion();
     let id = $("#qNumDiv").text();
-    loadQuestion(parseInt(id)+1);
+    loadQuestion(parseInt(id) + 1);
 }
 
-function prevQuestion(){
+function prevQuestion() {
     saveQuestion();
     let id = $("#qNumDiv").text();
-    loadQuestion(parseInt(id)-1);
+    loadQuestion(parseInt(id) - 1);
 }
 
 var fontSize = 19;
 function changeFontSize(fontSize) {
-    console.log("cfs: "+fontSize);
+    console.log("cfs: " + fontSize);
     if (fontSize <= 36 && fontSize >= 20) {
         $('#eso-cont').css("font-size", fontSize + "px");
         $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
@@ -131,65 +131,109 @@ function getFontSize() {
     return parseInt(fontText);
 }
 
+
+function showMarkedQuesitionsPage() {
+    $(".container").css("display", "none");
+    $(".marked-questions-page").css("display", "block");
+}
+
+function showExamPage() {
+    $(".container").css("display", "block");
+    $(".marked-questions-page").css("display", "none");
+}
+
 $(function () {
 
 
-        $("#nextQuestion").on("click", nextQuestion);
-        $("#prevQuestion").on("click", prevQuestion);
-        $("#ismarked").on("click", markQuestion);
-        $("#radioA").on("click", answerQuestion);
-        $("#radioB").on("click", answerQuestion);
-        $("#radioC").on("click", answerQuestion);
-        $("#radioD").on("click", answerQuestion);
+    $("#nextQuestion").on("click", nextQuestion);
+    $("#prevQuestion").on("click", prevQuestion);
+    $("#ismarked").on("click", markQuestion);
+    $("#radioA").on("click", answerQuestion);
+    $("#radioB").on("click", answerQuestion);
+    $("#radioC").on("click", answerQuestion);
+    $("#radioD").on("click", answerQuestion);
 
 
-        createQuestions();
+    createQuestions();
 
-        saveQuestion();
-        loadQuestion(1, false);
-
-
-        setTimeout(function(){
-            document.getElementById('pageTitleSpan').focus();
-        },250)
+    saveQuestion();
+    loadQuestion(1, false);
 
 
+    setTimeout(function () {
+        document.getElementById('pageTitleSpan').focus();
+    }, 250)
 
-        $("#increaseFont").click(function (e) {
-            var fontSize = getFontSize();
-            changeFontSize(fontSize + 2);
-            // resizeImagesAccordingToFontSize(fontSize);
-        });
 
-        $("#decreaseFont").click(function (e) {
-            var fontSize = getFontSize();
-            changeFontSize(fontSize - 2);
-            // resizeImagesAccordingToFontSize(fontSize);
-        });
 
-         //select font
-         $('#fonts').change(function(){
-            $("#eso-cont").removeClass();
-            $("#eso-cont").addClass("font_"+this.selectedIndex);
-        });
+    $("#increaseFont").click(function (e) {
+        var fontSize = getFontSize();
+        changeFontSize(fontSize + 2);
+        // resizeImagesAccordingToFontSize(fontSize);
+    });
 
-        //theme
-        $('#themes').change(function(){
-            let selectedTheme = $('#themes').find(":selected").val();
-            $("body").removeClass();
-            $("body").addClass(selectedTheme);
-        });
+    $("#decreaseFont").click(function (e) {
+        var fontSize = getFontSize();
+        changeFontSize(fontSize - 2);
+        // resizeImagesAccordingToFontSize(fontSize);
+    });
 
-        
-        setInterval(() => {
-            countdowntime -= 1000;
-            var minutes = Math.floor((countdowntime % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((countdowntime % (1000 * 60)) / 1000);
-            if(seconds < 10){
-                seconds = "0"+seconds;
+    //select font
+    $('#fonts').change(function () {
+        $("#eso-cont").removeClass();
+        $("#eso-cont").addClass("font_" + this.selectedIndex);
+    });
+
+    //theme
+    $('#themes').change(function () {
+        let selectedTheme = $('#themes').find(":selected").val();
+        $("body").removeClass();
+        $("body").addClass(selectedTheme);
+    });
+
+
+    setInterval(() => {
+        countdowntime -= 1000;
+        var minutes = Math.floor((countdowntime % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((countdowntime % (1000 * 60)) / 1000);
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+        $("#remainingTime").html("KALAN SÜRE " + minutes + ":" + seconds);
+        $("#remainingTimeLabel").html("KALAN SÜRE" + minutes + " DAKİKA");
+
+    }, 1000);
+
+    $("#markedQuestionsButton").click(function (e) {
+        $(".container").css("display", "none");
+        $(".marked-questions-page").css("display", "block");
+
+        $(".marked-questions-div").html("");
+
+        document.getElementById('marked-questions-title').focus();
+
+
+        var $ul = $("<ul>").appendTo($(".marked-questions-div"));
+        qArr.forEach(function (q) {
+            if (q.marked) {
+
+                var $li = $("<li>").appendTo($ul);
+                var $a = $('<a role="button" href="#' + q.id + '" >').appendTo($li);
+                $a.html("Soru " + q.id);
+
+                $a.click((e) => {
+                    showExamPage();
+                    loadQuestion($(e.target).html().split(" ")[1]);
+                });
             }
-            $("#remainingTime").html( "KALAN SÜRE "+ minutes+":"+seconds);
-            $("#remainingTimeLabel").html("KALAN SÜRE"+ minutes+" DAKİKA");
+        });
 
-        }, 1000);
+
+        showMarkedQuesitionsPage();
+    });
+
+    $("#backToExamButton").click(function (e) {
+        showExamPage();
+    });
+
 });

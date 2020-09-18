@@ -1,7 +1,8 @@
 .btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover,
 
 #increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover{
-  border:6px solid red !important;
+  border:6px inset red !important;
+  border-style: inset;
 }
 
 
@@ -76,7 +77,7 @@ body
 
 .page-title
 {
-    height: 164px;
+    height: 215px;
     background-color: #333333;
     color: #FFFFFF;
     font-weight: bold;
@@ -141,9 +142,9 @@ body
     cursor:pointer;
     min-width: 275px;
     border: 3px solid darkgray;
+    border-style: inset;
     margin-right: 40px;
     float: left;
-
 }
 
 
@@ -395,17 +396,29 @@ body
     font-family: 'Lucida Console' !important;
   }
 
+.bottom-bar{
+    position: fixed;
+    bottom: 0px;
+}
+
   .bottom-bar input,  .bottom-bar label,  .bottom-bar .btn-mark{
       color: black;
   }
 
+  .marked-questions-div a {
+      text-decoration: none !important;
+  }
+
+  a{
+      color: black;
+  }
   
   /* THEME 1 */
   body.theme2{
     background-color: black;
     color: azure;
   }
-  .theme2 .page-title{
+  .theme2 .page-title, .theme2 a{
     background-color: #111111;
     color: #FFFFFF;
   }
@@ -451,7 +464,7 @@ body
     background-color: black;
     color: yellow;
   }
-  .theme3 .page-title{
+  .theme3 .page-title, .theme3 a{
     background-color: #111111;
     color: yellow;
   }
@@ -497,7 +510,7 @@ body
     background-color: black;
     color: green;
   }
-  .theme4 .page-title{
+  .theme4 .page-title, .theme4 a{
     background-color: #111111;
     color: green;
   }

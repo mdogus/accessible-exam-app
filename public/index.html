@@ -18,7 +18,7 @@
 
 <body class="theme3">
 
-    <div id="eso-cont" >
+    <div id="eso-cont">
 
         <div id="pageTitleDiv" class="page-title" aria-hidden="false">
             <span class="header-text left" tabindex="0" id="pageTitleSpan">ENGELSİZ SINAV ORTAMI</span>
@@ -54,8 +54,8 @@
                     </optgroup>
                 </select>
             </div>
-            <div  aria-hidden="false">
-                <div class="nav-button" >Yazı Büyüklüğü:</div>
+            <div aria-hidden="false">
+                <div class="nav-button">Yazı Büyüklüğü:</div>
                 <div class="nav-button">
                     <span id="fontSize" style=" vertical-align: middle;">18 px</span>
                 </div>
@@ -72,10 +72,10 @@
                     </button>
                 </div>
             </div>
-            <div class="left"  aria-hidden="false" id="remTimeDiv">
+            <div class="left" aria-hidden="false" id="remTimeDiv">
                 <span id="remainingTime" aria-hidden="true"></span>
                 <div class="hiddenLink" aria-hidden="false">
-                    <span id="remainingTimeLabel" aria-hidden="false" ></span>
+                    <span id="remainingTimeLabel" aria-hidden="false"></span>
                 </div>
             </div>
         </div>
@@ -83,12 +83,8 @@
         <div class="container">
             <div>
                 <div id="soruTemplateDiv" class="textSelectable">
-
                     <div id="soruContainer">
-
-
                         <div id="soruAlaniDiv" class="content" style="height: 600px">
-
                             <div class="hiddenLink" aria-hidden="false">
                                 <span id="qSummaryDiv" tabindex="1">
                                 </span>
@@ -101,9 +97,6 @@
                                 <span class="question" id="question"></span>
                                 <p></p>
                             </div>
-
-
-
                             <div class="secenekler">
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
@@ -116,8 +109,6 @@
                                         <p><span class="highlighted" id="oA"></span></p>
                                     </div>
                                 </div>
-
-
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
                                         <input id="radioB" type="radio" name="qValue" class="answer-radio left"
@@ -130,8 +121,6 @@
                                         <p><span class="highlighted" id="oB"></span></p>
                                     </div>
                                 </div>
-
-
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
                                         <input id="radioC" type="radio" name="qValue" class="answer-radio left"
@@ -144,8 +133,6 @@
                                         <p><span class="highlighted" id="oC"></span></p>
                                     </div>
                                 </div>
-
-
                                 <div class="answerBox" aria-checked="false">
                                     <div class="secenek-baslik">
                                         <input id="radioD" type="radio" name="qValue" class="answer-radio left"
@@ -158,7 +145,6 @@
                                         <p><span class="highlighted" id="oD"></span></p>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -173,15 +159,21 @@
                         </div>
                         <input id="nextQuestion" type="button" value="Sonraki Soru" class="btn-footer btn-next"
                             role="button" aria-hidden="false" data-content="Sonraki Soru">
-                        <input id="markedQuestionsButton" type="button" value="Tekrar Bakılacak Sorular" class="btn-footer btn-finish" 
-                            role="button" aria-hidden="false" data-content="Tekrar bakılacak sorular">
+                        <input id="markedQuestionsButton" type="button" value="Tekrar Bakılacak Sorular"
+                            class="btn-footer btn-finish" role="button" aria-hidden="false"
+                            data-content="Tekrar bakılacak sorular">
                         <input id="finishButton" type="button" value="Sınavı Bitir" class="btn-footer btn-finish"
                             role="button" aria-hidden="false" data-content="Sınavı Bitir">
                     </div>
-
-
                 </div>
-
+            </div>
+        </div>
+        <div class="marked-questions-page" style="display: none;">
+            <div id="marked-questions-title" tabindex="1">TEKRAR BAKILACAK SORULAR</div>
+            <div class="marked-questions-div"></div>
+            <div class="bottom-bar">
+                <input id="backToExamButton" type="button" value="Sınava Dön" class="btn-footer btn-finish"
+                    role="button" aria-hidden="false">
             </div>
         </div>
     </div>
