@@ -152,13 +152,19 @@ body
     background-color: grey;
 }
 
+
+
 .btn-mark {
-    height: 74px !important;
+    height: 74px ;
     min-width: 224px;   
     display: flex;
     justify-content: left;
     align-items: center;
     padding-left: 20px;
+}
+
+.btn-mark:hover {
+    height: 68px ;
 }
 .btn-mark > input {
     height: 50px;
@@ -167,11 +173,12 @@ body
 }
 .btn-mark > label {
     margin-left: 23px;
-    height: 100%;
+    height: 90%;
     width: 80%;
     display: flex;
     justify-content: left;
     align-items: center;
+    border: none !important;
 }
 
 .btn-prev{

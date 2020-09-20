@@ -10,6 +10,7 @@
 
     <!-- <script src="lib/jaws.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="lib/fontsize/jquery.fontsize.js"></script>
+    <script src="js/q.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/eso2.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="stylesheet" href="css/eso2.css">
@@ -23,7 +24,7 @@
         <div id="pageTitleDiv" class="page-title" aria-hidden="false">
             <span class="header-text left" tabindex="0" id="pageTitleSpan">ENGELSİZ SINAV ORTAMI</span>
             <br>
-            <span class="header-text left">Aday Bilgileri: Metehan Oğuzhan</span>
+            <span class="header-text left" role="heading">Aday Bilgileri: Metehan Oğuzhan</span>
             <br>
             <div>
                 <label id="themes-label" for="themes" role="heading">Tema:</label>
@@ -55,7 +56,7 @@
                 </select>
             </div>
             <div aria-hidden="false">
-                <div class="nav-button">Yazı Büyüklüğü:</div>
+                <div class="nav-button" role="heading">Yazı Büyüklüğü:</div>
                 <div class="nav-button">
                     <span id="fontSize" style=" vertical-align: middle;">18 px</span>
                 </div>
@@ -74,8 +75,8 @@
             </div>
             <div class="left" aria-hidden="false" id="remTimeDiv">
                 <span id="remainingTime" aria-hidden="true"></span>
-                <div class="hiddenLink" aria-hidden="false">
-                    <span id="remainingTimeLabel" aria-hidden="false"></span>
+                <div class="hiddenLink" aria-hidden="false" >
+                    <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@
                                 <span id="qSummaryDiv" tabindex="1">
                                 </span>
                             </div>
-                            <div class="question-number" id="qNumDiv" role="main">
+                            <div class="question-number" id="qNumDiv" role="heading">
                                 6
                             </div>
                             <div class="soru-ifadesi">

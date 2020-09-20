@@ -3,34 +3,40 @@ var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 60;
 
-var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
-// var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
+// var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
+// // var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
 
-var o1Text = 'A) Gözümde bir damla su, güçlü deniz olup taşıyor Çöllerde kalmış gibi yanıyor, yanıyorum';
-var o2Text = 'B) Özlediğin hayatı buldun mu bilmem Gözlerinde hâlâ hüzün var gibi';
-var o3Text = 'C) Nazlı yârdan kem haberler geliyor Dostlarım ağlıyor, düşman gülüyor';
-var o4Text = 'D) Küçük bir çeşmeyim yurdumun Unutulmuş bir dağında';
+// var o1Text = 'A) Gözümde bir damla su, güçlü deniz olup taşıyor Çöllerde kalmış gibi yanıyor, yanıyorum';
+// var o2Text = 'B) Özlediğin hayatı buldun mu bilmem Gözlerinde hâlâ hüzün var gibi';
+// var o3Text = 'C) Nazlı yârdan kem haberler geliyor Dostlarım ağlıyor, düşman gülüyor';
+// var o4Text = 'D) Küçük bir çeşmeyim yurdumun Unutulmuş bir dağında';
 
-var qArr = [];
+// var qArr = [];
 
-function createQuestions() {
-    for (var i = 1; i <= numOfGenQuestions; i++) {
-        qArr[i] = {
-            id: i,
-            text: questionText + " " + i,
-            o1Text: o1Text + " " + i,
-            o2Text: o2Text + " " + i,
-            o3Text: o3Text + " " + i,
-            o4Text: o4Text + " " + i,
-            answer: undefined,
-            marked: false
-        };
-    }
+// function createQuestions() {
+//     for (var i = 1; i <= numOfGenQuestions; i++) {
+//         qArr[i] = {
+//             id: i,
+//             text: questionText + " " + i,
+//             o1Text: o1Text + " " + i,
+//             o2Text: o2Text + " " + i,
+//             o3Text: o3Text + " " + i,
+//             o4Text: o4Text + " " + i,
+//             answer: undefined,
+//             marked: false
+//         };
+//     }
+// }
+
+
+function getCurrQuestionId(){
+    let qNumText = $("#qNumDiv").text();
+    return parseInt(qNumText.split(' ')[1]);
 }
 
 function saveQuestion() {
-    let qid = $("#qNumDiv").text();
-    let q = qArr[parseInt(qid)];
+    let qid = getCurrQuestionId();
+    let q = qArr[qid];
     if (q) {
         q.marked = $("#ismarked").is(':checked');
         q.answer = $("input[name=qValue]:checked").val();
@@ -52,7 +58,7 @@ function loadQuestion(qid, focus) {
             $("#ismarked").prop('checked', q.marked);
         }
 
-        $("#qNumDiv").text(q.id);
+        $("#qNumDiv").text("Soru "+q.id);
         $("#question").text(q.text);
         $("#oA").text(q.o1Text);
         $("#oB").text(q.o2Text);
@@ -91,13 +97,13 @@ function answerQuestion() {
 
 function nextQuestion() {
     saveQuestion();
-    let id = $("#qNumDiv").text();
+    let id = getCurrQuestionId();
     loadQuestion(parseInt(id) + 1);
 }
 
 function prevQuestion() {
     saveQuestion();
-    let id = $("#qNumDiv").text();
+    let id = getCurrQuestionId();
     loadQuestion(parseInt(id) - 1);
 }
 
@@ -154,7 +160,7 @@ $(function () {
     $("#radioD").on("click", answerQuestion);
 
 
-    createQuestions();
+    // createQuestions();
 
     saveQuestion();
     loadQuestion(1, false);
