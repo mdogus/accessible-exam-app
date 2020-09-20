@@ -223,8 +223,8 @@ $(function () {
         qArr.forEach(function (q) {
             if (q.marked) {
 
-                var $li = $("<li>").appendTo($ul);
-                var $a = $('<a role="button" href="#' + q.id + '" >').appendTo($li);
+                var $li = $('<li >').appendTo($ul);
+                var $a = $('<a  role="button" href="#' + q.id + '" >').appendTo($li);
                 $a.html("Soru " + q.id);
 
                 $a.click((e) => {
@@ -241,5 +241,17 @@ $(function () {
     $("#backToExamButton").click(function (e) {
         showExamPage();
     });
+
+
+    $("#finishButton").click(function (e) {
+        $(".container").css("display", "none");
+        $(".marked-questions-page").css("display", "none");
+        $(".finish-page").css("display", "block");
+
+        document.getElementById('finish-span').focus();
+    });
+
+    
+
 
 });
