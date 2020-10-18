@@ -28,7 +28,6 @@ var countdowntime = 1000 * 60 * 60;
 //     }
 // }
 
-
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
     return parseInt(qNumText.split(' ')[1]);
@@ -43,6 +42,7 @@ function saveQuestion() {
     }
     return qid;
 }
+
 function loadQuestion(qid, focus) {
 
     $('input[name="qValue"]').prop('checked', false);
@@ -59,7 +59,7 @@ function loadQuestion(qid, focus) {
         }
 
         $("#qNumDiv").text("Soru "+q.id);
-        $("#question").text(q.text);
+        $("#question").html(q.text);
         $("#oA").text(q.o1Text);
         $("#oB").text(q.o2Text);
         $("#oC").text(q.o3Text);
@@ -76,11 +76,11 @@ function loadQuestion(qid, focus) {
     }
 }
 
-
+//TODO: buraya numara ekle.
 function updateSummary(qid) {
     let q = qArr[qid];
     if (q) {
-        let sum = "Soru " + q.id + ", Cevaplanan Seçenek " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı " + (q.marked ? "Evet" : "Hayır");
+        let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         $("#qSummaryDiv").text(sum);
     }
 }
@@ -96,6 +96,8 @@ function answerQuestion() {
 }
 
 function nextQuestion() {
+    /*let msj = '[15-Eki-2020, Per; 13:29:14] Sonraki soruya gidildi.';
+    eventTracker(msj);*/
     saveQuestion();
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) + 1);
@@ -139,11 +141,13 @@ function getFontSize() {
 
 
 function showMarkedQuesitionsPage() {
+    $(".page-title").css("display", "none");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "block");
 }
 
 function showExamPage() {
+    $(".page-title").css("display", "block");
     $(".container").css("display", "block");
     $(".marked-questions-page").css("display", "none");
 }

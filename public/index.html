@@ -6,7 +6,7 @@
 
 
     <script src="lib/jquery-3.4.1.min.js"></script>
-    <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <!--<script src="lib/jquery-ui/jquery-ui.js"></script>-->
 
     <!-- <script src="lib/jaws.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="lib/fontsize/jquery.fontsize.js"></script>
@@ -85,14 +85,15 @@
             <div>
                 <div id="soruTemplateDiv" class="textSelectable">
                     <div id="soruContainer">
+                        <div class="question-number" id="qNumDiv" role="heading" aria-hidden="true">
+                            6
+                        </div>
                         <div id="soruAlaniDiv" class="content" style="overflow: scroll; height: 40vh">
                             <div class="hiddenLink" aria-hidden="false">
                                 <span id="qSummaryDiv" tabindex="1" role="heading">
                                 </span>
                             </div>
-                            <div class="question-number" id="qNumDiv" role="heading">
-                                6
-                            </div>
+                            <!-- .question-number buradan kestim -->
                             <div class="soru-ifadesi">
                                 <p></p>
                                 <span class="question" id="question"></span>

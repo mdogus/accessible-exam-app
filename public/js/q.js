@@ -54,7 +54,7 @@ qArr[++i] = {
 };
 qArr[++i] = {
     id: i,
-    text: '(I) Başar Başarırın yeni öykü kitabı “Çıktığınız Hevesle İniniz” yazarın on altı yeni öyküsünü okuyucuyla buluşturuyor. \n(II) Başarır, kitabında Türkçenin kaybolmakta olan inceliklerinin peşinden gitmeye çalışıyor. \n(III) Geleneksel öykü kitabı formatına büyük bir yenilik getiren kitapta yer yer gereksiz tekrarlara da düşülmüş. \n(IV) Ayrıca Başarır, “Çıktığınız Hevesle ininiz”de şiirle düz yazıyı etkileyici bir uyumla birleştirmiş. Yukarıda numaralanmış cümlelerin hangisinde sözü edilen eserle ilgili hem olumlu hem olumsuz eleştiri söz konusudur?' ,
+    text: '(I) Başar Başarırın yeni öykü kitabı “Çıktığınız Hevesle İniniz” yazarın on altı yeni öyküsünü okuyucuyla buluşturuyor. <br>(II) Başarır, kitabında Türkçenin kaybolmakta olan inceliklerinin peşinden gitmeye çalışıyor. <br>(III) Geleneksel öykü kitabı formatına büyük bir yenilik getiren kitapta yer yer gereksiz tekrarlara da düşülmüş. <br>(IV) Ayrıca Başarır, “Çıktığınız Hevesle ininiz”de şiirle düz yazıyı etkileyici bir uyumla birleştirmiş. Yukarıda numaralanmış cümlelerin hangisinde sözü edilen eserle ilgili hem olumlu hem olumsuz eleştiri söz konusudur?' ,
     o1Text: 'I.' ,
     o2Text: 'II.' ,
     o3Text: 'III.' ,
