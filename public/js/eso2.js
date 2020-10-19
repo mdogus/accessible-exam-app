@@ -216,10 +216,23 @@ $(function () {
             seconds = "0" + seconds;
         }
         $("#remainingTime").html("KALAN SÜRE " + minutes + ":" + seconds);
-        $("#remainingTimeLabel").html("KALAN SÜRE" + minutes + " DAKİKA");
+        $("#remainingTimeLabel").html("Kalan Süre: " + minutes + " dakika, " + seconds + "saniye");
 
     }, 1000);
+    
+    //key bind
+    $(document).keydown(function(event){
+		//console.log(event.keyCode);
+		if(event.altKey === true){
+			if(event.keyCode == 84){
+				//$("#remainingTimeLabel").attr("role", "status");
+				alert($("#remainingTimeLabel").text());
+			}
+		}
+	});
 
+                                 
+    //Tekrar Bakılacak Sorular düğmesine basıldığında
     $("#markedQuestionsButton").click(function (e) {
         $(".container").css("display", "none");
         $(".marked-questions-page").css("display", "block");
@@ -247,12 +260,13 @@ $(function () {
 
         showMarkedQuesitionsPage();
     });
-
+    
+    //Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
         showExamPage();
     });
 
-
+    //Sınavı Bitir düğmesine basıldığında
     $("#finishButton").click(function (e) {
         $(".container").css("display", "none");
         $(".marked-questions-page").css("display", "none");
@@ -260,8 +274,4 @@ $(function () {
 
         document.getElementById('finish-span').focus();
     });
-
-    
-
-
 });
