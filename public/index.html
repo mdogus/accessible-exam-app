@@ -58,7 +58,7 @@
             <div aria-hidden="false">
                 <div class="nav-button" role="heading">Yazı Büyüklüğü:</div>
                 <div class="nav-button">
-                    <span id="fontSize" style=" vertical-align: middle;">18 px</span>
+                    <span id="fontSize" style=" vertical-align: middle;">14 px</span>
                 </div>
                 <div class="nav-button">
                     <button id="decreaseFont" data-content="Fontu Küçült" data-placement="top" rel="popover"
@@ -150,8 +150,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Footer Button Bar -->
                     <div class="bottom-bar">
-                        <input id="prevQuestion" type="button" value="Önceki Soru" class="btn-footer btn-prev"
+                        <input id="prevQuestion" type="button" value="Önceki" class="btn-footer btn-prev"
                             role="button" aria-hidden="false" aria-label="Önceki Soru" aria-labelledby="prevLabel">
                         <div class="btn-footer btn-mark" data-content="Tekrar Bakılacak"
                             aria-labelledby="ismarkedlabel">
@@ -159,8 +160,8 @@
                             <label aria-hidden="true" class="unselectable" for="ismarked" id="ismarkedlabel">Tekrar
                                 Bakılacak</label>
                         </div>
-                        <input id="nextQuestion" type="button" value="Sonraki Soru" class="btn-footer btn-next"
-                            role="button" aria-hidden="false" data-content="Sonraki Soru">
+                        <input id="nextQuestion" type="button" value="Sonraki" class="btn-footer btn-next"
+                            role="button" aria-hidden="false" aria-label="Sonraki Soru" data-content="Sonraki Soru">
                         <input id="markedQuestionsButton" type="button" value="Tekrar Bakılacak Sorular"
                             class="btn-footer btn-finish" role="button" aria-hidden="false"
                             data-content="Tekrar bakılacak sorular">
@@ -170,14 +171,16 @@
                 </div>
             </div>
         </div>
+        <!-- Marked Questions Page -->
         <div class="marked-questions-page" style="display: none;">
-            <div id="marked-questions-title" tabindex="1">TEKRAR BAKILACAK SORULAR</div>
+            <div id="marked-questions-title" tabindex="1" role="heading">TEKRAR BAKILACAK SORULAR</div>
             <div class="marked-questions-div"></div>
             <div class="bottom-bar">
                 <input id="backToExamButton" type="button" value="Sınava Dön" class="btn-footer btn-finish"
                     role="button" aria-hidden="false">
             </div>
         </div>
+        <!-- Finish Page -->
         <div class="finish-page" style="display: none;">
             <span id="finish-span" tabindex="1">SINAVINIZ TAMAMLANDI</span>
             

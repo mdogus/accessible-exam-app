@@ -65,9 +65,10 @@ function loadQuestion(qid, focus) {
         $("#oC").text(q.o3Text);
         $("#oD").text(q.o4Text);
 
-
-        $("#ismarkedlabel").text("Soru " + q.id + " Tekrar Bakılacak Mı?");
-
+        //update summary
+        let sum = "Soru " + q.id + " Tekrar Bakılacak Mı?";
+        //$("#ismarkedlabel").text("Soru " + q.id + " Tekrar Bakılacak Mı?");
+        $("#ismarkedlabel").attr("aria-label", sum);
         updateSummary(q.id);
 
         if (focus !== false) {
@@ -76,7 +77,6 @@ function loadQuestion(qid, focus) {
     }
 }
 
-//TODO: buraya numara ekle.
 function updateSummary(qid) {
     let q = qArr[qid];
     if (q) {
@@ -109,10 +109,10 @@ function prevQuestion() {
     loadQuestion(parseInt(id) - 1);
 }
 
-var fontSize = 19;
+var fontSize = 13;
 function changeFontSize(fontSize) {
     console.log("cfs: " + fontSize);
-    if (fontSize <= 36 && fontSize >= 20) {
+    if (fontSize <= 36 && fontSize >= 14) {
         $('#eso-cont').css("font-size", fontSize + "px");
         $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
 
@@ -134,7 +134,7 @@ function changeFontSize(fontSize) {
 function getFontSize() {
     var fontText = $("#fontSize").text();
     if (fontText == "") {
-        fontText = 18;
+        fontText = 14;
     }
     return parseInt(fontText);
 }
@@ -144,12 +144,18 @@ function showMarkedQuesitionsPage() {
     $(".page-title").css("display", "none");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "block");
+    
+    if (focus == false) {
+        document.getElementByClassName('marked-questions-page').focus();
+    }
 }
 
 function showExamPage() {
     $(".page-title").css("display", "block");
     $(".container").css("display", "block");
     $(".marked-questions-page").css("display", "none");
+    
+    document.getElementById('qSummaryDiv').focus();
 }
 
 $(function () {
