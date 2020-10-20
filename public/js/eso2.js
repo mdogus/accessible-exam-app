@@ -221,6 +221,7 @@ $(function () {
     }, 1000);
     
     //key bind
+    //Alt + S: Kalan süre
     $(document).keydown(function(event){
 		//console.log(event.keyCode);
 		if(event.altKey === true){
@@ -235,13 +236,36 @@ $(function () {
 			}
 		}
 	});
-    /*$(document).keyup(function(event){
+    //Alt + T: Tekrar bakılacak sorular
+    $(document).keydown(function(event){
         if(event.altKey === true){
-            if(event.keyCode == 83){
-                $("#remainingTimeLabel").removeAttr("role", "alert");
+            if(event.keyCode == 84){
+                $(".container").css("display", "none");
+                $(".marked-questions-page").css("display", "block");
+
+                $(".marked-questions-div").html("");
+
+                document.getElementById('marked-questions-title').focus();
+
+
+                var $ul = $("<ul>").appendTo($(".marked-questions-div"));
+                qArr.forEach(function (q) {
+                    if (q.marked) {
+
+                        var $li = $('<li >').appendTo($ul);
+                        var $a = $('<a  role="button" href="#' + q.id + '" >').appendTo($li);
+                        $a.html("Soru " + q.id);
+
+                        $a.click((e) => {
+                            showExamPage();
+                            loadQuestion($(e.target).html().split(" ")[1]);
+                        });
+                    }
+                });
+                showMarkedQuesitionsPage();
             }
         }
-    });*/
+    });
 
                                  
     //Tekrar Bakılacak Sorular düğmesine basıldığında
