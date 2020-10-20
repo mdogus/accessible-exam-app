@@ -224,9 +224,11 @@ $(function () {
     $(document).keydown(function(event){
 		//console.log(event.keyCode);
 		if(event.altKey === true){
-			if(event.keyCode == 84){
-				//$("#remainingTimeLabel").attr("role", "status");
-				alert($("#remainingTimeLabel").text());
+			if(event.keyCode == 83){
+                //let timeAlert = $("#remainingTimeLabel").text();
+				//$("<p role='alert'>$(timeAlert)</p>").appendTo(document.body);
+                $("#remainingTimeLabel").attr("role", "alert");
+				//alert($("#remainingTimeLabel").text());
 			}
 		}
 	});
