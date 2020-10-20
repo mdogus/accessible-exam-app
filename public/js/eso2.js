@@ -232,6 +232,13 @@ $(function () {
 			}
 		}
 	});
+    $(document).keyup(function(event){
+        if(event.altKey === true){
+            if(event.keyCode == 83){
+                $("#remainingTimeLabel").removeAttr("role", "alert");
+            }
+        }
+    });
 
                                  
     //Tekrar Bakılacak Sorular düğmesine basıldığında
