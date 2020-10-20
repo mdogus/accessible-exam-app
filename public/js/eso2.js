@@ -230,7 +230,7 @@ $(function () {
                 $("#remainingTimeLabel").attr("role", "alert");
                 setTimeout(function(){
                     $("#remainingTimeLabel").removeAttr("role");
-                }, 250);
+                }, 100);
 				//alert($("#remainingTimeLabel").text());
 			}
 		}
