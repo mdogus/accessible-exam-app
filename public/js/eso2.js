@@ -228,17 +228,20 @@ $(function () {
                 //let timeAlert = $("#remainingTimeLabel").text();
 				//$("<p role='alert'>$(timeAlert)</p>").appendTo(document.body);
                 $("#remainingTimeLabel").attr("role", "alert");
+                setTimeout(function(){
+                    $("#remainingTimeLabel").removeAttr("role");
+                }, 1000);
 				//alert($("#remainingTimeLabel").text());
 			}
 		}
 	});
-    $(document).keyup(function(event){
+    /*$(document).keyup(function(event){
         if(event.altKey === true){
             if(event.keyCode == 83){
                 $("#remainingTimeLabel").removeAttr("role", "alert");
             }
         }
-    });
+    });*/
 
                                  
     //Tekrar Bakılacak Sorular düğmesine basıldığında
