@@ -145,6 +145,7 @@ function showMarkedQuesitionsPage() {
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "block");
     $(".accessibility-page").css("display", "none");
+    $("#accessibilityButtonDiv").css("display", "none");
     
     if (focus == false) {
         document.getElementByClassName('marked-questions-page').focus();
@@ -156,6 +157,7 @@ function showExamPage() {
     $(".container").css("display", "block");
     $(".marked-questions-page").css("display", "none");
     $(".accessibility-page").css("display", "none");
+    $("#accessibilityButtonDiv").css("display", "block");
     document.getElementById('qSummaryDiv').focus();
 }
 //show accessibility page

@@ -29,7 +29,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 
-    overflow: scroll; /* hidden */
+    overflow: hidden; /* scroll */
     height: 100%;
     
     font-family: 'Segoe UI';
