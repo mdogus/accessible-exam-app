@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Engelsiz Sınav Ortamı</title>
+    <title>Engelsiz Sınav Uygulaması</title>
 
 
     <script src="lib/jquery-3.4.1.min.js"></script>
@@ -14,7 +14,9 @@
     <script src="js/eso2.js" type="text/javascript" charset="utf-8"></script>
 
     <link rel="stylesheet" href="css/eso2.css">
-
+    <!-- Font Awesome
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    -->
 </head>
 
 <body class="theme3">
@@ -22,10 +24,17 @@
     <div id="eso-cont">
 
         <div id="pageTitleDiv" class="page-title" aria-hidden="false">
-            <span class="header-text left" tabindex="0" id="pageTitleSpan">ENGELSİZ SINAV ORTAMI</span>
+            <span class="header-text left" tabindex="0" id="pageTitleSpan" role="heading">ENGELSİZ SINAV UYGULAMASI</span>
             <br aria-hidden="true">
             <span class="header-text left" role="heading">Aday Bilgileri: Metehan Oğuzhan</span>
             <br aria-hidden="true">
+            <!-- Erişilebilirlik düğmesi -->
+            <div id="accessibilityButtonDiv" class="nav-button">
+                <button id="accessibilityButton" data-content="Erişilebilirlik" data-placement="top" rel="popover" data-original-title="" aria-label="Erişilebilirlik Ayarları">
+                    Erişilebilirlik
+                </button>
+            </div>
+            <!--
             <div>
                 <label id="themes-label" for="themes" role="heading">Tema:</label>
                 <select id="themes" sele>
@@ -79,6 +88,7 @@
                     <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
                 </div>
             </div>
+            -->
         </div>
 
         <div class="container">
@@ -88,7 +98,7 @@
                         <div class="question-number" id="qNumDiv" role="heading" aria-hidden="true">
                             6
                         </div>
-                        <div id="soruAlaniDiv" class="content" style="overflow: scroll; height: 40vh">
+                        <div id="soruAlaniDiv" class="content" style="overflow: scroll; height: 50vh">
                             <div class="hiddenLink" aria-hidden="false">
                                 <span id="qSummaryDiv" tabindex="1" role="heading">
                                 </span>
@@ -162,6 +172,7 @@
                         </div>
                         <input id="nextQuestion" type="button" value="Sonraki" class="btn-footer btn-next"
                             role="button" aria-hidden="false" aria-label="Sonraki Soru" data-content="Sonraki Soru">
+                        <br>
                         <input id="markedQuestionsButton" type="button" value="Tekrar Bakılacak Sorular"
                             class="btn-footer btn-finish" role="button" aria-hidden="false"
                             data-content="Tekrar bakılacak sorular">
@@ -180,10 +191,66 @@
                     role="button" aria-hidden="false">
             </div>
         </div>
+        <!-- Accessibility Page -->
+        <div class="accessibility-page" style="display: none;">
+            <div id="accessibility-title" tabindex="1" role="heading"></div>
+            <div class="accessibility-div">
+                <div>
+                    <label id="themes-label" for="themes" role="heading">Tema:</label>
+                    <select id="themes" sele>
+                        <option value="themeDefault">Beyaz Üzeri Siyah</option>
+                        <option value="theme2">Siyah Üzeri Beyaz</option>
+                        <option value="theme3" selected>Siyah Üzeri Sarı</option>
+                        <option value="theme4">Siyah Üzeri Yeşil</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="fonts-label" for="fonts" role="heading">Yazı Tipi:</label>
+                    <select id="fonts">
+                        <optgroup>
+                            <option>Verdana</option>
+                            <option>Arial</option>
+                            <option>Arial Black</option>
+                            <option>Times New Roman</option>
+                            <option>Helvetica</option>
+                            <option>Book Antiqua</option>
+                            <option>Georgia</option>
+                            <option>Tahoma</option>
+                            <option>Palatino Linotype</option>
+                            <option>Impact</option>
+                            <option>Lucida Sans Unicode</option>
+                            <option>Courier New</option>
+                            <option>Lucida Console</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div aria-hidden="false">
+                    <div class="nav-button" role="heading">Yazı Büyüklüğü:</div>
+                    <div class="nav-button">
+                        <span id="fontSize" style=" vertical-align: middle;">14 px</span>
+                    </div>
+                    <div class="nav-button">
+                        <button id="decreaseFont" data-content="Fontu Küçült" data-placement="top" rel="popover"
+                            alt="font küçült" data-original-title="" aria-label="Fontu Küçült">
+                            <img src="/img/textSmaller.png">
+                        </button>
+                    </div>
+                    <div class="nav-button">
+                        <button id="increaseFont" data-content="Fontu Büyüt" data-placement="top" rel="popover"
+                            alt="font büyüt" data-original-title="" aria-label="Fontu Büyüt">
+                            <img src="/img/textBigger.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <input id="accPageBackToExamButton" type="button" value="Sınava Dön" class="btn-footer btn-finish"
+                    role="button" aria-hidden="false">
+            </div>
+        </div>
         <!-- Finish Page -->
         <div class="finish-page" style="display: none;">
             <span id="finish-span" tabindex="1">SINAVINIZ TAMAMLANDI</span>
-            
         </div>
     </div>
 </body>

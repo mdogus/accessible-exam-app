@@ -21,8 +21,7 @@
     }
 }
 
-body
-{
+body {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -30,15 +29,14 @@ body
     -ms-user-select: none;
     user-select: none;
 
-    overflow: hidden;
+    overflow: scroll; /* hidden */
     height: 100%;
-
+    
     font-family: 'Segoe UI';
     background-color: #F2F2F2;
 }
 
-.textSelectable
-{
+.textSelectable {
     -webkit-touch-callout: text;
     -webkit-user-select: text;
     -khtml-user-select: text;
@@ -71,13 +69,12 @@ body
 
 #eso-cont, #eso-cont input, #eso-cont select{
     line-height: 32px;
-    font-size: 20px;
+    font-size: 14px;
     font-family: Verdana;
 }
 
-.page-title
-{
-    height: 215px;
+.page-title {
+    min-height: 100px;
     background-color: #333333;
     color: #FFFFFF;
     font-weight: bold;
@@ -109,15 +106,34 @@ body
     padding: 0 2px 0 0;
 }
 
-.nav-button button
-{
+.nav-button {
+    padding: 0 15px 0 0;
+    font-weight: bold;
+    float: left;
+}
+.nav-button button {
     border: 0 none;
     background: none repeat scroll 0 0 transparent;
 }
-.nav-button a
-{
-    
+.nav-button a {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.btn-nav {
+    cursor:pointer;
+    min-width: 275px;
+    border: 3px solid darkgray;
+    border-style: inset;
+    margin-right: 40px;
+    float: left;
+}
+.btn-nav:active {
+    background-color: grey;
+}
+.btn-nav input {
+    
+}
+.btn-access {
+    height: 80px !important;
 }
 
 
@@ -197,29 +213,24 @@ body
     height: 80px !important;
 }
 
-
-.secenek
-{
+.secenek {
     display: table-cell;
     vertical-align: middle;
     /* padding-top: 10px; */
     text-align: left !important;
 }
 
-.secenek p
-{
+.secenek p{
     text-align: left !important;
 }
 
-.secenek-baslik
-{
+.secenek-baslik {
     display: table-cell;
     width: 50px;
     vertical-align: middle;
 }
 
-.secenek-baslik input + label
-{
+.secenek-baslik input + label {
     background-image: url(../img/dot-grey.png);
     background-repeat: no-repeat;
     height: 38px;
@@ -248,16 +259,14 @@ body
     margin: 4px auto;
 }
 
-.secenekler
-{
+.secenekler {
     display: table;
     width: 100%;
     margin-top: 20px;
     font-weight: 500;
     font-family: "Segoe UI Semibold";
 }
-.answerBox input
-{
+.answerBox input {
     position: absolute;
     height: 38px;
     width: 38px;
@@ -282,8 +291,7 @@ body
     margin: 3px 5px 5px 10px;
 }
 
-.answerBox input:checked + label>span
-{
+.answerBox input:checked + label>span {
     background-image: url(../img/tick.png);
     background-repeat: no-repeat;
     height: 38px;
@@ -297,15 +305,13 @@ body
     margin: 3px 5px 5px 10px;
 }
 
-.answerText
-{
+.answerText {
     margin-top: 3px;
     text-align: left;
     padding-left: 53px;
 }
 
-.answerCheck
-{
+.answerCheck {
     background-image: url(../img/tick-green.png);
     background-repeat: no-repeat;
     height: 50px;
@@ -313,8 +319,7 @@ body
     float: left;
 }
 
-.Tick
-{
+.Tick {
     background-image: url(../img/tick.png);
     width: 36px;
     height: 36px;
@@ -325,13 +330,11 @@ body
     margin-top: 2px;
 }
 
-.answer-container
-{
+.answer-container {
     margin: 50px 0px 0px 5px;
 }
 
-.buttonAnswer
-{
+.buttonAnswer {
     background: none repeat scroll 0 0 transparent;
     border: 0 none;
     cursor: pointer;
@@ -341,14 +344,7 @@ body
     opacity: 1;
 }
 
-.nav-button
-{
-    padding: 0 15px 0 0;
-    font-weight: bold;
-    float: left;
-}
-.question-number
-{
+.question-number {
     color: #888888;
     font-size: 28px;
     font-weight: bold;
@@ -357,7 +353,7 @@ body
     padding: 2px 0;
 }
 
-
+/* Font Size */
 #increaseFont,  #decreaseFont {
     padding-top: 5px;
 }
@@ -403,20 +399,22 @@ body
     font-family: 'Lucida Console' !important;
   }
 
+/* bottom bar class */
 .bottom-bar{
     position: fixed;
     bottom: 0px;
 }
 
-  .bottom-bar input,  .bottom-bar label,  .bottom-bar .btn-mark{
-      color: black;
-  }
+.bottom-bar input,  .bottom-bar label,  .bottom-bar .btn-mark{
+    color: black;
+}
 
-  .marked-questions-div a {
-      text-decoration: none !important;
-  }
+.marked-questions-div a {
+    text-decoration: none !important;
+}
 
-  a{
+
+a {
       color: black;
   }
   
@@ -482,16 +480,16 @@ body
   .theme3 .bottom-bar input, .theme3 .bottom-bar label, .theme3 .bottom-bar .btn-mark, .theme3 select, .theme3 button{
       background-color: black;
       color: yellow;
-      border: 3px solid  green;
+      border: 3px solid  yellow;
   }
 
-  .theme3 .btn-footer {
-    border: 3px solid darkgray;
+  .theme3 .btn-footer, .theme3 .btn-nav {
+    border: 3px solid gray;
   }
 
-  .theme3 .btn-footer:active, .theme3 .btn-mark:active{
-    background-color: green; 
-  }
+.theme3 .btn-footer:active, .theme3 .btn-nav:active, .theme3 .btn-mark:active {
+    background-color: yellow;
+}
 
 .theme3 .secenek-baslik input + label{
     color: black;

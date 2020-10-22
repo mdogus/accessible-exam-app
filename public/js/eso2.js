@@ -141,9 +141,10 @@ function getFontSize() {
 
 
 function showMarkedQuesitionsPage() {
-    $(".page-title").css("display", "none");
+    $(".page-title").css("display", "block");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "block");
+    $(".accessibility-page").css("display", "none");
     
     if (focus == false) {
         document.getElementByClassName('marked-questions-page').focus();
@@ -154,8 +155,20 @@ function showExamPage() {
     $(".page-title").css("display", "block");
     $(".container").css("display", "block");
     $(".marked-questions-page").css("display", "none");
-    
+    $(".accessibility-page").css("display", "none");
     document.getElementById('qSummaryDiv').focus();
+}
+//show accessibility page
+function showAccessibilityPage() {
+    $(".page-title").css("display", "block");
+    $(".container").css("display", "none");
+    $(".marked-questions-page").css("display", "none");
+    $(".accessibility-page").css("display", "block");
+    $("#accessibilityButtonDiv").css("display", "none");
+    
+    if (focus == false) {
+        document.getElementById('accessibility-title').focus();
+    }
 }
 
 $(function () {
@@ -181,7 +194,7 @@ $(function () {
     }, 250)
 
 
-
+    
     $("#increaseFont").click(function (e) {
         var fontSize = getFontSize();
         changeFontSize(fontSize + 2);
@@ -206,7 +219,7 @@ $(function () {
         $("body").removeClass();
         $("body").addClass(selectedTheme);
     });
-
+    
 
     setInterval(() => {
         countdowntime -= 1000;
@@ -216,7 +229,7 @@ $(function () {
             seconds = "0" + seconds;
         }
         $("#remainingTime").html("KALAN SÜRE " + minutes + ":" + seconds);
-        $("#remainingTimeLabel").html("Kalan Süre: " + minutes + " dakika, " + seconds + "saniye");
+        $("#remainingTimeLabel").html("Kalan Süre: " + minutes + " dakika, " + seconds + " saniye");
 
     }, 1000);
     
@@ -296,10 +309,27 @@ $(function () {
 
         showMarkedQuesitionsPage();
     });
+                                 
+    //Erişilebilirlik düğmesi
+    $("#accessibilityButton").click(function (e) {
+        $(".container").css("display", "none");
+        $(".accessibility-page").css("display", "block");
+        
+        $("#accessibility-title").html("ERİŞİLEBİLİRLİK AYARLARI");
+        document.getElementById('accessibility-title').focus();
+            
+        showAccessibilityPage();
+    });
     
     //Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
         showExamPage();
+        //document.getElementById('qSummaryDiv').focus();
+    });
+    //Erişilebilirlik sayfasında Sınava Dön düğmesine basıldığında
+    $("#accPageBackToExamButton").click(function (e) {
+        showExamPage();
+        //document.getElementById('qSummaryDiv').focus();
     });
 
     //Sınavı Bitir düğmesine basıldığında
