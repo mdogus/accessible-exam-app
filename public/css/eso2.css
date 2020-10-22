@@ -46,14 +46,15 @@ body {
 }
 
 
-.left
-{
+.left {
     float: left !important;
 }
 
-.right
-{
-    float: right !important;
+.right {
+    position: fixed;
+    top: 5;
+    right: 5;
+    
 }
 
 .middle
@@ -142,17 +143,17 @@ body {
 }
 
 
-.hiddenLink
-{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+.hiddenLink {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
     margin-bottom: -1px;
 
 }
+
 
 .btn-footer {
     cursor:pointer;
