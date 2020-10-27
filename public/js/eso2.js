@@ -3,6 +3,8 @@ var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 60;
 
+var qSummary = "";
+
 // var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
 // // var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
 
@@ -82,6 +84,7 @@ function updateSummary(qid) {
     if (q) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         $("#qSummaryDiv").text(sum);
+        qSummary = sum;
     }
 }
 
@@ -176,7 +179,25 @@ function showAccessibilityPage() {
 $(function () {
 
 
-    $("#nextQuestion").on("click", nextQuestion);
+    //$("#nextQuestion").on("click", nextQuestion);
+    //log
+    $("#nextQuestion").click(function() {
+        nextQuestion()
+        
+        var data = {
+            event: "Sonraki Soru düğmesine basıldı. \n" + qSummary
+        };
+        
+        $.ajax({
+            type: "POST",
+            url: "/log",
+            data: data,
+            success: function(response) {
+                console.log(response);
+                //alert(response);
+            }
+        });
+    });
     $("#prevQuestion").on("click", prevQuestion);
     $("#ismarked").on("click", markQuestion);
     $("#radioA").on("click", answerQuestion);
@@ -344,45 +365,4 @@ $(function () {
     });
 });
 
-//Audio
-$(function() {
-    $("#listenQuestion").click(function (e) {
-        var audio = document.getElementById("qAudio");
-        var isPlaying = false;
-        
-        
-        
-        if (this.className == "is-playing") {
-            $("#listenQuestion").attr("class", "");
-            $("#listenQuestion").html("Soruyu Dinle");
-            audio.pause();
-        } else {
-            $("#listenQuestion").attr("class", "is-playing");
-            $("#listenQuestion").html("Durdur");
-            audio.play();
-        }
-        /*
-        if (isPlaying) {
-            $("#listenQuestion").html("Soruyu Dinle");
-            audio.pause();
-        } else {
-            $("#listenQuestion").html("Durdur");
-            audio.play();
-        }*/
-        audio.onplaying = function() {
-            //isPlaying = true;
-            $("#listenQuestion").attr("class", "is-playing");
-            $("#listenQuestion").html("Durdur");
-        }
-        audio.onpause = function() {
-            //isPlaying = false;
-            $("#listenQuestion").attr("class", "");
-            $("#listenQuestion").html("Soruyu Dinle");
-        }
-        audio.onended = function() {
-            //isPlaying = false;
-            $("#listenQuestion").attr("class", "");
-            $("#listenQuestion").html("Soruyu Dinle");
-        }
-    });
-});
+
