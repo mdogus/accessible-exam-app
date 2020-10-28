@@ -12,6 +12,8 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "http": "0.0.0",
-    "winston": "^3.3.3"
+    "mongoose": "^5.10.11",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.5"
   }
 }
