@@ -98,12 +98,16 @@ class LoggerService {
                     )
                 })
             ],
+            /*format: winston.format.combine(
+                winston.format.splat(),
+                winston.format.simple()
+            ),*/
             format: winston.format.printf((info) => {
                 //var infoObject = JSON.stringify(info.obj);
                 //var infoValue = Object.keys(infoObject).map(function (key) { return infoObject[key]; });
                 //let message = `${dateFormat()} | ${info.level.toUpperCase()} | ${route}.log | ${info.message} | `
-                let message = `${dateFormat()} | ${info.level.toUpperCase()} | `
-                message = info.obj ? message + `${info.obj} | ` : message
+                let message = `${dateFormat()} | ${info.level.toUpperCase()} | ${info.message} |`
+                //message = info.obj ? message + `${info.obj} | ` : message
                 //message = info.obj ? message + `data:${JSON.stringify(info.obj)} | ` : message
                 //message = this.log_data ? message + `log_data:${JSON.stringify(this.log_data)} | ` : message
                 return message

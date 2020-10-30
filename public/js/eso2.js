@@ -185,8 +185,8 @@ $(function () {
         nextQuestion()
         
         var data = {
-            event: "Sonraki Soru düğmesine basıldı. \n" + qSummary
-        };
+            event: "Sonraki Soru düğmesine basıldı. " + qSummary
+        }
         
         $.ajax({
             type: "POST",

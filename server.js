@@ -1,43 +1,56 @@
+//var path = require('path');
 var express = require('express');
 var fs = require('fs');
 var bodyParser = require('body-parser');
 var app = express();
+//Routes
+var logsRouter = require('./routes/logs');
+var loginRouter = require('./routes/index');
+
 //logger_service
 const Logger = require('./services/logger-service');
 const logger = new Logger('app');
 //MongoDB connection
 const database = require("./config/database.js")();
 
-app.use(express.static('public'));
+//Set view engine
+app.set('view engine', 'ejs');
+//app.set('views', path.join(__dirname, 'views'));
+
 //Ajax
 app.use(express.json()) // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static('public'));
+//Routes
+app.use('/', logsRouter);
+app.use('/', loginRouter);
 
 //Serves all the request which includes /images in the url from Images folder
+//app.use('/logs', express.static(__dirname + '/routes/logs'));
 //app.use('/images', express.static(__dirname + '/Images'));
 
 
 console.log("Starting server: "+__dirname);
-logger.logger.log("info", "Server started.");
+logger.info("Server started.");
 
 var server = app.listen(process.env.PORT || 5000);
 
 //Ajax
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-});
+//app.get('/', (req, res) => {
+//    res.sendFile(__dirname + '/index.html');
+//});
 
 //logger_service
 app.post('/log', (req, res) => {
     const body = req.body;
-    let msg = body.event;
-    console.log(msg);
-    logger.logger.log("info", msg);
+    console.log(body.event);
+    logger.logger.log("info", body.event);
     let error = {};
     
     // Adding body of the request as log data
-    logger.setLogData(msg)
-    logger.info("Request recieved at /", msg);
+    //logger.setLogData(body)
+    //logger.info("Request recieved at /", body);
     
     // We are expecting name,age and gender in the body of the request
     /*
@@ -66,5 +79,5 @@ app.post('/log', (req, res) => {
         console.log(body)
         res.send("")
     }*/
-    console.log(body);
 });
+

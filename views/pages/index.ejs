@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>ESO User Logs</h1>
+            <p>Logs listed below.</p>
+            <ul>
+                <% logs.forEach(function(log) { %>
+                    <li>
+                        <strong><%= log.timestamp; %></strong>
+                        | <%= log.message %>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
