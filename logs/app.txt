@@ -155,3 +155,7 @@ Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Cum, 30-Eki-2020, 20:54:47] | INFO | Server started. |
 [Cum, 30-Eki-2020, 21:27:17] | INFO | Server started. |
 [Cum, 30-Eki-2020, 21:44:57] | INFO | Server started. |
+[Cmt, 31-Eki-2020, 12:36:14] | INFO | Server started. |
+[Cmt, 31-Eki-2020, 12:36:46] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 31-Eki-2020, 12:58:4] | INFO | Server started. |
+[Cmt, 31-Eki-2020, 13:0:22] | INFO | Server started. |
