@@ -21,13 +21,13 @@ app.set('view engine', 'ejs');
 app.use(express.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
+app.use('/test', express.static(__dirname + '/public'));
 //Routes
 app.use('/', logsRouter);
 app.use('/', loginRouter);
 
 //Serves all the request which includes /images in the url from Images folder
-//app.use('/logs', express.static(__dirname + '/routes/logs'));
 //app.use('/images', express.static(__dirname + '/Images'));
 
 
