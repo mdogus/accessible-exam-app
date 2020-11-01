@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var app = express();
 //Routes
 var logsRouter = require('./routes/logs');
+var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/index');
 
 //logger_service
@@ -24,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //app.use(express.static('public'));
 app.use('/test', express.static(__dirname + '/public'));
 //Routes
+app.use('/', usersRouter);
 app.use('/', logsRouter);
 app.use('/', loginRouter);
 

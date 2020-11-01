@@ -16,13 +16,13 @@ router.route("/fetch").get(function(req, res) {
 //JS/Nodejs Projects/ejs-demo
 // use res.render to load up an ejs view file
 // index page
-router.get('/logs', function(req, res) {
+router.get('/usr-logs', function(req, res) {
     logs.find({}, function(err, docs) {
         if (err) {
             res.send(err);
         } else {
             //res.send(docs);
-            res.render('pages/index', {
+            res.render('pages/usr-logs', {
                 logs: docs
             });
         }

@@ -1,0 +1,3 @@
+[Paz, 1-Kas-2020, 22:17:6] | INFO | User %s |
+[Paz, 1-Kas-2020, 22:24:21] | INFO | User saved successfully: %s |
+[Paz, 1-Kas-2020, 22:32:19] | INFO | User saved successfully: %s, %s |
