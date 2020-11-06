@@ -2,12 +2,25 @@
 var express = require('express');
 var fs = require('fs');
 var bodyParser = require('body-parser');
+const cookieParser = require("cookie-parser");
 var app = express();
+//JWT config
+const jwtConfig = require("./config/jwtConfig");
+app.set("api_secret_key", jwtConfig.api_secret_key);
+//JWT middleware: verify token
+const verifyToken = require("./services/verify-token");
+//Passport
+const passport = require("passport");
+//const initializePassport = require("./config/passport");
+//initializePassport(passport);
+//Express flash
+const flash = require("express-flash");
+//Express session
+const expressSession = require("express-session");
 //Routes
 var logsRouter = require('./routes/logs');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/index');
-
 //logger_service
 const Logger = require('./services/logger-service');
 const logger = new Logger('app');
@@ -16,22 +29,49 @@ const database = require("./config/database.js")();
 
 //Set view engine
 app.set('view engine', 'ejs');
-//app.set('views', path.join(__dirname, 'views'));
 
 //Ajax
 app.use(express.json()) // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
+//Passport, Express flash and session
+app.use(cookieParser("passport"));
+app.use(
+  expressSession({
+    cookie: { maxAge: 60000 },
+    resave: true,
+    secret: "passport",
+    saveUninitialized: true
+  })
+);
+app.use(flash());
+//app.use(expressSession({
+//    secret: app.get("api_secret_key"),
+//    resave: false,
+//    saveUninitialized: false
+//}));
+app.use(passport.initialize());
+app.use(passport.session())
 
+//Routes
 //app.use(express.static('public'));
 app.use('/test', express.static(__dirname + '/public'));
-//Routes
 app.use('/', usersRouter);
 app.use('/', logsRouter);
 app.use('/', loginRouter);
+//app.use('/', verifyToken);
 
 //Serves all the request which includes /images in the url from Images folder
 //app.use('/images', express.static(__dirname + '/Images'));
 
+//Global res.flash middleware
+app.use((req, res, next) => {
+    //Passport flashes
+    res.locals.passportFailure = req.flash("error");
+    res.locals.passportSuccess = req.flash("success");
+    //Logged in user
+    res.locals.user = req.user;
+    next();
+});
 
 console.log("Starting server: "+__dirname);
 logger.info("Server started.");

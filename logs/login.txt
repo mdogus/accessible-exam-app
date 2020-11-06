@@ -1,3 +1,10 @@
 [Paz, 1-Kas-2020, 22:17:6] | INFO | User %s |
 [Paz, 1-Kas-2020, 22:24:21] | INFO | User saved successfully: %s |
 [Paz, 1-Kas-2020, 22:32:19] | INFO | User saved successfully: %s, %s |
+[Çar, 4-Kas-2020, 14:20:30] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Çar, 4-Kas-2020, 14:21:43] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Çar, 4-Kas-2020, 14:22:28] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Çar, 4-Kas-2020, 14:25:21] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Çar, 4-Kas-2020, 14:26:37] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Çar, 4-Kas-2020, 15:11:9] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
+[Çar, 4-Kas-2020, 15:11:32] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |

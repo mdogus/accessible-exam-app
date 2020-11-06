@@ -1,0 +1,5 @@
+[Cmt, 7-Kas-2020, 1:23:9] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Cmt, 7-Kas-2020, 1:55:16] | INFO | Başarıyla giriş yapıldı. |
+[Cmt, 7-Kas-2020, 1:57:41] | INFO | ${user.name} Başarıyla giriş yapıldı. |
+[Cmt, 7-Kas-2020, 2:2:12] | INFO | Giriş yapıldı: %s %s |
+[Cmt, 7-Kas-2020, 2:4:6] | INFO | Giriş yapıldı: %s %s |

@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 module.exports = () => {
     const uri = "mongodb+srv://user_admin:mKWwIjvbpPU2q8VV@clustereso.qxzto.mongodb.net/eso?retryWrites=true&w=majority";
     mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-    mongoose.connection.on("open", () => {
+    mongoose.connection.once("open", () => {
         console.log("MongoDB connection succeeded");
     });
     mongoose.connection.on("error", (err) => {
