@@ -27,8 +27,8 @@ passport.use(new LocalStrategy({
             logger.logger.log("error", "Lütfen parolayı kontrol ederek tekrar giriniz.");
             return done(null, false, { message: "Lütfen parolayı kontrol ederek tekrar giriniz." });
         } else {
-            console.log("Başarıyla giriş yapıldı.");
-            logger.logger.log("info", "Giriş yapıldı.");
+            console.log("${user.name} ${user.surname}, giriş yaptı.");
+            logger.logger.log("info", "%s %s %s", user.name, user.surname, " giriş yaptı.");
         }
         return done(null, user, { message: "Kullanıcı girişi başarılı." });
     });

@@ -3,3 +3,11 @@
 [Cmt, 7-Kas-2020, 1:57:41] | INFO | ${user.name} Başarıyla giriş yapıldı. |
 [Cmt, 7-Kas-2020, 2:2:12] | INFO | Giriş yapıldı: %s %s |
 [Cmt, 7-Kas-2020, 2:4:6] | INFO | Giriş yapıldı: %s %s |
+[Cmt, 7-Kas-2020, 18:42:23] | INFO | Giriş yapıldı. |
+[Cmt, 7-Kas-2020, 18:46:52] | INFO | Giriş yapıldı: %s %s |
+[Cmt, 7-Kas-2020, 18:48:32] | INFO | Giriş yapıldı: %s %s |
+[Cmt, 7-Kas-2020, 18:51:12] | INFO | %s %s, %s |
+[Cmt, 7-Kas-2020, 18:52:53] | INFO | %s %s %s |
+[Cmt, 7-Kas-2020, 18:55:16] | INFO | ${user.name} ${user.surname}, giriş yaptı. |
+[Cmt, 7-Kas-2020, 19:3:12] | INFO | %s %s |
+[Cmt, 7-Kas-2020, 19:4:25] | INFO | %s %s %s |
