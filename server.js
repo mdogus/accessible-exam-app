@@ -2,13 +2,13 @@
 var express = require('express');
 var fs = require('fs');
 var bodyParser = require('body-parser');
-const cookieParser = require("cookie-parser");
+//const cookieParser = require("cookie-parser");
 var app = express();
 //JWT config
-const jwtConfig = require("./config/jwtConfig");
-app.set("api_secret_key", jwtConfig.api_secret_key);
+//const jwtConfig = require("./config/jwtConfig");
+//app.set("api_secret_key", jwtConfig.api_secret_key);
 //JWT middleware: verify token
-const verifyToken = require("./services/verify-token");
+//const verifyToken = require("./services/verify-token");
 //Passport
 const passport = require("passport");
 //const initializePassport = require("./config/passport");

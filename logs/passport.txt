@@ -27,3 +27,5 @@
 [Paz, 8-Kas-2020, 22:30:7] | INFO | %s %s %s |
 [Paz, 8-Kas-2020, 22:31:31] | INFO | %s %s %s |
 [Paz, 8-Kas-2020, 22:32:38] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 23:3:51] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 23:4:28] | INFO | %s %s %s |
