@@ -21,25 +21,23 @@ require("../config/passport");
 const Logger = require('../services/logger-service');
 const logger = new Logger('login');
 /* GET home page. */
-router.get('/', (req, res, next) => {
+router.get('/', checkAuthenticated, (req, res, next) => {
     res.render('pages/index', {
-        title: "Giriş Yap | Engelsiz Sınav Uygulaması",
-        data: { },
-        errors: { }
+        title: "Giriş Yap | Engelsiz Sınav Uygulaması"
+        //data: { },
+        //errors: { }
     });
 });
 //Login page
-router.get('/login', (req, res) => {
+router.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('pages/login');
 });
-router.post('/login', (req, res, next) => {
-    passport.authenticate('local', {
-        successRedirect: '/',
-        failureRedirect: '/login',
-        failureFlash: true,
-        successFlash: true
-    })(req, res, next);
-});
+router.post('/login', checkNotAuthenticated, passport.authenticate('local', {
+  successRedirect: "/",
+  failureRedirect: '/login',
+  failureFlash: true
+}));
+
         /*
         const { email, password } = req.body;
         const errors = [];
@@ -67,11 +65,26 @@ router.post('/login', (req, res, next) => {
     res.redirect('/usr-logs');
 });*/
 
-// SignUp page
-router.get('/sign-up', function(req, res) {
-    res.render('pages/sign-up');
+//Admin Login page
+router.get('/admin/login', checkNotAuthenticatedAdmin, (req, res) => {
+    res.render('pages/admin-login');
 });
-router.post('/sign-up', async (req, res) => {
+router.post('/admin/login', checkNotAuthenticatedAdmin, passport.authenticate('local', {
+  successRedirect: "/admin",
+  failureRedirect: '/admin/login',
+  failureFlash: true
+}))
+//Admin homepage
+router.get('/admin', checkAuthenticatedAdmin, (req, res) => {
+    //TODO: Yönetici yetkiniz bulunmamaktadır
+    //res.render("pages/index", { errors: { message: "Yönetici yetkiniz bulunmamaktadır!"}})
+    res.render('pages/admin-home');
+});
+// Admin - SignUp page
+router.get('/admin/sign-up', checkAuthenticatedAdmin, (req, res) => {
+    res.render('pages/admin-sign-up');
+});
+router.post('/admin/sign-up', checkAuthenticatedAdmin, async (req, res) => {
     const newUser = new User(req.body);
     
     try {
@@ -164,5 +177,74 @@ function checkNotAuthenticated(req, res, next) {
   }
   next()
 }
+//Admin authentication
+function checkAuthenticatedAdmin(req, res, next) {
+  if (req.isAuthenticated() && (req.user.email === "mdogusm@gmail.com") && (req.user.password === "abcd1234")) {
+    return next()
+  }
+  res.redirect('/admin/login')
+}
 
+function checkNotAuthenticatedAdmin(req, res, next) {
+  if (req.isAuthenticated() && (req.user.email === "mdogusm@gmail.com") && (req.user.password === "abcd1234")) {
+    return res.redirect('/admin')
+  }
+  next()
+}
+/*
+//Require admin
+function requireAdmin() {
+    return function(req, res, next) {
+        User.findOne({ req.body.username }, function(err, user) {
+            if (err) { return next(err); }
+
+            if (!user) {
+                // Do something - the user does not exist
+            }
+
+            if (!user.admin) {
+                // Do something - the user exists but is no admin user
+            }
+
+            // Hand over control to passport
+            next();
+        });
+    }
+}*/
+
+function hasAuthorization(req, res, next) {
+    if (req.isAuthenticated() && (req.user.role >= 2)) {
+        return next();
+    }
+    return res.redirect(403, "/error");
+}
+/*
+function checkAuthorization(isAuthenticated, isAdmin) {
+    return function(req, res, next) {
+        if (isAuthenticated == true) {
+            if (req.isAuthenticated()) {
+                return next()
+            }
+            res.redirect('/login')
+        } else {
+            if (req.isAuthenticated()) {
+              if (isAdmin == true) {
+                  if ((req.user.email === "mdogusm@gmail.com") && (req.user.password === "abcd1234")) {
+                      return res.redirect("/admin");
+                  } else {
+                      return res.redirect("/");
+                  }
+              }
+            }
+            return next()
+        }
+    }
+}*/
+/*
+function isAdmin(req, res, next) {
+    if (req.isAuthenticated() && (req.user.email === "mdogusm@gmail.com") && (req.user.password === "abcd1234")) {
+        return next()
+    }
+    res.redirect("/");
+}*/
 module.exports = router;

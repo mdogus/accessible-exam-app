@@ -11,3 +11,19 @@
 [Cmt, 7-Kas-2020, 18:55:16] | INFO | ${user.name} ${user.surname}, giriş yaptı. |
 [Cmt, 7-Kas-2020, 19:3:12] | INFO | %s %s |
 [Cmt, 7-Kas-2020, 19:4:25] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:15:26] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:16:34] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:27:37] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:28:8] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:30:46] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:39:25] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:43:31] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:48:23] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 20:49:13] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 21:57:10] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 22:20:16] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 22:24:55] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 22:28:15] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 22:30:7] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 22:31:31] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 22:32:38] | INFO | %s %s %s |

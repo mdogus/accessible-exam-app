@@ -34,16 +34,16 @@ app.set('view engine', 'ejs');
 app.use(express.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: false }));
 //Passport, Express flash and session
-app.use(cookieParser("passport"));
+//app.use(cookieParser("passport"));
+app.use(flash());
 app.use(
   expressSession({
-    cookie: { maxAge: 60000 },
+    //cookie: { maxAge: 60000 },
     resave: true,
     secret: "passport",
-    saveUninitialized: true
+    saveUninitialized: false
   })
 );
-app.use(flash());
 //app.use(expressSession({
 //    secret: app.get("api_secret_key"),
 //    resave: false,
