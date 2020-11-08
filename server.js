@@ -64,14 +64,14 @@ app.use('/', loginRouter);
 //app.use('/images', express.static(__dirname + '/Images'));
 
 //Global res.flash middleware
-app.use((req, res, next) => {
-    //Passport flashes
-    res.locals.passportFailure = req.flash("error");
-    res.locals.passportSuccess = req.flash("success");
-    //Logged in user
-    res.locals.user = req.user;
-    next();
-});
+//app.use((req, res, next) => {
+//    //Passport flashes
+//    res.locals.passportFailure = req.flash("error");
+//    res.locals.passportSuccess = req.flash("success");
+//    //Logged in user
+//    res.locals.user = req.user;
+//    next();
+//});
 
 console.log("Starting server: "+__dirname);
 logger.info("Server started.");

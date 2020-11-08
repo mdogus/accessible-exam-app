@@ -29,3 +29,6 @@
 [Paz, 8-Kas-2020, 22:32:38] | INFO | %s %s %s |
 [Paz, 8-Kas-2020, 23:3:51] | INFO | %s %s %s |
 [Paz, 8-Kas-2020, 23:4:28] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 23:38:23] | INFO | %s %s %s |
+[Paz, 8-Kas-2020, 23:38:46] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Paz, 8-Kas-2020, 23:39:14] | INFO | %s %s %s |
