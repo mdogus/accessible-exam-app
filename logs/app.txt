@@ -135,3 +135,4 @@
 [Paz, 8-Kas-2020, 22:46:50] | INFO | Server started. |
 [Paz, 8-Kas-2020, 23:3:19] | INFO | Server started. |
 [Paz, 8-Kas-2020, 23:37:49] | INFO | Server started. |
+[Pzt, 9-Kas-2020, 0:47:15] | INFO | Server started. |

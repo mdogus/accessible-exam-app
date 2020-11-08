@@ -1,6 +1,6 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const bcrypt = require("bcrypt");
+//const bcrypt = require("bcrypt");
 //logger_service
 const Logger = require('../services/logger-service');
 const logger = new Logger('passport');
