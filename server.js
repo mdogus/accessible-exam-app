@@ -11,14 +11,12 @@ var app = express();
 //const verifyToken = require("./services/verify-token");
 //Passport
 const passport = require("passport");
-//const initializePassport = require("./config/passport");
-//initializePassport(passport);
 //Express flash
 const flash = require("express-flash");
 //Express session
 const expressSession = require("express-session");
 //Routes
-var logsRouter = require('./routes/logs');
+var adminRouter = require('./routes/admin');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/index');
 //logger_service
@@ -56,7 +54,7 @@ app.use(passport.session())
 //app.use(express.static('public'));
 app.use('/test', express.static(__dirname + '/public'));
 app.use('/', usersRouter);
-app.use('/', logsRouter);
+app.use('/', adminRouter);
 app.use('/', loginRouter);
 //app.use('/', verifyToken);
 

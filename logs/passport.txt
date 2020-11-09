@@ -32,3 +32,10 @@
 [Paz, 8-Kas-2020, 23:38:23] | INFO | %s %s %s |
 [Paz, 8-Kas-2020, 23:38:46] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
 [Paz, 8-Kas-2020, 23:39:14] | INFO | %s %s %s |
+[Pzt, 9-Kas-2020, 16:15:5] | INFO | %s %s %s |
+[Pzt, 9-Kas-2020, 16:31:8] | INFO | %s %s %s |
+[Pzt, 9-Kas-2020, 16:45:52] | INFO | %s %s %s |
+[Pzt, 9-Kas-2020, 20:42:47] | INFO | %s %s %s |
+[Pzt, 9-Kas-2020, 20:54:23] | INFO | %s %s %s |
+[Pzt, 9-Kas-2020, 21:10:17] | INFO | %s %s %s |
+[Pzt, 9-Kas-2020, 21:45:40] | INFO | %s %s %s |

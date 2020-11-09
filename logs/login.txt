@@ -8,3 +8,5 @@
 [Çar, 4-Kas-2020, 14:26:37] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
 [Çar, 4-Kas-2020, 15:11:9] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
 [Çar, 4-Kas-2020, 15:11:32] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Pzt, 9-Kas-2020, 19:57:10] | INFO | User saved successfully: %s %s |
+[Pzt, 9-Kas-2020, 20:59:2] | INFO | User saved successfully: %s %s |

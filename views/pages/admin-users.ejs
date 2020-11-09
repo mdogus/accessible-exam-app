@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/header-admin-home'); %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Kullanıcılar</h1>
+            <ul>
+                <% users.forEach(function(user) { %>
+                    <li>
+                        <strong><%= user.name; %></strong>
+                        <strong><%= user.surname; %></strong>
+                        | <%= user.email %>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>

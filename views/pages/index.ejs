@@ -6,14 +6,22 @@
 <body class="container">
 
 <header>
-    <%- include('../partials/header'); %>
+    <%- include('../partials/header-user-home'); %>
 </header>
 
 <main>
 <div class="row">
-    <div class="col-sm-8">
-        <div class="jumbotron" style="height: 65vh; width: 100%;">
-                <h3>Hoş geldiniz!</h3>
+    <div class="col-sm-8" style="height= 800px;">
+        <div class="jumbotron">
+                <h3 class="display-4">Hoş geldiniz!</h3>
+                <div class="jumbotron">
+                        <h3>Sınava Başla</h3>
+                        <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href='/test';" >Sınava Başla</button>
+                </div>
+                <div class="jumbotron">
+                        <h3>Kişisel Bilgiler</h3>
+                        <button type="button" class="btn btn-info  btn-lg btn-block" onclick="">Kişisel Bilgi Formu</button>
+                </div>
         </div>
     </div>
 
