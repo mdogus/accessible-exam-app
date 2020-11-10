@@ -87,37 +87,10 @@ app.post('/log', (req, res) => {
     console.log(body.event);
     logger.logger.log("info", body.event);
     let error = {};
-    
-    // Adding body of the request as log data
-    //logger.setLogData(body)
-    //logger.info("Request recieved at /", body);
-    
-    // We are expecting name,age and gender in the body of the request
-    /*
-    if (body.element == null || body.element == "") {
-        logger.error("Element field is empty")
-        error["element"] = "element field is empty"
-    }
-    if (body.event == null || body.event == "") {
-        logger.error("Event field is empty")
-        error["event"] = "event field is empty"
-    }
-    if (body.description == null || body.description == "") {
-        logger.error("Description field is empty")
-        error["description"] = "description field is empty"
-    }*/
-    /*
-    if (Object.keys(error).length != 0) {
-        logger.error("Return error response", {
-            "success": false
-        })
-        res.send("Error")
-    } else {
-        logger.info("Return success response", {
-            "success": true
-        })
-        console.log(body)
-        res.send("")
-    }*/
 });
 
+//Logout
+app.delete('/logout', (req, res) => {
+    req.logOut()
+    res.redirect('/')
+});

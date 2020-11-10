@@ -32,8 +32,13 @@ router.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 }));
 
 // about page
-router.get('/about', function(req, res) {
+router.get('/about', checkNotAuthenticated, function(req, res) {
     res.render('pages/about');
+});
+
+//Test page
+router.get('/exam', checkAuthenticated, function(req, res) {
+    //res.render('pages/index');
 });
 
 //User authentication

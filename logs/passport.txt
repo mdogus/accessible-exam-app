@@ -39,3 +39,12 @@
 [Pzt, 9-Kas-2020, 20:54:23] | INFO | %s %s %s |
 [Pzt, 9-Kas-2020, 21:10:17] | INFO | %s %s %s |
 [Pzt, 9-Kas-2020, 21:45:40] | INFO | %s %s %s |
+[Sal, 10-Kas-2020, 21:6:26] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 0:24:13] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 0:40:40] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 2:0:19] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 2:10:27] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 2:14:43] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 2:16:23] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 2:19:22] | INFO | %s %s %s |
+[Çar, 11-Kas-2020, 2:20:33] | INFO | %s %s %s |

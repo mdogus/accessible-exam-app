@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    padding-top: 30px;
+}
+
+.font-raleway {
+  /*font-family: 'Tangerine', serif;*/
+  /*font-family: 'Noto Sans JP', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+}
+
