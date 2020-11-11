@@ -16,9 +16,7 @@ const logger = new Logger('login');
 /* GET home page. */
 router.get('/', checkAuthenticated, (req, res, next) => {
     res.render('pages/index', {
-        title: "Ana Sayfa | Engelsiz Sınav Uygulaması"
-        //data: { },
-        //errors: { }
+        //title: "Ana Sayfa | Engelsiz Sınav Uygulaması"
     });
 });
 //Login page

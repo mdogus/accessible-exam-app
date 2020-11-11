@@ -264,9 +264,9 @@ $(function () {
 			if(event.keyCode == 83){
                 //let timeAlert = $("#remainingTimeLabel").text();
 				//$("<p role='alert'>$(timeAlert)</p>").appendTo(document.body);
-                $("#remainingTimeLabel").attr("role", "alert");
+                $("#remainingTimeLabel").attr("aria-live", "assertive");
                 setTimeout(function(){
-                    $("#remainingTimeLabel").removeAttr("role");
+                    $("#remainingTimeLabel").removeAttr("aria-live");
                 }, 100);
 				//alert($("#remainingTimeLabel").text());
 			}

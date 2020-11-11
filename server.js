@@ -14,7 +14,7 @@ const passport = require("passport");
 //Express flash
 const flash = require("express-flash");
 //Express session
-const expressSession = require("express-session");
+const session = require("express-session");
 //Routes
 var adminRouter = require('./routes/admin');
 var usersRouter = require('./routes/users');
@@ -34,11 +34,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //Passport, Express flash and session
 //app.use(cookieParser("passport"));
 app.use(flash());
-app.use(
-  expressSession({
+app.use(session({
     //cookie: { maxAge: 60000 },
-    resave: true,
     secret: "passport",
+    resave: false,
     saveUninitialized: false
   })
 );
@@ -62,14 +61,14 @@ app.use('/', loginRouter);
 //app.use('/images', express.static(__dirname + '/Images'));
 
 //Global res.flash middleware
-//app.use((req, res, next) => {
-//    //Passport flashes
-//    res.locals.passportFailure = req.flash("error");
-//    res.locals.passportSuccess = req.flash("success");
-//    //Logged in user
-//    res.locals.user = req.user;
-//    next();
-//});
+/*app.use((req, res, next) => {
+    //Passport flashes
+    res.locals.passportFailure = req.flash("error");
+    res.locals.passportSuccess = req.flash("success");
+    //Logged in user
+    res.locals.user = req.user;
+    next();
+});*/
 
 console.log("Starting server: "+__dirname);
 logger.info("Server started.");
@@ -90,7 +89,7 @@ app.post('/log', (req, res) => {
 });
 
 //Logout
-app.delete('/logout', (req, res) => {
-    req.logOut()
-    res.redirect('/')
+app.get('/logout', (req, res) => {
+    req.logout();
+    res.redirect('/login');
 });

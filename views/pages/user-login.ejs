@@ -23,11 +23,11 @@
     <div class="col-sm-4" style="padding-top: 50px;">
         <div class="well">
             <h3>Giriş Yap</h3>
-            <!--% if(passportError) { %-->
+            <% if (messages.error) { %>
                 <div class="alert alert-danger">
-                    <!--%= passportError %-->
+                    <%= messages.error %>
                 </div>
-            <!--% } %-->
+            <% } %>
             <form action="/login" method="POST">
                 <div class="form-group">
                     <label for="inputEmail">E-posta</label>
