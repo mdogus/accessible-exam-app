@@ -1,12 +1,12 @@
 // .alert
 $(function() {
     $(window).ready(function() {
-        /*if ($(".alert")) {
+        if ($(".alert")) {
             $(".alert").attr("role", "alert");
             setTimeout(function(){
                 $(".alert").removeAttr("role");
             }, 1000);
-        }*/
+        }
         //$(".alert").attr("aria-live", "assertive");
         //setTimeout(function(){
           //  $(".alert").removeAttr("aria-live");
