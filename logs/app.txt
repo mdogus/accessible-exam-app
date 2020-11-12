@@ -198,3 +198,17 @@
 [Çar, 11-Kas-2020, 19:16:20] | INFO | Server started. |
 [Çar, 11-Kas-2020, 19:18:57] | INFO | Server started. |
 [Çar, 11-Kas-2020, 19:27:21] | INFO | Server started. |
+[Per, 12-Kas-2020, 20:20:36] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:0:48] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:8:22] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:12:28] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:17:53] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:20:31] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:23:16] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:27:14] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:35:20] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:49:37] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:52:7] | INFO | Server started. |
+[Per, 12-Kas-2020, 21:54:34] | INFO | Server started. |
+[Per, 12-Kas-2020, 23:29:55] | INFO | Server started. |
+[Per, 12-Kas-2020, 23:58:53] | INFO | Server started. |

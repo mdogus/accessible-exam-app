@@ -15,7 +15,7 @@ passport.use(new LocalStrategy({
         if (err) {
             console.log(err);
             logger.logger.log("error", err);
-            return done(err, null, "Bir hata oluştu!");
+            return done(err, null, { message: "Bir hata oluştu!" });
         }
         if (!user) {
             console.log("Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz.");

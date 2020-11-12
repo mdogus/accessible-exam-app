@@ -70,3 +70,19 @@
 [Çar, 11-Kas-2020, 18:57:59] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
 [Çar, 11-Kas-2020, 18:58:49] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
 [Çar, 11-Kas-2020, 19:16:47] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 20:21:28] | ERROR | Girdiğiniz e-posta adresi bulunamadı. Lütfen kontrol ederek tekrar giriniz. |
+[Per, 12-Kas-2020, 21:35:32] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
+[Per, 12-Kas-2020, 21:35:57] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 21:49:58] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 21:52:25] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 21:54:50] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 22:47:25] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 23:27:45] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 23:30:18] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 23:33:37] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 23:57:37] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 23:58:12] | INFO | %s %s %s |
+[Per, 12-Kas-2020, 23:59:9] | INFO | %s %s %s |
+[Cum, 13-Kas-2020, 0:0:57] | INFO | %s %s %s |
+[Cum, 13-Kas-2020, 0:2:7] | INFO | %s %s %s |
+[Cum, 13-Kas-2020, 0:4:23] | INFO | %s %s %s |

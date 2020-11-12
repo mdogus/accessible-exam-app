@@ -12,3 +12,34 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+img.img-brend {
+    filter: grayscale(100%);
+    width: 30px;
+    height: 30px;
+}
+
+div.filter-grayscale {
+    background-image: url(../img/multiple-choice.jpg);
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+}
+
+div.filter-grayscale.dimensions-login {
+    height: 65vh;
+    width: 100%;
+}
+
+div.filter-blur {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+div.filter-blur.dimensions-login {
+    height: 65vh;
+    width: 100%;
+}
