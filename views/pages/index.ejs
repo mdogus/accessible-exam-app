@@ -3,13 +3,13 @@
 <head>
     <%- include('../partials/head'); %>
 </head>
-<body class="container">
+<body>
 
-<header>
+<header class="container-fluid" style="padding: 0;">
     <%- include('../partials/header-user-home'); %>
 </header>
 
-<main>
+<main class="container">
 <div class="row">
     <div class="col-sm-8">
         <div class="jumbotron">
@@ -31,7 +31,7 @@
 
     <div class="col-sm-4 filter-grayscale">
         <div class="jumbotron filter-grayscale">
-                <div class="filter-blur">
+                <div class="filter-blur sidebar">
                     <h3 class="font-raleway">Görme Engelli Bireylere Yönelik Web Tabanlı Sınav Uygulaması</h3>
                 </div>
         </div>
@@ -40,7 +40,7 @@
 </div>
 </main>
 
-<footer>
+<footer class="container-fluid fixed-bottom">
     <%- include('../partials/footer'); %>
 </footer>
 
