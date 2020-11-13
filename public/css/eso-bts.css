@@ -37,16 +37,26 @@ img.img-brand {
     color: white;
 }
 /* Main */
-div.col-sm-4.filter-grayscale, div.col-sm-8 {
+div.col-sm-4.sidebar-filter-grayscale, div.col-sm-8 {
     padding-top: 10px;
 }
 
-div.jumbotron.filter-grayscale {
+div.jumbotron.filter-grayscale, div.jumbotron.sidebar-filter-grayscale {
     width: 100%;
     height: 100%;
 }
-
+    /* login */
 div.filter-grayscale {
+    background-image: url(../img/multiple-choice.jpg);
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+    /* sidebar */
+div.sidebar-filter-grayscale {
     background-image: url(../img/multiple-choice.jpg);
     filter: grayscale(100%);
     background-repeat: no-repeat;
@@ -56,13 +66,13 @@ div.filter-grayscale {
 }
 
 div.filter-grayscale.dimensions-login {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 div.filter-blur {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
     padding-top: 40px;
     padding-left: 20px;
     width: 100%;
