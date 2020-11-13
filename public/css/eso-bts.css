@@ -71,8 +71,8 @@ div.filter-grayscale.dimensions-login {
 }
 
 div.filter-blur {
-    backdrop-filter: blur(13px);
-    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     padding-top: 40px;
     padding-left: 20px;
     width: 100%;
