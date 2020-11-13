@@ -17,7 +17,8 @@
                 <% logs.forEach(function(log) { %>
                     <li>
                         <strong><%= log.timestamp; %></strong>
-                        | <%= log.message %>
+                        <br>
+                        <%= log.message %>
                     </li>
                 <% }); %>
             </ul>

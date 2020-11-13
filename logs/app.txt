@@ -212,3 +212,10 @@
 [Per, 12-Kas-2020, 21:54:34] | INFO | Server started. |
 [Per, 12-Kas-2020, 23:29:55] | INFO | Server started. |
 [Per, 12-Kas-2020, 23:58:53] | INFO | Server started. |
+[Cum, 13-Kas-2020, 12:16:36] | INFO | Server started. |
+[Cum, 13-Kas-2020, 12:18:51] | INFO | Server started. |
+[Cum, 13-Kas-2020, 12:20:1] | INFO | Server started. |
+[Cum, 13-Kas-2020, 12:24:3] | INFO | Server started. |
+[Cum, 13-Kas-2020, 13:48:50] | INFO | Server started. |
+[Cum, 13-Kas-2020, 13:50:37] | INFO | Server started. |
+[Cum, 13-Kas-2020, 14:12:2] | INFO | Server started. |

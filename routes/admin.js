@@ -14,16 +14,20 @@ const logger = new Logger('login');
 router.get('/admin', checkAuthenticatedAdmin, (req, res) => {
     //TODO: Yönetici yetkiniz bulunmamaktadır
     //res.render("pages/index", { errors: { message: "Yönetici yetkiniz bulunmamaktadır!"}})
-    res.render('pages/admin-home');
+    res.render('pages/admin-home', {
+        name: req.user.name,
+        surname: req.user.surname
+    });
 });
 //Admin Login page
 router.get('/admin/login', checkNotAuthenticatedAdmin, (req, res) => {
     res.render('pages/admin-login');
 });
 router.post('/admin/login', checkNotAuthenticatedAdmin, passport.authenticate('local', {
-  successRedirect: "/admin",
-  failureRedirect: '/admin/login',
-  failureFlash: true
+    successRedirect: "/admin",
+    failureRedirect: '/admin/login',
+    successFlash: true,
+    failureFlash: true
 }))
 // Admin sign-up page
 router.get('/admin/sign-up', checkAuthenticatedAdmin, (req, res) => {
