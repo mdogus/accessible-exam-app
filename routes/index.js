@@ -32,14 +32,24 @@ router.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     failureFlash: true
 }));
 
-// About page
+// Login about page
 router.get('/about', checkNotAuthenticated, function(req, res) {
     res.render('pages/about');
 });
 
-// Contact page
+// User home about page
+router.get('/user-about', checkAuthenticated, function(req, res) {
+    res.render('pages/user-about');
+});
+
+// Login contact page
 router.get('/contact', checkNotAuthenticated, function(req, res) {
     res.render('pages/contact');
+});
+
+// User home contact page
+router.get('/user-contact', checkAuthenticated, function(req, res) {
+    res.render('pages/user-contact');
 });
 
 //Test page

@@ -20,23 +20,43 @@
                 <% } %>
                 <div class="jumbotron">
                         <h3 class="font-raleway">Sınava Başla</h3>
-                        <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href='/test';" >Sınava Başla</button>
+                        <span class="lead">Lütfen sınava başlamadan önce </span>
+                        <a class="lead" href="#">Kullanım Kılavuzu</a>
+                        <span class="lead">nu okuyun.</span>
+                        <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Sınava Başla</button>
+                        
+                        <!-- Kullanım Kılavuzu pop-up -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Kullanım Kılavuzu</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body lead">
+                                Lütfen sınava başlamadan önce Kullanım Kılavuzu'nu okuyunuz.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                                <button type="button" class="btn btn-info" onclick="location.href='#';">Kullanım Kılavuzu'na Git</button>
+                                <button type="button" class="btn btn-primary" onclick="location.href='/test';">Sınava Başla</button>
+                              </div>
+                            </div>
+                          </div>
                 </div>
+                <!-- Kişisel Bilgi Formu -->
                 <div class="jumbotron">
                         <h3 class="font-raleway">Kişisel Bilgiler</h3>
                         <button type="button" class="btn btn-info  btn-lg btn-block" onclick="">Kişisel Bilgi Formu</button>
                 </div>
         </div>
     </div>
-
-    <div class="col-sm-4 sidebar-filter-grayscale">
-        <div class="jumbotron sidebar-filter-grayscale">
-                <div class="filter-blur sidebar">
-                    <h3 class="font-raleway">Görme Engelli Bireylere Yönelik Web Tabanlı Sınav Uygulaması</h3>
-                </div>
-        </div>
-    </div>
-
+    
+    <%- include('../partials/sidebar'); %>
+    
 </div>
 </main>
 

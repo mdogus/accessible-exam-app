@@ -104,3 +104,8 @@
 [Cum, 13-Kas-2020, 23:12:18] | INFO | %s %s %s |
 [Cum, 13-Kas-2020, 23:15:40] | INFO | %s %s %s |
 [Cum, 13-Kas-2020, 23:32:34] | INFO | %s %s %s |
+[Cmt, 14-Kas-2020, 14:55:39] | INFO | %s %s %s |
+[Cmt, 14-Kas-2020, 15:12:37] | INFO | %s %s %s |
+[Cmt, 14-Kas-2020, 16:18:5] | INFO | %s %s %s |
+[Cmt, 14-Kas-2020, 16:59:52] | INFO | %s %s %s |
+[Cmt, 14-Kas-2020, 19:37:30] | INFO | %s %s %s |

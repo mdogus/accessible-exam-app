@@ -9,5 +9,9 @@ $(function() {
         }
     });
     
-    
+    //Pop-up modal
+    //$('#myModal').on('shown.bs.modal', function () {
+      //$('#myButton').trigger('focus')
+    //})
 });
+
