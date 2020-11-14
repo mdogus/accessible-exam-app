@@ -37,7 +37,7 @@ img.img-brand {
     color: white;
 }
 /* Main */
-div.col-sm-4.sidebar-filter-grayscale, div.col-sm-8 {
+div.col-sm-4, div.col-sm-8 {
     padding-top: 10px;
 }
 
