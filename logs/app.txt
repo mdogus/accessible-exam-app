@@ -239,3 +239,16 @@
 [Cmt, 14-Kas-2020, 20:48:15] | INFO | Server started. |
 [Cmt, 14-Kas-2020, 21:47:5] | INFO | Server started. |
 [Cmt, 14-Kas-2020, 21:53:4] | INFO | Server started. |
+[Pzt, 16-Kas-2020, 14:12:6] | INFO | Server started. |
+[Pzt, 16-Kas-2020, 20:26:3] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:26:5] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:29:17] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:40:14] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:40:16] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:40:17] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:40:18] | INFO | Sonraki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:40:19] | INFO | Sonraki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:40:51] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 16-Kas-2020, 20:40:52] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 17-Kas-2020, 0:39:55] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 17-Kas-2020, 1:38:48] | INFO | Server started. |

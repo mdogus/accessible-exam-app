@@ -1,22 +1,16 @@
 .btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover,
 
-#increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover{
-  border:6px inset red !important;
+#increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover {
+  border: 4px inset red !important;
   border-style: inset;
 }
 
-
-
-@media (min-width: 1200px)
-{
-    .header-text
-    {
+@media (min-width: 1200px) {
+    .header-text {
         width: 1050px !important;
     }
-
-
-    .content-koklu
-    {
+    
+    .content-koklu {
         width: 482px !important;
     }
 }
@@ -51,43 +45,36 @@ body {
 }
 
 .right {
-    position: fixed;
-    top: 5;
-    right: 5;
-    
+    float: right !important;
 }
 
-.middle
-{
+.middle {
     display: table;
     margin: 0 auto;
 }
 
-.header-text
-{
+.header-text {
     width: 960px;
 }
 
-#eso-cont, #eso-cont input, #eso-cont select{
+#eso-cont, #eso-cont input, #eso-cont select {
     line-height: 32px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Verdana;
 }
 
 .page-title {
-    min-height: 100px;
+    min-height: 50px;
     background-color: #333333;
     color: #FFFFFF;
     font-weight: bold;
+    padding-top: 5px;
     padding-left: 10px;
     top: 0px;
     left: 0px;
-    padding-top: 5px;
 }
 
-
-.header
-{
+.header {
     height: 128px;
     background-color: #F2F2F2;
     padding: 0 0 0 64px;
@@ -95,12 +82,10 @@ body {
     text-align: center;
 }
 
-.nav-icons
-{
+.nav-icons {
     float: left;
     margin-top: 36px;
 }
-
 
 .nav-icons div img
 {
@@ -156,8 +141,8 @@ body {
 
 
 .btn-footer {
-    cursor:pointer;
-    min-width: 275px;
+    cursor: pointer;
+    min-width: 200px;
     border: 3px solid darkgray;
     border-style: inset;
     margin-right: 40px;
@@ -166,31 +151,30 @@ body {
 
 
 .btn-footer:active, .btn-mark:active{
-    background-color: grey;
+    background-color: gray;
 }
-
 
 
 .btn-mark {
-    height: 74px ;
-    min-width: 224px;   
+    height: 60px ;
+    min-width: 200px;
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .btn-mark:hover {
-    height: 68px ;
+    height: 56px ;
 }
 .btn-mark > input {
-    height: 50px;
-    line-height: 50px ;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    line-height: 0px;
 }
 .btn-mark > label {
-    margin-left: 23px;
-    height: 90%;
+    margin-left: 10px;
+    height: 80%;
     width: 80%;
     display: flex;
     justify-content: left;
@@ -199,19 +183,21 @@ body {
 }
 
 .btn-prev{
-    height: 80px !important;
-    background:url(/img/arrow-left-big.png) no-repeat;
-    background-position: 0 5;
+    height: 60px !important;
+    background: url(/test/img/arrow-left-big.png) no-repeat;
+    background-position: 10 1;
+    background-size: 50px 50px;
 }
 
 .btn-next{
-    height: 80px !important;
-    background:url(/img/arrow-right-big.png) no-repeat;
-    background-position: 205 5;
+    height: 60px !important;
+    background:url(/test/img/arrow-right-big.png) no-repeat;
+    background-position: 10 1;
+    background-size: 50px 50px;
 }
 
 .btn-finish{
-    height: 80px !important;
+    height: 60px !important;
 }
 
 .secenek {
@@ -243,6 +229,7 @@ body {
     line-height: 34px;
     float: left;
     margin: 4px auto;
+    margin-left: 6px;
 }
 
 .secenek-baslik input:checked + label
@@ -258,6 +245,7 @@ body {
     line-height: 34px;
     float: left;
     margin: 4px auto;
+    margin-left: 6px;
 }
 
 .secenekler {
@@ -347,7 +335,7 @@ body {
 
 .question-number {
     color: #888888;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
     display: table;
     margin: 0 auto;
@@ -358,7 +346,6 @@ body {
 #increaseFont,  #decreaseFont {
     padding-top: 5px;
 }
-
 
 #eso-cont.font_0 *{
     font-family: Verdana !important;
@@ -413,7 +400,6 @@ body {
 .marked-questions-div a {
     text-decoration: none !important;
 }
-
 
 a {
       color: black;
@@ -481,11 +467,11 @@ a {
   .theme3 .bottom-bar input, .theme3 .bottom-bar label, .theme3 .bottom-bar .btn-mark, .theme3 select, .theme3 button{
       background-color: black;
       color: yellow;
-      border: 3px solid  yellow;
+      border: 3px solid yellow;
   }
 
   .theme3 .btn-footer, .theme3 .btn-nav {
-    border: 3px solid gray;
+    border: 3px solid yellow;
   }
 
 .theme3 .btn-footer:active, .theme3 .btn-nav:active, .theme3 .btn-mark:active {
@@ -558,9 +544,57 @@ a {
     color: white;
 }
 
-#remTimeDiv{
+#remTimeDiv {
     width: 100%;
 }
+
 .marked-questions-div li {
     list-style: none;
+}
+
+button {
+    border: 3px solid #fcad26;
+    border-radius: 50px;
+    color: #fcad26;
+    background-color: white;
+    min-width: 150px;
+    padding: 5px 15px;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover {
+    border-radius: 50px;
+    background: rgb(53,54,58);
+    color: #fff;
+}
+button.accessibility:before {
+    content: '\f0ad';
+    font-family: FontAwesome;
+    font-size: 40px;
+    padding-right: 10px;
+}
+button.listen:before {
+    content: '\f144';
+    font-family: FontAwesome;
+    font-size: 40px;
+    padding-right: 10px;
+}
+button.pause:before {
+    content: '\f28b';
+    font-family: FontAwesome;
+    font-size: 40px;
+    padding-right: 10px;
+}
+button.next:before {
+    content: '\f0a8';
+    font-family: FontAwesome;
+    font-size: 40px;
+    padding-right: 10px;
 }

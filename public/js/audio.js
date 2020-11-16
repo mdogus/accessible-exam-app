@@ -7,11 +7,11 @@ $(function() {
         
         
         if (this.className == "is-playing") {
-            $("#listenQuestion").attr("class", "");
+            $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
             audio.pause();
         } else {
-            $("#listenQuestion").attr("class", "is-playing");
+            $("#listenQuestion").attr("class", "is-playing listen");
             $("#listenQuestion").html("Durdur");
             audio.play();
         }
@@ -25,17 +25,17 @@ $(function() {
         }*/
         audio.onplaying = function() {
             //isPlaying = true;
-            $("#listenQuestion").attr("class", "is-playing");
+            $("#listenQuestion").attr("class", "is-playing pause");
             $("#listenQuestion").html("Durdur");
         }
         audio.onpause = function() {
             //isPlaying = false;
-            $("#listenQuestion").attr("class", "");
+            $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
         }
         audio.onended = function() {
             //isPlaying = false;
-            $("#listenQuestion").attr("class", "");
+            $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
         }
     });
