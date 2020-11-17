@@ -256,3 +256,6 @@
 [Sal, 17-Kas-2020, 11:28:16] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Sal, 17-Kas-2020, 11:28:17] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Sal, 17-Kas-2020, 16:10:28] | INFO | Server started. |
+[Sal, 17-Kas-2020, 16:39:6] | INFO | Server started. |
+[Sal, 17-Kas-2020, 19:28:3] | INFO | Server started. |
+[Sal, 17-Kas-2020, 19:42:46] | INFO | Server started. |

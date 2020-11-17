@@ -4,8 +4,6 @@ $(function() {
         var audio = document.getElementById("qAudio");
         var isPlaying = false;
         
-        
-        
         if (this.className == "pause") {
             $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
@@ -39,31 +37,33 @@ $(function() {
             $("#listenQuestion").html("Soruyu Dinle");
         }
     });
-    //Listen option
-    $("#listenOption").click(function (e) {
-        var audio = document.getElementById("oAudio");
+    
+    //Listen options
+    $("#listenOptions").click(function (e) {
+        var audioOptions = document.getElementById("oAudio");
         
-        if (this.className == "pause") {
-            $("#listenOption").attr("class", "listen");
-            $("#listenOption").html("Soruyu Dinle");
-            audio.pause();
+        if (this.className == "pause-options") {
+            $("#listenOptions").attr("class", "listen-options");
+            $("#listenOptions").html("Seçenekleri Dinle");
+            audioOptions.pause();
         } else {
-            $("#listenOption").attr("class", "pause");
-            $("#listenOption").html("Durdur");
-            audio.play();
+            $("#listenOptions").attr("class", "pause-options");
+            $("#listenOptions").html("Durdur");
+            audioOptions.play();
         }
         
-        audio.onplaying = function() {
-            $("#listenOption").attr("class", "pause");
-            $("#listenOption").html("Durdur");
+        audioOptions.onplaying = function() {
+            $("#listenOptions").attr("class", "pause-options");
+            $("#listenOptions").html("Durdur");
         }
-        audio.onpause = function() {
-            $("#").attr("class", "listen");
-            $("#listenOption").html("Soruyu Dinle");
+        audioOptions.onpause = function() {
+            $("#listenOptions").attr("class", "listen-options");
+            $("#listenOptions").html("Seçenekleri Dinle");
         }
-        audio.onended = function() {
-            $("#listenOption").attr("class", "listen");
-            $("#listenOption").html("Soruyu Dinle");
+        audioOptions.onended = function() {
+            $("#listenOptions").attr("class", "listen-options");
+            $("#listenOptions").html("Seçenekleri Dinle");
         }
     });
 });
+

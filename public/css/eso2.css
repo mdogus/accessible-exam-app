@@ -590,7 +590,19 @@ button.listen:before {
     font-size: 30px;
     padding-right: 10px;
 }
+button.listen-options:before {
+    content: '\f144';
+    font-family: FontAwesome;
+    font-size: 30px;
+    padding-right: 10px;
+}
 button.pause:before {
+    content: '\f28b';
+    font-family: FontAwesome;
+    font-size: 30px;
+    padding-right: 10px;
+}
+button.pause-options:before {
     content: '\f28b';
     font-family: FontAwesome;
     font-size: 30px;
