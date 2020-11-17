@@ -46,6 +46,7 @@ body {
 
 .right {
     float: right !important;
+
 }
 
 .middle {
@@ -64,6 +65,9 @@ body {
 }
 
 .page-title {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     min-height: 50px;
     background-color: #333333;
     color: #FFFFFF;
@@ -335,7 +339,7 @@ body {
 
 .question-number {
     color: #888888;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     display: table;
     margin: 0 auto;
@@ -577,24 +581,24 @@ button:hover {
 button.accessibility:before {
     content: '\f0ad';
     font-family: FontAwesome;
-    font-size: 40px;
+    font-size: 30px;
     padding-right: 10px;
 }
 button.listen:before {
     content: '\f144';
     font-family: FontAwesome;
-    font-size: 40px;
+    font-size: 30px;
     padding-right: 10px;
 }
 button.pause:before {
     content: '\f28b';
     font-family: FontAwesome;
-    font-size: 40px;
+    font-size: 30px;
     padding-right: 10px;
 }
-button.next:before {
+button.previous:before {
     content: '\f0a8';
     font-family: FontAwesome;
-    font-size: 40px;
+    font-size: 30px;
     padding-right: 10px;
 }

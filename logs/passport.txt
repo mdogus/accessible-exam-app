@@ -114,3 +114,4 @@
 [Cmt, 14-Kas-2020, 21:13:5] | INFO | %s %s %s |
 [Cmt, 14-Kas-2020, 21:32:32] | INFO | %s %s %s |
 [Cmt, 14-Kas-2020, 21:47:20] | INFO | %s %s %s |
+[Sal, 17-Kas-2020, 10:42:29] | INFO | %s %s %s |
