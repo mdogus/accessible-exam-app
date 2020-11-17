@@ -146,7 +146,7 @@ body {
 
 .btn-footer {
     cursor: pointer;
-    min-width: 200px;
+    min-width: 150px;
     border: 3px solid darkgray;
     border-style: inset;
     margin-right: 40px;
@@ -561,7 +561,6 @@ button {
     border-radius: 50px;
     color: #fcad26;
     background-color: white;
-    min-width: 150px;
     padding: 5px 15px;
     margin: 0 10px;
     text-align: center;
@@ -573,16 +572,19 @@ button {
     cursor: pointer;
     transition: all 0.3s;
 }
+.btn-right {
+    justify-content: flex-end;
+}
 button:hover {
     border-radius: 50px;
     background: rgb(53,54,58);
     color: #fff;
 }
-button.accessibility:before {
-    content: '\f0ad';
+button.accessibility:after {
+    content: '\f013';
     font-family: FontAwesome;
     font-size: 30px;
-    padding-right: 10px;
+    padding-left: 10px;
 }
 button.listen:before {
     content: '\f144';
@@ -613,6 +615,12 @@ button.previous:before {
     font-family: FontAwesome;
     font-size: 30px;
     padding-right: 10px;
+}
+button.next:after {
+    content: '\f0a9';
+    font-family: FontAwesome;
+    font-size: 30px;
+    padding-left: 10px;
 }
 
 div.content {
