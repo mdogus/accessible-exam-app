@@ -66,7 +66,9 @@ function loadQuestion(qid, focus) {
         $("#oB").text(q.o2Text);
         $("#oC").text(q.o3Text);
         $("#oD").text(q.o4Text);
-
+        $("#qAudio").attr("src", q.qAudioSrc);
+        $("#oAudio").attr("src", q.oAudioSrc);
+        
         //update summary
         let sum = "Soru " + q.id + " Tekrar Bakılacak Mı?";
         //$("#ismarkedlabel").text("Soru " + q.id + " Tekrar Bakılacak Mı?");
@@ -217,7 +219,7 @@ $(function () {
     }, 250)
 
 
-    
+    //Font size
     $("#increaseFont").click(function (e) {
         var fontSize = getFontSize();
         changeFontSize(fontSize + 2);
@@ -343,7 +345,62 @@ $(function () {
             
         showAccessibilityPage();
     });
-    
+                                 
+    //Soruyu dinle
+    $("#listenQuestion").click(function (e) {
+        let audio = document.getElementById("qAudio");
+            
+        if (this.className == "pause") {
+            $("#listenQuestion").attr("class", "listen");
+            $("#listenQuestion").html("Soruyu Dinle");
+            audio.pause();
+        } else {
+            $("#listenQuestion").attr("class", "pause");
+            $("#listenQuestion").html("Durdur");
+            audio.play();
+        }
+        
+        audio.onplaying = function() {
+            $("#listenQuestion").attr("class", "pause");
+            $("#listenQuestion").html("Durdur");
+        }
+        audio.onpause = function() {
+            $("#listenQuestion").attr("class", "listen");
+            $("#listenQuestion").html("Soruyu Dinle");
+        }
+        audio.onended = function() {
+            $("#listenQuestion").attr("class", "listen");
+            $("#listenQuestion").html("Soruyu Dinle");
+        }
+    });
+    //Seçenekleri dinle
+    $("#listenOptions").click(function (e) {
+        var audioOptions = document.getElementById("oAudio");
+        
+        if (this.className == "pause-options") {
+            $("#listenOptions").attr("class", "listen-options");
+            $("#listenOptions").html("Seçenekleri Dinle");
+            audioOptions.pause();
+        } else {
+            $("#listenOptions").attr("class", "pause-options");
+            $("#listenOptions").html("Durdur");
+            audioOptions.play();
+        }
+        
+        audioOptions.onplaying = function() {
+            $("#listenOptions").attr("class", "pause-options");
+            $("#listenOptions").html("Durdur");
+        }
+        audioOptions.onpause = function() {
+            $("#listenOptions").attr("class", "listen-options");
+            $("#listenOptions").html("Seçenekleri Dinle");
+        }
+        audioOptions.onended = function() {
+            $("#listenOptions").attr("class", "listen-options");
+            $("#listenOptions").html("Seçenekleri Dinle");
+        }
+    });
+                                 
     //Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
         showExamPage();
