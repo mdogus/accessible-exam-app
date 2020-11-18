@@ -123,30 +123,26 @@
                     </div>
                     <!-- Footer Button Bar -->
                     <div class="bottom-bar">
-                        <button id="prevQuestion" class="btn-footer previous" aria-label="Önceki Soru" aria-labelledby="prevLabel">Önceki</button>
-                        <button id="nextQuestion" class="btn-footer next btn-right" aria-label="Sonraki Soru">Sonraki</button>
-                        <!-- Rounded switch -->
-                        <div class="ismarked-switch">
-                            <label for="ismarked" aria-label="Tekrar Bakılacak">Tekrar Bak</label>
-                            <label class="switch">
-                              <input type="checkbox" id="ismarked">
-                              <div class="slider round">
-                                  <span class="on" aria-label="EVET">EVET</span><span class="off" aria-label="HAYIR">HAYIR</span>
-                              </div>
-                            </label>
+                        <!-- Bottom bar left -->
+                        <div class="bottom-bar-left">
+                            <button id="prevQuestion" class="btn-footer previous" aria-label="Önceki Soru" aria-labelledby="prevLabel">Önceki</button>
+                            <button id="nextQuestion" class="btn-footer next btn-right" aria-label="Sonraki Soru">Sonraki</button>
+                            <!-- Rounded switch -->
+                            <div class="ismarked-switch">
+                                <label for="ismarked" aria-label="Tekrar Bakılacak" style="background-color:#333333;text-align:right;font-weight:bold;">Tekrar Bak</label>
+                                <label class="switch">
+                                  <input type="checkbox" id="ismarked">
+                                  <div class="slider round">
+                                      <span class="on" aria-label="EVET">EVET</span><span class="off" aria-label="HAYIR">HAYIR</span>
+                                  </div>
+                                </label>
+                            </div>
                         </div>
-                        <!--div class="btn-footer btn-mark" data-content="Tekrar Bakılacak"
-                            aria-labelledby="ismarkedlabel">
-                            <input type="checkbox" id="ismarked" role="checkbox" aria-hidden="false">
-                            <label aria-hidden="true" class="unselectable" for="ismarked" id="ismarkedlabel">Tekrar
-                                Bakılacak</label-->
+                        <!-- Bottom bar right -->
+                        <div class="bottom-bar-right">
+                            <button id="markedQuestionsButton" class="btn-footer look-up" aria-label="Sınavı Gözden Geçir">Gözden Geçir</button>
+                            <button id="finishButton" class="btn-footer finish-test" aria-label="Sınavı Bitir">Sınavı Bitir</button>
                         </div>
-                        <br>
-                        <input id="markedQuestionsButton" type="button" value="Tekrar Bakılacak Sorular"
-                            class="btn-footer btn-finish" role="button" aria-hidden="false"
-                            data-content="Tekrar bakılacak sorular">
-                        <input id="finishButton" type="button" value="Sınavı Bitir" class="btn-footer btn-finish right"
-                            role="button" aria-hidden="false" data-content="Sınavı Bitir">
                     </div>
                 </div>
             </div>

@@ -300,3 +300,9 @@
 [Çar, 18-Kas-2020, 13:54:39] | INFO | Server started. |
 [Çar, 18-Kas-2020, 14:9:20] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Çar, 18-Kas-2020, 14:17:3] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 18-Kas-2020, 21:55:2] | INFO | Server started. |
+[Çar, 18-Kas-2020, 21:56:57] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 18-Kas-2020, 21:56:57] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 18-Kas-2020, 22:7:50] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 18-Kas-2020, 22:7:54] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 19-Kas-2020, 0:42:36] | INFO | Server started. |

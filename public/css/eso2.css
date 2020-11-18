@@ -68,13 +68,14 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
+    align-items: center;
     min-height: 50px;
-    background-color: #333333;
-    color: #FFFFFF;
+    background-color: #3333;
+    color: #FFFF;
     font-weight: bold;
     padding-top: 5px;
     padding-left: 10px;
-    top: 0px;
+    top: 10px;
     left: 0px;
 }
 
@@ -392,9 +393,24 @@ body {
   }
 
 /* bottom bar class */
-.bottom-bar{
+.bottom-bar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    min-height: 50px;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
+    width:100%;
+}
+.bottom-bar-left {
+    grid-column: 1 / 3;
+}
+.bottom-bar-right {
+    grid-column: 4 / 5;
 }
 
 .bottom-bar input,  .bottom-bar label,  .bottom-bar .btn-mark{
@@ -627,6 +643,18 @@ button.next:after {
     font-size: 30px;
     padding-left: 10px;
 }
+button.look-up:after {
+    content: '\f06e';
+    font-family: FontAwesome;
+    font-size: 30px;
+    padding-left: 10px;
+}
+button.finish-test:after {
+    content: '\f14d';
+    font-family: FontAwesome;
+    font-size: 30px;
+    padding-left: 10px;
+}
 
 div.content {
     overflow: scroll;
@@ -638,8 +666,7 @@ div.content {
 div.ismarked-switch {
     display:grid;
     grid-template-columns: auto auto;
-    grid-gap: 10px;
-    align-items: center;
+    grid-gap: 5px;
 }
 
 /* The switch - the box around the slider */
@@ -655,6 +682,7 @@ div.ismarked-switch {
   opacity: 0;
   width: 0;
   height: 0;
+  background-color: white;
 }
 
 /* The slider */
