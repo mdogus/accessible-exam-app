@@ -125,11 +125,21 @@
                     <div class="bottom-bar">
                         <button id="prevQuestion" class="btn-footer previous" aria-label="Önceki Soru" aria-labelledby="prevLabel">Önceki</button>
                         <button id="nextQuestion" class="btn-footer next btn-right" aria-label="Sonraki Soru">Sonraki</button>
-                        <div class="btn-footer btn-mark" data-content="Tekrar Bakılacak"
+                        <!-- Rounded switch -->
+                        <div class="ismarked-switch">
+                            <label for="ismarked" aria-label="Tekrar Bakılacak">Tekrar Bak</label>
+                            <label class="switch">
+                              <input type="checkbox" id="ismarked">
+                              <div class="slider round">
+                                  <span class="on" aria-label="EVET">EVET</span><span class="off" aria-label="HAYIR">HAYIR</span>
+                              </div>
+                            </label>
+                        </div>
+                        <!--div class="btn-footer btn-mark" data-content="Tekrar Bakılacak"
                             aria-labelledby="ismarkedlabel">
                             <input type="checkbox" id="ismarked" role="checkbox" aria-hidden="false">
                             <label aria-hidden="true" class="unselectable" for="ismarked" id="ismarkedlabel">Tekrar
-                                Bakılacak</label>
+                                Bakılacak</label-->
                         </div>
                         <br>
                         <input id="markedQuestionsButton" type="button" value="Tekrar Bakılacak Sorular"
