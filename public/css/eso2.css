@@ -1,7 +1,7 @@
-.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-number:hover,
+.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-header:hover,
 
 #increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover {
-  border: 4px inset red !important;
+  border: 3px inset red !important;
   border-style: inset;
 }
 
@@ -22,7 +22,8 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    overflow: hidden;
+
+    overflow: hidden;/*  scroll */
     height: 100%;
     
     font-family: 'Segoe UI';
@@ -73,6 +74,7 @@ body {
     color: #FFFF;
     font-weight: bold;
     padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 10px;
     top: 10px;
     left: 0px;
@@ -337,18 +339,27 @@ body {
     opacity: 1;
 }
 
+.question-header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    background-color: rgb(53,54,58);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hiddenLink {
+    grid-column: 2 / 2;
+}
 .question-number {
+    grid-column: 1 / 1;
     color: #888888;
+    text-align: left;
     font-size: 20px;
     font-weight: bold;
     display: table;
     margin: 0 auto;
     padding: 2px 0;
-}
-
-/* Font Size */
-#increaseFont,  #decreaseFont {
-    padding-top: 5px;
 }
 
 #eso-cont.font_0 *{
@@ -475,11 +486,7 @@ a {
     background-color: black;
     color: yellow;
   }
-  .theme3 .page-title {
-    background-color: black;
-    color: yellow;
-  }
-  .theme3 a {
+  .theme3 .page-title, .theme3 a{
     background-color: #111111;
     color: yellow;
   }
@@ -523,7 +530,7 @@ a {
 }
 
 .theme3 .question-number{
-    color: yellow;
+    color: white;
 }
   /* THEME 4 */
   body.theme4{
@@ -596,13 +603,13 @@ button {
     cursor: pointer;
     transition: all 0.3s;
 }
-.btn-right {
-    justify-content: flex-end;
-}
 button:hover {
     border-radius: 50px;
     background: rgb(53,54,58);
     color: #fff;
+}
+.btn-right {
+    justify-content: flex-end;
 }
 button.accessibility:after {
     content: '\f013';
@@ -613,25 +620,25 @@ button.accessibility:after {
 button.listen:before {
     content: '\f144';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 20px;
     padding-right: 10px;
 }
 button.listen-options:before {
     content: '\f144';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 20px;
     padding-right: 10px;
 }
 button.pause:before {
     content: '\f28b';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 20px;
     padding-right: 10px;
 }
 button.pause-options:before {
     content: '\f28b';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 20px;
     padding-right: 10px;
 }
 button.previous:before {
@@ -647,7 +654,7 @@ button.next:after {
     padding-left: 10px;
 }
 button.look-up:after {
-    content: '\f06e';
+    content: '\f0ae';
     font-family: FontAwesome;
     font-size: 30px;
     padding-left: 10px;
@@ -658,19 +665,21 @@ button.finish-test:after {
     font-size: 30px;
     padding-left: 10px;
 }
+button.decrease-font:before {
+    content: '\f056';
+    font-family: FontAwesome;
+    font-size: 24px;
+}
+button.increase-font:before {
+    content: '\f055';
+    font-family: FontAwesome;
+    font-size: 24px;
+}
 
 div.content {
+    margin-top: 5px;
     overflow: scroll;
     height: 58vh;
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-    div.content::-webkit-scrollbar {
-        display: none;
-    }
-/* Hide scrollbar for IE, Edge and Firefox */
-div.content {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
 }
 
 /* Switch */
@@ -751,7 +760,6 @@ input:checked + .slider:before {
 }
 
 .on, .off {
-  color: white;
   position: absolute;
   transform: translate(-50%,-50%);
   top: 50%;
@@ -761,9 +769,11 @@ input:checked + .slider:before {
 }
 
 .on {
+    color: black;
     padding-right: 15px;
 }
 .off {
+    color: white;
     padding-left: 20px;
 }
 
