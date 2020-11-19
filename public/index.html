@@ -36,12 +36,7 @@
                     <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
                 </div>
             </div>
-            <!-- Erişilebilirlik düğmesi -->
-            <div id="accessibilityButtonDiv" class="nav-button right">
-                <button id="accessibilityButton" class="accessibility btn-right" data-content="Erişilebilirlik" rel="popover" aria-label="Erişilebilirlik Ayarları">
-                    Erişilebilirlik
-                </button>
-            </div>
+            <!-- erişilebilirlik ayarları düğmesi buradan çıkartıldı. -->
         </div>
         
         <!-- .container -->
@@ -50,11 +45,11 @@
                 <div id="soruTemplateDiv" class="textSelectable">
                     <div id="soruContainer">
                         <div class="question-header">
-                            <div class="question-number" id="qNumDiv" role="heading"></div>
+                            <div class="question-number" id="qNumDiv" role="heading" aria-hidden="true"></div>
                             <div class="hiddenLink">
                                 <span id="qSummaryDiv" tabindex="1" role="heading"></span>
                             </div>
-                            <div>
+                            <div class="listen-div">
                                 <!-- Soruyu Dinle -->
                                 <div>
                                     <audio id="qAudio" ></audio>
@@ -62,6 +57,12 @@
                                     <audio id="oAudio"></audio>
                                     <button id="listenOptions" class="listen-options">Seçenekleri Dinle</button>
                                 </div>
+                            </div>
+                            <!-- Erişilebilirlik düğmesi -->
+                            <div id="accessibilityButtonDiv" class="nav-button right">
+                                <button id="accessibilityButton" class="accessibility btn-right" data-content="Erişilebilirlik" rel="popover" aria-label="Erişilebilirlik Ayarları">
+                                    Erişilebilirlik
+                                </button>
                             </div>
                         </div>
                         <div id="soruAlaniDiv" class="content">

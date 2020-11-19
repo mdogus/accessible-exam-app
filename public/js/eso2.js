@@ -146,15 +146,13 @@ function getFontSize() {
 
 
 function showMarkedQuesitionsPage() {
-    $(".page-title").css("display", "none");
+    $(".page-title").css("display", "block");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "block");
     $(".accessibility-page").css("display", "none");
     $("#accessibilityButtonDiv").css("display", "none");
     
-    if (focus == false) {
-        document.getElementByClassName('marked-questions-page').focus();
-    }
+    document.getElementById('marked-questions-title').focus();
 }
 
 function showExamPage() {
@@ -163,25 +161,21 @@ function showExamPage() {
     $(".marked-questions-page").css("display", "none");
     $(".accessibility-page").css("display", "none");
     $("#accessibilityButtonDiv").css("display", "block");
+    
     document.getElementById('qSummaryDiv').focus();
 }
 //show accessibility page
 function showAccessibilityPage() {
-    $(".page-title").css("display", "none");
+    $(".page-title").css("display", "block");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "none");
     $(".accessibility-page").css("display", "block");
     $("#accessibilityButtonDiv").css("display", "none");
     
-    if (focus == false) {
-        document.getElementById('accessibility-title').focus();
-    }
+    document.getElementById('accessibility-title').focus();
 }
 
 $(function () {
-
-
-    //$("#nextQuestion").on("click", nextQuestion);
     //log
     $("#nextQuestion").click(function() {
         nextQuestion()
@@ -314,8 +308,7 @@ $(function () {
         $(".marked-questions-div").html("");
 
         document.getElementById('marked-questions-title').focus();
-
-
+        
         var $ul = $("<ul>").appendTo($(".marked-questions-div"));
         qArr.forEach(function (q) {
             if (q.marked) {
@@ -337,8 +330,10 @@ $(function () {
                                  
     //Erişilebilirlik düğmesi
     $("#accessibilityButton").click(function (e) {
+        $(".page-title").css("display", "block");
         $(".container").css("display", "none");
         $(".accessibility-page").css("display", "block");
+        $("#accessibilityButtonDiv").css("display", "none");
         
         $("#accessibility-title").html("ERİŞİLEBİLİRLİK AYARLARI");
         document.getElementById('accessibility-title').focus();
@@ -404,12 +399,12 @@ $(function () {
     //Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
         showExamPage();
-        //document.getElementById('qSummaryDiv').focus();
+        document.getElementById('qSummaryDiv').focus();
     });
     //Erişilebilirlik sayfasında Sınava Dön düğmesine basıldığında
     $("#accPageBackToExamButton").click(function (e) {
         showExamPage();
-        //document.getElementById('qSummaryDiv').focus();
+        document.getElementById('qSummaryDiv').focus();
     });
 
     //Sınavı Bitir düğmesine basıldığında
