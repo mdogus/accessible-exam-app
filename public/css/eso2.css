@@ -615,71 +615,89 @@ button.accessibility:after {
     content: '\f013';
     font-family: FontAwesome;
     font-size: 30px;
+    font-weight: normal;
     padding-left: 10px;
 }
 button.listen:before {
     content: '\f144';
     font-family: FontAwesome;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: normal;
     padding-right: 10px;
 }
 button.listen-options:before {
     content: '\f144';
     font-family: FontAwesome;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: normal;
     padding-right: 10px;
 }
 button.pause:before {
     content: '\f28b';
     font-family: FontAwesome;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: normal;
     padding-right: 10px;
 }
 button.pause-options:before {
     content: '\f28b';
     font-family: FontAwesome;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: normal;
     padding-right: 10px;
 }
 button.previous:before {
     content: '\f0a8';
     font-family: FontAwesome;
     font-size: 30px;
+    font-weight: normal;
     padding-right: 10px;
 }
 button.next:after {
     content: '\f0a9';
     font-family: FontAwesome;
     font-size: 30px;
+    font-weight: normal;
     padding-left: 10px;
 }
 button.look-up:after {
     content: '\f0ae';
     font-family: FontAwesome;
     font-size: 30px;
+    font-weight: normal;
     padding-left: 10px;
 }
 button.finish-test:after {
     content: '\f14d';
     font-family: FontAwesome;
     font-size: 30px;
+    font-weight: normal;
     padding-left: 10px;
 }
 button.decrease-font:before {
     content: '\f056';
     font-family: FontAwesome;
     font-size: 24px;
+    font-weight: normal;
 }
 button.increase-font:before {
     content: '\f055';
     font-family: FontAwesome;
     font-size: 24px;
+    font-weight: normal;
 }
 
 div.content {
     margin-top: 5px;
     overflow: scroll;
     height: 58vh;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.content::-webkit-scrollbar {
+  display: none;
 }
 
 /* Switch */

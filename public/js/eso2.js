@@ -146,7 +146,7 @@ function getFontSize() {
 
 
 function showMarkedQuesitionsPage() {
-    $(".page-title").css("display", "block");
+    $(".page-title").css("display", "none");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "block");
     $(".accessibility-page").css("display", "none");
@@ -167,7 +167,7 @@ function showExamPage() {
 }
 //show accessibility page
 function showAccessibilityPage() {
-    $(".page-title").css("display", "block");
+    $(".page-title").css("display", "none");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "none");
     $(".accessibility-page").css("display", "block");
@@ -414,6 +414,7 @@ $(function () {
 
     //Sınavı Bitir düğmesine basıldığında
     $("#finishButton").click(function (e) {
+        $(".page-title").css("display", "none");
         $(".container").css("display", "none");
         $(".marked-questions-page").css("display", "none");
         $(".finish-page").css("display", "block");
