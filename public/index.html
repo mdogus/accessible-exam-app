@@ -36,7 +36,10 @@
                     <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
                 </div>
             </div>
-            <!-- erişilebilirlik ayarları düğmesi buradan çıkartıldı. -->
+            <!-- Erişilebilirlik düğmesi -->
+            <div id="hiddenAccessibilityButtonDiv">
+                <button id="hiddenAccessibilityButton" class="hidden-accessibility" rel="popover" aria-label="Erişilebilirlik Ayarları"></button>
+            </div>
         </div>
         
         <!-- .container -->
@@ -60,7 +63,7 @@
                             </div>
                             <!-- Erişilebilirlik düğmesi -->
                             <div id="accessibilityButtonDiv" class="nav-button right">
-                                <button id="accessibilityButton" class="accessibility btn-right" data-content="Erişilebilirlik" rel="popover" aria-label="Erişilebilirlik Ayarları">
+                                <button id="accessibilityButton" class="accessibility btn-right" rel="popover" aria-hidden="true">
                                     Erişilebilirlik
                                 </button>
                             </div>
@@ -130,11 +133,11 @@
                             <button id="nextQuestion" class="btn-footer next btn-right" aria-label="Sonraki Soru">Sonraki</button>
                             <!-- Rounded switch -->
                             <div class="ismarked-switch">
-                                <label for="ismarked" aria-label="Tekrar Bakılacak Mı?" style="background-color:#333333;text-align:right;font-weight:bold;">Tekrar Bak</label>
+                                <label for="ismarked" style="background-color:#333333;text-align:right;font-weight:bold;" aria-hidden="true">Tekrar Bak</label>
                                 <label class="switch">
                                   <input type="checkbox" id="ismarked">
                                   <div class="slider round">
-                                      <span class="on" aria-label="EVET">EVET</span><span class="off" aria-label="HAYIR">HAYIR</span>
+                                      <span class="on" aria-hidden="true">EVET</span><span class="off" aria-hidden="true">HAYIR</span>
                                   </div>
                                 </label>
                             </div>

@@ -311,3 +311,5 @@
 [Per, 19-Kas-2020, 19:52:47] | INFO | Server started. |
 [Per, 19-Kas-2020, 23:23:13] | INFO | Server started. |
 [Cum, 20-Kas-2020, 14:34:57] | INFO | Server started. |
+[Cum, 20-Kas-2020, 14:55:54] | INFO | Server started. |
+[Cum, 20-Kas-2020, 16:47:46] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |

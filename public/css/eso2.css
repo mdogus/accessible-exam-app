@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Open+Sans&family=Orbitron&display=swap');
+
 .btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-header:hover,
 
 #increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover {
@@ -66,7 +68,7 @@ body {
 
 .page-title {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     align-items: center;
     background-color: #3333;
     color: #FFFF;
@@ -82,7 +84,9 @@ body {
 #remTimeDiv {
     grid-column: 1 / 1;
 }
-
+#hiddenAccessibilityButtonDiv {
+    grid-column: 2 / 2;
+}
 
 .header {
     height: 128px;
@@ -598,8 +602,30 @@ a {
     list-style: none;
 }
 
+.remaining-time {
+    border: 1px solid yellow;
+    border-radius: 10px;
+    color: yellow;
+    background-color: rgb(53,54,58);
+    padding: 5px 15px;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Goldman', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+.remaining-time:hover {
+    border: 3px solid red;
+    border-radius: 10px;
+    background: rgb(53,54,58);
+    color: yellow;
+}
+
 button {
-    border: 3px solid #fcad26;
+    border: 2px solid #fcad26;
     border-radius: 50px;
     color: #fcad26;
     background-color: white;
@@ -621,6 +647,11 @@ button:hover {
 }
 .btn-right {
     justify-content: flex-end;
+}
+button.hidden-accessibility {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 button.accessibility:after {
     content: '\f013';
@@ -808,11 +839,11 @@ input:checked + .slider:before {
 
 .on {
     color: black;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 .off {
     color: white;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 input:checked+ .slider .on {

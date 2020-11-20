@@ -75,9 +75,7 @@ function loadQuestion(qid, focus) {
         $("#ismarkedlabel").attr("aria-label", sum);
         updateSummary(q.id);
 
-        if (focus !== false) {
-            document.getElementById('qSummaryDiv').focus();
-        }
+        document.getElementById('qSummaryDiv').focus();
     }
 }
 
@@ -85,6 +83,9 @@ function updateSummary(qid) {
     let q = qArr[qid];
     if (q) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+        let label = "Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+        
+        $("#ismarked").attr("aria-label", label);
         $("#qSummaryDiv").text(sum);
         qSummary = sum;
     }
@@ -151,6 +152,7 @@ function showMarkedQuesitionsPage() {
     $(".marked-questions-page").css("display", "block");
     $(".accessibility-page").css("display", "none");
     $("#accessibilityButtonDiv").css("display", "none");
+    $(".hidden-accessibility").css("display", "none");
     
     document.getElementById('marked-questions-title').focus();
 }
@@ -161,6 +163,7 @@ function showExamPage() {
     $(".marked-questions-page").css("display", "none");
     $(".accessibility-page").css("display", "none");
     $("#accessibilityButtonDiv").css("display", "block");
+    $(".hidden-accessibility").css("display", "block");
     
     document.getElementById('qSummaryDiv').focus();
 }
@@ -171,6 +174,7 @@ function showAccessibilityPage() {
     $(".marked-questions-page").css("display", "none");
     $(".accessibility-page").css("display", "block");
     $("#accessibilityButtonDiv").css("display", "none");
+    $(".hidden-accessibility").css("display", "none");
     
     document.getElementById('accessibility-title').focus();
 }
@@ -195,7 +199,7 @@ $(function () {
         });
     });
     $("#prevQuestion").on("click", prevQuestion);
-    $("#ismarked").on("click", markQuestion);
+    $("#ismarked").click(markQuestion);
     $("#radioA").on("click", answerQuestion);
     $("#radioB").on("click", answerQuestion);
     $("#radioC").on("click", answerQuestion);
@@ -247,7 +251,7 @@ $(function () {
         if (seconds < 10) {
             seconds = "0" + seconds;
         }
-        $("#remainingTime").html("KALAN SÜRE " + minutes + ":" + seconds);
+        $("#remainingTime").html('KALAN SÜRE ' + '<span class="remaining-time">' + minutes + ':' + seconds + '</span>');
         $("#remainingTimeLabel").html("Kalan Süre: " + minutes + " dakika, " + seconds + " saniye");
 
     }, 1000);
@@ -334,12 +338,26 @@ $(function () {
         $(".container").css("display", "none");
         $(".accessibility-page").css("display", "block");
         $("#accessibilityButtonDiv").css("display", "none");
-        
+        $(".hidden-accessibility").css("display", "none");
+            
         $("#accessibility-title").html("ERİŞİLEBİLİRLİK AYARLARI");
         document.getElementById('accessibility-title').focus();
             
         showAccessibilityPage();
     });
+                                 //Hidden accessibility button
+                                 $(".hidden-accessibility").click(function (e) {
+                                     $(".page-title").css("display", "block");
+                                     $(".container").css("display", "none");
+                                     $(".accessibility-page").css("display", "block");
+                                     $("#accessibilityButtonDiv").css("display", "none");
+                                     $(".hidden-accessibility").css("display", "none");
+                                         
+                                     $("#accessibility-title").html("ERİŞİLEBİLİRLİK AYARLARI");
+                                     document.getElementById('accessibility-title').focus();
+                                         
+                                     showAccessibilityPage();
+                                 });
                                  
     //Soruyu dinle
     $("#listenQuestion").click(function (e) {
