@@ -679,11 +679,20 @@ button.look-up:after {
     padding-left: 10px;
 }
 button.finish-test:after {
-    content: '\f14d';
+    content: '\f2f5';
     font-family: FontAwesome;
     font-size: 30px;
     font-weight: normal;
     padding-left: 10px;
+}
+button.back-to-test:before {
+    content: '\f0e2';
+    font-family: FontAwesome;
+    font-size: 30px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 30px;
 }
 button.decrease-font:before {
     content: '\f056';
