@@ -342,3 +342,4 @@
 [Cmt, 21-Kas-2020, 22:8:33] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Cmt, 21-Kas-2020, 22:8:35] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Cmt, 21-Kas-2020, 22:9:27] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:40:34] | INFO | Server started. |

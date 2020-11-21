@@ -423,10 +423,10 @@ body::-webkit-scrollbar {
 /* bottom bar class */
 .bottom-bar {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
     min-height: 50px;
-    background-color: #333333;
+    background-color: rgb(53,54,58);
     color: #FFFFFF;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -435,15 +435,15 @@ body::-webkit-scrollbar {
     width:100%;
 }
 .bottom-bar-left {
-    grid-column: 1 / 2;
+    grid-column: 1 / 1;
     justify-self: start;
 }
 .bottom-bar-center {
     grid-column: 2 / 2;
-    justify-self: end;
+    justify-self: center;
 }
 .bottom-bar-right {
-    grid-column: 4 / 5;
+    grid-column: 3 / 3;
     justify-self: end;
 }
 
