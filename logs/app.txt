@@ -314,3 +314,31 @@
 [Cum, 20-Kas-2020, 14:55:54] | INFO | Server started. |
 [Cum, 20-Kas-2020, 16:47:46] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Cum, 20-Kas-2020, 18:16:0] | INFO | Server started. |
+[Cmt, 21-Kas-2020, 21:38:4] | INFO | Server started. |
+[Cmt, 21-Kas-2020, 21:38:52] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:40:10] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:44:13] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:44:29] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:45:56] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:46:2] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:47:5] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:47:7] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:49:22] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:49:23] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:50:1] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:50:2] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:58:44] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 21:58:48] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:0:53] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:0:54] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:2:32] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:2:34] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:3:9] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:3:10] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:4:0] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:4:1] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:5:19] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:5:22] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:8:33] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:8:35] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 21-Kas-2020, 22:9:27] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |

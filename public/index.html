@@ -36,10 +36,6 @@
                     <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
                 </div>
             </div>
-            <!-- Erişilebilirlik düğmesi -->
-            <div id="hiddenAccessibilityButtonDiv">
-                <button id="hiddenAccessibilityButton" class="hidden-accessibility" rel="popover" aria-label="Erişilebilirlik Ayarları"></button>
-            </div>
         </div>
         
         <!-- .container -->
@@ -48,6 +44,10 @@
                 <div id="soruTemplateDiv" class="textSelectable">
                     <div id="soruContainer">
                         <div class="question-header">
+                            <!-- Erişilebilirlik düğmesi -->
+                            <div id="hiddenAccessibilityButtonDiv">
+                                <button id="hiddenAccessibilityButton" class="hidden-accessibility" rel="popover" aria-label="Erişilebilirlik Ayarları"></button>
+                            </div>
                             <div class="question-number" id="qNumDiv" role="heading" aria-hidden="true"></div>
                             <div class="hiddenLink">
                                 <span id="qSummaryDiv" tabindex="1" role="heading"></span>
@@ -131,9 +131,12 @@
                         <div class="bottom-bar-left">
                             <button id="prevQuestion" class="btn-footer previous" aria-label="Önceki Soru" aria-labelledby="prevLabel">Önceki</button>
                             <button id="nextQuestion" class="btn-footer next btn-right" aria-label="Sonraki Soru">Sonraki</button>
+                        </div>
+                        <!-- Bottom Bar Center -->
+                        <div class="bottom-bar-center">
                             <!-- Rounded switch -->
                             <div class="ismarked-switch">
-                                <label for="ismarked" style="background-color:#333333;text-align:right;font-weight:bold;" aria-hidden="true">Tekrar Bak</label>
+                                <label for="ismarked" style="background-color:rgb(53,54,58);text-align:right;font-weight:bold;" aria-hidden="true">Tekrar Bak</label>
                                 <label class="switch">
                                   <input type="checkbox" id="ismarked">
                                   <div class="slider round">
