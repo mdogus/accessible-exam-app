@@ -90,9 +90,6 @@ body::-webkit-scrollbar {
 #remTimeDiv {
     grid-column: 1 / 1;
 }
-#hiddenAccessibilityButtonDiv {
-    grid-column: 2 / 2;
-}
 
 .header {
     height: 128px;
@@ -360,6 +357,10 @@ body::-webkit-scrollbar {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+#hiddenAccessibilityButtonDiv {
+    height: 0;
+    width: 0;
 }
 .question-number {
     grid-column: 1 / 1;

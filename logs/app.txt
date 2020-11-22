@@ -343,3 +343,11 @@
 [Cmt, 21-Kas-2020, 22:8:35] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Cmt, 21-Kas-2020, 22:9:27] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Cmt, 21-Kas-2020, 22:40:34] | INFO | Server started. |
+[Pzt, 23-Kas-2020, 0:8:2] | INFO | Server started. |
+[Pzt, 23-Kas-2020, 0:14:44] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 23-Kas-2020, 0:15:27] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 23-Kas-2020, 0:15:30] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 23-Kas-2020, 0:15:34] | INFO | Sonraki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 23-Kas-2020, 0:15:38] | INFO | Sonraki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 23-Kas-2020, 0:15:41] | INFO | Sonraki Soru düğmesine basıldı. Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Pzt, 23-Kas-2020, 0:22:14] | INFO | Server started. |
