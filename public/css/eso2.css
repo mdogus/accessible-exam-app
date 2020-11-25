@@ -624,8 +624,10 @@ a {
     font-size: 26px;
     font-weight: bold;
     align-items: center;
-    background: linear-gradient(0deg, rgb(255,255,255, 0.1) 85%, rgb(53,54,58)),
-                linear-gradient(180deg, rgb(255,255,255, 0.1) 85%, rgb(53,54,58));
+    background: -webkit-linear-gradient(90deg, rgb(255,255,255, 0.1) 85%, rgb(53,54,58)),
+    -webkit-linear-gradient(270deg, rgb(255,255,255, 0.1) 85%, rgb(53,54,58));
+    /*background: -webkit-linear-gradient(90deg, rgb(255,255,255, 0.1) 85%, rgb(53,54,58)),
+                -webkit-linear-gradient(270deg, rgb(255,255,255, 0.1) 85%, rgb(53,54,58));*/
 }
 .remaining-time:hover {
     border: 3px solid red;

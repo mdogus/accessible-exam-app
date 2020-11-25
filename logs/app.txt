@@ -354,3 +354,4 @@
 [Pzt, 23-Kas-2020, 15:28:12] | INFO | Server started. |
 [Pzt, 23-Kas-2020, 23:9:0] | INFO | Server started. |
 [Çar, 25-Kas-2020, 16:11:59] | INFO | Server started. |
+[Çar, 25-Kas-2020, 17:57:25] | INFO | Server started. |
