@@ -356,3 +356,5 @@
 [Çar, 25-Kas-2020, 16:11:59] | INFO | Server started. |
 [Çar, 25-Kas-2020, 17:57:25] | INFO | Server started. |
 [Çar, 25-Kas-2020, 18:32:17] | INFO | Server started. |
+[Çar, 25-Kas-2020, 19:5:56] | INFO | Server started. |
+[Çar, 25-Kas-2020, 21:29:33] | INFO | Server started. |
