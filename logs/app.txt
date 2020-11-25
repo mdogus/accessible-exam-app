@@ -358,3 +358,19 @@
 [Çar, 25-Kas-2020, 18:32:17] | INFO | Server started. |
 [Çar, 25-Kas-2020, 19:5:56] | INFO | Server started. |
 [Çar, 25-Kas-2020, 21:29:33] | INFO | Server started. |
+[Çar, 25-Kas-2020, 22:5:19] | INFO | Server started. |
+[Çar, 25-Kas-2020, 22:10:43] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:10:46] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:10:49] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:10:53] | INFO | Sonraki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:10:55] | INFO | Sonraki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:10:59] | INFO | Sonraki Soru düğmesine basıldı. Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:12:43] | INFO | Sonraki Soru düğmesine basıldı. Soru 8, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:12:46] | INFO | Sonraki Soru düğmesine basıldı. Soru 9, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:12:49] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:12:53] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Evet |
+[Çar, 25-Kas-2020, 22:12:55] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:12:59] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:14:43] | INFO | Sonraki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:14:46] | INFO | Sonraki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 25-Kas-2020, 22:14:49] | INFO | Sonraki Soru düğmesine basıldı. Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |

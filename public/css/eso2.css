@@ -3,8 +3,7 @@
 .btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-header:hover,
 
 #increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover {
-  border: 3px inset red !important;
-  border-style: inset;
+  border: 2px inset red !important;
 }
 
 @media (min-width: 1200px) {
@@ -66,7 +65,7 @@ body::-webkit-scrollbar {
     width: 960px;
 }
 
-#eso-cont, #eso-cont input, #eso-cont select {
+#eso-cont, #eso-cont input, #eso-cont select, #eso-cont button {
     line-height: 32px;
     font-size: 16px;
     font-family: Verdana;
@@ -159,8 +158,7 @@ body::-webkit-scrollbar {
 
 .btn-footer {
     cursor: pointer;
-    border: 3px solid darkgray;
-    border-style: inset;
+    /*border: 3px solid darkgray;*/
     margin-right: 20px;
 }
 
@@ -168,7 +166,6 @@ body::-webkit-scrollbar {
 .btn-footer:active, .btn-mark:active{
     background-color: gray;
 }
-
 
 .btn-mark {
     height: 60px ;
@@ -352,6 +349,8 @@ body::-webkit-scrollbar {
     grid-template-columns: auto auto auto;
     align-items: center;
     background-color: rgb(53,54,58);
+    border-radius: 10px;
+    border: 1px solid rgb(100,100,100);
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -363,12 +362,15 @@ body::-webkit-scrollbar {
 .question-number {
     grid-column: 1 / 1;
     justify-self: start;
-    color: #888888;
     text-align: left;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     display: table;
-    padding-left: 20px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: black;
+    box-shadow: 0 0 4px rgb(255,255,255, 0.5);
 }
 .listen-div {
     grid-column: 2 / 2;
@@ -510,31 +512,44 @@ a {
     color: yellow;
   }
   .theme3 .page-title, .theme3 a{
-    background-color: #111111;
+    background-color: black;
     color: yellow;
   }
   .theme3 .header {
-      background-color: #F2F2F2;
+      background-color: black;
   }
 
     .theme3 .bottom-bar input, .theme3 .bottom-bar label, .theme3 .bottom-bar .btn-mark, .theme3 .bottom-bar label, .theme3 select, .theme3 button {
         background-color: black;
         color: yellow;
-        border: 0px solid yellow;
+        /*border: 0px solid yellow;*/
     }
     .theme3 select, .theme3 button {
         background-color: black;
         color: yellow;
-        border: 3px solid yellow;
+        border: 2px solid yellow;
     }
 
-  .theme3 .btn-footer, .theme3 .btn-nav {
-    border: 3px solid yellow;
-  }
+    .theme3 button:hover {
+        background: rgb(33,34,38);
+        color: #fff;
+    }
+    
+    .theme3 button.increase-font, .theme3 button.decrease-font {
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        border: 0;
+        line-height: 10px;
+    }
+    .theme3 button:hover.increase-font, .theme3 button:hover.decrease-font {
+            border-radius: 50%;
+            border: 0;
+    }
 
-.theme3 .btn-footer:active, .theme3 .btn-nav:active, .theme3 .btn-mark:active {
-    background-color: yellow;
-}
+    .theme3 .btn-footer:active, .theme3 .btn-nav:active, .theme3 .btn-mark:active {
+        background-color: yellow;
+    }
 
 .theme3 .secenek-baslik input + label{
     color: black;
@@ -544,7 +559,7 @@ a {
     color: white;
 }
 
-.theme3 .answerBox input + label>span{
+.theme3 .answerBox input + label>span {
     color: white;
 }
 
@@ -552,9 +567,6 @@ a {
     color: white;
 }
 
-.theme3 .question-number{
-    color: white;
-}
   /* THEME 4 */
   body.theme4{
     background-color: black;
@@ -630,17 +642,16 @@ a {
     -webkit-linear-gradient(0.75turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0));
 }
 .remaining-time:hover {
-    border: 3px solid red;
+    border: 2px solid red;
     border-radius: 10px;
-    background: rgb(53,54,58);
+    background: rgb(33,34,38);
     color: yellow;
 }
 
 button {
     border: 2px solid #fcad26;
     border-radius: 50px;
-    color: #fcad26;
-    background-color: white;
+    /*color: #fcad26;*/
     padding: 5px 15px;
     margin: 0 10px;
     text-align: center;
@@ -654,8 +665,6 @@ button {
 }
 button:hover {
     border-radius: 50px;
-    background: rgb(53,54,58);
-    color: #fff;
 }
 .btn-right {
     justify-content: flex-end;
@@ -668,7 +677,7 @@ button.hidden-accessibility {
 button.accessibility:after {
     content: '\f013';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: normal;
     padding-left: 10px;
 }
@@ -703,35 +712,35 @@ button.pause-options:before {
 button.previous:before {
     content: '\f0a8';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     padding-right: 10px;
 }
 button.next:after {
     content: '\f0a9';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     padding-left: 10px;
 }
 button.look-up:after {
     content: '\f0ae';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     padding-left: 10px;
 }
 button.finish-test:after {
     content: '\f2f5';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     padding-left: 10px;
 }
 button.back-to-test:before {
     content: '\f0e2';
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     padding-left: 10px;
     padding-right: 20px;
@@ -740,13 +749,13 @@ button.back-to-test:before {
 button.decrease-font:before {
     content: '\f056';
     font-family: FontAwesome;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: normal;
 }
 button.increase-font:before {
     content: '\f055';
     font-family: FontAwesome;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: normal;
 }
 
@@ -870,4 +879,5 @@ input:checked + .slider .off {
 /* Marked Questions Page */
 .marked-questions-page, .accessibility-page, .finish-page {
     margin-top: 60px;
+    padding-bottom: 100px;
 }

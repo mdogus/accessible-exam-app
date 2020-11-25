@@ -32,7 +32,7 @@
             <!-- Kalan Süre -->
             <div class="" aria-hidden="false" id="remTimeDiv">
                 <span id="remainingTime" class="" aria-hidden="true"></span>
-                <span id="remainingTimeSpan" class="remaining-time"></span>
+                <span id="remainingTimeSpan" aria-hidden="true"></span>
                 <div class="hiddenLink">
                     <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
                 </div>
@@ -49,7 +49,7 @@
                             <div id="hiddenAccessibilityButtonDiv" style="">
                                 <button id="hiddenAccessibilityButton" class="hidden-accessibility" rel="popover" aria-label="Erişilebilirlik Ayarları"></button>
                             </div>
-                            <div class="question-number" id="qNumDiv" role="heading" aria-hidden="true"></div>
+                            <div id="qNumDiv" class="question-number" role="heading" aria-hidden="true"></div>
                             <div class="hiddenLink">
                                 <span id="qSummaryDiv" tabindex="1" role="heading"></span>
                             </div>
@@ -157,7 +157,7 @@
         </div>
         <!-- Marked Questions Page -->
         <div class="marked-questions-page" style="display: none;">
-            <div id="marked-questions-title" tabindex="1" role="heading">TEKRAR BAKILACAK SORULAR</div>
+            <div id="marked-questions-title" tabindex="1" role="heading" style="font-weight:bold;">TEKRAR BAKILACAK SORULAR</div>
             <div class="marked-questions-div"></div>
             <div class="bottom-bar">
                 <button id="backToExamButton" class="btn-footer back-to-test">Sınava Dön</button>

@@ -115,20 +115,26 @@ function prevQuestion() {
     loadQuestion(parseInt(id) - 1);
 }
 
-var fontSize = 13;
+var fontSize = 16;
 function changeFontSize(fontSize) {
     console.log("cfs: " + fontSize);
-    if (fontSize <= 36 && fontSize >= 14) {
+    if (fontSize <= 36 && fontSize >= 16) {
         $('#eso-cont').css("font-size", fontSize + "px");
         $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
 
         $('#eso-cont .question-number').css("font-size", fontSize * 1.5 + "px");
         $('#eso-cont .question-number').css("line-height", (fontSize * 1.5 * 1.4) + "px");
+        
+        $('#eso-cont .remaining-time').css("font-size", fontSize * 1.5 + "px");
+        $('#eso-cont .remaining-time').css("line-height", (fontSize * 1.5 * 1.4) + "px");
 
         $('#eso-cont input[type=button]').css("font-size", fontSize + "px");
         $('#eso-cont input[type=button]').css("line-height", (fontSize * 1.4) + "px");
 
         $('#eso-cont button img').css("width", fontSize * 1.2 + "px");
+        
+        $('#eso-cont button').css("font-size", fontSize + "px");
+        $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
 
         $('#eso-cont select').css("font-size", (fontSize) + "px");
         $('#eso-cont select').css("line-height", (fontSize * 1.4) + "px");
@@ -140,7 +146,7 @@ function changeFontSize(fontSize) {
 function getFontSize() {
     var fontText = $("#fontSize").text();
     if (fontText == "") {
-        fontText = 14;
+        fontText = 16;
     }
     return parseInt(fontText);
 }
@@ -253,6 +259,7 @@ $(function () {
         }
         $("#remainingTime").html('KALAN SÜRE ');
         $("#remainingTimeSpan").html(minutes + ':' + seconds);
+        $("#remainingTimeSpan").attr("class", "remaining-time");
         $("#remainingTimeLabel").html("Kalan Süre: " + minutes + " dakika, " + seconds + " saniye");
 
     }, 1000);
