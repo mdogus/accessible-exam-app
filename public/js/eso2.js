@@ -251,7 +251,8 @@ $(function () {
         if (seconds < 10) {
             seconds = "0" + seconds;
         }
-        $("#remainingTime").html('KALAN SÜRE ' + '<span class="remaining-time">' + minutes + ':' + seconds + '</span>');
+        $("#remainingTime").html('KALAN SÜRE ');
+        $("#remainingTimeSpan").html(minutes + ':' + seconds);
         $("#remainingTimeLabel").html("Kalan Süre: " + minutes + " dakika, " + seconds + " saniye");
 
     }, 1000);

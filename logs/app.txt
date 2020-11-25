@@ -351,3 +351,6 @@
 [Pzt, 23-Kas-2020, 0:15:38] | INFO | Sonraki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Pzt, 23-Kas-2020, 0:15:41] | INFO | Sonraki Soru düğmesine basıldı. Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Pzt, 23-Kas-2020, 0:22:14] | INFO | Server started. |
+[Pzt, 23-Kas-2020, 15:28:12] | INFO | Server started. |
+[Pzt, 23-Kas-2020, 23:9:0] | INFO | Server started. |
+[Çar, 25-Kas-2020, 16:11:59] | INFO | Server started. |
