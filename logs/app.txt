@@ -374,3 +374,30 @@
 [Çar, 25-Kas-2020, 22:14:43] | INFO | Sonraki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Çar, 25-Kas-2020, 22:14:46] | INFO | Sonraki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Çar, 25-Kas-2020, 22:14:49] | INFO | Sonraki Soru düğmesine basıldı. Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 17:49:26] | INFO | Server started. |
+[Per, 26-Kas-2020, 20:11:51] | INFO | Server started. |
+[Per, 26-Kas-2020, 20:12:35] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:12:36] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:12:37] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:12:38] | INFO | Sonraki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:12:39] | INFO | Sonraki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:12:40] | INFO | Sonraki Soru düğmesine basıldı. Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:14:35] | INFO | Sonraki Soru düğmesine basıldı. Soru 8, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:14:36] | INFO | Sonraki Soru düğmesine basıldı. Soru 9, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:14:37] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:14:38] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:14:39] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:14:40] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:16:35] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:16:36] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:16:37] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:16:38] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:16:39] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:16:40] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:18:35] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:18:36] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:18:37] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:18:38] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:18:39] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:18:40] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 20:19:45] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |

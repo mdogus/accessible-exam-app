@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Open+Sans&family=Orbitron&display=swap');
 
-.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-header:hover,
+.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-header:hover, .bottom-bar:hover,
 
 #increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover {
   border: 2px inset red !important;
@@ -29,9 +29,6 @@ body {
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    
-    font-family: 'Segoe UI';
-    background-color: #F2F2F2;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -45,7 +42,6 @@ body::-webkit-scrollbar {
     -ms-user-select: text;
     user-select: text;
 }
-
 
 .left {
     float: left !important;
@@ -138,11 +134,9 @@ body::-webkit-scrollbar {
     height: 60px !important;
 }
 
-
 #soruAlaniDiv {
-    padding: 0px 30px 100px 30px !important;
+    padding: 0px 30px 140px 30px !important;
 }
-
 
 .hiddenLink {
     position: absolute;
@@ -349,8 +343,6 @@ body::-webkit-scrollbar {
     grid-template-columns: auto auto auto;
     align-items: center;
     background-color: rgb(53,54,58);
-    border-radius: 10px;
-    border: 1px solid rgb(100,100,100);
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -425,7 +417,6 @@ body::-webkit-scrollbar {
 .bottom-bar {
     display: grid;
     grid-template-columns: auto auto auto;
-    align-items: center;
     min-height: 50px;
     background-color: rgb(53,54,58);
     color: #FFFFFF;
@@ -438,14 +429,17 @@ body::-webkit-scrollbar {
 .bottom-bar-left {
     grid-column: 1 / 1;
     justify-self: start;
+    align-items: center;
 }
 .bottom-bar-center {
     grid-column: 2 / 2;
     justify-self: center;
+    align-items: center;
 }
 .bottom-bar-right {
     grid-column: 3 / 3;
     justify-self: end;
+    align-items: center;
 }
 
 .bottom-bar input,  .bottom-bar label,  .bottom-bar .btn-mark{
@@ -458,66 +452,191 @@ body::-webkit-scrollbar {
 
 a {
       color: black;
-  }
-  
-  /* THEME 1 */
-  body.theme2{
-    background-color: black;
-    color: azure;
-  }
-  .theme2 .page-title, .theme2 a{
-    background-color: #111111;
-    color: #FFFFFF;
-  }
-  .theme2 .header {
-      background-color: #F2F2F2;
-  }
+}
 
-  .theme2 .bottom-bar input, .theme2 .bottom-bar label, .theme2 .bottom-bar .btn-mark, .theme2 select, .theme2 button{
-    background-color: black;
-    border: 3px solid  cyan;
-    color: white;
-  }
-
-  .theme2 .btn-footer {
-    border: 3px solid darkgray;
-  }
-
-  .theme2 .btn-footer:active, .theme2 .btn-mark:active{
-    background-color: cyan; 
-  }
-
-.theme2 .secenek-baslik input + label{
+/* THEME 1: Black on White */
+body.theme1 {
+    background-color: White;
     color: black;
 }
-
-.theme2 .secenek-baslik input:checked + label{
+.theme1 .page-title, .theme1 a {
+    background-color: white;
+    color: black;
+}
+.theme1 .remaining-time {
+    border: 1px solid rgb(150, 150, 150);
+    color: white;
+    background-color: black !important;
+    box-shadow: 0 0 4px rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(255,255,255) 85%, black),
+                linear-gradient(180deg, rgb(255,255,255, 0.1) 85%, rgb(0,0,0));
+    background: -webkit-linear-gradient(0.25turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0)),
+    -webkit-linear-gradient(0.75turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0));
+}
+.theme1 .remaining-time:hover {
+    border: 2px solid red;
+    background: rgb(33,34,38);
+    color: white;
+}
+.theme1 .question-header, .theme1 .bottom-bar {
+    border-radius: 8px;
+    border: 1px solid rgb(150,150,150);
+    box-shadow: 0 0 4px rgb(0,0,0);
+}
+.theme1 .question-number {
+    color: white;
+}
+.theme1 .header {
+    background-color: white;
+}
+.theme1 .bottom-bar input, .theme1 .bottom-bar label, .theme1 .bottom-bar .btn-mark, .theme1 .bottom-bar label, .theme1 select, .theme1 button {
+    background-color: White;
+    color: black;
+    /*border: 0px solid yellow;*/
+}
+.theme1 select, .theme1 button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.theme1 button:hover {
+    background: rgb(33,34,38);
+    color: #fff;
+}
+.theme1 button.increase-font, .theme1 button.decrease-font {
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: 0;
+    line-height: 10px;
+}
+.theme1 button:hover.increase-font, .theme1 button:hover.decrease-font {
+    border-radius: 50%;
+    border: 0;
+}
+.theme1 .btn-footer:active, .theme1 .btn-nav:active, .theme1 .btn-mark:active {
+    background-color: orange;
+}
+.theme1 .secenek-baslik input + label {
+    color: black;
+}
+.theme1 .secenek-baslik input:checked + label {
+    color: white;
+}
+.theme1 .answerBox input + label>span {
+    color: white;
+}
+.theme1 .answerBox input:checked + label>span {
     color: white;
 }
 
-.theme2 .answerBox input + label>span{
+/* THEME 2: White on Black */
+body.theme2{
+    background-color: black;
+    color: white;
+}
+.theme2 .page-title, .theme2 a {
+    background-color: black;
+    color: white;
+}
+.theme2 .remaining-time {
+    border: 1px solid white;
+    color: white;
+    background: linear-gradient(0deg, rgb(255,255,255) 85%, black),
+                linear-gradient(180deg, rgb(255,255,255, 0.1) 85%, rgb(0,0,0));
+    background: -webkit-linear-gradient(0.25turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0)),
+    -webkit-linear-gradient(0.75turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0));
+}
+.theme2 .remaining-time:hover {
+    border: 2px solid red;
+    background: rgb(33,34,38);
+    color: white;
+}
+.theme2 .question-header, .theme2 .bottom-bar {
+    border-radius: 8px;
+    border: 1px solid rgb(120,120,120);
+    /*box-shadow: 0 0 4px rgb(0,0,0);*/
+}
+.theme2 .header {
+    background-color: black;
+}
+.theme2 .question-number {
+    color: white;
+}
+.theme2 .bottom-bar input, .theme2 .bottom-bar label, .theme2 .bottom-bar .btn-mark, .theme2 .bottom-bar label, .theme2 select, .theme2 button {
+    background-color: black;
+    color: white;
+    /*border: 0px solid yellow;*/
+}
+.theme2 select, .theme2 button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.theme2 button:hover {
+    background: rgb(33,34,38);
+    color: #fff;
+}
+.theme2 button.increase-font, .theme2 button.decrease-font {
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: 0;
+    line-height: 10px;
+}
+.theme2 button:hover.increase-font, .theme2 button:hover.decrease-font {
+    border-radius: 50%;
+    border: 0;
+}
+.theme2 .btn-footer:active, .theme2 .btn-nav:active, .theme2 .btn-mark:active {
+    background-color: orange;
+}
+.theme2 .secenek-baslik input + label {
+    color: black;
+}
+.theme2 .secenek-baslik input:checked + label {
+    color: white;
+}
+.theme2 .answerBox input + label>span {
+    color: white;
+}
+.theme2 .answerBox input:checked + label>span {
     color: white;
 }
 
-.theme2 .answerBox input:checked + label>span{
-    color: white;
-}
-
-.theme2 .question-number{
-    color: white;
-}
-  /* THEME 3 */
-  body.theme3{
+/* THEME 3: Yellow on Black */
+body.theme3{
     background-color: black;
     color: yellow;
-  }
-  .theme3 .page-title, .theme3 a{
+}
+.theme3 .page-title, .theme3 a{
     background-color: black;
     color: yellow;
-  }
-  .theme3 .header {
-      background-color: black;
-  }
+}
+.theme3 .remaining-time {
+    border: 1px solid yellow;
+    color: yellow;
+    background: linear-gradient(0deg, rgb(255,255,255) 85%, black),
+                linear-gradient(180deg, rgb(255,255,255, 0.1) 85%, rgb(0,0,0));
+    background: -webkit-linear-gradient(0.25turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0)),
+    -webkit-linear-gradient(0.75turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0));
+}
+.theme3 .rmaining-time:hover {
+    border: 2px solid red;
+    background: rgb(33,34,38);
+    color: yellow;
+}
+.theme3 .question-header, .theme3 .bottom-bar {
+    border-radius: 8px;
+    border: 1px solid rgb(120,120,120);
+    /*box-shadow: 0 0 4px rgb(0,0,0);*/
+}
+.theme3 .header {
+    background-color: black;
+}
+.theme3 .question-number {
+    color: yellow;
+}
 
     .theme3 .bottom-bar input, .theme3 .bottom-bar label, .theme3 .bottom-bar .btn-mark, .theme3 .bottom-bar label, .theme3 select, .theme3 button {
         background-color: black;
@@ -623,9 +742,7 @@ a {
 }
 
 .remaining-time {
-    border: 1px solid yellow;
     border-radius: 10px;
-    color: yellow;
     /*background-color: rgb(53,54,58);*/
     min-width: 200px !important;
     padding: 5px 15px;
@@ -636,16 +753,9 @@ a {
     font-size: 26px;
     font-weight: bold;
     align-items: center;
-    background: linear-gradient(0deg, rgb(255,255,255, 0.1) 85%, rgb(0,0,0)),
-                linear-gradient(180deg, rgb(255,255,255, 0.1) 85%, rgb(0,0,0));
-                background: -webkit-linear-gradient(0.25turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0)),
-    -webkit-linear-gradient(0.75turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0));
 }
 .remaining-time:hover {
-    border: 2px solid red;
     border-radius: 10px;
-    background: rgb(33,34,38);
-    color: yellow;
 }
 
 button {
