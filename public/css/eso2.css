@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
 .left {
     float: left !important;
 }
-
+butto
 .right {
     float: right !important;
 
@@ -153,9 +153,8 @@ body::-webkit-scrollbar {
 .btn-footer {
     cursor: pointer;
     /*border: 3px solid darkgray;*/
-    margin-right: 20px;
+    /*margin-right: 20px;*/
 }
-
 
 .btn-footer:active, .btn-mark:active{
     background-color: gray;
@@ -417,7 +416,9 @@ body::-webkit-scrollbar {
 .bottom-bar {
     display: grid;
     grid-template-columns: auto auto auto;
-    min-height: 50px;
+    justify-content: space-between;
+    align-content: center;
+    /*min-height: 50px;*/
     background-color: rgb(53,54,58);
     color: #FFFFFF;
     padding-top: 5px;
@@ -429,17 +430,15 @@ body::-webkit-scrollbar {
 .bottom-bar-left {
     grid-column: 1 / 1;
     justify-self: start;
-    align-items: center;
 }
 .bottom-bar-center {
     grid-column: 2 / 2;
     justify-self: center;
-    align-items: center;
 }
 .bottom-bar-right {
     grid-column: 3 / 3;
     justify-self: end;
-    align-items: center;
+    padding-right: 20px;
 }
 
 .bottom-bar input,  .bottom-bar label,  .bottom-bar .btn-mark{
@@ -527,6 +526,9 @@ body.theme1 {
     color: white;
 }
 .theme1 .answerBox input:checked + label>span {
+    color: white;
+}
+.theme1 #isMarkedLabel {
     color: white;
 }
 
@@ -767,7 +769,8 @@ button {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    display: inline-flex;
+    display: inline-flex,
+        -webkit-inline-flex;
     align-items: center;
     font-size: 16px;
     cursor: pointer;
@@ -985,6 +988,12 @@ input:checked + .slider .off {
     display: none;
 }
 /*-- END --*/
+
+#isMarkedLabel {
+    background-color: rgb(53,54,58);
+    text-align: right;
+    font-weight: bold;
+}
 
 /* Marked Questions Page */
 .marked-questions-page, .accessibility-page, .finish-page {

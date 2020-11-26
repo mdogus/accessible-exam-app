@@ -21,7 +21,7 @@
     <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"-->
 </head>
 
-<body class="theme1">
+<body class="theme2">
     
     <div id="eso-cont">
 
@@ -46,7 +46,7 @@
                     <div id="soruContainer">
                         <div class="question-header">
                             <!-- Erişilebilirlik düğmesi -->
-                            <div id="hiddenAccessibilityButtonDiv" style="">
+                            <div id="hiddenAccessibilityButtonDiv">
                                 <button id="hiddenAccessibilityButton" class="hidden-accessibility" rel="popover" aria-label="Erişilebilirlik Ayarları"></button>
                             </div>
                             <div id="qNumDiv" class="question-number" role="heading" aria-hidden="true"></div>
@@ -130,14 +130,14 @@
                     <div class="bottom-bar">
                         <!-- Bottom bar left -->
                         <div class="bottom-bar-left">
-                            <button id="prevQuestion" class="btn-footer previous" aria-label="Önceki Soru" aria-labelledby="prevLabel">Önceki</button>
-                            <button id="nextQuestion" class="btn-footer next btn-right" aria-label="Sonraki Soru">Sonraki</button>
+                            <button id="prevQuestion" class="previous" aria-label="Önceki Soru" aria-labelledby="prevLabel">Önceki</button>
+                            <button id="nextQuestion" class="next" aria-label="Sonraki Soru">Sonraki</button>
                         </div>
                         <!-- Bottom Bar Center -->
                         <div class="bottom-bar-center">
                             <!-- Rounded switch -->
                             <div class="ismarked-switch">
-                                <label for="ismarked" style="background-color:rgb(53,54,58);text-align:right;font-weight:bold;" aria-hidden="true">Tekrar Bak</label>
+                                <label id="isMarkedLabel" for="ismarked" aria-hidden="true">Tekrar Bak</label>
                                 <label class="switch">
                                   <input type="checkbox" id="ismarked">
                                   <div class="slider round">
@@ -173,8 +173,8 @@
                     <label id="themes-label" for="themes" role="heading" style="font-weight:bold;">Tema:</label>
                     <select id="themes" sele>
                         <!--option value="themeDefault">Beyaz Üzeri Siyah</option-->
-                        <option value="theme1" selected>Beyaz Üzeri Siyah</option>
-                        <option value="theme2">Siyah Üzeri Beyaz</option>
+                        <option value="theme1">Beyaz Üzeri Siyah</option>
+                        <option value="theme2" selected>Siyah Üzeri Beyaz</option>
                         <option value="theme3">Siyah Üzeri Sarı</option>
                         <option value="theme4">Siyah Üzeri Yeşil</option>
                     </select>

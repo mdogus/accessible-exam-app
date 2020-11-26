@@ -401,3 +401,4 @@
 [Per, 26-Kas-2020, 20:18:39] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Per, 26-Kas-2020, 20:18:40] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Per, 26-Kas-2020, 20:19:45] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 26-Kas-2020, 22:28:6] | INFO | Server started. |
