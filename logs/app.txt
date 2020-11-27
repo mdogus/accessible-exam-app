@@ -403,3 +403,5 @@
 [Per, 26-Kas-2020, 20:19:45] | INFO | Sonraki Soru düğmesine basıldı. Soru 10, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Per, 26-Kas-2020, 22:28:6] | INFO | Server started. |
 [Cum, 27-Kas-2020, 0:8:55] | INFO | Server started. |
+[Cum, 27-Kas-2020, 14:25:36] | INFO | Server started. |
+[Cum, 27-Kas-2020, 21:37:19] | INFO | Server started. |
