@@ -405,3 +405,4 @@
 [Cum, 27-Kas-2020, 0:8:55] | INFO | Server started. |
 [Cum, 27-Kas-2020, 14:25:36] | INFO | Server started. |
 [Cum, 27-Kas-2020, 21:37:19] | INFO | Server started. |
+[Cmt, 28-Kas-2020, 15:16:11] | INFO | Server started. |

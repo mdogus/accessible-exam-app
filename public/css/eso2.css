@@ -61,7 +61,14 @@ butto
     width: 960px;
 }
 
-#eso-cont, #eso-cont input, #eso-cont select, #eso-cont button {
+#eso-cont select {
+    font-weight: bold;
+    min-width: 250px;
+    min-height: 30px;
+    padding: 5px;
+}
+
+#eso-cont, #eso-cont input, #eso-cont button {
     line-height: 32px;
     font-size: 16px;
     font-family: Verdana;
@@ -712,12 +719,21 @@ body.theme-pink {
 .theme-pink .header {
     background-color: #f2cec0;
 }
-.theme-pink .bottom-bar input, .theme-pink .bottom-bar label, .theme-pink .bottom-bar .btn-mark, .theme-pink .bottom-bar label, .theme-pink select {
+.theme-pink .bottom-bar input, .theme-pink .bottom-bar label, .theme-pink .bottom-bar .btn-mark, .theme-pink .bottom-bar label {
     background-color: #f2cec0;
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme-pink select, .theme-pink button {
+#marked-questions-title, #accessibility-title, #finish-span {
+    background-color: black;
+    color: #f2cec0;
+}
+.theme-pink #themes, .theme-pink #fonts {
+    border: 2px solid gray;
+    background-color: black;
+    color: #f2cec0;
+}
+.theme-pink button {
     background-color: black;
     color: #f6ded5;
     border: 2px solid #f6ded5;
@@ -784,7 +800,7 @@ body.theme2{
 .theme2 .question-number {
     color: white;
 }
-.theme2 .bottom-bar input, .theme2 .bottom-bar label, .theme2 .bottom-bar .btn-mark, .theme2 .bottom-bar label, .theme2 select, .theme2 button {
+.theme2 .bottom-bar input, .theme2 .bottom-bar label, .theme2 .bottom-bar .btn-mark, .theme2 .bottom-bar label {
     background-color: black;
     color: white;
     /*border: 0px solid yellow;*/
@@ -1217,8 +1233,15 @@ input:checked + .slider .off {
     font-weight: bold;
 }
 
-/* Marked Questions Page */
+/* Marked Questions and other pages */
 .marked-questions-page, .accessibility-page, .finish-page {
     margin-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    padding-right: 20px;
+}
+#marked-questions-title, #accessibility-title, #finish-span {
+    padding: 4px 15px;
+}
+.accessibility-div {
+    padding-left: 30px;
 }
