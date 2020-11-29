@@ -215,12 +215,14 @@ butto
 .secenek {
     display: table-cell;
     vertical-align: middle;
-    /* padding-top: 10px; */
+    /*padding-top: 10px;*/
     text-align: left !important;
 }
 
-.secenek p{
+.secenek p {
     text-align: left !important;
+    padding-left: 8px;
+    
 }
 
 .secenek-baslik {
@@ -230,23 +232,25 @@ butto
 }
 
 .secenek-baslik input + label {
-    background-image: url(../img/dot-grey.png);
+    border-radius: 50%;
+    /*background-image: url(../img/dot-grey.png);*/
     background-repeat: no-repeat;
     height: 38px;
     width: 38px;
-    color: white;
     font-weight: bold;
     font-size: x-large;
     text-align: center;
     line-height: 34px;
     float: left;
+    padding-top: 3px;
+    padding-right: 1px;
     margin: 4px auto;
-    margin-left: 6px;
+    margin-left: 4px;
 }
 
-.secenek-baslik input:checked + label
-{
-    background-image: url(../img/tick.png);
+.secenek-baslik input:checked + label {
+    border-radius: 50%;
+    /*background-image: url(../img/tick.png);*/
     background-repeat: no-repeat;
     height: 38px;
     width: 38px;
@@ -257,14 +261,14 @@ butto
     line-height: 34px;
     float: left;
     margin: 4px auto;
-    margin-left: 6px;
+    margin-left: 4px;
 }
 
 .secenekler {
     display: table;
     width: 100%;
     margin-top: 20px;
-    font-weight: 500;
+    /*font-weight: 500;*/
 }
 .answerBox input {
     position: absolute;
@@ -276,9 +280,8 @@ butto
     cursor: pointer;
 }
 
-.answerBox input + label>span
-{
-    background-image: url(../img/dot-grey.png);
+.answerBox input + label>span {
+    /*background-image: url(../img/dot-grey.png);*/
     background-repeat: no-repeat;
     height: 38px;
     width: 38px;
@@ -290,9 +293,8 @@ butto
     float: left;
     margin: 3px 5px 5px 10px;
 }
-
 .answerBox input:checked + label>span {
-    background-image: url(../img/tick.png);
+    /*background-image: url(../img/tick.png);*/
     background-repeat: no-repeat;
     height: 38px;
     width: 38px;
@@ -320,7 +322,7 @@ butto
 }
 
 .Tick {
-    background-image: url(../img/tick.png);
+    /*background-image: url(../img/tick.png);*/
     width: 36px;
     height: 36px;
     background-repeat: no-repeat;
@@ -497,12 +499,22 @@ body.theme1 {
 .theme1 .header {
     background-color: white;
 }
-.theme1 .bottom-bar input, .theme1 .bottom-bar label, .theme1 .bottom-bar .btn-mark, .theme1 .bottom-bar label, .theme1 select {
+.theme1 .bottom-bar input, .theme1 .bottom-bar label, .theme1 .bottom-bar .btn-mark, .theme1 .bottom-bar label {
     background-color: white;
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme1 select, .theme1 button {
+.theme1 #marked-questions-title, .theme1 #accessibility-title, .theme1 #finish-span {
+    background-color: black;
+    color: white;
+    /*border: 2px solid white;*/
+}
+.theme1 #themes, .theme1 #fonts {
+    border: 2px solid gray;
+    background-color: black;
+    color: white;
+}
+.theme1 button {
     background-color: black;
     color: white;
     border: 2px solid white;
@@ -571,12 +583,21 @@ body.theme-sepia {
 .theme-sepia .header {
     background-color: #f7e6d4;
 }
-.theme-sepia .bottom-bar input, .theme-sepia .bottom-bar label, .theme-sepia .bottom-bar .btn-mark, .theme-sepia .bottom-bar label, .theme-sepia select {
+.theme-sepia .bottom-bar input, .theme-sepia .bottom-bar label, .theme-sepia .bottom-bar .btn-mark, .theme-sepia .bottom-bar label {
     background-color: #f7e6d4;
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme-sepia select, .theme-sepia button {
+.theme-sepia #marked-questions-title, .theme-sepia #accessibility-title, .theme-sepia #finish-span {
+    background-color: black;
+    color: #f7e6d4;
+}
+.theme-sepia #themes, .theme-sepia #fonts {
+    border: 2px solid gray;
+    background-color: black;
+    color: #f7e6d4;
+}
+.theme-sepia button {
     background-color: black;
     color: #f7e6d4;
     border: 2px solid white;
@@ -587,10 +608,7 @@ body.theme-sepia {
     filter: brightness(150%);
 }
 .theme-sepia button.increase-font, .theme-sepia button.decrease-font {
-    
-}
-.theme-sepia button:hover.increase-font, .theme-sepia button:hover.decrease-font {
-    
+    border: 2px solid black;
 }
 .theme-sepia .btn-footer:active, .theme-sepia .btn-nav:active, .theme-sepia .btn-mark:active {
     background-color: orange;
@@ -613,11 +631,11 @@ body.theme-sepia {
 
 /* THEME Lime: Black on Lime */
 body.theme-lime {
-    background-color: #1aff1a; /* lime: 00ff00 */
+    background-color: #33ff33; /* lime: 00ff00 */
     color: black;
 }
 .theme-lime .page-title, .theme-lime a {
-    background-color: #1aff1a;
+    background-color: #33ff33;
     color: black;
 }
 .theme-lime .remaining-time {
@@ -643,14 +661,23 @@ body.theme-lime {
     color: #4dff4d;
 }
 .theme-lime .header {
-    background-color: #1aff1a;
+    background-color: #33ff33;
 }
-.theme-lime .bottom-bar input, .theme-lime .bottom-bar label, .theme-lime .bottom-bar .btn-mark, .theme-lime .bottom-bar label, .theme-lime select {
-    background-color: #1aff1a;
+.theme-lime .bottom-bar input, .theme-lime .bottom-bar label, .theme-lime .bottom-bar .btn-mark, .theme-lime .bottom-bar label {
+    background-color: #33ff33;
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme-lime select, .theme-lime button {
+.theme-lime #marked-questions-title, .theme-lime #accessibility-title, .theme-lime #finish-span {
+    background-color: black;
+    color: #4dff4d;
+}
+.theme-lime #themes, .theme-lime #fonts {
+    border: 2px solid gray;
+    background-color: black;
+    color: #4dff4d;
+}
+.theme-lime button {
     background-color: black;
     color: #4dff4d;
     border: 2px solid #4dff4d;
@@ -661,10 +688,7 @@ body.theme-lime {
     filter: brightness(150%);
 }
 .theme-lime button.increase-font, .theme-lime button.decrease-font {
-    border: 2px solid #4dff4d;
-}
-.theme-lime button:hover.increase-font, .theme-lime button:hover.decrease-font {
-    
+    border: 2px solid black;
 }
 .theme-lime .btn-footer:active, .theme-lime .btn-nav:active, .theme-lime .btn-mark:active {
     background-color: orange;
@@ -724,14 +748,14 @@ body.theme-pink {
     color: black;
     /*border: 0px solid yellow;*/
 }
-#marked-questions-title, #accessibility-title, #finish-span {
+.theme-pink #marked-questions-title, .theme-pink #accessibility-title, .theme-pink #finish-span {
     background-color: black;
-    color: #f2cec0;
+    color: #f6ded5;
 }
 .theme-pink #themes, .theme-pink #fonts {
     border: 2px solid gray;
     background-color: black;
-    color: #f2cec0;
+    color: #f6ded5;
 }
 .theme-pink button {
     background-color: black;
@@ -743,20 +767,21 @@ body.theme-pink {
     /*color: #1aff1a;*/
     filter: brightness(150%);
 }
-.theme-lime button.increase-font, .theme-lime button.decrease-font {
-    border: 2px solid #f6ded5;
-}
-.theme-lime button:hover.increase-font, .theme-lime button:hover.decrease-font {
-    
+.theme-pink button.increase-font, .theme-pink button.decrease-font {
+    border: 2px solid black;
 }
 .theme-pink .btn-footer:active, .theme-pink .btn-nav:active, .theme-pink .btn-mark:active {
     background-color: orange;
 }
 .theme-pink .secenek-baslik input + label {
+    background-color: #e59d80;
     color: black;
+    border: 3px solid black;
 }
 .theme-pink .secenek-baslik input:checked + label {
-    color: white;
+    background-color: black;
+    color: rgb(245,89,123);
+    border: 3px solid rgb(245,89,123);
 }
 .theme-pink .answerBox input + label>span {
     color: white;
@@ -765,6 +790,86 @@ body.theme-pink {
     color: white;
 }
 .theme-pink #isMarkedLabel {
+    color: white;
+}
+
+/* THEME Yellow: Black on Yellow */
+body.theme-yellow {
+    background-color: yellow; /*  */
+    color: black;
+}
+.theme-yellow .page-title, .theme-yellow a {
+    background-color: yellow;
+    color: black;
+}
+.theme-yellow .remaining-time {
+    border: 1px solid rgb(150, 150, 150);
+    color: #ffff66;
+    background-color: black !important;
+    box-shadow: 0 0 4px rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(255,255,255) 85%, black),
+                linear-gradient(180deg, rgb(255,255,255, 0.1) 85%, rgb(0,0,0));
+    background: -webkit-linear-gradient(0.25turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0)),
+    -webkit-linear-gradient(0.75turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0));
+}
+.theme-yellow .remaining-time:hover {
+    border: 2px solid red;
+    background: rgb(33,34,38);
+    color: #ffff99;
+}
+.theme-yellow .question-header, .theme-yellow .bottom-bar {
+    border: 1px solid rgb(150,150,150);
+    box-shadow: 0 0 4px rgb(0,0,0);
+}
+.theme-yellow .question-number {
+    color: #ffff66;
+}
+.theme-yellow .header {
+    background-color: yellow;
+}
+.theme-yellow .bottom-bar input, .theme-yellow .bottom-bar label, .theme-yellow .bottom-bar .btn-mark, .theme-yellow .bottom-bar label {
+    background-color: yellow;
+    color: black;
+    /*border: 0px solid yellow;*/
+}
+.theme-yellow #marked-questions-title, .theme-yellow #accessibility-title, .theme-yellow #finish-span {
+    background-color: black;
+    color: #ffff66;
+}
+.theme-yellow #themes, .theme-yellow #fonts {
+    border: 2px solid gray;
+    background-color: black;
+    color: #ffff66;
+}
+.theme-yellow button {
+    background-color: black;
+    color: #ffff66;
+    border: 2px solid #ffff66;
+}
+.theme-yellow button:hover {
+    background: rgb(13,14,18);
+    /*color: #1aff1a;*/
+    filter: brightness(150%);
+}
+.theme-yellow button.increase-font, .theme-yellow button.decrease-font {
+    border: 2px solid black;
+}
+.theme-yellow .btn-footer:active, .theme-yellow .btn-nav:active, .theme-yellow .btn-mark:active {
+    background-color: orange;
+}
+.theme-yellow .secenek-baslik input + label {
+    color: black;
+}
+.theme-yellow .secenek-baslik input:checked + label {
+    color: white;
+}
+.theme-yellow .answerBox input + label>span {
+    color: white;
+}
+.theme-yellow .answerBox input:checked + label>span {
+    color: white;
+}
+.theme-yellow #isMarkedLabel {
     color: white;
 }
 
@@ -805,20 +910,27 @@ body.theme2{
     color: white;
     /*border: 0px solid yellow;*/
 }
-.theme2 select, .theme2 button {
+.theme2 #marked-questions-title, .theme2 #accessibility-title, .theme2 #finish-span {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.theme2 #themes, .theme2 #fonts {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+.theme2 button {
     background-color: black;
     color: white;
     border: 2px solid white;
 }
 .theme2 button:hover {
-    background: rgb(33,34,38);
-    color: #fff;
+    background: rgb(23,24,28);
+    color: white;
 }
 .theme2 button.increase-font, .theme2 button.decrease-font {
     border: 2px solid white;
-}
-.theme2 button:hover.increase-font, .theme2 button:hover.decrease-font {
-    
 }
 .theme2 .btn-footer:active, .theme2 .btn-nav:active, .theme2 .btn-mark:active {
     background-color: orange;
@@ -868,95 +980,123 @@ body.theme3{
 .theme3 .question-number {
     color: yellow;
 }
-
-    .theme3 .bottom-bar input, .theme3 .bottom-bar label, .theme3 .bottom-bar .btn-mark, .theme3 .bottom-bar label, .theme3 select, .theme3 button {
-        background-color: black;
-        color: yellow;
-        /*border: 0px solid yellow;*/
-    }
-    .theme3 select, .theme3 button {
-        background-color: black;
-        color: yellow;
-        border: 2px solid yellow;
-    }
-
-    .theme3 button:hover {
-        background: rgb(33,34,38);
-        color: #fff;
-    }
-    
-    .theme3 button.increase-font, .theme3 button.decrease-font {
-        border: 2px solid yellow;
-    }
-    .theme3 button:hover.increase-font, .theme3 button:hover.decrease-font {
-            border-radius: 50%;
-            border: 0;
-    }
-
-    .theme3 .btn-footer:active, .theme3 .btn-nav:active, .theme3 .btn-mark:active {
-        background-color: yellow;
-    }
-
+.theme3 .bottom-bar input, .theme3 .bottom-bar label, .theme3 .bottom-bar .btn-mark, .theme3 .bottom-bar label {
+    background-color: black;
+    color: yellow;
+    /*border: 0px solid yellow;*/
+}
+.theme3 #marked-questions-title, .theme3 #accessibility-title, .theme3 #finish-span {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+.theme3 #themes, .theme3 #fonts {
+    border: 2px solid yellow;
+    background-color: black;
+    color: yellow;
+}
+.theme3 button {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+.theme3 button:hover {
+    background: rgb(23,24,28);
+    /*color: #fff;*/
+    filter: brightness(120%);
+}
+.theme3 button.increase-font, .theme3 button.decrease-font {
+    border: 2px solid yellow;
+}
+.theme3 .btn-footer:active, .theme3 .btn-nav:active, .theme3 .btn-mark:active {
+    background-color: yellow;
+}
 .theme3 .secenek-baslik input + label{
     color: black;
 }
-
 .theme3 .secenek-baslik input:checked + label{
     color: white;
 }
-
 .theme3 .answerBox input + label>span {
     color: white;
 }
-
 .theme3 .answerBox input:checked + label>span{
     color: white;
 }
 
-  /* THEME 4 */
-  body.theme4{
+/* THEME 4: Green on Black */
+body.theme4{
     background-color: black;
-    color: green;
-  }
-  .theme4 .page-title, .theme4 a{
-    background-color: #111111;
-    color: green;
-  }
-  .theme4 .header {
-      background-color: #F2F2F2;
-  }
-
-  .theme4 .bottom-bar input, .theme4 .bottom-bar label, .theme4 .bottom-bar .btn-mark, .theme4 select, .theme4 button{
-      background-color: black;
-      color: green;
-      border: 3px solid  blue;
-  }
-
-  .theme4 .btn-footer {
-    border: 3px solid darkgray;
-  }
-
-  .theme4 .btn-footer:active, .theme4 .btn-mark:active{
-    background-color: blue; 
-  }
-
-.theme4 .secenek-baslik input + label{
+    color: #80ff80;
+}
+.theme4 .page-title, .theme4 a {
+    background-color: black;
+    color: #80ff80;
+}
+.theme4 .remaining-time {
+    border: 1px solid #80ff80;
+    color: #80ff80;
+    background: linear-gradient(0deg, rgb(255,255,255) 85%, black),
+                linear-gradient(180deg, rgb(255,255,255, 0.1) 85%, rgb(0,0,0));
+    background: -webkit-linear-gradient(0.25turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0)),
+    -webkit-linear-gradient(0.75turn, rgb(255,255,255, 0.08) 85%, rgb(0,0,0));
+}
+.theme4 .rmaining-time:hover {
+    border: 2px solid red;
+    background: rgb(23,24,28);
+    color: #99ff99;
+}
+.theme4 .question-header, .theme4 .bottom-bar {
+    border: 1px solid rgb(120,120,120);
+    /*box-shadow: 0 0 4px rgb(0,0,0);*/
+}
+.theme4 .header {
+    background-color: black;
+}
+.theme4 .question-number {
+    color: #80ff80;
+}
+.theme4 .bottom-bar input, .theme4 .bottom-bar label, .theme4 .bottom-bar .btn-mark, .theme4 .bottom-bar label {
+    background-color: black;
+    color: #80ff80;
+    /*border: 0px solid yellow;*/
+}
+.theme4 #marked-questions-title, .theme4 #accessibility-title, .theme4 #finish-span {
+    background-color: black;
+    color: #80ff80;
+    border: 2px solid #66ff66;
+}
+.theme4 #themes, .theme4 #fonts {
+    border: 2px solid #80ff80;
+    background-color: black;
+    color: #80ff80;
+}
+.theme4 button {
+    background-color: black;
+    color: #80ff80;
+    border: 2px solid #80ff80;
+}
+.theme4 button:hover {
+    background: rgb(23,24,28);
+    /*color: #99ff99;*/
+    filter: brightness(120%);
+}
+.theme4 button.increase-font, .theme4 button.decrease-font {
+    border: 2px solid #80ff80;
+}
+.theme4 .btn-footer:active, .theme4 .btn-nav:active, .theme4 .btn-mark:active {
+    background-color: #80ff80;
+}
+.theme4 .secenek-baslik input + label {
     color: black;
 }
-
-.theme4 .secenek-baslik input:checked + label{
+.theme4 .secenek-baslik input:checked + label {
     color: white;
 }
-
-.theme4 .answerBox input + label>span{
+.theme4 .answerBox input + label>span {
     color: white;
 }
-
 .theme4 .answerBox input:checked + label>span{
-    color: white;
-}
-
-.theme4 .question-number{
     color: white;
 }
 
@@ -1085,12 +1225,8 @@ button.back-to-test:before {
 button.decrease-font, button.increase-font {
     padding: 4px;
     margin: 0;
-    border-radius: 10%;
-    border: 0;
+    border-radius: 8%;
     line-height: 10px;
-}
-button.decrease-font, button.increase-font {
-    border: 0;
 }
 button.decrease-font:before {
     content: '\f056';
