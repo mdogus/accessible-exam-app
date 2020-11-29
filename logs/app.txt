@@ -409,3 +409,4 @@
 [Cmt, 28-Kas-2020, 19:31:42] | INFO | Server started. |
 [Paz, 29-Kas-2020, 17:28:35] | INFO | Server started. |
 [Paz, 29-Kas-2020, 18:46:29] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 29-Kas-2020, 22:18:41] | INFO | Server started. |

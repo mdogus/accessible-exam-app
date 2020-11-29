@@ -221,6 +221,7 @@ butto
 
 .secenek p {
     text-align: left !important;
+    margin-bottom: 2px;
     padding-left: 8px;
     
 }
@@ -243,9 +244,7 @@ butto
     line-height: 34px;
     float: left;
     padding-top: 3px;
-    padding-right: 1px;
-    margin: 4px auto;
-    margin-left: 4px;
+    margin: 4px;
 }
 
 .secenek-baslik input:checked + label {
