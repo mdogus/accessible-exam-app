@@ -5,13 +5,26 @@ $(function() {
             $(".alert").attr("role", "alert");
             setTimeout(function(){
                 $(".alert").removeAttr("role");
-            }, 1000);
+            }, 100);
         }
     });
-    
-    //Pop-up modal
-    //$('#myModal').on('shown.bs.modal', function () {
-      //$('#myButton').trigger('focus')
-    //})
 });
 
+/*$(document).ready(function() {
+    $("#personalInfoButton").click(function(event) {
+        event.preventDefault();
+        console.log('Btn: Kişisel Bilgi Formu');
+        $("#personalInfoButton").css("background-color", "red");
+        var data = {
+            event: "Kişisel Bilgi Formu düğmesine basıldı."
+        };
+        $.ajax({
+            type: "POST",
+            url: "/log",
+            data: data,
+            success: function(response) {
+                    console.log("Kişisel Bilgi Formu");
+            }
+        });
+    });
+});*/

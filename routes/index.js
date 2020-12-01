@@ -11,10 +11,19 @@ const passport = require("passport");
 require("../config/passport");
 //logger_service
 const Logger = require('../services/logger-service');
-const logger = new Logger('login');
+const logger = new Logger('user-logs');
+
+//User logs
+router.post('/user-logs', (req, res) => {
+    const body = req.body;
+    console.log(body.event);
+    logger.logger.log("info", body.event);
+    let error = {};
+});
 
 /* GET home page. */
 router.get('/', checkAuthenticated, (req, res, next) => {
+    logger.logger.log("info", "Ana Sayfa açıldı.")
     res.render('pages/index', {
         //title: "Ana Sayfa | Engelsiz Sınav Uygulaması",
         name: req.user.name,
@@ -34,21 +43,25 @@ router.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 
 // Login about page
 router.get('/about', checkNotAuthenticated, function(req, res) {
+    logger.logger.log("info", "Giriş: Hakkında sayfası açıldı.")
     res.render('pages/about');
 });
 
 // User home about page
 router.get('/user-about', checkAuthenticated, function(req, res) {
+    logger.logger.log("info", "Hakkında sayfası açıldı.")
     res.render('pages/user-about');
 });
 
 // Login contact page
 router.get('/contact', checkNotAuthenticated, function(req, res) {
+    logger.logger.log("info", "Giriş: İletişim sayfası açıldı.")
     res.render('pages/contact');
 });
 
 // User home contact page
 router.get('/user-contact', checkAuthenticated, function(req, res) {
+    logger.logger.log("info", "İletişim sayfası açıldı.")
     res.render('pages/user-contact');
 });
 

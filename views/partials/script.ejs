@@ -1,0 +1,37 @@
+<!-- Google jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#personalInfoButton").click(function(event) {
+        event.preventDefault();
+        $("#personalInfoButton").css("background-color", "red");
+        var data = {
+            event: "Kişisel Bilgi Formu düğmesine basıldı."
+        };
+        $.ajax({
+            type: "POST",
+            url: "/log",
+            data: data,
+            success: function(response) {
+                    console.log("Kişisel Bilgi Formu");
+            }
+        });
+    });
+    
+    $("#startExamModalButton").click(function(event) {
+        event.preventDefault();
+        $("#startExamModalButton").css("background-color", "red");
+        var data = {
+            event: "Sınava Başla düğmesine basıldı."
+        };
+        $.ajax({
+            type: "POST",
+            url: "/log",
+            data: data,
+            success: function(response) {
+                    console.log("Kişisel Bilgi Formu");
+            }
+        });
+    });
+});
+</script>

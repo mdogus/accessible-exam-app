@@ -1,7 +1,7 @@
 var examHour = 1;
 var examMinute = 30;
 var numOfGenQuestions = 11;
-var countdowntime = 1000 * 60 * 60;
+var countdowntime = 1000 * 60 * 30;
 
 var qSummary = "";
 

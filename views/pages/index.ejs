@@ -26,7 +26,7 @@
                     <span class="lead">Lütfen Kişisel Bilgi Formu'nu doldurunuz.</span>
                     <br>
                     <small class="text-muted">*Kişisel bilgileriniz yalnızca araştırma kapsamında verilerin analiz edilmesi amacıyla kullanılacak ve gizli tutulacaktır.</small>
-                    <button type="button" class="btn btn-info  btn-lg btn-block" onclick="">Kişisel Bilgi Formu</button>
+                    <button id="personalInfoButton" type="button" class="btn btn-info  btn-lg btn-block">Kişisel Bilgi Formu</button>
                 </div>
                 
                 <!--  Sınava Başla -->
@@ -35,7 +35,7 @@
                     <span class="lead">Lütfen sınava başlamadan önce </span>
                     <a class="lead" href="#">Kullanım Kılavuzu'nu</a>
                     <span class="lead">nu okuyunuz.</span>
-                    <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Sınava Başla</button>
+                    <button id="startExamModalButton" type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Sınava Başla</button>
                 </div>
             </div>
         </div>
@@ -70,6 +70,9 @@
       </div>
     </div>
   </div>
+
+<!-- Ajax scripts -->
+<%- include('../partials/script'); %>
 
 </body>
 </html>
