@@ -29,7 +29,7 @@ router.post('/admin/login', checkNotAuthenticatedAdmin, passport.authenticate('l
     successFlash: true,
     failureFlash: true
 }))
-// Admin sign-up page
+//Admin sign-up page
 router.get('/admin/sign-up', checkAuthenticatedAdmin, (req, res) => {
     res.render('pages/admin-sign-up');
 });
@@ -81,6 +81,27 @@ router.get('/admin/logs', checkAuthenticatedAdmin, function(req, res) {
             });
         }
     });
+});
+//Delete user logs
+router.delete('/admin/delete-logs', checkAuthenticatedAdmin, function(req, res) {
+    const deleteAllLogs = async () => {
+      try {
+        await logs.deleteMany();
+        console.log('All Data successfully deleted');
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    deleteAllLogs;
+    //res.redirect('/admin/logs');
+    /*logs.deleteMany({ level: 'info'}, function(err, docs) {
+        if (err) {
+            res.send(err);
+        }
+        //} else {
+          //  res.redirect('/admin/logs');
+        //}
+    });*/
 });
 
 //Fetching data

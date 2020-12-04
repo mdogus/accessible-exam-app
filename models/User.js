@@ -13,6 +13,14 @@ const User = new Schema({
         type: String
         //minlength: 8
     },
+    age: {
+        type: String
+    }
 });
+
+/*User.updateMany({},
+    {age: ''},
+    {multi: true},
+    function(err, numberAffected){});*/
 
 module.exports = mongoose.model("User", User, "user");

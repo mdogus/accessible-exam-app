@@ -8,23 +8,32 @@ $(function() {
             }, 100);
         }
     });
+    
+    $(document).ready(function(){
+        
+    });
+    
+    /* Kişisel Bilgi formu düğmesi */
+    /*$("#personalInfoModalButton").click((e) => {
+        e.preventDefault();
+        
+        var actualModal = $(this).attr('data-actual');
+        var newModal = $(this).attr('data-target');
+        $(actualModal).modal('hide');
+        $(newModal).modal('show');
+        //$("#personalInfoModal").css("display","block");
+        //$("#startExamModal").css("display","none");
+    });*/
+    /* Sınava Başla düğmesi */
+    /*$("#startExamModalButton").click((e) => {
+        e.preventDefault();
+        
+        //var actualModal = $(this).attr('data-actual');
+        //var newModal = $(this).attr('data-target');
+        //$(actualModal).modal('hide');
+        //$(newModal).modal('show');
+        //$("#personalInfoModal").css("display","none");
+        //$("#startExamModal").css("display","block");
+    });*/
 });
 
-/*$(document).ready(function() {
-    $("#personalInfoButton").click(function(event) {
-        event.preventDefault();
-        console.log('Btn: Kişisel Bilgi Formu');
-        $("#personalInfoButton").css("background-color", "red");
-        var data = {
-            event: "Kişisel Bilgi Formu düğmesine basıldı."
-        };
-        $.ajax({
-            type: "POST",
-            url: "/log",
-            data: data,
-            success: function(response) {
-                    console.log("Kişisel Bilgi Formu");
-            }
-        });
-    });
-});*/

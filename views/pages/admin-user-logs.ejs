@@ -13,12 +13,17 @@
         <div class="jumbotron">
             <h1>User Logs</h1>
             <p>Logs listed below.</p>
+            
+            <form action="/admin/delete-logs" method="DELETE">
+                <button type="submit" class="btn btn-danger btn-block">Delete User Logs</button>
+            </form>
+            
             <ul>
                 <% logs.forEach(function(log) { %>
                     <li>
                         <strong><%= log.timestamp; %></strong>
                         <br>
-                        <%= log.message %>
+                        <span><%= log.message %></span>
                     </li>
                 <% }); %>
             </ul>

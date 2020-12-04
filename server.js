@@ -23,7 +23,10 @@ var loginRouter = require('./routes/index');
 const Logger = require('./services/logger-service');
 const logger = new Logger('app');
 //MongoDB connection
+//const mongoose = require("mongoose");
 const database = require("./config/database.js")();
+//Add new fields to User schema
+//database.user.update({}, {$set: { age: [] }, { multi:true }});
 
 //Set view engine
 app.set('view engine', 'ejs');
@@ -86,6 +89,36 @@ app.post('/log', (req, res) => {
     console.log(body.event);
     logger.logger.log("info", body.event);
     let error = {};
+});
+//Accessibility Settings
+app.post('/access-settings', (req, res) => {
+    console.log(req.body);
+    let newSettings = {
+        "theme": req.body.theme,
+        "fontFamily": req.body.fontfamily,
+        "fontSize": req.body.fontsize
+    };
+    fs.readFile('/config/access-settings.json', 'utf8', (err, data) => {
+        /*if (err) {
+            console.log("Error: Could not read the json file.");
+            return
+        }
+        try {
+            const jsonString = fs.readFileSync('./config/access-settings.json');
+            const settings = JSON.parse(jsonString);
+        } catch(err) {
+          console.log(err)
+          return
+        }*/
+        data = JSON.parse(data);
+        console.log(data);
+        data = JSON.stringify(newSettings);
+        res.end(data);
+        fs.writeFile('/config/access-settings.json', JSON.stringify(data), (err) => {
+            if (err) throw err;
+            console.log('Erişilebilirlik ayarları kaydedildi.');
+        });
+    });
 });
 
 //Logout

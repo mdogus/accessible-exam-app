@@ -4,6 +4,8 @@ var router = express.Router();
 const formValidation = require("../services/formValidation");
 //Models
 const User = require("../models/User");
+//controller
+const controller = require("../controller/user-controller");
 //JWT
 //const jwt = require("jsonwebtoken");
 //Passport
@@ -13,23 +15,18 @@ require("../config/passport");
 const Logger = require('../services/logger-service');
 const logger = new Logger('user-logs');
 
-//User logs
-router.post('/user-logs', (req, res) => {
-    const body = req.body;
-    console.log(body.event);
-    logger.logger.log("info", body.event);
-    let error = {};
-});
-
 /* GET home page. */
 router.get('/', checkAuthenticated, (req, res, next) => {
     logger.logger.log("info", "Ana Sayfa açıldı.")
     res.render('pages/index', {
         //title: "Ana Sayfa | Engelsiz Sınav Uygulaması",
         name: req.user.name,
-        surname: req.user.surname
+        surname: req.user.surname,
+        email: req.user.email
     });
 });
+//Kişisel bilgi formu
+router.post('/save-personal-info', checkAuthenticated, controller.updateUser);
 //Login page
 router.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('pages/user-login');
