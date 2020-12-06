@@ -20,3 +20,14 @@
 [Cmt, 5-Ara-2020, 0:37:31] | INFO | User saved successfully: %s %s %s |
 [Cmt, 5-Ara-2020, 1:3:44] | INFO | User saved successfully: %s %s %s |
 [Cmt, 5-Ara-2020, 1:24:50] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 19:22:44] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 19:29:24] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 19:32:26] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 19:42:4] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 19:44:27] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 19:59:47] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 20:41:3] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 21:29:58] | ERROR | Failed to save personal info. |
+[Cmt, 5-Ara-2020, 22:11:36] | INFO | Personal Info saved successfully: %s %s %s |
+[Cmt, 5-Ara-2020, 23:5:14] | INFO | Personal Info saved successfully: %s %s %s |
+[Paz, 6-Ara-2020, 20:27:6] | INFO | Personal Info saved successfully: %s %s %s |

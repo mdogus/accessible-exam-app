@@ -22,7 +22,8 @@ router.get('/', checkAuthenticated, (req, res, next) => {
         //title: "Ana Sayfa | Engelsiz Sınav Uygulaması",
         name: req.user.name,
         surname: req.user.surname,
-        email: req.user.email
+        email: req.user.email,
+        age: req.user.age
     });
 });
 //Kişisel bilgi formu

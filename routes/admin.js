@@ -83,16 +83,20 @@ router.get('/admin/logs', checkAuthenticatedAdmin, function(req, res) {
     });
 });
 //Delete user logs
-router.delete('/admin/delete-logs', checkAuthenticatedAdmin, function(req, res) {
-    const deleteAllLogs = async () => {
-      try {
-        await logs.deleteMany();
-        console.log('All Data successfully deleted');
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    deleteAllLogs;
+router.post('/admin/delete-logs', checkAuthenticatedAdmin, function(req, res) {
+    try {
+        logs.deleteMany({}, function(err) {
+            if(err) {
+                console.log(err);
+            } else {
+                console.log('User Logs successfully deleted');
+                res.redirect("/admin/logs");
+            }
+        });
+      
+    } catch (err) {
+      console.log(err);
+    }
     //res.redirect('/admin/logs');
     /*logs.deleteMany({ level: 'info'}, function(err, docs) {
         if (err) {

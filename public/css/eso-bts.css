@@ -53,6 +53,93 @@ div.col-sm-4, div.col-sm-8 {
     overflow:hidden;
 }
 
+/* Inputs */
+/*input[type=radio] {
+    width: 20px;
+    height: 20px;
+}*/
+input[type=text] {
+    border: 1px solid #0f0f0f;
+    padding: 12px 16px;
+}
+textarea {
+    border: 1px solid #0f0f0f !important;
+    /*outline: 1px solid #0f0f0f;*/
+    padding: 12px 16px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/* Customize the label (the container) */
+.container1, .container2 {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.container1 input, .container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark1, .checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #ccc;
+  border: 3px solid black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .checkmark1, .container2 input:checked ~ .checkmark2 {
+  background-color: black;
+  color:white;
+  border: 2px solid slateGrey;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container1 .checkmark1:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: red;
+}
+span.checkmark2 {
+font-family: verdana;
+font-size: 24px;
+font-weight: bold;
+}
+
 /* Blur */
 div.jumbotron.filter-grayscale, div.jumbotron.sidebar-filter-grayscale {
     width: 100%;

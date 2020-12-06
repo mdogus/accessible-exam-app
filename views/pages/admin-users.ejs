@@ -18,6 +18,11 @@
                         <strong><%= user.name; %></strong>
                         <strong><%= user.surname; %></strong>
                         | <%= user.email %>
+                        <% if(user.age !== "") { %>
+                            <ul>
+                                <li><strong>Yaş: </strong><%= user.age %></li>
+                            </ul>
+                        <% } %>
                     </li>
                 <% }); %>
             </ul>
