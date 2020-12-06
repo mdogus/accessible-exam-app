@@ -270,3 +270,7 @@
 [Paz, 6-Ara-2020, 21:13:29] | INFO | Ana Sayfa açıldı. |
 [Paz, 6-Ara-2020, 21:20:30] | INFO | Ana Sayfa açıldı. |
 [Paz, 6-Ara-2020, 21:20:39] | INFO | Ana Sayfa açıldı. |
+[Paz, 6-Ara-2020, 22:43:54] | INFO | Ana Sayfa açıldı. |
+[Paz, 6-Ara-2020, 22:45:57] | INFO | Ana Sayfa açıldı. |
+[Paz, 6-Ara-2020, 22:50:37] | INFO | Ana Sayfa açıldı. |
+[Paz, 6-Ara-2020, 22:52:28] | INFO | Ana Sayfa açıldı. |

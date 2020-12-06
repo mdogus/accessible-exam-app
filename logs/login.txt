@@ -31,3 +31,13 @@
 [Cmt, 5-Ara-2020, 22:11:36] | INFO | Personal Info saved successfully: %s %s %s |
 [Cmt, 5-Ara-2020, 23:5:14] | INFO | Personal Info saved successfully: %s %s %s |
 [Paz, 6-Ara-2020, 20:27:6] | INFO | Personal Info saved successfully: %s %s %s |
+[Paz, 6-Ara-2020, 22:45:57] | INFO | Personal Info saved successfully: %s %s %s %s %s %s %s %s %s |
+[Paz, 6-Ara-2020, 22:52:28] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 12
+Cinsiyet: Erkek
+Meslek: akademik 
+Kişisel Teknolojier: Akıllı telefon (iOS),Akıllı telefon (Android),Dizüstü bilgisayar,Masaüstü bilgisayar,Tablet bilgisayar,klavye 
+Yardımcı Teknolojiler: ekran okuyucu
+İşletim sistemi: Windows,macOS,linux |

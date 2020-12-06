@@ -8,6 +8,7 @@ const logger = new Logger('login');
  */
 exports.updateUser = async (req, res) => {
     const user = req.body;
+    const msg = "Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.genderRadios + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTech + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem;
     
     try {
         //Add new fields
@@ -25,8 +26,10 @@ exports.updateUser = async (req, res) => {
                 res.send(err);
             } else {
                 console.log("Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.genderRadios + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTech + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem);
-                logger.logger.log("Personal Info saved successfully: %s %s %s %s %s %s %s %s %s", user.name, user.surname, user.age, user.genderRadios, user.job, user.personalTech, user.assistiveTechs, user.opSystem);
+                //logger.logger.log("info", "Personal Info saved successfully: %s %s %s %s %s %s %s %s %s", user.name, user.surname, user.age, user.genderRadios, user.job, user.personalTech, user.assistiveTechs, user.opSystem);
                 //logger.logger.log("info", "Personal Info saved successfully: %s %s %s", user.name, user.surname, user.age);
+                
+                logger.logger.log("info", msg)
                 res.redirect("/");
             }
         });

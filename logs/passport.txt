@@ -234,3 +234,6 @@
 [Paz, 6-Ara-2020, 20:32:26] | INFO | %s %s %s |
 [Paz, 6-Ara-2020, 21:11:42] | INFO | %s %s %s |
 [Paz, 6-Ara-2020, 21:20:30] | INFO | %s %s %s |
+[Paz, 6-Ara-2020, 21:25:41] | INFO | %s %s %s |
+[Paz, 6-Ara-2020, 22:43:54] | INFO | %s %s %s |
+[Paz, 6-Ara-2020, 22:50:37] | INFO | %s %s %s |
