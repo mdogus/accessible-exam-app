@@ -761,3 +761,5 @@
 [Paz, 6-Ara-2020, 22:44:14] | INFO | Kişisel Bilgi Formu düğmesine basıldı. |
 [Paz, 6-Ara-2020, 22:50:13] | INFO | Server started. |
 [Paz, 6-Ara-2020, 22:50:42] | INFO | Kişisel Bilgi Formu düğmesine basıldı. |
+[Pzt, 7-Ara-2020, 13:52:39] | INFO | Server started. |
+[Pzt, 7-Ara-2020, 13:53:5] | INFO | Kişisel Bilgi Formu düğmesine basıldı. |

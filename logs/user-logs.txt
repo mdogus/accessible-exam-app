@@ -274,3 +274,4 @@
 [Paz, 6-Ara-2020, 22:45:57] | INFO | Ana Sayfa açıldı. |
 [Paz, 6-Ara-2020, 22:50:37] | INFO | Ana Sayfa açıldı. |
 [Paz, 6-Ara-2020, 22:52:28] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 13:52:58] | INFO | Ana Sayfa açıldı. |

@@ -237,3 +237,4 @@
 [Paz, 6-Ara-2020, 21:25:41] | INFO | %s %s %s |
 [Paz, 6-Ara-2020, 22:43:54] | INFO | %s %s %s |
 [Paz, 6-Ara-2020, 22:50:37] | INFO | %s %s %s |
+[Pzt, 7-Ara-2020, 13:52:58] | INFO | %s %s %s |
