@@ -30,6 +30,7 @@ exports.updateUser = async (req, res) => {
                 //logger.logger.log("info", "Personal Info saved successfully: %s %s %s", user.name, user.surname, user.age);
                 
                 logger.logger.log("info", msg)
+                //req.flash("message", "Kişisel Bilgi Formu kaydedilmiştir. Teşekkür ederiz.");
                 res.redirect("/");
             }
         });

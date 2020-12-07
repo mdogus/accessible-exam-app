@@ -238,3 +238,17 @@
 [Paz, 6-Ara-2020, 22:43:54] | INFO | %s %s %s |
 [Paz, 6-Ara-2020, 22:50:37] | INFO | %s %s %s |
 [Pzt, 7-Ara-2020, 13:52:58] | INFO | %s %s %s |
+[Pzt, 7-Ara-2020, 22:53:38] | INFO | %s %s %s |
+[Pzt, 7-Ara-2020, 23:15:46] | INFO | %s %s %s |
+[Pzt, 7-Ara-2020, 23:42:29] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:8:49] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:9:13] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:18:44] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:21:40] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:26:46] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:43:47] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:54:17] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:56:13] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 0:58:37] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 1:15:59] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 1:22:18] | INFO | %s %s %s |

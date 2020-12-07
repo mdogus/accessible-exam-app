@@ -41,3 +41,12 @@ Meslek: akademik
 Kişisel Teknolojier: Akıllı telefon (iOS),Akıllı telefon (Android),Dizüstü bilgisayar,Masaüstü bilgisayar,Tablet bilgisayar,klavye 
 Yardımcı Teknolojiler: ekran okuyucu
 İşletim sistemi: Windows,macOS,linux |
+[Pzt, 7-Ara-2020, 23:32:20] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: Erkek
+Meslek: Akademisyen
+Kişisel Teknolojier: Akıllı telefon (iOS),Akıllı telefon (Android),Dizüstü bilgisayar,Masaüstü bilgisayar,Tablet bilgisayar,Ütü
+Yardımcı Teknolojiler: Jaws, nvdda
+İşletim sistemi: Windows,macOS,Linux |

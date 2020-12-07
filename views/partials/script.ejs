@@ -7,7 +7,7 @@ $(document).ready(function() {
         $("#personalInfoButton").css("background-color", "red");
         
         var data = {
-            event: "Kişisel Bilgi Formu düğmesine basıldı."
+            event: "Button: Kişisel Bilgi Formu düğmesine basıldı."
         };
         $.ajax({
             type: "POST",
@@ -24,7 +24,7 @@ $(document).ready(function() {
         $("#startExamModalButton").css("background-color", "red");
         
         var data = {
-            event: "Sınava Başla düğmesine basıldı."
+            event: "Button: Sınava Başla düğmesine basıldı."
         };
         $.ajax({
             type: "POST",
@@ -36,6 +36,11 @@ $(document).ready(function() {
         });
     });
     
+    /* Kişisel Bilgi Formu */
+    $("#personalInfoButton").click((event) => {
+        event.preventDefault();
+        window.location.href = "/user/personal-info";
+    });
     $("#personalTechCheck6").on("click", function() {
         $("#inputPersonalTechCheck6").removeAttr("hidden");
     });
@@ -43,8 +48,15 @@ $(document).ready(function() {
         $("#inputOpSystemCheck3").removeAttr("hidden");
     });
     
-    /*$("#inputOpSystemCheck3").focus(function() {
-        
-    });*/
 });
+
+setTimeout(function() {
+    
+}, 5000);
+
+$(document).ready(function() {
+    $("#msgPersonalInfoSrOnly").delay(5000).slideUp(300);
+    $("#msgPersonalInfo").delay(5000).slideUp(300);
+});
+
 </script>

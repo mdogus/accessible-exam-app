@@ -275,3 +275,111 @@
 [Paz, 6-Ara-2020, 22:50:37] | INFO | Ana Sayfa açıldı. |
 [Paz, 6-Ara-2020, 22:52:28] | INFO | Ana Sayfa açıldı. |
 [Pzt, 7-Ara-2020, 13:52:58] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 22:53:38] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 22:55:11] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 22:55:50] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 22:57:52] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 22:57:54] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Pzt, 7-Ara-2020, 23:15:46] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 23:15:49] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Pzt, 7-Ara-2020, 23:17:50] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Pzt, 7-Ara-2020, 23:30:12] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Pzt, 7-Ara-2020, 23:32:20] | INFO | Ana Sayfa açıldı. |
+[Pzt, 7-Ara-2020, 23:42:29] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:8:49] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:9:13] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:18:44] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:21:40] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:26:46] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:29:30] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:43:47] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:43:55] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 0:44:42] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 32
+Cinsiyet: Erkek
+Meslek: akademik
+Kişisel Teknolojier: Akıllı telefon (iOS),Akıllı telefon (Android),
+Yardımcı Teknolojiler: jaws
+İşletim sistemi: Windows, |
+[Sal, 8-Ara-2020, 0:44:42] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:47:17] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:47:20] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:47:34] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:54:18] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:54:25] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 0:54:52] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: Erkek
+Meslek: akademik
+Kişisel Teknolojier: Akıllı telefon (Android),
+Yardımcı Teknolojiler: jaws
+İşletim sistemi: macOS, |
+[Sal, 8-Ara-2020, 0:54:52] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:56:13] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:56:16] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 0:57:0] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: Erkek
+Meslek: akademik
+Kişisel Teknolojier: Akıllı telefon (Android),
+Yardımcı Teknolojiler: jaws 
+İşletim sistemi: Windows, |
+[Sal, 8-Ara-2020, 0:57:0] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:58:37] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 0:58:40] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 0:59:13] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: Kadın
+Meslek: akademik
+Kişisel Teknolojier: Akıllı telefon (iOS),
+Yardımcı Teknolojiler: jaws
+İşletim sistemi: Windows, |
+[Sal, 8-Ara-2020, 0:59:13] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:15:59] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:16:2] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 1:16:52] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 16
+Cinsiyet: Erkek
+Meslek: akdemik
+Kişisel Teknolojier: Akıllı telefon (iOS),
+Yardımcı Teknolojiler: jaws
+İşletim sistemi: macOS, |
+[Sal, 8-Ara-2020, 1:16:52] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:17:15] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:20:0] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:21:43] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:22:18] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:22:22] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 1:22:53] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: Erkek
+Meslek: akademik
+Kişisel Teknolojier: Akıllı telefon (Android),
+Yardımcı Teknolojiler: jaws
+İşletim sistemi: macOS, |
+[Sal, 8-Ara-2020, 1:22:53] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:24:10] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:27:38] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:29:12] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:30:24] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:33:51] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:34:18] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:37:22] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:37:36] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:37:45] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:40:31] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:40:41] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:42:9] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 1:42:21] | INFO | Ana Sayfa açıldı. |
