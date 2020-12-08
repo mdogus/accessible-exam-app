@@ -4,17 +4,6 @@
     <%- include('../partials/head'); %>
 </head>
 <body>
-    <!-- Flash Messages for Screen Readers -->
-    <%_ if (messages.success) { %>
-        <div class="sr-only">
-            <h4>Hoş geldiniz <%= name %> <%= surname %>!</h4>
-        </div>
-    <% } %>
-    <% if (msgPersonalInfo !== "") { %>
-        <div id="msgPersonalInfoSrOnly" class="sr-only">
-            <h4><%= msgPersonalInfo %></h4>
-        </div>
-    <% } _%>
     
 <header class="container-fluid" style="padding: 0;">
     <%- include('../partials/header-user-home'); %>
@@ -26,8 +15,8 @@
             <!-- Flash Messages -->
             <div class="jumbotron">
                 <% if (messages.success) { %>
-                    <div class="alert alert-info font-raleway" role="alert">
-                        <h4>Hoş geldiniz <strong><%= name %> <%= surname %></strong>!</h4>
+                    <div id="greetingMsg" class="alert alert-info font-raleway" role="alert">
+                        <h4 style="font-weight:bold;">Hoş geldiniz <%= name %> <%= surname %>!</h4>
                     </div>
                 <% } %>
                 <% if (msgPersonalInfo !== "") { %>

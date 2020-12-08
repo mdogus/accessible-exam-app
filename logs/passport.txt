@@ -252,3 +252,22 @@
 [Sal, 8-Ara-2020, 0:58:37] | INFO | %s %s %s |
 [Sal, 8-Ara-2020, 1:15:59] | INFO | %s %s %s |
 [Sal, 8-Ara-2020, 1:22:18] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 12:51:38] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 12:53:47] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 12:58:9] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:2:1] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:3:26] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:4:31] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:4:59] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:5:14] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:5:52] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:7:51] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
+[Sal, 8-Ara-2020, 13:8:15] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:8:41] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:12:8] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
+[Sal, 8-Ara-2020, 13:14:49] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:15:31] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:16:0] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:17:43] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
+[Sal, 8-Ara-2020, 13:18:7] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 13:18:43] | INFO | %s %s %s |
