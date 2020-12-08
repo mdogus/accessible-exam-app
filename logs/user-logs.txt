@@ -405,3 +405,82 @@ Yardımcı Teknolojiler: jaws
 [Sal, 8-Ara-2020, 13:16:0] | INFO | Ana Sayfa açıldı. |
 [Sal, 8-Ara-2020, 13:18:8] | INFO | Ana Sayfa açıldı. |
 [Sal, 8-Ara-2020, 13:18:43] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:1:45] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:2:32] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:3:16] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:24:29] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:25:25] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:28:8] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:29:21] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:32:16] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:32:51] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:33:9] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:33:24] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:34:14] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:34:57] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:35:32] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:37:7] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:40:33] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:41:52] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:47:24] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:47:27] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:47:37] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:48:30] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:51:13] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:51:33] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:53:13] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 16:53:27] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 22:36:32] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 22:36:43] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 22:41:24] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 22:42:30] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 22:44:1] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 22:45:0] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 22:46:19] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 23:12:29] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 23:12:32] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 23:19:7] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 23:19:10] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 23:20:37] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: undefined
+Meslek: Akademik
+Kişisel Teknolojier: undefined
+Yardımcı Teknolojiler: JAWS, NVDA
+İşletim sistemi: Windows,macOS,Linux |
+[Sal, 8-Ara-2020, 23:20:37] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 23:27:59] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 23:28:1] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 23:29:49] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 23:44:44] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 23:44:48] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 23:45:43] | ERROR | Invalid update pipeline operator: "age" |
+[Sal, 8-Ara-2020, 23:52:11] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 23:52:14] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 8-Ara-2020, 23:52:48] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 13
+Cinsiyet: undefined
+Okul: Gazi, 
+Meslek: Akademik
+Kişisel Teknolojier: undefined
+Yardımcı Teknolojiler: undefined
+İşletim sistemi: undefined |
+[Sal, 8-Ara-2020, 23:52:48] | INFO | Ana Sayfa açıldı. |
+[Sal, 8-Ara-2020, 23:54:18] | INFO | Ana Sayfa açıldı. |
+[Çar, 9-Ara-2020, 0:1:52] | INFO | Ana Sayfa açıldı. |
+[Çar, 9-Ara-2020, 0:1:54] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 9-Ara-2020, 0:3:4] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 13
+Cinsiyet: undefined
+Okul: Anadolu, Özel eğitim-4. sınıf
+Meslek: Muslukçu
+Kişisel Teknolojier: undefined
+Yardımcı Teknolojiler: undefined
+İşletim sistemi: undefined |
+[Çar, 9-Ara-2020, 0:3:4] | INFO | Ana Sayfa açıldı. |

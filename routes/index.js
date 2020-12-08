@@ -66,32 +66,50 @@ router.get('/user/contact', checkAuthenticated, function(req, res) {
 });
 
 //Kişisel bilgi formu
+//User home: Personal info page
+router.get('/user/personal-info', checkAuthenticated, function(req, res) {
+    res.render("pages/user-form-info", {
+        name: req.user.name,
+        surname: req.user.surname,
+        email: req.user.email,
+        age: req.user.age
+    });
+    logger.logger.log("info", "Page: Kişisel Bilgi Formu sayfası açıldı.")
+});
 //router.post('/user/save-personal-info', checkAuthenticated, controller.updateUser);
 router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => {
     const user = req.body;
-    const msg = "Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.genderRadios + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTech + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem;
+    const msg = "Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.genderRadios + "\nOkul: " + user.studentVar1 + ", " + user.studentVar2 + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTechs + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem;
     
     msgPersonalInfo = "Kişisel Bilgi Formu kaydedilmiştir. Teşekkür ederiz.";
     
     try {
         //Add new fields
         /*await User.updateMany({},
-        [{$set: { "age": "" }}],
+        [{$set: { "age": "" }},
+         {$set: { "gender": "" }},
+         {$set: { "studentVar1": "" }},
+         {$set: { "studentVar2": "" }},
+         {$set: { "job": "" }},
+         {$set: { "personalTechs": [] }},
+         {$set: { "assistiveTechs": "" }},
+         {$set: { "opSystem": [] }}],
         { multi: true }, function (err, doc) {
             if (err) return err;
             console.log('The doc response from Mongo was ', doc);
         });*/
         await User.updateOne({ "email": user.email },
-                             { "age": user.age }, function(err, doc) {
+                             [{$set: { "age": user.age }},
+                              {$set: { "gender": user.gender }},
+                              {$set: { "studentVar1": user.studentVar1 }},
+                              {$set: { "studentVar2": user.studentVar2 }},
+                              {$set: { "job": user.job }}], function(err, doc) {
             if (err) {
                 console.log(err);
                 logger.logger.log("error", err);
                 res.send(err);
             } else {
-                console.log("Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.genderRadios + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTech + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem);
-                //logger.logger.log("info", "Personal Info saved successfully: %s %s %s %s %s %s %s %s %s", user.name, user.surname, user.age, user.genderRadios, user.job, user.personalTech, user.assistiveTechs, user.opSystem);
-                //logger.logger.log("info", "Personal Info saved successfully: %s %s %s", user.name, user.surname, user.age);
-                
+                console.log(msg);
                 logger.logger.log("info", msg)
                 //req.flash("message", "Kişisel Bilgi Formu kaydedilmiştir. Teşekkür ederiz.");
                 res.redirect("/");
@@ -103,25 +121,7 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
         res.redirect("/login");
     };
 });
-//User home: Personal info page
-router.get('/user/personal-info', checkAuthenticated, function(req, res) {
-    /*User.find({}, function(err, docs) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.render('pages/user-form-info', {
-                user: doc
-            });
-        }
-    });*/
-    res.render("pages/user-form-info", {
-        name: req.user.name,
-        surname: req.user.surname,
-        email: req.user.email,
-        age: req.user.age
-    });
-    logger.logger.log("info", "Page: Kişisel Bilgi Formu sayfası açıldı.")
-});
+
 
 //Test page
 router.get('/exam', checkAuthenticated, function(req, res) {

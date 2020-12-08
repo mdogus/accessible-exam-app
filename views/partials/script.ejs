@@ -41,6 +41,12 @@ $(document).ready(function() {
         event.preventDefault();
         window.location.href = "/user/personal-info";
     });
+    $("#inputCheckJob1").on("click", function() {
+        $("#jobStudentInfo").removeAttr("hidden");
+    });
+    $("#inputCheckJob2").on("click", function() {
+        $("#inputTextJobRadio3").removeAttr("hidden");
+    });
     $("#personalTechCheck6").on("click", function() {
         $("#inputPersonalTechCheck6").removeAttr("hidden");
     });
@@ -49,10 +55,6 @@ $(document).ready(function() {
     });
     
 });
-
-setTimeout(function() {
-    
-}, 5000);
 
 $(document).ready(function() {
     $("#greetingMsg").delay(5000).slideUp(300);

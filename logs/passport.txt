@@ -271,3 +271,11 @@
 [Sal, 8-Ara-2020, 13:17:43] | ERROR | Lütfen parolayı kontrol ederek tekrar giriniz. |
 [Sal, 8-Ara-2020, 13:18:7] | INFO | %s %s %s |
 [Sal, 8-Ara-2020, 13:18:43] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 16:1:45] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 16:40:33] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 22:36:32] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 23:12:29] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 23:19:7] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 23:44:44] | INFO | %s %s %s |
+[Sal, 8-Ara-2020, 23:52:11] | INFO | %s %s %s |
+[Çar, 9-Ara-2020, 0:1:52] | INFO | %s %s %s |

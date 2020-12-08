@@ -4,18 +4,16 @@ const Schema = mongoose.Schema;
 const User = new Schema({
     name: String,
     surname: String,
-    email: {
-        type: String
-        //required: true,
-        //unique: true
-    },
-    password: {
-        type: String
-        //minlength: 8
-    },
-    age: {
-        type: String
-    }
+    email: { type: String },
+    password: { type: String },
+    age: { type: String },
+    gender: { type: String },
+    studentVar1: { type: String },
+    studentVar2: { type: String },
+    job: { type: String },
+    personalTechs: [{ type: String }],
+    assistiveTechs: { type: String },
+    opSystem: [{ type: String }]
 });
 
 /*User.updateMany({},
