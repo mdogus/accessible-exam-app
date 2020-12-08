@@ -798,3 +798,4 @@
 [Sal, 8-Ara-2020, 1:16:2] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Sal, 8-Ara-2020, 1:22:5] | INFO | Server started. |
 [Sal, 8-Ara-2020, 1:22:22] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Sal, 8-Ara-2020, 12:38:0] | INFO | Server started. |
