@@ -36,29 +36,71 @@ $(document).ready(function() {
         });
     });
     
-    /* Kişisel Bilgi Formu */
-    $("#personalInfoButton").click((event) => {
-        event.preventDefault();
-        window.location.href = "/user/personal-info";
-    });
-    $("#inputCheckJob1").on("click", function() {
-        $("#jobStudentInfo").removeAttr("hidden");
-    });
-    $("#inputCheckJob2").on("click", function() {
-        $("#inputTextJobRadio3").removeAttr("hidden");
-    });
-    $("#personalTechCheck6").on("click", function() {
-        $("#inputPersonalTechCheck6").removeAttr("hidden");
-    });
-    $("#opSystemCheck3").on("click", function() {
-        $("#inputOpSystemCheck3").removeAttr("hidden");
-    });
-    
 });
 
 $(document).ready(function() {
     $("#greetingMsg").delay(5000).slideUp(300);
     $("#msgPersonalInfo").delay(5000).slideUp(300);
+});
+
+$(document).ready(function() {
+    /* Kişisel Bilgi Formu */
+    /* ana sayfadaki yönlendirme düğmesi */
+    $("#personalInfoButton").click((event) => {
+        event.preventDefault();
+        window.location.href = "/user/personal-info";
+    });
+    
+    /* job */
+    $("#alertJobDiv").hide();
+    $("#jobStudentInfo").hide();
+    $("#jobOtherInfo").hide();
+    
+    /*$("#inputCheckJob1").click(function() {
+        $("#jobStudentInfo").toggle(this.checked);
+    });
+    $("#inputCheckJob2").click(function() {
+        $("#jobOtherInfo").toggle(this.checked);
+    });*/
+    
+    $("#inputCheckJob1").change(function() {
+        if($(this).is(':checked')) {
+            $("#jobStudentInfo").show(300).find(':input').attr('required', true);
+            /*$("#inputTextJobRadio1").attr("required");
+            $("#inputTextJobRadio2").attr("required");*/
+        } else {
+            $("#jobStudentInfo").hide(300).find(':input').removeAttr('required');
+            /*$("#inputTextJobRadio1").removeAttr("required");
+            $("#inputTextJobRadio2").removeAttr("required");*/
+        }
+    });
+    
+    $("#inputCheckJob2").change(function() {
+        if($(this).is(':checked')) {
+            $("#jobOtherInfo").show(300).find(':input').attr('required', true);
+            /*$("#inputTextJobRadio3").attr("required");*/
+        } else {
+            $("#jobOtherInfo").hide(300).find(':input').removeAttr('required');
+            /*$("#inputTextJobRadio3").removeAttr("required");*/
+        }
+    });
+    
+    /* personal techs */
+    $("#personalTechCheck6").on("click", function() {
+        $("#inputPersonalTechCheck6").removeAttr("hidden");
+    });
+    
+    /* operation system */
+    $("#opSystemCheck3").on("click", function() {
+        $("#inputOpSystemCheck3").removeAttr("hidden");
+    });
+    
+    /* personal info form alerts */
+    /*$("#personalInfoSaveButton").click(function(e) {
+        if(!$("inputCheckJob1").is(':checked') && !$("inputCheckJob1").is(':checked')) {
+            $("#alertJob").show(300);
+        }
+    });*/
 });
 
 </script>

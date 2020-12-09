@@ -51,22 +51,27 @@
                     </div>
                     <hr style="border:1px solid #888;" aria-hidden="true">
                     <label class="h6" for="" role="heading">Mesleğinizi belirtiniz.</label>
+                    <div id="alertJobDiv" class="alert alert-danger font-raleway" role="alert">
+                        <h4 style="font-weight:bold;">Lütfen en az bir seçim yapınız.</h4>
+                    </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="inputCheckJob1">
                       <label class="form-check-label" for="inputCheckJob1">Öğrenci</label>
-                      <div hidden id="jobStudentInfo">
+                      <div id="jobStudentInfo">
                         <small class="form-text text-muted" style="margin-top:-5px;padding-top:0;">Lütfen aşağıdaki alanları doldurunuz.</small>
-                        <input type="text" class="form-control" id="inputTextJobRadio1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." style="margin:5px;" required>
-                        <input type="text" class="form-control" id="inputTextJobRadio2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." style="margin:5px;" required>
+                        <input type="text" class="form-control" id="inputTextJobRadio1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." style="margin:5px;">
+                        <input type="text" class="form-control" id="inputTextJobRadio2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." style="margin:5px;">
                       </div>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="inputCheckJob2">
                       <label class="form-check-label" for="inputCheckJob2">Diğer</label>
-                      <input hidden type="text" class="form-control" id="inputTextJobRadio3" name="job" placeholder="Mesleğiniz..." aria-label="Mesleğinizi belirtiniz." required>
+                      <div id="jobOtherInfo">
+                        <input type="text" class="form-control" id="inputTextJobRadio3" name="job" placeholder="Mesleğiniz..." aria-label="Mesleğinizi belirtiniz.">
+                      </div>
                     </div>
-                    <!--
                     <hr style="border:1px solid #888;" aria-hidden="true">
+                    <!-- personal techs -->
                     <label class="h6" for="" role="heading">Kullandığınız kişisel teknolojileri belirtiniz.</label>
                     <small class="form-text text-muted" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
@@ -77,6 +82,7 @@
                       <input class="form-check-input" type="checkbox" name="personalTechs" value="Akıllı telefon (Android)" id="personalTechCheck2">
                       <label class="form-check-label" for="personalTechCheck2">Akıllı telefon (Android)</label>
                     </div>
+                    <!--
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="personalTechs" value="Dizüstü bilgisayar" id="personalTechCheck3">
                       <label class="form-check-label" for="personalTechCheck3">Dizüstü bilgisayar</label>
@@ -92,9 +98,13 @@
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="personalTechCheck6">
                       <label class="form-check-label" for="personalTechCheck6">Diğer</label>
-                      <input hidden type="text" class="form-control" id="inputPersonalTechCheck6" name="personalTechs" aria-describedby="" placeholder="Yazınız" aria-label="Varsa sahip olduğunuz diğer kişisel teknolojileri yazınız.">
+                      <input hidden type="text" class="form-control" id="inputPersonalTechCheck6" name="personalTechs" placeholder="Yazınız" aria-label="Varsa sahip olduğunuz diğer kişisel teknolojileri yazınız.">
                     </div>
+                    -->
+                    
                     <hr style="border:1px solid #888;" aria-hidden="true">
+                    <!-- assistive techs -->
+                    <!--
                     <div class="form-group">
                         <label class="h6" for="inputAssistiveTechs" role="heading">Kullandığınız yardımcı teknolojileri belirtiniz.</label>
                         <textarea class="form-control" id="inputAssistiveTechs" name="assistiveTechs" rows="2" aria-describedby="" placeholder="Ekran okuyucu (ör. JAWS), ekran büyüteci (ör. Windows/Büyüteç), braille ekran vb." required></textarea>
@@ -117,7 +127,7 @@
                     </div>
                     -->
                     <div style="margin-top:20px;">
-                        <button type="submit" class="btn btn-primary btn-block">Kaydet</button>
+                        <button id="personalInfoSaveButton" type="submit" class="btn btn-primary btn-block">Kaydet</button>
                     </div>
                 </form>
             </div>
