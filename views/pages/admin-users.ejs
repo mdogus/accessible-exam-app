@@ -25,12 +25,19 @@
                                 <li><strong>Okul/Üniversite: </strong><%= user.studentVar1 %></li>
                                 <li><strong>Bölüm/Sınıf: </strong><%= user.studentVar2 %></li>
                                 <li><strong>Meslek: </strong><%= user.job %></li>
-                                <li><strong>Kullanılan Kişisel Teknolojiler: </strong></li>
+                                <li><strong>Kişisel Teknolojiler: </strong></li>
                                     <ul>
                                         <% user.personalTechs.forEach(function(i) { %>
-                                        <li><%= i %></li>
+                                            <li><%= i %></li>
                                         <% }); %>
                                     </ul>
+                                <li><strong>Yardımcı Teknolojiler: </strong><%= user.assistiveTechs %></li>
+                                <li><strong>Masaüstü İşletim Sistemi: </strong></li>
+                                <ul>
+                                    <% user.opSystem.forEach(function(i) { %>
+                                        <li><%= i %></li>
+                                    <% }); %>
+                                </ul>
                             </ul>
                         <% } %>
                     </li>

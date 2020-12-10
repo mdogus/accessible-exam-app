@@ -135,13 +135,13 @@ function checkNotAuthenticated(req, res, next) {
 }
 //Admin authentication
 function checkAuthenticatedAdmin(req, res, next) {
-  if (req.isAuthenticated() && (req.user.email === "mdogusm@gmail.com") && (req.user.password === "abcd1234")) {
+  if (req.isAuthenticated() && (req.user.email === "mdogusm@gmail.com") && (req.user.password === "vivalacoffee1210")) {
     return next()
   }
   res.redirect('/admin/login')
 }
 function checkNotAuthenticatedAdmin(req, res, next) {
-  if (req.isAuthenticated() && (req.user.email === "mdogusm@gmail.com") && (req.user.password === "abcd1234")) {
+  if (req.isAuthenticated() && (req.user.email === "mdogusm@gmail.com") && (req.user.password === "vivalacoffee1210")) {
     return res.redirect('/admin')
   }
   next()

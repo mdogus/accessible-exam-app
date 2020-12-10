@@ -55,7 +55,7 @@ $(document).ready(function() {
     $("#alertJobDiv").hide();
     $("#jobStudentInfo").hide();
     $("#jobOtherInfo").hide();
-    
+    /* .toggle() */
     /*$("#inputCheckJob1").click(function() {
         $("#jobStudentInfo").toggle(this.checked);
     });
@@ -66,41 +66,89 @@ $(document).ready(function() {
     $("#inputCheckJob1").change(function() {
         if($(this).is(':checked')) {
             $("#jobStudentInfo").show(300).find(':input').attr('required', true);
-            /*$("#inputTextJobRadio1").attr("required");
-            $("#inputTextJobRadio2").attr("required");*/
         } else {
             $("#jobStudentInfo").hide(300).find(':input').removeAttr('required');
-            /*$("#inputTextJobRadio1").removeAttr("required");
-            $("#inputTextJobRadio2").removeAttr("required");*/
         }
     });
-    
     $("#inputCheckJob2").change(function() {
         if($(this).is(':checked')) {
             $("#jobOtherInfo").show(300).find(':input').attr('required', true);
-            /*$("#inputTextJobRadio3").attr("required");*/
         } else {
             $("#jobOtherInfo").hide(300).find(':input').removeAttr('required');
-            /*$("#inputTextJobRadio3").removeAttr("required");*/
         }
     });
     
     /* personal techs */
-    $("#personalTechCheck6").on("click", function() {
-        $("#inputPersonalTechCheck6").removeAttr("hidden");
+    $("#personalTechsOtherInfo").hide();
+    $("#personalTechCheck6").change(function() {
+        if($(this).is(':checked')) {
+            $("#personalTechsOtherInfo").show(300).find(':input').attr('required', true);
+        } else {
+            $("#personalTechsOtherInfo").hide(300).find(':input').removeAttr('required');
+        }
     });
     
     /* operation system */
-    $("#opSystemCheck3").on("click", function() {
-        $("#inputOpSystemCheck3").removeAttr("hidden");
+    $("#opSystemOtherInfo").hide();
+    $("#opSystemCheck3").change(function() {
+        if($(this).is(':checked')) {
+            $("#opSystemOtherInfo").show(300).find(':input').attr('required', true);
+        } else {
+            $("#opSystemOtherInfo").hide(300).find(':input').removeAttr('required');
+        }
     });
     
-    /* personal info form alerts */
-    /*$("#personalInfoSaveButton").click(function(e) {
-        if(!$("inputCheckJob1").is(':checked') && !$("inputCheckJob1").is(':checked')) {
-            $("#alertJob").show(300);
+    /* personal info alerts */
+    $("#personalInfoSaveButton").click(function(e) {
+        if(($("input[name='studentVar1']").val() === "") && ($("input[name='studentVar2']").val() === "") && ($("input[name='job']").val() === "")) {
+            
+            e.preventDefault();
+            $("#alertJobDiv").show(300);
+            $("#alertJobDiv").focus();
+            $(this).css("background-color", "red");
         }
-    });*/
+    });
+    
+
 });
 
+$(function() {
+    
+});
 </script>
+
+<!--
+/* personal info form alerts */
+$("#personalInfoSaveButton").click(function(e) {
+    $("#inputCheckJob1, #inputCheckJob2").each(function() {
+        if(($("#inputCheckJob1").prop("checked", false)) && ($("#inputCheckJob2").prop("checked", false))) {
+            
+            
+            $("#alertJobDiv").show(300);
+            $("#personalInfoSaveButton").css("background-color", "red");
+        } else {
+            $("#personalInfo").submit();
+        }
+        
+    });
+    
+});
+
+$(function() {
+    /* personal info form alerts */
+    $("#personalInfo").each(function() {
+    $(this).submit(function(event) {
+        /*if ($.trim(username.val()) === "")
+        !$("#inputCheckJob1").is(':checked') && !$("#inputCheckJob2").is(':checked'))*/
+        event.preventDefault();
+        alert("it is working");
+        if(($("#inputCheckJob1").prop("checked", false)) && ($("#inputCheckJob2").prop("checked", false))) {
+            
+            $("#alertJobDiv").show(300);
+            $("#personalInfoSaveButton").css("background-color", "red");
+        }
+        return false;
+    });
+    });
+});
+-->
