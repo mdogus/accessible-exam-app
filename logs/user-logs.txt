@@ -1157,3 +1157,5 @@ Yardımcı Teknolojiler: jaws
 [Cum, 11-Ara-2020, 1:8:1] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Cum, 11-Ara-2020, 1:9:4] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Cum, 11-Ara-2020, 1:11:2] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 1:38:0] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 1:38:2] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
