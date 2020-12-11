@@ -51,6 +51,10 @@ $(document).ready(function() {
         window.location.href = "/user/personal-info";
     });
     
+    
+    /* age */
+    $("#alertAgeDiv").hide();
+    
     /* gender */
     $("#alertGenderDiv").hide();
     
@@ -82,6 +86,7 @@ $(document).ready(function() {
     });
     
     /* personal techs */
+    $("#alertPersonalTechsDiv").hide();
     $("#personalTechsOtherInfo").hide();
     $("#personalTechCheck6").change(function() {
         if($(this).is(':checked')) {
@@ -91,7 +96,11 @@ $(document).ready(function() {
         }
     });
     
+    /* assistive techs */
+    $("#alertAssistiveTechsDiv").hide();
+    
     /* operation system */
+    $("#alertOpSystemDiv").hide();
     $("#opSystemOtherInfo").hide();
     $("#opSystemCheck3").change(function() {
         if($(this).is(':checked')) {
@@ -103,8 +112,19 @@ $(document).ready(function() {
     
     /* personal info alerts */
     $("#personalInfoSaveButton").click(function(e) {
-        /* gender */
-        if(!$("#inputRadioGender1").is(":checked") && !$("#inputRadioGender2").is(":checked")) {
+        
+        /* age */
+        if($("input[name='age']").val() === "") {
+            
+            e.preventDefault();
+            $("#alertAgeDiv").show(300);
+            $("#alertAgeDiv").attr("tabindex","0");
+            document.getElementById("alertAgeDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertAgeDiv").delay(5000).slideUp(300);
+            
+            /* gender */
+        } else if(!$("#inputRadioGender1").is(":checked") && !$("#inputRadioGender2").is(":checked")) {
           
             e.preventDefault();
             $("#alertGenderDiv").show(300);
@@ -122,6 +142,37 @@ $(document).ready(function() {
             document.getElementById("alertJobDiv").focus();
             $(this).css("background-color", "red");
             $("#alertJobDiv").delay(5000).slideUp(300);
+            
+            /* personal techs */
+        } else if(!$("#personalTechCheck1").is(":checked") && !$("#personalTechCheck2").is(":checked") && !$("#personalTechCheck3").is(":checked") && !$("#personalTechCheck4").is(":checked") && !$("#personalTechCheck5").is(":checked") && !$("#personalTechCheck6").is(":checked")) {
+            
+            e.preventDefault();
+            $("#alertPersonalTechsDiv").show(300);
+            $("#alertPersonalTechsDiv").attr("tabindex","0");
+            document.getElementById("alertPersonalTechsDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertPersonalTechsDiv").delay(5000).slideUp(300);
+            
+            /* assistive techs */
+        } else if($("textarea[name='assistiveTechs']").val() === "") {
+            
+            e.preventDefault();
+            $("#alertAssistiveTechsDiv").show(300);
+            $("#alertAssistiveTechsDiv").attr("tabindex","0");
+            document.getElementById("alertAssistiveTechsDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertAssistiveTechsDiv").delay(5000).slideUp(300);
+            
+            /* operating system */
+        } else if(!$("#opSystemCheck1").is(":checked") && !$("#opSystemCheck2").is(":checked") && !$("#opSystemCheck3").is(":checked")) {
+            
+            e.preventDefault();
+            $("#alertOpSystemDiv").show(300);
+            $("#alertOpSystemDiv").attr("tabindex","0");
+            document.getElementById("alertAssistiveTechsDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertOpSystemDiv").delay(5000).slideUp(300);
+            
         }
     });
     

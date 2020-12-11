@@ -29,7 +29,7 @@ small {
 
 .form-group label {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 42px;
 }
 
@@ -42,10 +42,10 @@ small {
 }
 .col-sm-10 input {
     border-bottom: 2px solid rgb(150,150,150);
-    font-size: 22px;
+    font-size: 20px;
 }
 
-label.h4, label.h6 {
+h4, .alert-danger h6, label.h4, label.h6 {
     font-weight: bold;
 }
 
