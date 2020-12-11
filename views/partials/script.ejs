@@ -108,7 +108,7 @@ $(document).ready(function() {
           
             e.preventDefault();
             $("#alertGenderDiv").show(300);
-            $("#alertGenderDiv").attr("tabindex","-1");
+            $("#alertGenderDiv").attr("tabindex","0");
             document.getElementById("alertGenderDiv").focus();
             $(this).css("background-color", "red");
             $("#alertGenderDiv").delay(5000).slideUp(400);
@@ -122,7 +122,7 @@ $(document).ready(function() {
             $("#alertJobDiv").attr("tabindex","0");
             document.getElementById("alertJobDiv").focus();
             $(this).css("background-color", "red");
-            $("#alertJobDiv").delay(5000).slideUp(400);
+            $("#alertJobDiv").delay(5000).hide(400);
         }
     });
     
