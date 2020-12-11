@@ -39,8 +39,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $("#greetingMsg").delay(5000).slideUp(300);
-    $("#msgPersonalInfo").delay(5000).slideUp(300);
+    $("#greetingMsg").delay(5000).slideUp(400);
+    $("#msgPersonalInfo").delay(5000).slideUp(400);
 });
 
 $(document).ready(function() {
@@ -50,6 +50,9 @@ $(document).ready(function() {
         event.preventDefault();
         window.location.href = "/user/personal-info";
     });
+    
+    /* gender */
+    $("#alertGenderDiv").hide();
     
     /* job */
     $("#alertJobDiv").hide();
@@ -100,13 +103,26 @@ $(document).ready(function() {
     
     /* personal info alerts */
     $("#personalInfoSaveButton").click(function(e) {
+        /* gender */
+        if(!($("input[name='gender']").val() === "Kadın") || !($("input[name='gender']").val() === "Erkek") || ($("input[name='gender']").val() === null)) {
+          
+            e.preventDefault();
+            $("#alertGenderDiv").show(300);
+            $("#alertGenderDiv").attr("tabindex","0");
+            document.getElementById("alertGenderDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertGenderDiv").delay(5000).slideUp(400);
+        }
+        
+        /* job */
         if(($("input[name='studentVar1']").val() === "") && ($("input[name='studentVar2']").val() === "") && ($("input[name='job']").val() === "")) {
             
             e.preventDefault();
             $("#alertJobDiv").show(300);
-            $("#alertJobDiv").attr("tabindex","0");
+            $("#alertJobDiv").attr("tabindex","-1");
             document.getElementById("alertJobDiv").focus();
             $(this).css("background-color", "red");
+            $("#alertJobDiv").delay(5000).slideUp(400);
         }
     });
     

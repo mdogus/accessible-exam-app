@@ -12,6 +12,7 @@
 /* Body */
 body {
     padding-top: 30px;
+    font-size: 16px;
 }
 
 a {
@@ -19,6 +20,33 @@ a {
 }
 a:hover {
     text-decoration: underline solid rgb(241,88,58);
+}
+
+small {
+    font-size: 16px;
+}
+
+
+.form-group label {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 42px;
+}
+
+.form-group .col-sm-2 {
+    border-bottom: 1px solid rgb(150,150,150);
+}
+.form-group .col-sm-10 {
+    border-bottom: 1px solid rgb(150,150,150);
+    
+}
+.col-sm-10 input {
+    border-bottom: 2px solid rgb(150,150,150);
+    font-size: 22px;
+}
+
+label.h4, label.h6 {
+    font-weight: bold;
 }
 
 /* NavBar */
@@ -57,7 +85,9 @@ div.col-sm-4, div.col-sm-8 {
 .alert-danger {
     background-color: rgb(255,0,0);
     color: white;
-    
+}
+.alert-danger h6 {
+    margin-bottom: 0px;
 }
 
 /* screen reader only */
