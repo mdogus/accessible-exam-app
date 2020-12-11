@@ -112,10 +112,9 @@ $(document).ready(function() {
             document.getElementById("alertGenderDiv").focus();
             $(this).css("background-color", "red");
             $("#alertGenderDiv").delay(5000).slideUp(300);
-        }
-        
-        /* job */
-        if(($("input[name='studentVar1']").val() === "") && ($("input[name='studentVar2']").val() === "") && ($("input[name='job']").val() === "")) {
+            
+            /* job */
+        } else if(($("input[name='studentVar1']").val() === "") && ($("input[name='studentVar2']").val() === "") && ($("input[name='job']").val() === "")) {
             
             e.preventDefault();
             $("#alertJobDiv").show(300);
