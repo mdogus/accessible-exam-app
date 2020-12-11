@@ -1315,3 +1315,16 @@ Kişisel Teknolojier:
 Yardımcı Teknolojiler: aasdf
 İşletim sistemi:  |
 [Cum, 11-Ara-2020, 18:42:37] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 18:53:41] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 18:53:44] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 18:55:50] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: Kadın
+Okul: , 
+Meslek: akademikbbbb
+Kişisel Teknolojier: 
+Yardımcı Teknolojiler: asdf
+İşletim sistemi:  |
+[Cum, 11-Ara-2020, 18:55:50] | INFO | Ana Sayfa açıldı. |
