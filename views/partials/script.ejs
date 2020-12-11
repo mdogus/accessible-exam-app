@@ -104,11 +104,11 @@ $(document).ready(function() {
     /* personal info alerts */
     $("#personalInfoSaveButton").click(function(e) {
         /* gender */
-        if(!($("input[name='gender']").val() === "Kadın") || !($("input[name='gender']").val() === "Erkek") || ($("input[name='gender']").val() === null)) {
+        if($("input[name='gender']").val() === null) {
           
             e.preventDefault();
             $("#alertGenderDiv").show(300);
-            $("#alertGenderDiv").attr("tabindex","0");
+            $("#alertGenderDiv").attr("tabindex","-1");
             document.getElementById("alertGenderDiv").focus();
             $(this).css("background-color", "red");
             $("#alertGenderDiv").delay(5000).slideUp(400);
