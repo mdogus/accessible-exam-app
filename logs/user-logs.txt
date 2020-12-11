@@ -1256,3 +1256,16 @@ Yardımcı Teknolojiler: mmmmm
 [Cum, 11-Ara-2020, 11:40:40] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Cum, 11-Ara-2020, 11:41:15] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Cum, 11-Ara-2020, 11:41:21] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 14:15:38] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 14:15:43] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 14:18:3] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: undefined
+Okul: , 
+Meslek: mmmkkk
+Kişisel Teknolojier: 
+Yardımcı Teknolojiler: masdf
+İşletim sistemi:  |
+[Cum, 11-Ara-2020, 14:18:3] | INFO | Ana Sayfa açıldı. |
