@@ -104,7 +104,7 @@ $(document).ready(function() {
     /* personal info alerts */
     $("#personalInfoSaveButton").click(function(e) {
         /* gender */
-        if($("input[name='gender']").val() === null) {
+        if(!$("#inputRadioGender1").is(":checked") && !$("#inputRadioGender2").is(":checked")) {
           
             e.preventDefault();
             $("#alertGenderDiv").show(300);

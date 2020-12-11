@@ -1274,3 +1274,44 @@ Yardımcı Teknolojiler: masdf
 [Cum, 11-Ara-2020, 14:42:45] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Cum, 11-Ara-2020, 14:44:6] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Cum, 11-Ara-2020, 14:54:17] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 18:24:32] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 18:24:37] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 18:28:49] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 18:29:4] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: undefined
+Okul: , 
+Meslek: 
+Kişisel Teknolojier: 
+Yardımcı Teknolojiler: asdf
+İşletim sistemi:  |
+[Cum, 11-Ara-2020, 18:29:4] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 18:38:21] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 18:38:24] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 18:40:37] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 18:41:16] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: Erkek
+Okul: odtü, görme
+Meslek: 
+Kişisel Teknolojier: 
+Yardımcı Teknolojiler: abcd
+İşletim sistemi:  |
+[Cum, 11-Ara-2020, 18:41:16] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 18:41:36] | INFO | Ana Sayfa açıldı. |
+[Cum, 11-Ara-2020, 18:41:39] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cum, 11-Ara-2020, 18:42:37] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: Kadın
+Okul: , 
+Meslek: akademik
+Kişisel Teknolojier: 
+Yardımcı Teknolojiler: aasdf
+İşletim sistemi:  |
+[Cum, 11-Ara-2020, 18:42:37] | INFO | Ana Sayfa açıldı. |
