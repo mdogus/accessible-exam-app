@@ -169,11 +169,11 @@ $(document).ready(function() {
             e.preventDefault();
             $("#alertOpSystemDiv").show(300);
             $("#alertOpSystemDiv").attr("tabindex","0");
-            document.getElementById("alertAssistiveTechsDiv").focus();
+            document.getElementById("alertOpSystemDiv").focus();
             $(this).css("background-color", "red");
             $("#alertOpSystemDiv").delay(5000).slideUp(300);
-            
         }
+        $("#personalInfo").submit();
     });
     
 

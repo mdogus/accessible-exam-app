@@ -930,3 +930,7 @@
 [Cum, 11-Ara-2020, 21:46:47] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Cum, 11-Ara-2020, 21:59:48] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Cum, 11-Ara-2020, 23:5:25] | INFO | Server started. |
+[Cum, 11-Ara-2020, 23:19:14] | INFO | Server started. |
+[Cum, 11-Ara-2020, 23:28:53] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Cmt, 12-Ara-2020, 0:9:41] | INFO | Server started. |
+[Cmt, 12-Ara-2020, 0:9:49] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
