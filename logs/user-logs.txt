@@ -1485,3 +1485,8 @@ Kişisel Teknolojier: Dizüstü bilgisayar,Masaüstü bilgisayar,asdf
 Yardımcı Teknolojiler: asdf
 İşletim sistemi: macOS,asdf |
 [Cmt, 12-Ara-2020, 19:2:59] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 19:13:56] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 19:14:12] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 19:15:59] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 19:37:53] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 19:39:20] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
