@@ -1404,3 +1404,84 @@ Yardımcı Teknolojiler: cavız
 [Cmt, 12-Ara-2020, 0:9:33] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Cmt, 12-Ara-2020, 0:9:47] | INFO | Ana Sayfa açıldı. |
 [Cmt, 12-Ara-2020, 0:9:49] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 16:20:57] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 16:21:3] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 16:49:55] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 16:52:4] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 16:58:17] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:1:23] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:31:43] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:33:1] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:37:30] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:39:55] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:47:1] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:49:24] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: Erkek
+Okul: , 
+Meslek: asdf
+Kişisel Teknolojier: Akıllı telefon (Android),asdf
+Yardımcı Teknolojiler: asdasdf
+İşletim sistemi: Windows,macOS,linux |
+[Cmt, 12-Ara-2020, 17:49:24] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 17:52:21] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 17:52:54] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: Kadın
+Okul: , 
+Meslek: asdf
+Kişisel Teknolojier: Akıllı telefon (iOS),
+Yardımcı Teknolojiler: asdf
+İşletim sistemi: Windows,macOS, |
+[Cmt, 12-Ara-2020, 17:52:55] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 18:10:23] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 18:10:26] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:11:5] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: Erkek
+Okul: , 
+Meslek: asdf
+Kişisel Teknolojier: Akıllı telefon (Android),Dizüstü bilgisayar,
+Yardımcı Teknolojiler: asdf
+İşletim sistemi: Windows,macOS, |
+[Cmt, 12-Ara-2020, 18:11:5] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 18:13:13] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 18:13:15] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:19:42] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:21:34] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:27:3] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:27:13] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:28:2] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:28:15] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:28:40] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:30:30] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:39:18] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 18:40:12] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: asdf
+Cinsiyet: Erkek
+Okul: , 
+Meslek: asdf
+Kişisel Teknolojier: Akıllı telefon (Android),Dizüstü bilgisayar,
+Yardımcı Teknolojiler: asdf
+İşletim sistemi: Windows,macOS,asdf |
+[Cmt, 12-Ara-2020, 19:1:51] | INFO | Ana Sayfa açıldı. |
+[Cmt, 12-Ara-2020, 19:1:58] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 12-Ara-2020, 19:2:59] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 1234
+Cinsiyet: Erkek
+Okul: , 
+Meslek: asdf
+Kişisel Teknolojier: Dizüstü bilgisayar,Masaüstü bilgisayar,asdf
+Yardımcı Teknolojiler: asdf
+İşletim sistemi: macOS,asdf |
+[Cmt, 12-Ara-2020, 19:2:59] | INFO | Ana Sayfa açıldı. |

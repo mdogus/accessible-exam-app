@@ -87,28 +87,28 @@ $(document).ready(function() {
     
     /* personal techs */
     $("#alertPersonalTechsDiv").hide();
-    $("#personalTechsOtherInfo").hide();
+    /*$("#personalTechsOtherInfo").hide();
     $("#personalTechCheck6").change(function() {
         if($(this).is(':checked')) {
             $("#personalTechsOtherInfo").show(300).find(':input').attr('required', true);
         } else {
             $("#personalTechsOtherInfo").hide(300).find(':input').removeAttr('required');
         }
-    });
+    });*/
     
     /* assistive techs */
     $("#alertAssistiveTechsDiv").hide();
     
     /* operation system */
     $("#alertOpSystemDiv").hide();
-    $("#opSystemOtherInfo").hide();
+    /*$("#opSystemOtherInfo").hide();
     $("#opSystemCheck3").change(function() {
         if($(this).is(':checked')) {
             $("#opSystemOtherInfo").show(300).find(':input').attr('required', true);
         } else {
             $("#opSystemOtherInfo").hide(300).find(':input').removeAttr('required');
         }
-    });
+    });*/
     
     /* personal info alerts */
     $("#personalInfoSaveButton").click(function(e) {
@@ -144,7 +144,7 @@ $(document).ready(function() {
             $("#alertJobDiv").delay(5000).slideUp(300);
             
             /* personal techs */
-        } else if(!$("#personalTechCheck1").is(":checked") && !$("#personalTechCheck2").is(":checked") && !$("#personalTechCheck3").is(":checked") && !$("#personalTechCheck4").is(":checked") && !$("#personalTechCheck5").is(":checked") && !$("#personalTechCheck6").is(":checked")) {
+        } else if(!$("#personalTechCheck1").is(":checked") && !$("#personalTechCheck2").is(":checked") && !$("#personalTechCheck3").is(":checked") && !$("#personalTechCheck4").is(":checked") && !$("#personalTechCheck5").is(":checked")) {
             
             e.preventDefault();
             $("#alertPersonalTechsDiv").show(300);
@@ -164,16 +164,16 @@ $(document).ready(function() {
             $("#alertAssistiveTechsDiv").delay(5000).slideUp(300);
             
             /* operating system */
-        } else if(!$("#opSystemCheck1").is(":checked") && !$("#opSystemCheck2").is(":checked") && !$("#opSystemCheck3").is(":checked")) {
+        } else if(!$("#opSystemCheck1").is(":checked") && !$("#opSystemCheck2").is(":checked")) {
             
             e.preventDefault();
             $("#alertOpSystemDiv").show(300);
             $("#alertOpSystemDiv").attr("tabindex","0");
             document.getElementById("alertOpSystemDiv").focus();
-            $(this).css("background-color", "red");
+            $(this).css("background-color", "green");
             $("#alertOpSystemDiv").delay(5000).slideUp(300);
         }
-        $("#personalInfo").submit();
+        
     });
     
 
@@ -184,38 +184,4 @@ $(function() {
 });
 </script>
 
-<!--
-/* personal info form alerts */
-$("#personalInfoSaveButton").click(function(e) {
-    $("#inputCheckJob1, #inputCheckJob2").each(function() {
-        if(($("#inputCheckJob1").prop("checked", false)) && ($("#inputCheckJob2").prop("checked", false))) {
-            
-            
-            $("#alertJobDiv").show(300);
-            $("#personalInfoSaveButton").css("background-color", "red");
-        } else {
-            $("#personalInfo").submit();
-        }
-        
-    });
-    
-});
 
-$(function() {
-    /* personal info form alerts */
-    $("#personalInfo").each(function() {
-    $(this).submit(function(event) {
-        /*if ($.trim(username.val()) === "")
-        !$("#inputCheckJob1").is(':checked') && !$("#inputCheckJob2").is(':checked'))*/
-        event.preventDefault();
-        alert("it is working");
-        if(($("#inputCheckJob1").prop("checked", false)) && ($("#inputCheckJob2").prop("checked", false))) {
-            
-            $("#alertJobDiv").show(300);
-            $("#personalInfoSaveButton").css("background-color", "red");
-        }
-        return false;
-    });
-    });
-});
--->
