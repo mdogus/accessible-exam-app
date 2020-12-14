@@ -79,7 +79,7 @@ router.get('/user/personal-info', checkAuthenticated, function(req, res) {
 //router.post('/user/save-personal-info', checkAuthenticated, controller.updateUser);
 router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => {
     const user = req.body;
-    const msg = "Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.gender + "\nOkul: " + user.studentVar1 + ", " + user.studentVar2 + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTechs + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem;
+    const msg = "Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.gender + "\nGörme Engeli Durumu: " + user.visualImpairment + "\nOkul: " + user.studentVar1 + ", " + user.studentVar2 + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTechs + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem + "\nİnternet Tarayıcı: " + user.browser;
     
     msgPersonalInfo = "Kişisel Bilgi Formu kaydedilmiştir. Teşekkür ederiz.";
     
@@ -88,12 +88,15 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
         /*await User.updateMany({},
         [{$set: { "age": "" }},
          {$set: { "gender": "" }},
+         {$set: { "visualImpairment": "" }},
          {$set: { "studentVar1": "" }},
          {$set: { "studentVar2": "" }},
+         {$set: { "studentVar3": "" }},
          {$set: { "job": "" }},
          {$set: { "personalTechs": [] }},
          {$set: { "assistiveTechs": "" }},
-         {$set: { "opSystem": [] }}],
+         {$set: { "opSystem": [] }},
+         {$set: { "browser": [] }}],
         { multi: true }, function (err, doc) {
             if (err) return err;
             console.log('The doc response from Mongo was ', doc);
@@ -101,12 +104,15 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
         await User.updateOne({ "email": user.email },
                              [{$set: { "age": user.age }},
                               {$set: { "gender": user.gender }},
+                              {$set: { "visualImpairment": user.visualImpairment }},
                               {$set: { "studentVar1": user.studentVar1 }},
                               {$set: { "studentVar2": user.studentVar2 }},
+                              //{$set: { "studentVar3": user.studentVar3 }},
                               {$set: { "job": user.job }},
                               {$set: { "personalTechs": user.personalTechs }},
                               {$set: { "assistiveTechs": user.assistiveTechs }},
-                              {$set: { "opSystem": user.opSystem }}], function(err, doc) {
+                              {$set: { "opSystem": user.opSystem }},
+                              {$set: { "browser": user.browser }}], function(err, doc) {
             if (err) {
                 console.log(err);
                 logger.logger.log("error", err);

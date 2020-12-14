@@ -8,12 +8,15 @@ const User = new Schema({
     password: { type: String },
     age: { type: String },
     gender: { type: String },
+    visualImpairment: { type: String },
     studentVar1: { type: String },
     studentVar2: { type: String },
+    studentVar3: { type: String },
     job: { type: String },
     personalTechs: [{ type: String }],
     assistiveTechs: { type: String },
-    opSystem: [{ type: String }]
+    opSystem: [{ type: String }],
+    browser: [{ type: String }]
 });
 
 /*User.updateMany({},

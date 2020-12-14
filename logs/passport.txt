@@ -336,3 +336,9 @@
 [Cmt, 12-Ara-2020, 16:20:57] | INFO | %s %s %s |
 [Cmt, 12-Ara-2020, 19:1:51] | INFO | %s %s %s |
 [Cmt, 12-Ara-2020, 19:13:56] | INFO | %s %s %s |
+[Cmt, 12-Ara-2020, 19:44:8] | INFO | %s %s %s |
+[Cmt, 12-Ara-2020, 19:44:8] | INFO | %s %s %s |
+[Pzt, 14-Ara-2020, 19:20:18] | INFO | %s %s %s |
+[Pzt, 14-Ara-2020, 19:32:46] | INFO | %s %s %s |
+[Pzt, 14-Ara-2020, 19:50:36] | INFO | %s %s %s |
+[Pzt, 14-Ara-2020, 20:48:20] | INFO | %s %s %s |

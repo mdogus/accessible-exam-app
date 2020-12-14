@@ -58,9 +58,23 @@ $(document).ready(function() {
     /* gender */
     $("#alertGenderDiv").hide();
     
+    /* student info */
+    $("#alertStudentInfoDiv").hide();
+    /*$("#jobStudentInfo").hide();*/
+    $("#inputCheckStudent").change(function() {
+        if($(this).is(':checked')) {
+            $("#studentInfo").find(":input[type='text']").attr('required', true);
+            $("#studentInfo").find(":input[type='text']").attr('aria-hidden', 'false');
+            $("#studentInfo").removeAttr("style");
+        } else {
+            $("#studentInfo").find(":input[type='text']").removeAttr('required');
+            $("#studentInfo").find(":input[type='text']").removeAttr('aria-hidden');
+            $("#studentInfo").css("filter","blur(2px)");
+        }
+    });
+    
     /* job */
     $("#alertJobDiv").hide();
-    $("#jobStudentInfo").hide();
     $("#jobOtherInfo").hide();
     /* .toggle() */
     /*$("#inputCheckJob1").click(function() {
@@ -69,21 +83,6 @@ $(document).ready(function() {
     $("#inputCheckJob2").click(function() {
         $("#jobOtherInfo").toggle(this.checked);
     });*/
-    
-    $("#inputCheckJob1").change(function() {
-        if($(this).is(':checked')) {
-            $("#jobStudentInfo").show(300).find(':input').attr('required', true);
-        } else {
-            $("#jobStudentInfo").hide(300).find(':input').removeAttr('required');
-        }
-    });
-    $("#inputCheckJob2").change(function() {
-        if($(this).is(':checked')) {
-            $("#jobOtherInfo").show(300).find(':input').attr('required', true);
-        } else {
-            $("#jobOtherInfo").hide(300).find(':input').removeAttr('required');
-        }
-    });
     
     /* personal techs */
     $("#alertPersonalTechsDiv").hide();

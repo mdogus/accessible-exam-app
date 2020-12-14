@@ -62,17 +62,20 @@
                     <hr style="border:1px solid #888;" aria-hidden="true">
                     
                     <!-- education info -->
-                    <div id="alertEduInfoDiv" class="alert alert-danger" role="alert">
+                    <div id="alertStudentInfoDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen öğrenim bilgilerinizi belirtiniz.</h6>
                     </div>
                     <h4>Öğrenim Bilgileri</h4>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="educationInfo" id="inputRadioEducationInfo1" value="1">
-                      <label class="form-check-label" for="inputRadioEducationInfo1">Öğrenciyim.</label>
+                    <small class="form-text text-muted" style="margin-top:-10px;padding-top:0;">Lütfen öğrenciyseniz aşağıdaki alanları doldurunuz.</small>
+                    <div class="form-check" style="margin-top:10px;padding-left:5px;">
+                        <label class="check-container" for="inputCheckStudent">Öğrenciyim.
+                            <input class="form-check-input" type="checkbox" id="inputCheckStudent">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="educationInfo" id="inputRadioEducationInfo2" value="2">
-                      <label class="form-check-label" for="inputRadioEducationInfo2">Öğrenci değilim.</label>
+                    <div id="studentInfo" style="filter:blur(2px);padding-left:10px;">
+                      <input type="text" class="form-control" id="inputTextStudent1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." style="margin:5px;" aria-hidden="true">
+                      <input type="text" class="form-control" id="inputTextStudent2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." style="margin:5px;" aria-hidden="true">
                     </div>
                     <hr style="border:1px solid #888;" aria-hidden="true">
                     
@@ -81,21 +84,8 @@
                         <h6>Lütfen mesleğinizi belirtiniz.</h6>
                     </div>
                     <h4>Mesleğinizi belirtiniz.</h4>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="inputCheckJob1">
-                      <label class="form-check-label" for="inputCheckJob1">Öğrenci</label>
-                      <div id="jobStudentInfo">
-                        <small class="form-text text-muted" style="margin-top:-5px;padding-top:0;">Lütfen aşağıdaki alanları doldurunuz.</small>
-                        <input type="text" class="form-control" id="inputTextJobRadio1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." style="margin:5px;">
-                        <input type="text" class="form-control" id="inputTextJobRadio2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." style="margin:5px;">
-                      </div>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="inputCheckJob2">
-                      <label class="form-check-label" for="inputCheckJob2">Diğer</label>
-                      <div id="jobOtherInfo">
-                        <input type="text" class="form-control" id="inputTextJobRadio3" name="job" placeholder="Yazınız" aria-label="Mesleğiniz">
-                      </div>
+                    <div id="jobOtherInfo">
+                      <input type="text" class="form-control" id="inputTextJobRadio3" name="job" placeholder="Yazınız" aria-label="Mesleğiniz">
                     </div>
                     <hr style="border:1px solid #888;" aria-hidden="true">
                     
