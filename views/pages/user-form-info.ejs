@@ -14,7 +14,7 @@
     <div class="col-sm-8">
         <div class="jumbotron">
             <div>
-                <h1 class="display-4 font-raleway" style="font-weight:bold;">Kişisel Bilgi Formu</h1>
+                <h1 class="display-4 heading-form font-raleway" style="font-weight:bold;">Kişisel Bilgi Formu</h1>
                 <form id"personalInfo" action="/user/save-personal-info" method="POST">
                     <div class="form-group row">
                         <label for="inputStaticName" class="col-sm-2 col-form-label" role="heading">Ad</label>
@@ -34,23 +34,22 @@
                         <input type="text" readonly class="form-control-plaintext" id="inputStaticEmail" name="email" value="<%= email %>" style="border:0;">
                       </div>
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
                     
                     <!-- age -->
                     <div id="alertAgeDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen yaşınızı belirtiniz.</h6>
                     </div>
-                    <div class="form-group">
-                        <h4>Yaş</h4>
+                    <h4 class="heading-form">Yaş</h4>
+                    <div id="ageFormGroup" class="form-group">
                         <input type="text" class="form-control" id="inputAge" name="age" placeholder="Yazınız" aria-label="Yaşınız" required>
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- gender -->
                     <div id="alertGenderDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen cinsiyetinizi belirtiniz.</h6>
                     </div>
-                    <h4>Cinsiyet</h4>
+                    <h4 class="heading-form">Cinsiyet</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="gender" id="inputRadioGender1" value="Kadın">
                       <label class="form-check-label" for="inputRadioGender1">Kadın</label>
@@ -61,21 +60,42 @@
                     </div>
                     <hr style="border:1px solid #888;" aria-hidden="true">
                     
+                    <!-- visual impairment info -->
+                    <div id="alertVisualImpairmentDiv" class="alert alert-danger" role="alert">
+                        <h6>Lütfen görme engeli durumunuzu belirtiniz.</h6>
+                    </div>
+                    <h4 class="heading-form">Görme Engeli Durumu</h4>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="visualImpairment" id="inputRadioVisualImpairment1" value="Görmeyen">
+                      <label class="form-check-label" for="inputRadioVisualImpairment1">Görmeyen</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="visualImpairment" id="inputRadioVisualImpairment2" value="Az gören" aria-describedby="inputRadioVisualImpairmentHelp2">
+                      <label class="form-check-label" for="inputRadioVisualImpairment2">Az gören
+                        </label>
+                    </div>
+                    <div style="background-color:midnightblue;color:yellow;margin-top:20px;padding-left:10px;width:10%;">
+                        <i class="fas fa-hand-point-right"></i>
+                        <strong style="font-style:italic;"> Not </strong>
+                    </div>
+                    <small class="text-muted">Az gören, okuma ve yazmada birincil olarak görme duyusunu kullanan bireyi ifade etmektedir.</small>
+                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    
                     <!-- education info -->
                     <div id="alertStudentInfoDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen öğrenim bilgilerinizi belirtiniz.</h6>
                     </div>
-                    <h4>Öğrenim Bilgileri</h4>
-                    <small class="form-text text-muted" style="margin-top:-10px;padding-top:0;">Lütfen öğrenciyseniz aşağıdaki alanları doldurunuz.</small>
-                    <div class="form-check" style="margin-top:10px;padding-left:5px;">
+                    <h4 class="heading-form">Öğrenim Bilgileri</h4>
+                    <small class="form-text text-muted heading-info">Lütfen öğrenciyseniz aşağıdaki alanları doldurunuz.</small>
+                    <div class="form-check">
                         <label class="check-container" for="inputCheckStudent">Öğrenciyim.
                             <input class="form-check-input" type="checkbox" id="inputCheckStudent">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div id="studentInfo" style="filter:blur(2px);padding-left:10px;">
-                      <input type="text" class="form-control" id="inputTextStudent1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." style="margin:5px;" aria-hidden="true">
-                      <input type="text" class="form-control" id="inputTextStudent2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." style="margin:5px;" aria-hidden="true">
+                    <div id="studentInfo" style="padding-left:10px;opacity:0.5;">
+                      <input type="text" readonly class="form-control" id="inputTextStudent1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." style="margin: 5px 5px 5px 15px;" aria-hidden="true">
+                      <input type="text" readonly class="form-control" id="inputTextStudent2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." style="margin:5px 5px 5px 15px;" aria-hidden="true">
                     </div>
                     <hr style="border:1px solid #888;" aria-hidden="true">
                     
@@ -83,7 +103,7 @@
                     <div id="alertJobDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen mesleğinizi belirtiniz.</h6>
                     </div>
-                    <h4>Mesleğinizi belirtiniz.</h4>
+                    <h4 class="heading-form">Mesleğinizi belirtiniz.</h4>
                     <div id="jobOtherInfo">
                       <input type="text" class="form-control" id="inputTextJobRadio3" name="job" placeholder="Yazınız" aria-label="Mesleğiniz">
                     </div>
@@ -93,30 +113,40 @@
                     <div id="alertPersonalTechsDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen kullandığınız bilgi ve iletişim teknolojilerini belirtiniz.</h6>
                     </div>
-                    <h4>Kullandığınız bilgi ve iletişim teknolojilerini belirtiniz.</h4>
-                    <small class="form-text text-muted" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
+                    <h4 class="heading-form">Kullandığınız bilgi ve iletişim teknolojilerini belirtiniz.</h4>
+                    <small class="form-text text-muted heading-info" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="personalTechs" value="Akıllı telefon (iOS)" id="personalTechCheck1">
-                      <label class="form-check-label" for="personalTechCheck1">Akıllı telefon (iOS)</label>
+                      <label class="check-container" for="personalTechCheck1">Akıllı telefon (iOS)
+                        <input class="form-check-input" type="checkbox" name="personalTechs" value="Akıllı telefon (iOS)" id="personalTechCheck1">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="personalTechs" value="Akıllı telefon (Android)" id="personalTechCheck2">
-                      <label class="form-check-label" for="personalTechCheck2">Akıllı telefon (Android)</label>
+                      <label class="check-container" for="personalTechCheck2">Akıllı telefon (Android)
+                        <input class="check-container" type="checkbox" name="personalTechs" value="Akıllı telefon (Android)" id="personalTechCheck2">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="personalTechs" value="Dizüstü bilgisayar" id="personalTechCheck3">
-                      <label class="form-check-label" for="personalTechCheck3">Dizüstü bilgisayar</label>
+                      <label class="check-container" for="personalTechCheck3">Dizüstü bilgisayar
+                        <input class="form-check-input" type="checkbox" name="personalTechs" value="Dizüstü bilgisayar" id="personalTechCheck3">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="personalTechs" value="Masaüstü bilgisayar" id="personalTechCheck4">
-                      <label class="form-check-label" for="personalTechCheck4">Masaüstü bilgisayar</label>
+                      <label class="check-container" for="personalTechCheck4">Masaüstü bilgisayar
+                        <input class="form-check-input" type="checkbox" name="personalTechs" value="Masaüstü bilgisayar" id="personalTechCheck4">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="personalTechs" value="Tablet bilgisayar" id="personalTechCheck5">
-                      <label class="form-check-label" for="personalTechCheck5">Tablet bilgisayar</label>
+                      <label class="check-container" for="personalTechCheck5">Tablet bilgisayar
+                        <input class="form-check-input" type="checkbox" name="personalTechs" value="Tablet bilgisayar" id="personalTechCheck5">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label" for="personalTechCheck6" aria-hidden="true">Diğer </label>
+                      <label class="form-check-label" aria-hidden="true">Diğer </label>
                       <small class="text-muted" aria-hidden="true">(Varsa kullandığınız diğer bilgi ve iletişim teknolojilerini belirtiniz.)</small>
                       <div id="personalTechsOtherInfo">
                         <input type="text" class="form-control" id="inputPersonalTechCheck6" name="personalTechs" placeholder="Yazınız" aria-label="Varsa kullandığınız diğer bilgi ve iletişim teknolojilerini belirtiniz.">
@@ -128,7 +158,7 @@
                     <div id="alertAssistiveTechsDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen kullandığınız yardımcı teknolojileri belirtiniz.</h6>
                     </div>
-                    <h4>Kullandığınız yardımcı teknolojileri belirtiniz.</h4>
+                    <h4 class="heading-form">Kullandığınız yardımcı teknolojileri belirtiniz.</h4>
                     <div class="form-group">
                         <textarea class="form-control" id="inputAssistiveTechs" name="assistiveTechs" rows="2" placeholder="Ekran okuyucu (ör. JAWS), ekran büyüteci (ör. Windows/Büyüteç), braille ekran vb." aria-label="Kullandığınız yardımcı teknolojiler: Ekran okuyucu (ör. JAWS), ekran büyüteci (ör. Windows/Büyüteç), braille ekran vb." required></textarea>
                     </div>
@@ -138,8 +168,8 @@
                     <div id="alertOpSystemDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen masaüstü işletim sistemini belirtiniz.</h6>
                     </div>
-                    <h4>Kullandığınız masaüstü işletim sistemini belirtiniz.</h4>
-                    <small class="form-text text-muted" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
+                    <h4 class="heading-form">Kullandığınız masaüstü işletim sistemini belirtiniz.</h4>
+                    <small class="form-text text-muted heading-info" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="opSystem" value="Windows" id="opSystemCheck1">
                       <label class="form-check-label" for="opSystemCheck1">Windows</label>
@@ -155,13 +185,14 @@
                         <input type="text" class="form-control" id="inputOpSystemCheck3" name="opSystem" placeholder="Yazınız" aria-label="Varsa kullandığınız diğer işletim sistemlerini belirtiniz.">
                       </div>
                     </div>
+                    <hr style="border:1px solid #888;" aria-hidden="true">
                     
                     <!-- browser info -->
                     <div id="alertBrowserDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen kullandığınız internet tarayıcıyı belirtiniz.</h6>
                     </div>
-                    <h4>Kullandığınız internet tarayıcıyı belirtiniz.</h4>
-                    <small class="form-text text-muted" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
+                    <h4 class="heading-form">Kullandığınız internet tarayıcıyı belirtiniz.</h4>
+                    <small class="form-text text-muted heading-info" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="browser" value="Google Chrome" id="browserCheck1">
                       <label class="form-check-label" for="browserCheck1">Google Chrome</label>

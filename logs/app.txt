@@ -957,3 +957,5 @@
 [Pzt, 14-Ara-2020, 19:50:38] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Pzt, 14-Ara-2020, 20:48:22] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Pzt, 14-Ara-2020, 22:15:45] | INFO | Server started. |
+[Sal, 15-Ara-2020, 22:52:15] | INFO | Server started. |
+[Sal, 15-Ara-2020, 22:52:40] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
