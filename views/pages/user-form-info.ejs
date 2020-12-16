@@ -16,22 +16,28 @@
             <div>
                 <h1 class="display-4 heading-form font-raleway" style="font-weight:bold;">Kişisel Bilgi Formu</h1>
                 <form id"personalInfo" action="/user/save-personal-info" method="POST">
-                    <div class="form-group row">
-                        <label for="inputStaticName" class="col-sm-2 col-form-label" role="heading">Ad</label>
+                    <h4 class="sr-only">Adınız</h4>
+                    <p class="sr-only"><%= name %></p>
+                    <div class="form-group row" aria-hidden="true">
+                        <label for="inputStaticName" class="col-sm-2 col-form-label">Ad</label>
                         <div class="col-sm-10">
-                            <input type="text" readonly class="form-control-plaintext" id="inputStaticName" name="name" value="<%= name %>" style="border:0;">
+                            <input type="text" readonly class="form-control-plaintext" id="inputStaticName" name="name" value="<%= name %>">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputStaticSurname" class="col-sm-2 col-form-label h6" role="heading">Soyad</label>
+                    <h4 class="sr-only">Soyadınız</h4>
+                    <p class="sr-only"><%= surname %></p>
+                    <div class="form-group row" aria-hidden="true">
+                        <label for="inputStaticSurname" class="col-sm-2 col-form-label">Soyad</label>
                         <div class="col-sm-10">
-                            <input type="text" readonly class="form-control-plaintext" id="inputStaticSurname" name="surname" value="<%= surname %>" style="border:0;">
+                            <input type="text" readonly class="form-control-plaintext" id="inputStaticSurname" name="surname" value="<%= surname %>">
                         </div>
                     </div>
-                    <div class="form-group row">
-                      <label for="inputStaticEmail" class="col-sm-2 col-form-label h6" role="heading">E-posta</label>
+                    <h4 class="sr-only">E-postanız</h4>
+                    <p class="sr-only"><%= email %></p>
+                    <div class="form-group row" aria-hidden="true">
+                      <label for="inputStaticEmail" class="col-sm-2 col-form-label">E<span>&#8209</span>posta</label>
                       <div class="col-sm-10">
-                        <input type="text" readonly class="form-control-plaintext" id="inputStaticEmail" name="email" value="<%= email %>" style="border:0;">
+                        <input type="text" readonly class="form-control-plaintext" id="inputStaticEmail" name="email" value="<%= email %>">
                       </div>
                     </div>
                     

@@ -50,6 +50,7 @@ small.heading-info {
     
 }
 .col-sm-10 input {
+    border: 0 !important;
     border-bottom: 2px solid rgb(150,150,150);
     font-size: 20px;
 }
@@ -62,7 +63,7 @@ h1.heading-form {
 h4.heading-form {
     background-color: rgb(53,54,58);
     color: rgb(245,245,245);
-    padding: 1px 2px 4px 15px;
+    padding: 4px 2px 4px 15px;
     margin-bottom: 15px;
 }
 

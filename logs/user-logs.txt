@@ -1707,3 +1707,16 @@ Yardımcı Teknolojiler: asdf
 [Çar, 16-Ara-2020, 2:50:31] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Çar, 16-Ara-2020, 2:51:19] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Çar, 16-Ara-2020, 2:52:5] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:11:5] | INFO | Ana Sayfa açıldı. |
+[Çar, 16-Ara-2020, 16:11:9] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:11:58] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:12:20] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:17:37] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:18:12] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:20:15] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:22:41] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:22:55] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:23:15] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:24:29] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:24:43] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 16:26:49] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |

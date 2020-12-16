@@ -959,3 +959,5 @@
 [Pzt, 14-Ara-2020, 22:15:45] | INFO | Server started. |
 [Sal, 15-Ara-2020, 22:52:15] | INFO | Server started. |
 [Sal, 15-Ara-2020, 22:52:40] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Çar, 16-Ara-2020, 16:6:13] | INFO | Server started. |
+[Çar, 16-Ara-2020, 16:11:9] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
