@@ -33,7 +33,8 @@ small {
 small.heading-info {
     margin-top: -15px;
     margin-bottom: 10px;
-    padding-left: 18px;
+    padding-left: 16px;
+    font-size: 18px;
 }
 
 .form-group label {
@@ -71,8 +72,22 @@ h4, .alert-danger h6, label.h4, label.h6 {
     font-weight: bold;
 }
 
-#ageFormGroup {
+#ageFormGroup, #jobFormGroup, #assistiveTechsFormGroup {
     margin-left: 15px;
+    margin-right: 15px;
+}
+
+#noteDiv {
+    background-color: rgb(230,230,230);
+    box-shadow: -1px 1px 5px 2px #aaaaaa;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+#noteBodyDiv {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* NavBar */
@@ -142,6 +157,12 @@ textarea {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+}
+#inputTextStudent1, #inputTextStudent2 {
+    margin: 5px 5px 5px 15px;
+}
+#personalTechsOtherDiv, #assistiveTechsOtherDiv, #opSystemOtherDiv, #browserOtherDiv {
+    padding-right: 15px;
 }
 
 /* Personal Info Custom Checbox */

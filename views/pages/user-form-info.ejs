@@ -45,7 +45,7 @@
                     <div id="alertAgeDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen yaşınızı belirtiniz.</h6>
                     </div>
-                    <h4 class="heading-form">Yaş</h4>
+                    <h4 class="heading-form" aria-label="Yaşınız">Yaş</h4>
                     <div id="ageFormGroup" class="form-group">
                         <input type="text" class="form-control" id="inputAge" name="age" placeholder="Yazınız" aria-label="Yaşınız" required>
                     </div>
@@ -55,7 +55,7 @@
                     <div id="alertGenderDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen cinsiyetinizi belirtiniz.</h6>
                     </div>
-                    <h4 class="heading-form">Cinsiyet</h4>
+                    <h4 class="heading-form" aria-label="Cinsiyetiniz">Cinsiyet</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="gender" id="inputRadioGender1" value="Kadın">
                       <label class="form-check-label" for="inputRadioGender1">Kadın</label>
@@ -64,7 +64,7 @@
                       <input class="form-check-input" type="radio" name="gender" id="inputRadioGender2" value="Erkek">
                       <label class="form-check-label" for="inputRadioGender2">Erkek</label>
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- visual impairment info -->
                     <div id="alertVisualImpairmentDiv" class="alert alert-danger" role="alert">
@@ -80,12 +80,16 @@
                       <label class="form-check-label" for="inputRadioVisualImpairment2">Az gören
                         </label>
                     </div>
-                    <div style="background-color:midnightblue;color:yellow;margin-top:20px;padding-left:10px;width:10%;">
+                    <div id="noteDiv">
                         <i class="fas fa-hand-point-right"></i>
                         <strong style="font-style:italic;"> Not </strong>
                     </div>
-                    <small class="text-muted">Az gören, okuma ve yazmada birincil olarak görme duyusunu kullanan bireyi ifade etmektedir.</small>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <div id="noteBodyDiv">
+                        <small class="text-muted" style="text-indent:55px;."><span style="font-style:italic;text-decoration:underline;">Az gören</span>, okuma ve yazmada birincil olarak görme duyusunu kullanan bireyi ifade etmektedir.</small>
+                        <br aria-hidden="true">
+                        <small class="text-muted"><span style="font-style:italic;text-decoration:underline;">Görmeyen</span>, okuma ve yazmada birincil olarak dokunma ve işitme duyusunu kullanan bireyi ifade etmektedir.</small>
+                    </div>
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- education info -->
                     <div id="alertStudentInfoDiv" class="alert alert-danger" role="alert">
@@ -99,28 +103,30 @@
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div id="studentInfo" style="padding-left:10px;opacity:0.5;">
-                      <input type="text" readonly class="form-control" id="inputTextStudent1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." style="margin: 5px 5px 5px 15px;" aria-hidden="true">
-                      <input type="text" readonly class="form-control" id="inputTextStudent2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." style="margin:5px 5px 5px 15px;" aria-hidden="true">
+                    <div id="studentInfo" style="padding-left:10px;padding-right:25px;opacity:0.5;">
+                      <div class="form-group">
+                        <input type="text" readonly class="form-control" id="inputTextStudent1" name="studentVar1" placeholder="Okul/üniversite..." aria-label="Devam ettiğiniz okul veya üniversiteyi belirtiniz." aria-hidden="true">
+                        <input type="text" readonly class="form-control" id="inputTextStudent2" name="studentVar2" placeholder="Bölüm/sınıf..." aria-label="Devam ettiğiniz bölüm ve sınıfı belirtiniz." aria-hidden="true">
+                      </div>
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- job -->
                     <div id="alertJobDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen mesleğinizi belirtiniz.</h6>
                     </div>
                     <h4 class="heading-form">Mesleğinizi belirtiniz.</h4>
-                    <div id="jobOtherInfo">
+                    <div id="jobFormGroup" class="form-group">
                       <input type="text" class="form-control" id="inputTextJobRadio3" name="job" placeholder="Yazınız" aria-label="Mesleğiniz">
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- personal techs -->
                     <div id="alertPersonalTechsDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen kullandığınız bilgi ve iletişim teknolojilerini belirtiniz.</h6>
                     </div>
                     <h4 class="heading-form">Kullandığınız bilgi ve iletişim teknolojilerini belirtiniz.</h4>
-                    <small class="form-text text-muted heading-info" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
+                    <small class="form-text text-muted heading-info">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
                       <label class="check-container" for="personalTechCheck1">Akıllı telefon (iOS)
                         <input class="form-check-input" type="checkbox" name="personalTechs" value="Akıllı telefon (iOS)" id="personalTechCheck1">
@@ -151,54 +157,54 @@
                         <span class="checkmark"></span>
                       </label>
                     </div>
-                    <div class="form-check">
+                    <div id="personalTechsOtherDiv" class="form-check">
                       <label class="form-check-label" aria-hidden="true">Diğer </label>
                       <small class="text-muted" aria-hidden="true">(Varsa kullandığınız diğer bilgi ve iletişim teknolojilerini belirtiniz.)</small>
-                      <div id="personalTechsOtherInfo">
+                      <div id="personalTechsOtherInfo" class="form-group">
                         <input type="text" class="form-control" id="inputPersonalTechCheck6" name="personalTechs" placeholder="Yazınız" aria-label="Varsa kullandığınız diğer bilgi ve iletişim teknolojilerini belirtiniz.">
                       </div>
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- assistive techs -->
                     <div id="alertAssistiveTechsDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen kullandığınız yardımcı teknolojileri belirtiniz.</h6>
                     </div>
                     <h4 class="heading-form">Kullandığınız yardımcı teknolojileri belirtiniz.</h4>
-                    <div class="form-group">
+                    <div id="assistiveTechsFormGroup" class="form-group">
                         <textarea class="form-control" id="inputAssistiveTechs" name="assistiveTechs" rows="2" placeholder="Ekran okuyucu (ör. JAWS), ekran büyüteci (ör. Windows/Büyüteç), braille ekran vb." aria-label="Kullandığınız yardımcı teknolojiler: Ekran okuyucu (ör. JAWS), ekran büyüteci (ör. Windows/Büyüteç), braille ekran vb." required></textarea>
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- operating system -->
                     <div id="alertOpSystemDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen masaüstü işletim sistemini belirtiniz.</h6>
                     </div>
                     <h4 class="heading-form">Kullandığınız masaüstü işletim sistemini belirtiniz.</h4>
-                    <small class="form-text text-muted heading-info" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
+                    <small class="form-text text-muted heading-info">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="opSystem" value="Windows" id="opSystemCheck1">
                       <label class="form-check-label" for="opSystemCheck1">Windows</label>
                     </div>
-                    <div class="form-check">
+                    <div id="assistiveTechsOtherDiv" class="form-check">
                       <input class="form-check-input" type="checkbox" name="opSystem" value="macOS" id="opSystemCheck2">
                       <label class="form-check-label" for="opSystemCheck2">macOS</label>
                     </div>
-                    <div class="form-check">
+                    <div id="opSystemOtherDiv" class="form-check">
                       <label class="form-check-label" for="opSystemCheck3" aria-hidden="true">Diğer </label>
                       <small class="text-muted" aria-hidden="true">(Varsa kullandığınız diğer masaüstü işletim sistemlerini belirtiniz.)</small>
                       <div id="opSystemOtherInfo">
                         <input type="text" class="form-control" id="inputOpSystemCheck3" name="opSystem" placeholder="Yazınız" aria-label="Varsa kullandığınız diğer işletim sistemlerini belirtiniz.">
                       </div>
                     </div>
-                    <hr style="border:1px solid #888;" aria-hidden="true">
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- browser info -->
                     <div id="alertBrowserDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen kullandığınız internet tarayıcıyı belirtiniz.</h6>
                     </div>
                     <h4 class="heading-form">Kullandığınız internet tarayıcıyı belirtiniz.</h4>
-                    <small class="form-text text-muted heading-info" style="margin-top:-10px;padding-top:0;">Birden fazla seçim yapabilirsiniz.</small>
+                    <small class="form-text text-muted heading-info">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="browser" value="Google Chrome" id="browserCheck1">
                       <label class="form-check-label" for="browserCheck1">Google Chrome</label>
@@ -223,6 +229,7 @@
                       <input class="form-check-input" type="checkbox" name="browser" value="Opera" id="browserCheck6">
                       <label class="form-check-label" for="browserCheck6">Opera</label>
                     </div>
+                    <hr class="hr-form" aria-hidden="true">
                     
                     <!-- save button -->
                     <div style="margin-top:20px;">
