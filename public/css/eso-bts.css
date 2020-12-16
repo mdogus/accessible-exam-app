@@ -179,6 +179,9 @@ label.check-container {
   -ms-user-select: none;
   user-select: none;
 }
+label.check-container:hover {
+    border-bottom: 3px solid rgb(120,120,120);
+}
 
 /* Hide the browser's default checkbox */
 label.check-container input {
@@ -208,7 +211,7 @@ label.check-container:hover input ~ .checkmark {
 
 /* When the checkbox is checked, add a blue background */
 label.check-container input:checked ~ .checkmark {
-    border: 2px solid black;
+    border: 2px solid rgb(150,150,150);
     background-color: midnightblue; /*#2196F3;*/
 }
 
@@ -226,15 +229,88 @@ label.check-container input:checked ~ .checkmark:after {
 
 /* Style the checkmark/indicator */
 label.check-container .checkmark:after {
-  left: 9px;
+  left: 8px;
   top: 5px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid rgb(245,245,245);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* Personal Info Custom Radio */
+/* Customize the label (the container) */
+label.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label.radio-container:hover {
+    border-bottom: 3px solid rgb(120,120,120);
+}
+
+/* Hide the browser's default radio button */
+label.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid rgb(100,100,100);
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+label.radio-container:hover input ~ .radio-checkmark {
+  border: 2px solid rgb(241,88,58);
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+label.radio-container input:checked ~ .radio-checkmark {
+  border: 2px solid rgb(150,150,150);
+  background-color: midnightblue;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+label.radio-container input:checked ~ .radio-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+label.radio-container .radio-checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgb(245,245,245);
 }
 
 /* ESO radio and checkbox */

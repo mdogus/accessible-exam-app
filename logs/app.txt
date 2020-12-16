@@ -963,3 +963,5 @@
 [Çar, 16-Ara-2020, 16:11:9] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Çar, 16-Ara-2020, 16:31:40] | INFO | Server started. |
 [Çar, 16-Ara-2020, 16:31:54] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Çar, 16-Ara-2020, 19:7:17] | INFO | Server started. |
+[Çar, 16-Ara-2020, 19:8:31] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |

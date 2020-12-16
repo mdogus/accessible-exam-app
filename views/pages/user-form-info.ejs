@@ -57,12 +57,16 @@
                     </div>
                     <h4 class="heading-form" aria-label="Cinsiyetiniz">Cinsiyet</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gender" id="inputRadioGender1" value="Kadın">
-                      <label class="form-check-label" for="inputRadioGender1">Kadın</label>
+                      <label class="radio-container" for="inputRadioGender1">Kadın
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioGender1" value="Kadın">
+                        <span class="radio-checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gender" id="inputRadioGender2" value="Erkek">
-                      <label class="form-check-label" for="inputRadioGender2">Erkek</label>
+                      <label class="radio-container" for="inputRadioGender2">Erkek
+                        <input class="form-check-input" type="radio" name="gender" id="inputRadioGender2" value="Erkek">
+                        <span class="radio-checkmark"></span>
+                      </label>
                     </div>
                     <hr class="hr-form" aria-hidden="true">
                     
@@ -72,22 +76,25 @@
                     </div>
                     <h4 class="heading-form">Görme Engeli Durumu</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="visualImpairment" id="inputRadioVisualImpairment1" value="Görmeyen">
-                      <label class="form-check-label" for="inputRadioVisualImpairment1">Görmeyen</label>
+                      <label class="radio-container" for="inputRadioVisualImpairment1">Görmeyen
+                        <input class="form-check-input" type="radio" name="visualImpairment" id="inputRadioVisualImpairment1" value="Görmeyen">
+                        <span class="radio-checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="visualImpairment" id="inputRadioVisualImpairment2" value="Az gören" aria-describedby="inputRadioVisualImpairmentHelp2">
-                      <label class="form-check-label" for="inputRadioVisualImpairment2">Az gören
-                        </label>
+                      <label class="radio-container" for="inputRadioVisualImpairment2">Az gören
+                        <input class="form-check-input" type="radio" name="visualImpairment" id="inputRadioVisualImpairment2" value="Az gören" aria-describedby="inputRadioVisualImpairmentHelp2">
+                        <span class="radio-checkmark"></span>
+                      </label>
                     </div>
                     <div id="noteDiv">
                         <i class="fas fa-hand-point-right"></i>
                         <strong style="font-style:italic;"> Not </strong>
                     </div>
                     <div id="noteBodyDiv">
-                        <small class="text-muted" style="text-indent:55px;."><span style="font-style:italic;text-decoration:underline;">Az gören</span>, okuma ve yazmada birincil olarak görme duyusunu kullanan bireyi ifade etmektedir.</small>
-                        <br aria-hidden="true">
                         <small class="text-muted"><span style="font-style:italic;text-decoration:underline;">Görmeyen</span>, okuma ve yazmada birincil olarak dokunma ve işitme duyusunu kullanan bireyi ifade etmektedir.</small>
+                        <br aria-hidden="true">
+                        <small class="text-muted"><span style="font-style:italic;text-decoration:underline;">Az gören</span>, okuma ve yazmada birincil olarak görme duyusunu kullanan bireyi ifade etmektedir.</small>
                     </div>
                     <hr class="hr-form" aria-hidden="true">
                     
@@ -183,12 +190,16 @@
                     <h4 class="heading-form">Kullandığınız masaüstü işletim sistemini belirtiniz.</h4>
                     <small class="form-text text-muted heading-info">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="opSystem" value="Windows" id="opSystemCheck1">
-                      <label class="form-check-label" for="opSystemCheck1">Windows</label>
+                      <label class="check-container" for="opSystemCheck1">Windows
+                        <input class="form-check-input" type="checkbox" name="opSystem" value="Windows" id="opSystemCheck1">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div id="assistiveTechsOtherDiv" class="form-check">
-                      <input class="form-check-input" type="checkbox" name="opSystem" value="macOS" id="opSystemCheck2">
-                      <label class="form-check-label" for="opSystemCheck2">macOS</label>
+                      <label class="check-container" for="opSystemCheck2">macOS
+                        <input class="form-check-input" type="checkbox" name="opSystem" value="macOS" id="opSystemCheck2">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div id="opSystemOtherDiv" class="form-check">
                       <label class="form-check-label" for="opSystemCheck3" aria-hidden="true">Diğer </label>
@@ -206,28 +217,40 @@
                     <h4 class="heading-form">Kullandığınız internet tarayıcıyı belirtiniz.</h4>
                     <small class="form-text text-muted heading-info">Birden fazla seçim yapabilirsiniz.</small>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="browser" value="Google Chrome" id="browserCheck1">
-                      <label class="form-check-label" for="browserCheck1">Google Chrome</label>
+                      <label class="check-container" for="browserCheck1">Google Chrome
+                        <input class="form-check-input" type="checkbox" name="browser" value="Google Chrome" id="browserCheck1">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="browser" value="Internet Explorer" id="browserCheck2">
-                      <label class="form-check-label" for="browserCheck2">Internet Explorer</label>
+                      <label class="check-container" for="browserCheck2">Internet Explorer
+                        <input class="form-check-input" type="checkbox" name="browser" value="Internet Explorer" id="browserCheck2">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="browser" value="Microsoft Edge" id="browserCheck3">
-                      <label class="form-check-label" for="browserCheck3">Microsoft Edge</label>
+                      <label class="check-container" for="browserCheck3">Microsoft Edge
+                        <input class="form-check-input" type="checkbox" name="browser" value="Microsoft Edge" id="browserCheck3">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="browser" value="Mozilla Firefox" id="browserCheck4">
-                      <label class="form-check-label" for="browserCheck4">Mozilla Firefox</label>
+                      <label class="check-container" for="browserCheck4">Mozilla Firefox
+                        <input class="form-check-input" type="checkbox" name="browser" value="Mozilla Firefox" id="browserCheck4">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="browser" value="Safari" id="browserCheck5">
-                      <label class="form-check-label" for="browserCheck5">Safari</label>
+                      <label class="check-container" for="browserCheck5">Safari
+                        <input class="form-check-input" type="checkbox" name="browser" value="Safari" id="browserCheck5">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="browser" value="Opera" id="browserCheck6">
-                      <label class="form-check-label" for="browserCheck6">Opera</label>
+                      <label class="check-container" for="browserCheck6">Opera
+                        <input class="form-check-input" type="checkbox" name="browser" value="Opera" id="browserCheck6">
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                     <hr class="hr-form" aria-hidden="true">
                     

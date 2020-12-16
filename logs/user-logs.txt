@@ -1795,3 +1795,46 @@ Yardımcı Teknolojiler: asdf
 [Çar, 16-Ara-2020, 17:56:33] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Çar, 16-Ara-2020, 17:56:49] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
 [Çar, 16-Ara-2020, 17:57:28] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:8:23] | INFO | Ana Sayfa açıldı. |
+[Çar, 16-Ara-2020, 19:8:31] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:12:26] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:13:30] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:19:25] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:23:1] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:23:33] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:24:31] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 19:25:0] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:17:31] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:20:29] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:30:26] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:32:6] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:32:42] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:33:8] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:33:23] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:36:5] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:37:42] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:50:17] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:51:42] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:53:41] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:57:18] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 20:58:55] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:0:39] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:1:12] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:5:22] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:7:15] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:7:58] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:8:16] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:10:16] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Çar, 16-Ara-2020, 21:14:30] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: Erkek
+Görme Engeli Durumu: Az gören
+Okul: anadolu, özel eğitim
+Meslek: pideci
+Kişisel Teknolojier: Akıllı telefon (iOS),Dizüstü bilgisayar,Masaüstü bilgisayar,Tablet bilgisayar,Ütü
+Yardımcı Teknolojiler: cavız 
+İşletim sistemi: Windows,macOS,Linuz
+İnternet Tarayıcı: Google Chrome,Safari |
+[Çar, 16-Ara-2020, 21:14:31] | INFO | Ana Sayfa açıldı. |
