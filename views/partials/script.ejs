@@ -64,22 +64,42 @@ $(document).ready(function() {
     /* student info */
     $("#alertStudentInfoDiv").hide();
     /*$("#jobStudentInfo").hide();*/
-    $("#inputCheckStudent").change(function() {
-        if($(this).is(':checked')) {
-            $("#studentInfo").find(":input[type='text']").attr('required', true);
-            $("#studentInfo").find(":input[type='text']").removeAttr('aria-hidden');
-            $("#studentInfo").find(":input[type='text']").removeAttr('readonly');
-            $("#studentInfo").removeAttr("style");
-        } else {
-            $("#studentInfo").find(":input[type='text']").removeAttr('required');
-            $("#studentInfo").find(":input[type='text']").removeAttr('aria-hidden');
-                $("#studentInfo").find(":input[type='text']").attr('readonly');
-            $("#studentInfo").css("opacity","0.5");
+    $("#inputCheckStudent").each(function() {
+        if($(this).not(':checked')) {
+            $("#jobFormGroup").find(":input[type='text']").attr('required', true);
         }
+        
+        $("#inputCheckStudent").change(function() {
+            if($(this).is(':checked')) {
+                $("#studentInfo").find(":input[type='text']").attr('required', true);
+                $("#studentInfo").find(":input[type='text']").removeAttr('aria-hidden');
+                $("#studentInfo").find(":input[type='text']").removeAttr('readonly');
+                $("#studentInfo").removeAttr("style");
+                
+                /* job input */
+                $("h4#jobHeading").css("display", "none");
+                $("input#inputTextJob").css("display", "none");
+                $("hr#hrJob").css("display", "none");
+                $("#jobFormGroup").find(":input[type='text']").attr('required', false);
+            } else {
+                $("#studentInfo").find(":input[type='text']").removeAttr('required');
+                $("#studentInfo").find(":input[type='text']").attr('aria-hidden', 'true');
+                $("#studentInfo").find(":input[type='text']").attr('readonly');
+                $("#studentInfo").css("opacity","0.5");
+                
+                /* job input */
+                $("h4#jobHeading").css("display", "block");
+                $("input#inputTextJob").css("display", "block");
+                /*$("input#inputTextJob").attr("required");
+                $("#jobFormGroup").find(":input[type='text']").attr("required");*/
+            }
+        });
     });
+    
     
     /* job */
     $("#alertJobDiv").hide();
+    
     /* .toggle() */
     /*$("#inputCheckJob1").click(function() {
         $("#jobStudentInfo").toggle(this.checked);

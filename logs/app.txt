@@ -965,3 +965,9 @@
 [Çar, 16-Ara-2020, 16:31:54] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Çar, 16-Ara-2020, 19:7:17] | INFO | Server started. |
 [Çar, 16-Ara-2020, 19:8:31] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Per, 17-Ara-2020, 16:18:35] | INFO | Server started. |
+[Per, 17-Ara-2020, 18:55:27] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Per, 17-Ara-2020, 20:12:30] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Per, 17-Ara-2020, 20:41:56] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Per, 17-Ara-2020, 21:28:35] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Per, 17-Ara-2020, 21:31:30] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
