@@ -1,0 +1,211 @@
+<body class="theme-pink">
+    
+    <div id="eso-cont">
+
+        <div id="pageTitleDiv" class="page-title" aria-hidden="false">
+            <!--span class="header-text left" tabindex="0" id="pageTitleSpan" role="heading">ENGELSİZ SINAV UYGULAMASI</span-->
+            <!--br aria-hidden="true"-->
+            <!--span class="header-text left" role="heading">Aday Bilgileri: Metehan Oğuzhan</span-->
+            <!-- Kalan Süre -->
+            <div class="" aria-hidden="false" id="remTimeDiv">
+                <span id="remainingTime" class="" aria-hidden="true"></span>
+                <span id="remainingTimeSpan" aria-hidden="true"></span>
+                <div class="hiddenLink">
+                    <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- .container -->
+        <div class="container">
+            <div>
+                <div id="soruTemplateDiv" class="textSelectable">
+                    <div id="soruContainer">
+                        <div class="question-header">
+                            <!-- Erişilebilirlik düğmesi -->
+                            <div id="hiddenAccessibilityButtonDiv">
+                                <button id="hiddenAccessibilityButton" class="hidden-accessibility" rel="popover" aria-label="Erişilebilirlik Ayarları"></button>
+                            </div>
+                            <div id="qNumDiv" class="question-number" role="heading" aria-hidden="true"></div>
+                            <div class="hiddenLink">
+                                <span id="qSummaryDiv" tabindex="1" role="heading"></span>
+                            </div>
+                            <div class="listen-div">
+                                <!-- Soruyu Dinle -->
+                                <div>
+                                    <audio id="qAudio" ></audio>
+                                    <button id="listenQuestion" class="listen">Soruyu Dinle</button>
+                                    <audio id="oAudio"></audio>
+                                    <button id="listenOptions" class="listen-options">Seçenekleri Dinle</button>
+                                </div>
+                            </div>
+                            <!-- Erişilebilirlik düğmesi -->
+                            <div id="accessibilityButtonDiv" class="nav-button right">
+                                <button id="accessibilityButton" class="accessibility btn-right" rel="popover" aria-hidden="true">
+                                    Erişilebilirlik
+                                </button>
+                            </div>
+                        </div>
+                        <div id="soruAlaniDiv" class="content">
+                            <div class="soru-ifadesi">
+                                <p></p>
+                                <span class="question" id="question"></span>
+                                <p></p>
+                            </div>
+                            <div class="secenekler">
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="radioA" type="radio" name="qValue" class="answer-radio left"
+                                            value="A">
+                                        <label class="unselectable" for="radioA">A</label>
+                                    </div>
+
+                                    <div class="secenek ">
+                                        <p><span class="highlighted" id="oA"></span></p>
+                                    </div>
+                                </div>
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="radioB" type="radio" name="qValue" class="answer-radio left"
+                                            value="B">
+
+                                        <label class="unselectable" for="radioB">B</label>
+                                    </div>
+
+                                    <div class="secenek  eliminated">
+                                        <p><span class="highlighted" id="oB"></span></p>
+                                    </div>
+                                </div>
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="radioC" type="radio" name="qValue" class="answer-radio left"
+                                            value="C">
+
+                                        <label class="unselectable" for="radioC">C</label>
+                                    </div>
+
+                                    <div class="secenek">
+                                        <p><span class="highlighted" id="oC"></span></p>
+                                    </div>
+                                </div>
+                                <div class="answerBox" aria-checked="false">
+                                    <div class="secenek-baslik">
+                                        <input id="radioD" type="radio" name="qValue" class="answer-radio left"
+                                            value="D">
+
+                                        <label class="unselectable" for="radioD">D</label>
+                                    </div>
+
+                                    <div class="secenek ">
+                                        <p><span class="highlighted" id="oD"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Button Bar -->
+                    <div class="bottom-bar">
+                        <!-- Bottom bar left -->
+                        <div class="bottom-bar-left" style="display:inline-flex;">
+                            <!--div style="padding:0;margin:0;"-->
+                            <button id="prevQuestion" class="previous" aria-label="Önceki Soru">Önceki</button>
+                            <button id="nextQuestion" class="next" aria-label="Sonraki Soru">Sonraki</button>
+                        </div>
+                        <!-- Bottom Bar Center -->
+                        <div class="bottom-bar-center">
+                            <!-- Rounded switch -->
+                            <div class="ismarked-switch">
+                                <label id="isMarkedLabel" for="ismarked" aria-hidden="true">Tekrar Bak</label>
+                                <label class="switch">
+                                  <input type="checkbox" id="ismarked">
+                                  <div class="slider round">
+                                      <span class="on" aria-hidden="true">EVET</span><span class="off" aria-hidden="true">HAYIR</span>
+                                  </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Bottom bar right -->
+                        <div class="bottom-bar-right">
+                            <button id="markedQuestionsButton" class="btn-footer look-up" aria-label="Sınavı Gözden Geçir">Gözden Geçir</button>
+                            <button id="finishButton" class="btn-footer finish-test" aria-label="Sınavı Bitir">Sınavı Bitir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Marked Questions Page -->
+        <div class="marked-questions-page" style="display: none;">
+            <div id="marked-questions-title" tabindex="1" role="heading" style="font-weight:bold;">TEKRAR BAKILACAK SORULAR</div>
+            <div class="marked-questions-div"></div>
+            <div class="bottom-bar">
+                <button id="backToExamButton" class="btn-footer back-to-test">Sınava Dön</button>
+            </div>
+        </div>
+        <!-- Accessibility Page -->
+        <div class="accessibility-page" style="display: none;margin-left:20px;">
+            <div id="accessibility-title" tabindex="1" role="heading" style="font-weight:bold;"></div>
+            <br aria-hidden="true">
+            <div class="accessibility-div">
+                <div>
+                    <label id="themes-label" for="themes" role="heading" style="font-weight:bold;">Tema:</label>
+                    <br aria-hidden="true">
+                    <select id="themes" sele>
+                        <!--option value="themeDefault">Beyaz Üzeri Siyah</option-->
+                        <option value="theme1">Beyaz Üzeri Siyah</option>
+                        <option value="theme-sepia">Sepya Üzeri Siyah</option>
+                        <option value="theme-pink" selected>Pembe Üzeri Siyah</option>
+                        <option value="theme-yellow">Sarı Üzeri Siyah</option>
+                        <option value="theme-lime">Yeşil Üzeri Siyah</option>
+                        <option value="theme2">Siyah Üzeri Beyaz</option>
+                        <option value="theme3">Siyah Üzeri Sarı</option>
+                        <option value="theme4">Siyah Üzeri Yeşil</option>
+                    </select>
+                </div>
+                <br aria-hidden="true">
+                <div>
+                    <label id="fonts-label" for="fonts" role="heading" style="font-weight:bold;">Yazı Tipi:</label>
+                    <br aria-hidden="true">
+                    <select id="fonts">
+                        <optgroup>
+                            <option>Verdana</option>
+                            <option>Arial</option>
+                            <option>Arial Black</option>
+                            <option>Times New Roman</option>
+                            <option>Helvetica</option>
+                            <option>Book Antiqua</option>
+                            <option>Georgia</option>
+                            <option>Tahoma</option>
+                            <option>Palatino Linotype</option>
+                            <option>Impact</option>
+                            <option>Lucida Sans Unicode</option>
+                            <option>Courier New</option>
+                            <option>Lucida Console</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br aria-hidden="true">
+                <div>
+                    <div class="nav-button" role="heading">Yazı Büyüklüğü:</div>
+                    <br aria-hidden="true">
+                    <div class="nav-button">
+                        <button id="decreaseFont" class="decrease-font" rel="popover" aria-label="Fontu Küçült"></button>
+                    </div>
+                    <div class="nav-button">
+                        <span id="fontSize" style="vertical-align: middle;font-weight:normal;">16 px</span>
+                    </div>
+                    <div class="nav-button">
+                        <button id="increaseFont" class="increase-font" rel="popover" aria-label="Fontu Büyüt"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <button id="accPageBackToExamButton" class="btn-footer back-to-test">Sınava Dön</button>
+            </div>
+        </div>
+        <!-- Finish Page -->
+        <div class="finish-page" style="display: none;">
+            <span id="finish-span" tabindex="1" style="font-weight:bold;">Sınavınız Tamamlandı. Katılımınız için teşekkür ederiz.</span>
+        </div>
+    </div>
+    
+</body>

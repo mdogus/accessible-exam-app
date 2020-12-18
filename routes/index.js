@@ -134,7 +134,7 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
 
 //Test page
 router.get('/exam', checkAuthenticated, function(req, res) {
-    //res.render('pages/index');
+    res.render('pages/exam');
 });
 
 //User authentication

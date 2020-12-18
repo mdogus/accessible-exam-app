@@ -971,3 +971,13 @@
 [Per, 17-Ara-2020, 20:41:56] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Per, 17-Ara-2020, 21:28:35] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Per, 17-Ara-2020, 21:31:30] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Cum, 18-Ara-2020, 23:38:28] | INFO | Server started. |
+[Cum, 18-Ara-2020, 23:39:35] | INFO | Button: Sınava Başla düğmesine basıldı. |
+[Cum, 18-Ara-2020, 23:42:54] | INFO | Server started. |
+[Cum, 18-Ara-2020, 23:43:6] | INFO | Button: Sınava Başla düğmesine basıldı. |
+[Cum, 18-Ara-2020, 23:53:18] | INFO | Server started. |
+[Cum, 18-Ara-2020, 23:53:30] | INFO | Button: Sınava Başla düğmesine basıldı. |
+[Cum, 18-Ara-2020, 23:56:30] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 19-Ara-2020, 0:5:52] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 19-Ara-2020, 0:11:24] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 19-Ara-2020, 0:12:0] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |

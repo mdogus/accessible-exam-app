@@ -347,3 +347,6 @@
 [Çar, 16-Ara-2020, 16:31:51] | INFO | %s %s %s |
 [Çar, 16-Ara-2020, 19:8:23] | INFO | %s %s %s |
 [Per, 17-Ara-2020, 16:25:11] | INFO | %s %s %s |
+[Cum, 18-Ara-2020, 23:38:46] | INFO | %s %s %s |
+[Cum, 18-Ara-2020, 23:43:3] | INFO | %s %s %s |
+[Cum, 18-Ara-2020, 23:53:27] | INFO | %s %s %s |
