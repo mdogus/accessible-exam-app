@@ -1041,3 +1041,12 @@
 [Cmt, 19-Ara-2020, 17:43:56] | INFO | Server started. |
 [Cmt, 19-Ara-2020, 17:44:6] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
 [Cmt, 19-Ara-2020, 17:44:24] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 20-Ara-2020, 0:2:27] | INFO | Server started. |
+[Paz, 20-Ara-2020, 0:6:39] | INFO | Server started. |
+[Paz, 20-Ara-2020, 0:7:9] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Paz, 20-Ara-2020, 0:7:16] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 20-Ara-2020, 0:8:0] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 20-Ara-2020, 0:8:54] | INFO | Server started. |
+[Paz, 20-Ara-2020, 0:9:25] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Paz, 20-Ara-2020, 0:9:28] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 20-Ara-2020, 0:9:39] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |

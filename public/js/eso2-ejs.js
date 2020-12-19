@@ -221,7 +221,7 @@ $(function () {
     $(document).ready(() => {
         let selectedTheme = $('#pTheme').html();
         $("body").removeClass();
-        $("body").delay(100).addClass(selectedTheme);
+        $("body").addClass(selectedTheme);
         $('#themes').find('option[value=' + selectedTheme + ']').prop("selected", true);
     });
     
