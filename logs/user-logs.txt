@@ -1965,3 +1965,58 @@ Yardımcı Teknolojiler: asdf
 [Cum, 18-Ara-2020, 23:53:27] | INFO | Ana Sayfa açıldı. |
 [Cum, 18-Ara-2020, 23:53:45] | INFO | Ana Sayfa açıldı. |
 [Cmt, 19-Ara-2020, 0:5:34] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 13:24:33] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 13:25:36] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 13:36:59] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 13:37:2] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 19-Ara-2020, 13:38:14] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 19-Ara-2020, 13:38:29] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 14:35:59] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 14:36:2] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Cmt, 19-Ara-2020, 14:59:36] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 15:13:13] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 15:14:47] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 16:25:10] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 16:27:42] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 16:28:18] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 16:48:58] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 16:49:12] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:8:37] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:10:28] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:16:36] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:19:46] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:27:27] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:27:34] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: undefined |
+[Cmt, 19-Ara-2020, 17:31:21] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:31:27] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: undefined |
+[Cmt, 19-Ara-2020, 17:33:48] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:33:56] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink |
+[Cmt, 19-Ara-2020, 17:38:47] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:38:54] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink |
+[Cmt, 19-Ara-2020, 17:40:59] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:41:15] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink |
+[Cmt, 19-Ara-2020, 17:43:35] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:43:43] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink |
+[Cmt, 19-Ara-2020, 17:44:4] | INFO | Ana Sayfa açıldı. |
+[Cmt, 19-Ara-2020, 17:44:24] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-lime |

@@ -5,31 +5,6 @@ var countdowntime = 1000 * 60 * 30;
 
 var qSummary = "";
 
-// var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. O, hikâyelerinde anlattığı halkımızı yakından tanımış, sorunlarını, düşüncelerini öğrenmiş, rahatça tasvir etmiştir. Bu değerlendir-meler, onun romancılığı için de geçerlidir. Eserlerinde halk konuşmalarının tüm güzelliğini sade bir dille vermiştir. Hikâyeleri arasında Otlakçı, romanları arasında ise Ayaşlı ve Kiracıları çok bilinmektedir.';
-// // var questionText = 'Hikâyecilikte en eski tarz olan açıklama yolunu bırakmıştır. ';
-
-// var o1Text = 'A) Gözümde bir damla su, güçlü deniz olup taşıyor Çöllerde kalmış gibi yanıyor, yanıyorum';
-// var o2Text = 'B) Özlediğin hayatı buldun mu bilmem Gözlerinde hâlâ hüzün var gibi';
-// var o3Text = 'C) Nazlı yârdan kem haberler geliyor Dostlarım ağlıyor, düşman gülüyor';
-// var o4Text = 'D) Küçük bir çeşmeyim yurdumun Unutulmuş bir dağında';
-
-// var questionArr = [];
-
-// function createQuestions() {
-//     for (var i = 1; i <= numOfGenQuestions; i++) {
-//         questionArr[i] = {
-//             id: i,
-//             text: questionText + " " + i,
-//             o1Text: o1Text + " " + i,
-//             o2Text: o2Text + " " + i,
-//             o3Text: o3Text + " " + i,
-//             o4Text: o4Text + " " + i,
-//             answer: undefined,
-//             marked: false
-//         };
-//     }
-// }
-
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
     return parseInt(qNumText.split(' ')[1]);
@@ -243,6 +218,13 @@ $(function () {
     });
 
     //theme
+    $(document).ready(() => {
+        let selectedTheme = $('#pTheme').html();
+        $("body").removeClass();
+        $("body").delay(100).addClass(selectedTheme);
+        $('#themes').find('option[value=' + selectedTheme + ']').prop("selected", true);
+    });
+    
     $('#themes').change(function () {
         let selectedTheme = $('#themes').find(":selected").val();
         $("body").removeClass();

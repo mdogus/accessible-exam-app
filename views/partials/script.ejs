@@ -24,7 +24,7 @@ $(document).ready(function() {
         $("#startExamModalButton").css("background-color", "red");
         
         var data = {
-            event: "Button: Sınava Başla düğmesine basıldı."
+            event: "Button (before the Modal): Sınava Başla düğmesine basıldı."
         };
         $.ajax({
             type: "POST",
@@ -34,6 +34,28 @@ $(document).ready(function() {
                     console.log("Kişisel Bilgi Formu");
             }
         });
+    });
+    
+    $("#startExamButton").click(function(event) {
+        event.preventDefault();
+        $("#startExamModalButton").css("background-color", "red");
+        
+        $.post("/user/save-acc-settings", $("form#accessibilitySettingsForm").serialize());
+        //$("form#accessibilitySettingsForm").submit();
+        
+        var data = {
+            event: "Button (on the Modal): Sınava Başla düğmesine basıldı."
+        };
+        $.ajax({
+            type: "POST",
+            url: "/log",
+            data: data,
+            success: function(response) {
+                    console.log("Kişisel Bilgi Formu");
+            }
+        });
+        
+        window.location.href = "/exam";
     });
     
 });

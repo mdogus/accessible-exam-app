@@ -16,7 +16,8 @@ const User = new Schema({
     personalTechs: [{ type: String }],
     assistiveTechs: { type: String },
     opSystem: [{ type: String }],
-    browser: [{ type: String }]
+    browser: [{ type: String }],
+    theme: { type: String }
 });
 
 /*User.updateMany({},

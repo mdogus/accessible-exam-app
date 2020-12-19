@@ -96,7 +96,10 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
          {$set: { "personalTechs": [] }},
          {$set: { "assistiveTechs": "" }},
          {$set: { "opSystem": [] }},
-         {$set: { "browser": [] }}],
+         {$set: { "browser": [] }},
+         {$set: { "theme": "theme3" }},
+         {$set: { "font": "font_0" }},
+         {$set: { "fontSize": "18" }}],
         { multi: true }, function (err, doc) {
             if (err) return err;
             console.log('The doc response from Mongo was ', doc);
@@ -131,10 +134,35 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
     };
 });
 
+//Accessibility settings
+router.post('/user/save-acc-settings', checkAuthenticated, async (req, res) => {
+    const user = req.body;
+    const msg = "Accessibility Settings saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nTema Rengi: " + user.theme;
+    
+    try {
+        await User.updateOne({ "email": user.email },
+                             [{$set: { "theme": user.theme }}], function(err, doc) {
+            if (err) {
+                console.log(err);
+                logger.logger.log("error", err);
+                res.send(err);
+            } else {
+                console.log(msg);
+                logger.logger.log("info", msg)
+            }
+        });
+    } catch {
+        console.log("Failed to save Accessibility Settings.");
+        logger.logger.log("error", "Failed to save Accessibility Settings.");
+    };
+});
+
 
 //Test page
 router.get('/exam', checkAuthenticated, function(req, res) {
-    res.render('pages/exam');
+    res.render('pages/exam', {
+        theme: req.user.theme
+    });
 });
 
 //User authentication

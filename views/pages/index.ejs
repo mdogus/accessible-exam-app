@@ -75,23 +75,50 @@
     </div>
 </div>
 </div-->
+
 <!-- Start Exam Modal -->
 <div class="modal fade" id="startExamModal" tabindex="-1" role="dialog" aria-labelledby="startExamModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="startExamModalLabel">Kullanım Kılavuzu</h5>
+        <!-- <h5 class="modal-title" id="startExamModalLabel">Kullanım Kılavuzu</h5> -->
+        <h5 class="modal-title" id="startExamModalLabel">Erişilebilirlik Ayarları</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body lead">
-        Lütfen sınava başlamadan önce Kullanım Kılavuzu'nu okuyunuz.
+        <!-- Lütfen sınava başlamadan önce Kullanım Kılavuzu'nu okuyunuz. -->
+        <p>Lütfen sınava başlamadan önce erişilebilirlik tercihinizi belirleyin. (<strong>Not:</strong> İsteğe bağlıdır.)</p>
+        <form id="accessibilitySettingsForm" action="/user/save-acc-settings" method="POST">
+            <div class="sr-only" aria-hidden="true">
+                <input type="text" readonly id="inputStaticName" name="name" value="<%= name %>">
+            </div>
+            <div class="sr-only" aria-hidden="true">
+                <input type="text" readonly id="inputStaticSurname" name="surname" value="<%= surname %>">
+            </div>
+            <div class="sr-only" aria-hidden="true">
+                <input type="text" readonly id="inputStaticEmail" name="email" value="<%= email %>">
+            </div>
+            <div class="form-group">
+                <label for="selectThemes">Tema Rengi</label>
+                <select id="selectThemes" name="theme" class="form-control form-control-lg">
+                    <option value="theme1">Beyaz Üzeri Siyah</option>
+                    <option value="theme-sepia">Sepya Üzeri Siyah</option>
+                    <option value="theme-pink" selected>Pembe Üzeri Siyah</option>
+                    <option value="theme-yellow">Sarı Üzeri Siyah</option>
+                    <option value="theme-lime">Yeşil Üzeri Siyah</option>
+                    <option value="theme2">Siyah Üzeri Beyaz</option>
+                    <option value="theme3">Siyah Üzeri Sarı</option>
+                    <option value="theme4">Siyah Üzeri Yeşil</option>
+                </select>
+            </div>
+        </form>
       </div>
       <div class="modal-footer">
         <!--button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button-->
         <button type="button" class="btn btn-info" onclick="location.href='#';">Kullanım Kılavuzu'na Git</button>
-        <button type="button" class="btn btn-primary" onclick="location.href='/test';">Sınava Başla</button>
+        <button id="startExamButton" type="button" class="btn btn-primary">Sınava Başla</button>
       </div>
     </div>
 </div>

@@ -1,5 +1,9 @@
 <body class="theme-pink">
     
+    <div class="sr-only" aria-hidden="true">
+        <p id="pTheme"><%= theme %></p>
+    </div>
+    
     <div id="eso-cont">
 
         <div id="pageTitleDiv" class="page-title" aria-hidden="false">
@@ -149,11 +153,11 @@
                 <div>
                     <label id="themes-label" for="themes" role="heading" style="font-weight:bold;">Tema:</label>
                     <br aria-hidden="true">
-                    <select id="themes" sele>
+                    <select id="themes">
                         <!--option value="themeDefault">Beyaz Üzeri Siyah</option-->
                         <option value="theme1">Beyaz Üzeri Siyah</option>
                         <option value="theme-sepia">Sepya Üzeri Siyah</option>
-                        <option value="theme-pink" selected>Pembe Üzeri Siyah</option>
+                        <option value="theme-pink">Pembe Üzeri Siyah</option>
                         <option value="theme-yellow">Sarı Üzeri Siyah</option>
                         <option value="theme-lime">Yeşil Üzeri Siyah</option>
                         <option value="theme2">Siyah Üzeri Beyaz</option>
