@@ -379,45 +379,78 @@ butto
     justify-self: end;
 }
 
+/* Fonts */
+@font-face {
+    font-family: MEBFont;
+    src: url("/test/fonts/TTKBDikTemelAbece.ttf");
+}
+@font-face {
+    font-family: AppleGothic;
+    src: url("/test/fonts/Futura.ttf");
+}
+@font-face {
+    font-family: ChalkboardSE;
+    src: url("/test/fonts/ChalkboardSE.ttc");
+}
+
 #eso-cont.font_0 *{
-    font-family: Verdana !important;
-  }
-  #eso-cont.font_1 *{
     font-family: Arial !important;
-  }
-  #eso-cont.font_2 *{
+}
+#eso-cont.font_1 *{
     font-family: 'Arial Black' !important;
-  }
-  #eso-cont.font_3 *{
-    font-family: 'Times New Roman' !important;
-  }
-  #eso-cont.font_4 *{
-    font-family: Helvatica !important;
-  }
-  #eso-cont.font_5 *{
-    font-family: 'Book Antiqua' !important;
-  }
-  #eso-cont.font_6 *{
-    font-family: Georgia !important;
-  }
-  #eso-cont.font_7 *{
+}
+#eso-cont.font_2 *{
+    font-family: Futura !important;
+}
+#eso-cont.font_3 *{
+    font-family: ChalkboardSE !important;
+}
+#eso-cont.font_4 *{
+    font-family: 'Comic Sans MS' !important;
+}
+#eso-cont.font_5 *{
+    font-family: Helvetica !important;
+}
+#eso-cont.font_6 *{
     font-family: Tahoma !important;
-  }
-  #eso-cont.font_8 *{
+}
+#eso-cont.font_7 *{
+    font-family: 'Times New Roman' !important;
+}
+#eso-cont.font_8 *{
+    font-family: 'Trebuchet MS' !important;
+}
+#eso-cont.font_9 *{
+    font-family: MEBFont !important;
+}
+#eso-cont.font_10 *{
+    font-family: Verdana !important;
+}
+
+  /*#eso-cont.font_4 *{
+    font-family: Helvatica !important;
+  }*/
+  /*#eso-cont.font_5 *{
+    font-family: 'Book Antiqua' !important;
+  }*/
+  /*#eso-cont.font_4 *{
+    font-family: Georgia !important;
+  }*/
+  /*#eso-cont.font_5 *{
     font-family: Platino !important;
   }
-  #eso-cont.font_9 *{
+  #eso-cont.font_6 *{
     font-family: Impact !important;
   }
-  #eso-cont.font_10 *{
+  #eso-cont.font_7 *{
     font-family: 'Lucida Sans Unicode' !important;
   }
-  #eso-cont.font_11 *{
+  #eso-cont.font_8 *{
     font-family: 'Courier New' !important;
   }
-  #eso-cont.font_12 *{
+  #eso-cont.font_9 *{
     font-family: 'Lucida Console' !important;
-  }
+  }*/
 
 /* bottom bar class */
 .bottom-bar {

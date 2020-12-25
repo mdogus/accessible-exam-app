@@ -77,7 +77,7 @@
 </div-->
 
 <!-- Start Exam Modal -->
-<div class="modal fade" id="startExamModal" tabindex="-1" role="dialog" aria-labelledby="startExamModalLabel" aria-hidden="true">
+<div class="modal fade" id="startExamModal" tabindex="-1" role="dialog" aria-labelledby="startExamModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -89,7 +89,7 @@
       </div>
       <div class="modal-body lead">
         <!-- Lütfen sınava başlamadan önce Kullanım Kılavuzu'nu okuyunuz. -->
-        <p>Lütfen sınava başlamadan önce erişilebilirlik tercihinizi belirleyin. (<strong>Not:</strong> İsteğe bağlıdır.)</p>
+        <p>Lütfen sınava başlamadan önce erişilebilirlik tercihlerinizi belirleyin. (<strong>Not:</strong> İsteğe bağlıdır.)</p>
         <form id="accessibilitySettingsForm" action="/user/save-acc-settings" method="POST">
             <div class="sr-only" aria-hidden="true">
                 <input type="text" readonly id="inputStaticName" name="name" value="<%= name %>">

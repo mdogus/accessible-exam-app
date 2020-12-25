@@ -367,3 +367,5 @@
 [Cmt, 19-Ara-2020, 17:44:4] | INFO | %s %s %s |
 [Paz, 20-Ara-2020, 0:7:4] | INFO | %s %s %s |
 [Paz, 20-Ara-2020, 0:9:22] | INFO | %s %s %s |
+[Cum, 25-Ara-2020, 19:54:52] | INFO | %s %s %s |
+[Cum, 25-Ara-2020, 20:20:6] | INFO | %s %s %s |

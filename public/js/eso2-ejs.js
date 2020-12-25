@@ -212,6 +212,10 @@ $(function () {
     });
 
     //select font
+    $(document).ready(() => {
+        $("#eso-cont").removeClass();
+        $("#eso-cont").addClass("font_10");
+    });
     $('#fonts').change(function () {
         $("#eso-cont").removeClass();
         $("#eso-cont").addClass("font_" + this.selectedIndex);

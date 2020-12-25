@@ -2033,3 +2033,18 @@ Tema Rengi: theme-pink |
 Ad: Mustafa
 Soyad: Doğuş
 Tema Rengi: theme3 |
+[Cum, 25-Ara-2020, 19:54:52] | INFO | Ana Sayfa açıldı. |
+[Cum, 25-Ara-2020, 20:10:44] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3 |
+[Cum, 25-Ara-2020, 20:20:7] | INFO | Ana Sayfa açıldı. |
+[Cum, 25-Ara-2020, 20:20:16] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink |
+[Cum, 25-Ara-2020, 20:55:24] | INFO | Ana Sayfa açıldı. |
+[Cum, 25-Ara-2020, 22:26:8] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1 |
