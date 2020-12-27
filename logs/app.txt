@@ -1061,3 +1061,70 @@
 [Cum, 25-Ara-2020, 20:20:16] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
 [Cum, 25-Ara-2020, 22:25:54] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
 [Cum, 25-Ara-2020, 22:26:8] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 14:41:6] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 14:42:17] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 14:42:30] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 15:54:45] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 26-Ara-2020, 15:55:1] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 26-Ara-2020, 16:29:9] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 16:29:38] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 16:30:20] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 17:24:34] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 17:24:54] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 17:26:38] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 17:52:24] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 17:52:35] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 17:53:13] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:1:33] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 18:1:42] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:2:19] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:12:3] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 18:12:18] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:12:51] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:18:46] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 18:19:3] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:19:28] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:23:9] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 18:23:26] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:23:55] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:29:18] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 18:29:25] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:30:4] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:41:13] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 18:41:32] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:42:0] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:43:59] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 18:44:7] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 18:44:25] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:6:5] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 19:8:20] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 19:15:29] | INFO | Server started. |
+[Cmt, 26-Ara-2020, 19:15:46] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:16:6] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:16:37] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:16:56] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:19:9] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:19:20] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:20:2] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:22:2] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:24:49] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:26:24] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:27:37] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:29:37] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:51:36] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:54:42] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:56:42] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:57:55] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 19:59:55] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:28:37] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:30:0] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:31:4] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:31:57] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:32:43] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:33:29] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:36:39] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:37:59] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:39:15] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:39:58] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:40:53] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 26-Ara-2020, 20:42:53] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |

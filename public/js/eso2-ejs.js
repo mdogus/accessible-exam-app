@@ -210,17 +210,34 @@ $(function () {
         changeFontSize(fontSize - 2);
         // resizeImagesAccordingToFontSize(fontSize);
     });
-
-    //select font
+    
+    //set fotn when page loaded
     $(document).ready(() => {
-        $("#eso-cont").removeClass();
-        $("#eso-cont").addClass("font_10");
-    });
-    $('#fonts').change(function () {
-        $("#eso-cont").removeClass();
-        $("#eso-cont").addClass("font_" + this.selectedIndex);
-    });
+        let selectedFontSize = $('#pFontSize').html();
+        let fontSize = parseInt(selectedFontSize);
+        $('#eso-cont').css("font-size", fontSize + "px");
+        $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
 
+        $('#eso-cont .question-number').css("font-size", fontSize * 1.5 + "px");
+        $('#eso-cont .question-number').css("line-height", (fontSize * 1.5 * 1.4) + "px");
+        
+        $('#eso-cont .remaining-time').css("font-size", fontSize * 1.5 + "px");
+        $('#eso-cont .remaining-time').css("line-height", (fontSize * 1.5 * 1.4) + "px");
+
+        $('#eso-cont input[type=button]').css("font-size", fontSize + "px");
+        $('#eso-cont input[type=button]').css("line-height", (fontSize * 1.4) + "px");
+
+        $('#eso-cont button img').css("width", fontSize * 1.2 + "px");
+        
+        $('#eso-cont button').css("font-size", fontSize + "px");
+        $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
+
+        $('#eso-cont select').css("font-size", (fontSize) + "px");
+        $('#eso-cont select').css("line-height", (fontSize * 1.4) + "px");
+
+        $('#fontSize').html(fontSize + " px");
+    });
+    
     //theme
     $(document).ready(() => {
         let selectedTheme = $('#pTheme').html();
@@ -228,13 +245,25 @@ $(function () {
         $("body").addClass(selectedTheme);
         $('#themes').find('option[value=' + selectedTheme + ']').prop("selected", true);
     });
-    
     $('#themes').change(function () {
         let selectedTheme = $('#themes').find(":selected").val();
         $("body").removeClass();
         $("body").addClass(selectedTheme);
     });
     
+    //select font
+    $(document).ready(() => {
+        let selectedFont = $('#pFont').text();
+        $("#eso-cont").removeClass();
+        $("#eso-cont").addClass(selectedFont);
+        $('#fonts').find('option[value=' + selectedFont + ']').prop("selected", true);
+    });
+    $('#fonts').change(function () {
+        let selectedFont = $('#fonts').find(":selected").val();
+        $("#eso-cont").removeClass();
+        $("#eso-cont").addClass(selectedFont);
+        //$("#eso-cont").addClass("font_" + this.selectedIndex);
+    });
 
     setInterval(() => {
         countdowntime -= 1000;

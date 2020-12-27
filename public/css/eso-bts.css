@@ -168,6 +168,23 @@ textarea {
 #personalTechsOtherDiv, #assistiveTechsOtherDiv, #opSystemOtherDiv, #browserOtherDiv {
     padding-right: 15px;
 }
+#selectThemes:hover, #selectFonts:hover, #selectFontSize:hover {
+    cursor: pointer;
+    border-top: 1px solid rgb(100,100,100) !important;
+    border-bottom: 1px solid rgb(100,100,100) !important;
+    /*background: transparent;*/
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+    /*padding-top: 0px;*/
+    /*background-size: 40px;*/
+}
+/*#selectThemes:after {
+    content: '\f056';
+    font-family: FontAwesome;
+    font-size: 30px;
+    font-weight: normal;
+}*/
 
 /* Personal Info Custom Checbox */
 /* Customize the label (the container) */

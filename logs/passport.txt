@@ -369,3 +369,17 @@
 [Paz, 20-Ara-2020, 0:9:22] | INFO | %s %s %s |
 [Cum, 25-Ara-2020, 19:54:52] | INFO | %s %s %s |
 [Cum, 25-Ara-2020, 20:20:6] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 14:42:14] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 16:29:26] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 17:24:49] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 17:52:32] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 18:1:39] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 18:12:14] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 18:18:52] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 18:23:24] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 18:29:23] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 18:41:29] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 18:44:4] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 19:6:18] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 19:8:27] | INFO | %s %s %s |
+[Cmt, 26-Ara-2020, 19:15:42] | INFO | %s %s %s |

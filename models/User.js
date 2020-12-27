@@ -17,7 +17,9 @@ const User = new Schema({
     assistiveTechs: { type: String },
     opSystem: [{ type: String }],
     browser: [{ type: String }],
-    theme: { type: String }
+    theme: { type: String },
+    font: { type: String },
+    fontSize: { type: String }
 });
 
 /*User.updateMany({},

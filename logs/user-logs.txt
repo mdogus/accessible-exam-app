@@ -2048,3 +2048,112 @@ Tema Rengi: theme-pink |
 Ad: Mustafa
 Soyad: Doğuş
 Tema Rengi: theme1 |
+[Cmt, 26-Ara-2020, 14:42:14] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 14:42:30] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1 |
+[Cmt, 26-Ara-2020, 16:29:26] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 16:30:20] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink |
+[Cmt, 26-Ara-2020, 17:24:49] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 17:26:38] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1 |
+[Cmt, 26-Ara-2020, 17:52:32] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 17:53:13] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-yellow
+Yazı Tipi: font_3
+Yazı Boyutu: 20 |
+[Cmt, 26-Ara-2020, 18:1:39] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 18:2:19] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_1
+Yazı Boyutu: 18 |
+[Cmt, 26-Ara-2020, 18:12:15] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 18:12:51] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-sepia
+Yazı Tipi: font_3
+Yazı Boyutu: 20 |
+[Cmt, 26-Ara-2020, 18:18:52] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 18:19:28] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_3
+Yazı Boyutu: 18 |
+[Cmt, 26-Ara-2020, 18:23:24] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 18:23:55] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-lime
+Yazı Tipi: font_4
+Yazı Boyutu: 16 |
+[Cmt, 26-Ara-2020, 18:29:23] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 18:30:4] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_3
+Yazı Boyutu: 18 |
+[Cmt, 26-Ara-2020, 18:41:29] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 18:42:1] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_1
+Yazı Boyutu: 16 |
+[Cmt, 26-Ara-2020, 18:44:5] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 18:44:25] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-yellow
+Yazı Tipi: font_3
+Yazı Boyutu: 18 |
+[Cmt, 26-Ara-2020, 19:15:42] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 19:16:6] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_7
+Yazı Boyutu: 16 |
+[Cmt, 26-Ara-2020, 19:16:56] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_3
+Yazı Boyutu: 18 |
+[Cmt, 26-Ara-2020, 19:18:46] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 19:19:20] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 26-Ara-2020, 19:24:46] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 19:26:21] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 19:27:35] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 19:51:24] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 19:54:39] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 19:57:52] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:28:34] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:29:54] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:31:1] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:31:54] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:32:38] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:33:18] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:36:33] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:37:56] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:39:13] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:39:56] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:40:51] | INFO | Ana Sayfa açıldı. |
+[Cmt, 26-Ara-2020, 20:42:50] | INFO | Ana Sayfa açıldı. |

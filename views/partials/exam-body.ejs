@@ -1,7 +1,9 @@
 <body class="theme-pink">
     
-    <div class="sr-only" aria-hidden="true">
+    <div class="sr-only" aria-hidden="false">
         <p id="pTheme"><%= theme %></p>
+        <p id="pFont"><%= font %></p>
+        <p id="pFontSize"><%= fontSize %></p>
     </div>
     
     <div id="eso-cont">
@@ -170,18 +172,18 @@
                     <label id="fonts-label" for="fonts" role="heading" style="font-weight:bold;">Yazı Tipi:</label>
                     <br aria-hidden="true">
                     <select id="fonts">
-                        <optgroup>
-                            <option>Arial</option>
-                            <option>Arial Black</option>
-                            <option>Century Gothic</option>
-                            <option>Chalkboard</option>
-                            <option>Comic Sans</option>
-                            <option>Helvetica</option>
-                            <option>Tahoma</option>
-                            <option>Times New Roman</option>
-                            <option>Trebuchet</option>
-                            <option>TTKB Dik Temel Yazı</option>
-                            <option selected>Verdana</option>
+                        <!--optgroup id="fontsGroup"-->
+                            <option value="font_0">Arial</option>
+                            <option value="font_1">Arial Black</option>
+                            <option value="font_2">Century Gothic</option>
+                            <option value="font_3">Chalkboard</option>
+                            <option value="font_4">Comic Sans</option>
+                            <option value="font_5">Helvetica</option>
+                            <option value="font_6">Tahoma</option>
+                            <option value="font_7">Times New Roman</option>
+                            <option value="font_8">Trebuchet</option>
+                            <option value="font_9">TTKB Dik Temel Yazı</option>
+                            <option value="font_10">Verdana</option>
                             <!--option>Helvetica</option-->
                             <!--option>Book Antiqua</option-->
                             <!--option>Georgia</option-->
@@ -190,7 +192,7 @@
                             <!--option>Lucida Sans Unicode</option-->
                             <!--option>Courier New</option-->
                             <!--option>Lucida Console</option-->
-                        </optgroup>
+                        <!--/optgroup-->
                     </select>
                 </div>
                 <br aria-hidden="true">

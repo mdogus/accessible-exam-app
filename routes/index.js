@@ -137,11 +137,13 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
 //Accessibility settings
 router.post('/user/save-acc-settings', checkAuthenticated, async (req, res) => {
     const user = req.body;
-    const msg = "Accessibility Settings saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nTema Rengi: " + user.theme;
+    const msg = "Accessibility Settings saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nTema Rengi: " + user.theme + "\nYazı Tipi: " + user.font + "\nYazı Boyutu: " + user.fontSize;
     
     try {
         await User.updateOne({ "email": user.email },
-                             [{$set: { "theme": user.theme }}], function(err, doc) {
+                             [{$set: { "theme": user.theme }},
+                              {$set: { "font": user.font }},
+                              {$set: { "fontSize": user.fontSize }}], function(err, doc) {
             if (err) {
                 console.log(err);
                 logger.logger.log("error", err);
@@ -161,7 +163,9 @@ router.post('/user/save-acc-settings', checkAuthenticated, async (req, res) => {
 //Test page
 router.get('/exam', checkAuthenticated, function(req, res) {
     res.render('pages/exam', {
-        theme: req.user.theme
+        theme: req.user.theme,
+        font: req.user.font,
+        fontSize: req.user.fontSize
     });
 });
 
