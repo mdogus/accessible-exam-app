@@ -22,6 +22,7 @@
                             <ul>
                                 <li><strong>Yaş: </strong><%= user.age %></li>
                                 <li><strong>Cinsiyet: </strong><%= user.gender %></li>
+                                <li><strong>Görme Engeli Durumu: </strong><%= user.visualImpairment %></li>
                                 <li><strong>Okul/Üniversite: </strong><%= user.studentVar1 %></li>
                                 <li><strong>Bölüm/Sınıf: </strong><%= user.studentVar2 %></li>
                                 <li><strong>Meslek: </strong><%= user.job %></li>
@@ -33,13 +34,61 @@
                                     </ul>
                                 <li><strong>Yardımcı Teknolojiler: </strong><%= user.assistiveTechs %></li>
                                 <li><strong>Masaüstü İşletim Sistemi: </strong></li>
-                                <ul>
-                                    <% user.opSystem.forEach(function(i) { %>
-                                        <li><%= i %></li>
-                                    <% }); %>
-                                </ul>
-                                <li><strong>Tema Rengi: </strong><%= user.theme %></li>
-                                <li><strong>Yazı Tipi: </strong><%= user.font %></li>
+                                    <ul>
+                                        <% user.opSystem.forEach(function(i) { %>
+                                            <li><%= i %></li>
+                                        <% }); %>
+                                    </ul>
+                                <li><strong>İnternet Tarayıcı: </strong></li>
+                                    <ul>
+                                        <% user.browser.forEach(function(i) { %>
+                                            <li><%= i %></li>
+                                        <% }); %>
+                                    </ul>
+                                <li><strong>Tema Rengi: </strong>
+                                    <% if(user.theme == "theme1") { %>
+                                        Beyaz Üzeri Siyah
+                                    <% } else if(user.theme == "theme-sepia") { %>
+                                        Sepya Üzeri Siyah
+                                    <% } else if(user.theme == "theme-pink") { %>
+                                        Pembe Üzeri Siyah
+                                    <% } else if(user.theme == "theme-yellow") { %>
+                                        Sarı Üzeri Siyah
+                                    <% } else if(user.theme == "theme-lime") { %>
+                                        Yeşil Üzeri Siyah
+                                    <% } else if(user.theme == "theme2") { %>
+                                        Siyah Üzeri Beyaz
+                                    <% } else if(user.theme == "theme3") { %>
+                                        Siyah Üzeri Sarı
+                                    <% } else if(user.theme == "theme4") { %>
+                                        Siyah Üzeri Yeşil
+                                    <% }; %>
+                                </li>
+                                <li><strong>Yazı Tipi: </strong>
+                                    <% if(user.font == "font_0") { %>
+                                        Arial
+                                    <% } else if(user.font == "font_1") { %>
+                                        Arial Black
+                                    <% } else if(user.font == "font_2") { %>
+                                        Century Gothic
+                                    <% } else if(user.font == "font_3") { %>
+                                        Chalkboard
+                                    <% } else if(user.font == "font_4") { %>
+                                        Comic Sans MS
+                                    <% } else if(user.font == "font_5") { %>
+                                        Helvetica
+                                    <% } else if(user.font == "font_6") { %>
+                                        Tahoma
+                                    <% } else if(user.font == "font_7") { %>
+                                        Times New Roman
+                                    <% } else if(user.font == "font_8") { %>
+                                        Trebuchet
+                                    <% } else if(user.font == "font_9") { %>
+                                        TTKB Dik Temel Abece
+                                    <% } else if(user.font == "font_10") { %>
+                                        Verdana
+                                    <% }; %>
+                                </li>
                                 <li><strong>Yardımcı Teknolojiler: </strong><%= user.fontSize %></li>
                             </ul>
                         <% } %>

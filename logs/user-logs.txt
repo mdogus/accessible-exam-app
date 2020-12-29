@@ -2157,3 +2157,60 @@ Yazı Boyutu: 16 |
 [Cmt, 26-Ara-2020, 20:39:56] | INFO | Ana Sayfa açıldı. |
 [Cmt, 26-Ara-2020, 20:40:51] | INFO | Ana Sayfa açıldı. |
 [Cmt, 26-Ara-2020, 20:42:50] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 12:7:21] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 12:8:42] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 12:9:3] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 12:10:12] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 12:11:57] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 12:13:57] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 12:20:23] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 12:29:26] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 12:35:6] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 12:53:55] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 12:54:58] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 13:0:33] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 13:3:32] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 13
+Cinsiyet: Erkek
+Görme Engeli Durumu: Az gören
+Okul: asdf, asdf
+Meslek: asdf
+Kişisel Teknolojier: Akıllı telefon (iOS),Akıllı telefon (Android),Dizüstü bilgisayar,asdf
+Yardımcı Teknolojiler: asdf
+İşletim sistemi: macOS,
+İnternet Tarayıcı: undefined |
+[Sal, 29-Ara-2020, 13:3:32] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 13:3:40] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 13:14:18] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 13:14:27] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 13:14:42] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 13:23:54] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 13:52:56] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 19:5:49] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 20:33:19] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 20:33:22] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 20:36:58] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 20:40:21] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 20:43:12] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 29-Ara-2020, 20:47:19] | INFO | Personal Info saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Yaş: 14
+Cinsiyet: Erkek
+Görme Engeli Durumu: Az gören
+Okul: asdf, asdf
+Meslek: asdf
+Kişisel Teknolojier: Akıllı telefon (iOS),Akıllı telefon (Android),asdf
+Yardımcı Teknolojiler: asdf
+İşletim sistemi: Windows,asdf
+İnternet Tarayıcı: Google Chrome,Safari |
+[Sal, 29-Ara-2020, 20:47:20] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 21:51:47] | INFO | Ana Sayfa açıldı. |
+[Sal, 29-Ara-2020, 21:52:31] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-yellow
+Yazı Tipi: font_7
+Yazı Boyutu: 18 |

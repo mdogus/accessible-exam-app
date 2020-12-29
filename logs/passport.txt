@@ -383,3 +383,5 @@
 [Cmt, 26-Ara-2020, 19:6:18] | INFO | %s %s %s |
 [Cmt, 26-Ara-2020, 19:8:27] | INFO | %s %s %s |
 [Cmt, 26-Ara-2020, 19:15:42] | INFO | %s %s %s |
+[Sal, 29-Ara-2020, 12:7:21] | INFO | %s %s %s |
+[Sal, 29-Ara-2020, 20:33:19] | INFO | %s %s %s |

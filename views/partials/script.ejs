@@ -63,8 +63,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $("#greetingMsg").delay(5000).slideUp(400);
-    $("#msgPersonalInfo").delay(5000).slideUp(400);
+    $("#greetingMsg").delay(10000).slideUp(400);
+    $("#msgPersonalInfo").delay(10000).slideUp(400);
 });
 
 $(document).ready(function() {
@@ -101,9 +101,9 @@ $(document).ready(function() {
                 $("#studentInfo").removeAttr("style");
                 
                 /* job input */
-                $("h4#jobHeading").css("display", "none");
-                $("input#inputTextJob").css("display", "none");
-                $("hr#hrJob").css("display", "none");
+                //$("h4#jobHeading").css("display", "none");
+                //$("input#inputTextJob").css("display", "none");
+                //$("hr#hrJob").css("display", "none");
                 $("#jobFormGroup").find(":input[type='text']").attr('required', false);
             } else {
                 $("#studentInfo").find(":input[type='text']").removeAttr('required');
@@ -171,7 +171,7 @@ $(document).ready(function() {
             $("#alertAgeDiv").attr("tabindex","0");
             document.getElementById("alertAgeDiv").focus();
             $(this).css("background-color", "red");
-            $("#alertAgeDiv").delay(5000).slideUp(300);
+            $("#alertAgeDiv").delay(10000).slideUp(300);
             
             /* gender */
         } else if(!$("#inputRadioGender1").is(":checked") && !$("#inputRadioGender2").is(":checked")) {
@@ -181,7 +181,30 @@ $(document).ready(function() {
             $("#alertGenderDiv").attr("tabindex","0");
             document.getElementById("alertGenderDiv").focus();
             $(this).css("background-color", "red");
-            $("#alertGenderDiv").delay(5000).slideUp(300);
+            $("#alertGenderDiv").delay(10000).slideUp(300);
+            
+            /* visual impairment info */
+        } else if(!$("#inputRadioVisualImpairment1").is(":checked") && !$("#inputRadioVisualImpairment2").is(":checked")) {
+        
+            e.preventDefault();
+            $("#alertVisualImpairmentDiv").show(300);
+            $("#alertVisualImpairmentDiv").attr("tabindex","0");
+            document.getElementById("alertVisualImpairmentDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertVisualImpairmentDiv").delay(10000).slideUp(300);
+            
+            /* student info */
+        } else if(($("#inputCheckStudent").is(':checked')) && ($("input[id='inputTextStudent1']").val() === "") && ($("input[id='inputTextStudent2']").val() === "")) {
+            
+            e.preventDefault();
+            $("#alertStudentInfoDiv").show(300);
+            $("#alertStudentInfoDiv").attr("tabindex","0");
+            document.getElementById("alertStudentInfoDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertStudentInfoDiv").delay(10000).slideUp(300);
+            /*if($("#inputCheckStudent").not(':checked')) {
+                
+            }*/
             
             /* job */
         } else if(($("input[name='studentVar1']").val() === "") && ($("input[name='studentVar2']").val() === "") && ($("input[name='job']").val() === "")) {
@@ -191,7 +214,7 @@ $(document).ready(function() {
             $("#alertJobDiv").attr("tabindex","0");
             document.getElementById("alertJobDiv").focus();
             $(this).css("background-color", "red");
-            $("#alertJobDiv").delay(5000).slideUp(300);
+            $("#alertJobDiv").delay(10000).slideUp(300);
             
             /* personal techs */
         } else if(!$("#personalTechCheck1").is(":checked") && !$("#personalTechCheck2").is(":checked") && !$("#personalTechCheck3").is(":checked") && !$("#personalTechCheck4").is(":checked") && !$("#personalTechCheck5").is(":checked")) {
@@ -201,7 +224,7 @@ $(document).ready(function() {
             $("#alertPersonalTechsDiv").attr("tabindex","0");
             document.getElementById("alertPersonalTechsDiv").focus();
             $(this).css("background-color", "red");
-            $("#alertPersonalTechsDiv").delay(5000).slideUp(300);
+            $("#alertPersonalTechsDiv").delay(10000).slideUp(300);
             
             /* assistive techs */
         } else if($("textarea[name='assistiveTechs']").val() === "") {
@@ -211,7 +234,7 @@ $(document).ready(function() {
             $("#alertAssistiveTechsDiv").attr("tabindex","0");
             document.getElementById("alertAssistiveTechsDiv").focus();
             $(this).css("background-color", "red");
-            $("#alertAssistiveTechsDiv").delay(5000).slideUp(300);
+            $("#alertAssistiveTechsDiv").delay(10000).slideUp(300);
             
             /* operating system */
         } else if(!$("#opSystemCheck1").is(":checked") && !$("#opSystemCheck2").is(":checked")) {
@@ -221,7 +244,17 @@ $(document).ready(function() {
             $("#alertOpSystemDiv").attr("tabindex","0");
             document.getElementById("alertOpSystemDiv").focus();
             $(this).css("background-color", "green");
-            $("#alertOpSystemDiv").delay(5000).slideUp(300);
+            $("#alertOpSystemDiv").delay(10000).slideUp(300);
+            
+            /* browser */
+        } else if(!$("#browserCheck1").is(":checked") && !$("#browserCheck2").is(":checked") && !$("#browserCheck3").is(":checked") && !$("#browserCheck4").is(":checked") && !$("#browserCheck5").is(":checked") && !$("#browserCheck6").is(":checked")) {
+            
+            e.preventDefault();
+            $("#alertBrowserDiv").show(300);
+            $("#alertBrowserDiv").attr("tabindex","0");
+            document.getElementById("alertBrowserDiv").focus();
+            $(this).css("background-color", "green");
+            $("#alertBrowserDiv").delay(10000).slideUp(300);
         }
         
     });

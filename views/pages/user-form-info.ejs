@@ -15,6 +15,10 @@
         <div class="jumbotron">
             <div>
                 <h1 class="display-4 heading-form font-raleway" style="font-weight:bold;">Kişisel Bilgi Formu</h1>
+                <br aria-hidden="true">
+                <small class="text-muted heading-info">*Kişisel bilgileriniz yalnızca araştırma kapsamında verilerin analiz edilmesi amacıyla kullanılacak ve gizli tutulacaktır.</small>
+                <br aria-hidden="true">
+                
                 <form id="personalInfo" action="/user/save-personal-info" method="POST">
                     <h4 class="sr-only">Adınız</h4>
                     <p class="sr-only"><%= name %></p>
@@ -98,7 +102,7 @@
                     </div>
                     <hr class="hr-form" aria-hidden="true">
                     
-                    <!-- education info -->
+                    <!-- student info -->
                     <div id="alertStudentInfoDiv" class="alert alert-danger" role="alert">
                         <h6>Lütfen öğrenim bilgilerinizi belirtiniz.</h6>
                     </div>
