@@ -1135,3 +1135,18 @@
 [Sal, 29-Ara-2020, 20:33:22] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
 [Sal, 29-Ara-2020, 21:51:51] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
 [Sal, 29-Ara-2020, 21:52:31] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 14:19:32] | INFO | Server started. |
+[Per, 31-Ara-2020, 14:32:16] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Per, 31-Ara-2020, 14:34:44] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 14:35:7] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 14:35:50] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 14:35:54] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 14:39:21] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 31-Ara-2020, 14:39:25] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 31-Ara-2020, 14:39:26] | INFO | Sonraki Soru düğmesine basıldı. Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 31-Ara-2020, 14:39:26] | INFO | Sonraki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Per, 31-Ara-2020, 19:6:38] | INFO | Server started. |
+[Per, 31-Ara-2020, 19:17:1] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 19:17:5] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 19:17:13] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 31-Ara-2020, 19:17:27] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |

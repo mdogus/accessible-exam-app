@@ -59,10 +59,17 @@ function updateSummary(qid) {
     if (q) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         let label = "Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+        let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: " + "Yok" + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
-        $("#ismarked").attr("aria-label", label);
-        $("#qSummaryDiv").text(sum);
-        qSummary = sum;
+        if($("input[name='qValue']:radio").is(":checked")) {
+            $("#ismarked").attr("aria-label", label);
+            $("#qSummaryDiv").text(sum);
+            qSummary = sum;
+        } else {
+            $("#ismarked").attr("aria-label", label);
+            $("#qSummaryDiv").text(sumNotChecked);
+            qSummary = sumNotChecked;
+        }
     }
 }
 
@@ -160,6 +167,28 @@ function showAccessibilityPage() {
     document.getElementById('accessibility-title').focus();
 }
 
+var makeRadiosDeselectableByName = function(name) {
+    $("input[type='radio']").click(function() {
+        var previousValue = $(this).attr('previousValue');
+        var name = $(this).attr('name');
+        let qid = getCurrQuestionId();
+
+        if (previousValue == 'checked') {
+            $(this).removeAttr('checked');
+            $(this).attr('previousValue', false);
+            $(this).prop("checked", false);
+            updateSummary(qid);
+        } else {
+            $("input[name="+name+"]:radio").attr('previousValue', false);
+            $(this).attr('previousValue', 'checked');
+            answerQuestion();
+        }
+    });
+};
+$(document).ready(() => {
+    makeRadiosDeselectableByName("qValue");
+});
+
 $(function () {
     //log
     $("#nextQuestion").click(function() {
@@ -181,10 +210,12 @@ $(function () {
     });
     $("#prevQuestion").on("click", prevQuestion);
     $("#ismarked").click(markQuestion);
-    $("#radioA").on("click", answerQuestion);
-    $("#radioB").on("click", answerQuestion);
-    $("#radioC").on("click", answerQuestion);
-    $("#radioD").on("click", answerQuestion);
+    //Option radios
+    //$("#radioA").on("click", answerQuestion);
+    //$("#radioB").on("click", answerQuestion);
+    //$("#radioC").on("click", answerQuestion);
+    //$("#radioD").on("click", answerQuestion);
+    //$("#radioE").on("click", answerQuestion);
 
 
     // createQuestions();

@@ -2214,3 +2214,33 @@ Soyad: Doğuş
 Tema Rengi: theme-yellow
 Yazı Tipi: font_7
 Yazı Boyutu: 18 |
+[Per, 31-Ara-2020, 14:30:18] | INFO | Ana Sayfa açıldı. |
+[Per, 31-Ara-2020, 14:30:37] | INFO | Ana Sayfa açıldı. |
+[Per, 31-Ara-2020, 14:30:48] | INFO | Ana Sayfa açıldı. |
+[Per, 31-Ara-2020, 14:32:16] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Per, 31-Ara-2020, 14:35:8] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 31-Ara-2020, 14:35:54] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 31-Ara-2020, 19:16:58] | INFO | Ana Sayfa açıldı. |
+[Per, 31-Ara-2020, 19:17:5] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 31-Ara-2020, 19:17:9] | INFO | Ana Sayfa açıldı. |
+[Per, 31-Ara-2020, 19:17:27] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
