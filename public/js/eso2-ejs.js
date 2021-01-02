@@ -214,7 +214,7 @@ $(function () {
         nextQuestion()
         
         var data = {
-            event: "Sonraki Soru düğmesine basıldı. " + qSummary
+            event: "Sonraki Soru düğmesine basıldı. |" + qSummary
         }
         
         logEvent(data);
