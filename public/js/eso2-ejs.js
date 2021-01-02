@@ -4,6 +4,7 @@ var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
 
 var qSummary = "";
+var isMarkedLog = "";
 
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
@@ -14,8 +15,12 @@ function saveQuestion() {
     let qid = getCurrQuestionId();
     let q = questionArr[qid];
     if (q) {
+        let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+        
         q.marked = $("#ismarked").is(':checked');
         q.answer = $("input[name=qValue]:checked").val();
+        
+        qSummary = sum;
     }
     return qid;
 }
@@ -35,7 +40,7 @@ function loadQuestion(qid, focus) {
             $("#ismarked").prop('checked', q.marked);
         }
 
-        $("#qNumDiv").text("Soru "+q.id);
+        $("#qNumDiv").text("Soru " + q.id);
         $("#question").html(q.text);
         $("#oA").text(q.o1Text);
         $("#oB").text(q.o2Text);
@@ -58,17 +63,19 @@ function updateSummary(qid) {
     let q = questionArr[qid];
     if (q) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
-        let label = "Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+        let label = "Soru " + q.id + ": Tekrar bakılacak";
         let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: " + "Yok" + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+        
+        isMarkedLog = "Soru " + q.id + " — Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
         if($("input[name='qValue']:radio").is(":checked")) {
             $("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sum);
-            qSummary = sum;
+            //qSummary = sum;
         } else {
             $("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sumNotChecked);
-            qSummary = sumNotChecked;
+            //qSummary = sumNotChecked;
         }
     }
 }
@@ -189,27 +196,47 @@ $(document).ready(() => {
     makeRadiosDeselectableByName("qValue");
 });
 
+function logEvent(data) {
+    $.ajax({
+        type: "POST",
+        url: "/log",
+        data: data
+        /*success: function(response) {
+            console.log(response);
+            //alert(response);
+        }*/
+    });
+}
+
 $(function () {
     //log
-    $("#nextQuestion").click(function() {
+    $("#nextQuestion").click(() => {
         nextQuestion()
         
         var data = {
             event: "Sonraki Soru düğmesine basıldı. " + qSummary
         }
         
-        $.ajax({
-            type: "POST",
-            url: "/log",
-            data: data,
-            success: function(response) {
-                console.log(response);
-                //alert(response);
-            }
-        });
+        logEvent(data);
     });
-    $("#prevQuestion").on("click", prevQuestion);
-    $("#ismarked").click(markQuestion);
+    $("#prevQuestion").click(() =>  {
+        prevQuestion();
+        
+        var data = {
+            event: "Önceki Soru düğmesine basıldı. " + qSummary
+        }
+        
+        logEvent(data);
+    });
+    $("#ismarked").click(() => {
+        markQuestion();
+        
+        var data = {
+            event: "Tekrar Bak düğmesi işaretlendi. " + isMarkedLog
+        }
+        
+        logEvent(data);
+    });
     //Option radios
     //$("#radioA").on("click", answerQuestion);
     //$("#radioB").on("click", answerQuestion);
@@ -421,10 +448,14 @@ $(function () {
             $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
             audio.pause();
+            
+            data = { event: "Soruyu Dinle durduruldu." };
         } else {
             $("#listenQuestion").attr("class", "pause");
             $("#listenQuestion").html("Durdur");
             audio.play();
+            
+            data = { event: "Soruyu Dinle düğmesine basıldı." };
         }
         
         audio.onplaying = function() {
@@ -439,19 +470,26 @@ $(function () {
             $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
         }
+            
+        logEvent(data);
     });
     //Seçenekleri dinle
     $("#listenOptions").click(function (e) {
         var audioOptions = document.getElementById("oAudio");
+        var data;
         
         if (this.className == "pause-options") {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
             audioOptions.pause();
+            
+            data = { event: "Seçenekleri Dinle durduruldu." };
         } else {
             $("#listenOptions").attr("class", "pause-options");
             $("#listenOptions").html("Durdur");
             audioOptions.play();
+            
+            data = { event: "Seçenekleri Dinle düğmesine basıldı." };
         }
         
         audioOptions.onplaying = function() {
@@ -466,6 +504,8 @@ $(function () {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
         }
+        
+        logEvent(data);
     });
                                  
     //Sınava Dön düğmesine basıldığında

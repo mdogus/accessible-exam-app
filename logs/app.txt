@@ -1150,3 +1150,50 @@
 [Per, 31-Ara-2020, 19:17:5] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
 [Per, 31-Ara-2020, 19:17:13] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
 [Per, 31-Ara-2020, 19:17:27] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 2-Oca-2021, 23:3:25] | INFO | Server started. |
+[Cmt, 2-Oca-2021, 23:42:31] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 2-Oca-2021, 23:42:38] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 2-Oca-2021, 23:42:50] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 2-Oca-2021, 23:43:2] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Cmt, 2-Oca-2021, 23:44:15] | INFO | Sonraki Soru düğmesine basıldı.Soru 1, Cevaplanan Seçenek: C, Tekrar bakılacak mı: Hayır |
+[Cmt, 2-Oca-2021, 23:44:56] | INFO | Sonraki Soru düğmesine basıldı.Soru 2, Cevaplanan Seçenek: B, Tekrar bakılacak mı: Hayır |
+[Cmt, 2-Oca-2021, 23:45:2] | INFO | Sonraki Soru düğmesine basıldı.Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Cmt, 2-Oca-2021, 23:46:11] | INFO | Sonraki Soru düğmesine basıldı. Soru 1, Cevaplanan Seçenek: B, Tekrar bakılacak mı: Hayır |
+[Cmt, 2-Oca-2021, 23:46:18] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: D, Tekrar bakılacak mı: Hayır |
+[Cmt, 2-Oca-2021, 23:46:21] | INFO | Sonraki Soru düğmesine basıldı. Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 3-Oca-2021, 1:48:16] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1, Cevaplanan Seçenek: C, Tekrar bakılacak mı: Hayır |
+[Paz, 3-Oca-2021, 1:48:19] | INFO | Sonraki Soru düğmesine basıldı. Soru 1, Cevaplanan Seçenek: C, Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 1:48:22] | INFO | Sonraki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 3-Oca-2021, 1:50:16] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 3-Oca-2021, 1:53:55] | INFO | Tekrar Bak düğmesi işaretlendi. Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:4:18] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1, tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:4:20] | INFO | Sonraki Soru düğmesine basıldı. Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:6:59] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1, tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:7:38] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1— Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:8:2] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:10:2] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:16:8] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:18:0] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:18:16] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Hayır |
+[Paz, 3-Oca-2021, 2:20:0] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Paz, 3-Oca-2021, 2:22:14] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:22:16] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:22:17] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:22:18] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:24:14] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:24:16] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:28:48] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:28:49] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:28:52] | INFO | undefined |
+[Paz, 3-Oca-2021, 2:28:53] | INFO | undefined |
+[Paz, 3-Oca-2021, 2:30:49] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:31:57] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:31:58] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:32:0] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:32:1] | INFO | Seçenekleri Dinle durduruldu. |
+[Paz, 3-Oca-2021, 2:33:57] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:33:58] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:34:44] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:34:45] | INFO | Soruyu Dinle durduruldu. |
+[Paz, 3-Oca-2021, 2:34:47] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Paz, 3-Oca-2021, 2:34:48] | INFO | Seçenekleri Dinle durduruldu. |
