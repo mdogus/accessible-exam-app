@@ -3,7 +3,7 @@ var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
 
-var qSummary;
+var qSummary = "";
 var isMarkedLog;
 
 function getCurrQuestionId(){
