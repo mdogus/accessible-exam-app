@@ -4,7 +4,7 @@ var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
 
 var qSummary = "";
-var isMarkedLog = "";
+var isMarkedLog;
 
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
