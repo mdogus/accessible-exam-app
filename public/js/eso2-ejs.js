@@ -2,7 +2,7 @@ var examHour = 1;
 var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
-
+//logs
 var qSummary = "";
 var isMarkedLog = "";
 
@@ -520,14 +520,13 @@ $(function () {
     });
 
     //Sınavı Bitir düğmesine basıldığında
-    $("#finishButton").click(function (e) {
+    /*$("#finishButton").click(function (e) {
         $(".page-title").css("display", "none");
         $(".container").css("display", "none");
         $(".marked-questions-page").css("display", "none");
         $(".finish-page").css("display", "block");
 
         document.getElementById('finish-span').focus();
-    });
+    });*/
 });
-
 

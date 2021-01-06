@@ -2258,3 +2258,23 @@ Tema Rengi: theme1
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
 [Cmt, 2-Oca-2021, 23:43:12] | INFO | Ana Sayfa açıldı. |
+[Çar, 6-Oca-2021, 16:29:41] | INFO | Ana Sayfa açıldı. |
+[Çar, 6-Oca-2021, 16:29:59] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 6-Oca-2021, 20:19:15] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 6-Oca-2021, 21:18:5] | INFO | Ana Sayfa açıldı. |
+[Çar, 6-Oca-2021, 21:18:22] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |

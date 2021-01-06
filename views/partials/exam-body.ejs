@@ -121,6 +121,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <!-- Footer Button Bar -->
                     <div class="bottom-bar">
                         <!-- Bottom bar left -->
@@ -151,6 +152,29 @@
                 </div>
             </div>
         </div>
+        
+        <!-- The Modal -->
+        <div id="finishExamModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="finishExamModalLabel" >
+          <div role="document">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+              <span aria-hidden="true">&times;</span>
+              </button>
+              <h2 id="finishExamModalLabel" role="alert" aria-label="Uyarı! Sınavı bitirmek istediğinizden emin misiniz?">Uyarı</h2>
+            </div>
+            <div class="modal-body">
+              <p>Sınavı bitirmek istediğinizden emin misiniz?</p>
+            </div>
+            <div class="modal-footer">
+              <button>Hayır</button>
+              <button>Evet</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        
         <!-- Marked Questions Page -->
         <div class="marked-questions-page" style="display: none;">
             <div id="marked-questions-title" tabindex="1" role="heading" style="font-weight:bold;">TEKRAR BAKILACAK SORULAR</div>
@@ -231,5 +255,34 @@
             <span id="finish-span" tabindex="1" style="font-weight:bold;">Sınavınız Tamamlandı. Katılımınız için teşekkür ederiz.</span>
         </div>
     </div>
-    
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("finishExamModal");
+        // Get the button that opens the modal
+        var finishButton = document.getElementById("finishButton");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        finishButton.onclick = function() {
+            modal.style.display = "block";
+            document.getElementById("finishExamModalLabel").focus();
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+
 </body>
