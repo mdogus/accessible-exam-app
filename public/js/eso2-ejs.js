@@ -50,7 +50,7 @@ function loadQuestion(qid, focus) {
         $("#oAudio").attr("src", q.oAudioSrc);
         
         //update summary
-        let sum = "Soru " + q.id + " Tekrar Bakılacak Mı?";
+        let sum = "Soru " + q.id + " Tekrar bakılacak mı?";
         //$("#ismarkedlabel").text("Soru " + q.id + " Tekrar Bakılacak Mı?");
         $("#ismarkedlabel").attr("aria-label", sum);
         updateSummary(q.id);
@@ -63,7 +63,7 @@ function updateSummary(qid) {
     let q = questionArr[qid];
     if (q) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
-        let label = "Soru " + q.id + ": Tekrar bakılacak";
+        let label = "Soru " + q.id + ": Tekrar bakmak istiyorum.";
         let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: " + "Yok" + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
         isMarkedLog = "Soru " + q.id + " — Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");

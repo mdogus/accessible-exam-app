@@ -1206,3 +1206,13 @@
 [Çar, 6-Oca-2021, 21:17:57] | INFO | Server started. |
 [Çar, 6-Oca-2021, 21:18:11] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
 [Çar, 6-Oca-2021, 21:18:22] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 12-Oca-2021, 0:41:23] | INFO | Server started. |
+[Sal, 12-Oca-2021, 0:42:5] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 12-Oca-2021, 0:42:28] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 12-Oca-2021, 0:47:14] | INFO | Server started. |
+[Sal, 12-Oca-2021, 0:47:19] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Sal, 12-Oca-2021, 0:47:40] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 12-Oca-2021, 0:47:47] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 12-Oca-2021, 0:48:7] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Sal, 12-Oca-2021, 0:48:18] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Evet |
+[Sal, 12-Oca-2021, 0:48:20] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 2 — Tekrar bakılacak mı: Evet |

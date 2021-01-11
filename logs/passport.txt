@@ -391,3 +391,5 @@
 [Cmt, 2-Oca-2021, 23:42:10] | INFO | %s %s %s |
 [Çar, 6-Oca-2021, 16:29:41] | INFO | %s %s %s |
 [Çar, 6-Oca-2021, 21:18:5] | INFO | %s %s %s |
+[Sal, 12-Oca-2021, 0:41:53] | INFO | %s %s %s |
+[Sal, 12-Oca-2021, 0:47:26] | INFO | %s %s %s |
