@@ -2292,3 +2292,10 @@ Soyad: Doğuş
 Tema Rengi: theme1
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
+[Paz, 17-Oca-2021, 14:31:50] | INFO | Ana Sayfa açıldı. |
+[Paz, 17-Oca-2021, 14:31:56] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |

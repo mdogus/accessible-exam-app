@@ -1,6 +1,6 @@
 <body class="theme-pink">
     
-    <div class="sr-only" aria-hidden="false">
+    <div class="sr-only" aria-hidden="true">
         <p id="pTheme"><%= theme %></p>
         <p id="pFont"><%= font %></p>
         <p id="pFontSize"><%= fontSize %></p>
@@ -159,13 +159,14 @@
           <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
+              <h2 id="finishExamModalLabel" class="sr-only" role="alert">Uyarı: Sınavı bitirmek istediğinizden emin misiniz</h2>
               <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
               <span aria-hidden="true">&times;</span>
               </button>
-              <h2 id="finishExamModalLabel" role="alert" aria-label="Uyarı! Sınavı bitirmek istediğinizden emin misiniz?">Uyarı</h2>
+              <h2 aria-hidden="true">Uyarı</h2>
             </div>
             <div class="modal-body">
-              <p>Sınavı bitirmek istediğinizden emin misiniz?</p>
+              <p aria-hidden="true">Sınavı bitirmek istediğinizden emin misiniz?</p>
             </div>
             <div class="modal-footer">
               <button>Hayır</button>
@@ -281,7 +282,6 @@
                 modal.style.display = "none";
             }
         }
-
 
     </script>
 
