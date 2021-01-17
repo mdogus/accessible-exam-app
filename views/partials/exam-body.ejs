@@ -146,7 +146,7 @@
                         <!-- Bottom bar right -->
                         <div class="bottom-bar-right">
                             <button id="markedQuestionsButton" class="btn-footer look-up" aria-label="Sınavı Gözden Geçir">Gözden Geçir</button>
-                            <button id="finishButton" class="btn-footer finish-test" aria-label="Sınavı Bitir">Sınavı Bitir</button>
+                            <button id="finishButton" class="btn-footer finish-test">Sınavı Bitir</button>
                         </div>
                     </div>
                 </div>
@@ -154,8 +154,8 @@
         </div>
         
         <!-- The Modal -->
-        <div id="finishExamModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="finishExamModalLabel" >
-          <div role="document">
+        <div id="finishExamModal" class="modal" tabindex="-1"  aria-labelledby="finishExamModalLabel" >
+          <div >
           <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
@@ -268,12 +268,15 @@
         // When the user clicks on the button, open the modal
         finishButton.onclick = function() {
             modal.style.display = "block";
-            document.getElementById("finishExamModalLabel").focus();
+			$(".container").attr("aria-hidden","true");
+            $(".modal-footer").focus();
         }
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
+			$(".container").attr("aria-hidden","false");
+			$("#finishButton").focus();
         }
 
         // When the user clicks anywhere outside of the modal, close it

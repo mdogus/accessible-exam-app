@@ -1219,3 +1219,6 @@
 [Paz, 17-Oca-2021, 14:31:23] | INFO | Server started. |
 [Paz, 17-Oca-2021, 14:31:53] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
 [Paz, 17-Oca-2021, 14:31:56] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 17-Oca-2021, 23:32:50] | INFO | Server started. |
+[Paz, 17-Oca-2021, 23:33:21] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 17-Oca-2021, 23:33:24] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
