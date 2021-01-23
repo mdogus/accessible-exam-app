@@ -59,7 +59,7 @@
                                 <p></p>
                             </div>
                             <div class="secenekler">
-                                <div class="answerBox" aria-checked="false">
+                                <div class="answerBox">
                                     <div class="secenek-baslik">
                                         <input id="radioA" type="radio" name="qValue" class="answer-radio left"
                                             value="A">
@@ -70,7 +70,7 @@
                                         <p><span class="highlighted" id="oA"></span></p>
                                     </div>
                                 </div>
-                                <div class="answerBox" aria-checked="false">
+                                <div class="answerBox">
                                     <div class="secenek-baslik">
                                         <input id="radioB" type="radio" name="qValue" class="answer-radio left"
                                             value="B">
@@ -82,7 +82,7 @@
                                         <p><span class="highlighted" id="oB"></span></p>
                                     </div>
                                 </div>
-                                <div class="answerBox" aria-checked="false">
+                                <div class="answerBox">
                                     <div class="secenek-baslik">
                                         <input id="radioC" type="radio" name="qValue" class="answer-radio left"
                                             value="C">
@@ -94,7 +94,7 @@
                                         <p><span class="highlighted" id="oC"></span></p>
                                     </div>
                                 </div>
-                                <div class="answerBox" aria-checked="false">
+                                <div class="answerBox">
                                     <div class="secenek-baslik">
                                         <input id="radioD" type="radio" name="qValue" class="answer-radio left"
                                             value="D">
@@ -106,7 +106,7 @@
                                         <p><span class="highlighted" id="oD"></span></p>
                                     </div>
                                 </div>
-                                <div class="answerBox" aria-checked="false">
+                                <div class="answerBox">
                                     <div class="secenek-baslik">
                                         <input id="radioE" type="radio" name="qValue" class="answer-radio left"
                                             value="E">
@@ -114,7 +114,7 @@
                                         <label class="unselectable" for="radioE">E</label>
                                     </div>
 
-                                    <div class="secenek ">
+                                    <div class="secenek">
                                         <p><span class="highlighted" id="oE"></span></p>
                                     </div>
                                 </div>
@@ -163,14 +163,14 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
               <span aria-hidden="true">&times;</span>
               </button>
-              <h2 aria-hidden="true">Uyarı</h2>
+              <h2 aria-hidden="true">Uyarı!</h2>
             </div>
             <div class="modal-body">
               <p aria-hidden="true">Sınavı bitirmek istediğinizden emin misiniz?</p>
             </div>
             <div class="modal-footer">
-              <button>Hayır</button>
-              <button>Evet</button>
+              <button id="modalYesButton">Evet</button>
+			  <button id="modalNoButton">Hayır</button>
             </div>
           </div>
           </div>
@@ -257,7 +257,7 @@
         </div>
     </div>
 
-    <script>
+    <!--script>
         // Get the modal
         var modal = document.getElementById("finishExamModal");
         // Get the button that opens the modal
@@ -266,11 +266,17 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks on the button, open the modal
-        finishButton.onclick = function() {
+        $("#finishButton").click(() => {
             modal.style.display = "block";
 			$(".container").attr("aria-hidden","true");
+			$("#radioA").attr("aria-hidden", "true");
+			$("#radioB").attr("aria-hidden","true");
+			$("#radioC").attr("aria-hidden","true");
+			$("#radioD").attr("aria-hidden","true");
+			$("#radioE").attr("aria-hidden","true");
+			$("#ismarked").attr("aria-hidden","true");
             $(".modal-footer").focus();
-        }
+        });
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
@@ -286,6 +292,6 @@
             }
         }
 
-    </script>
+    </script -->
 
 </body>

@@ -2306,3 +2306,224 @@ Soyad: Doğuş
 Tema Rengi: theme-pink
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 13:17:23] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 13:17:30] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 13:20:40] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 13:20:45] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 13:24:50] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 13:25:1] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 13:27:50] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 13:27:55] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 13:31:33] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 13:31:38] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 13:34:55] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 13:35:0] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 15:0:47] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 15:0:52] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 15:1:41] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 15:1:47] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 15:3:43] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 15:3:48] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 15:5:29] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 15:5:34] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 15:6:39] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 15:6:44] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 15:8:47] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 15:8:52] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 15:24:23] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 15:24:27] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:32:40] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:32:49] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:35:32] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:35:39] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:37:30] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:37:34] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:39:36] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:39:40] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:42:10] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:42:17] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:46:4] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:46:8] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:50:49] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:51:0] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:55:11] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:55:18] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 16:58:23] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 16:58:33] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 17:2:32] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 17:2:37] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cum, 22-Oca-2021, 18:21:37] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 18:21:45] | INFO | Ana Sayfa açıldı. |
+[Cum, 22-Oca-2021, 18:21:49] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 23-Oca-2021, 15:14:26] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 15:14:33] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 15:14:36] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 15:15:42] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 15:16:6] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 23-Oca-2021, 15:19:13] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 15:19:17] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 23-Oca-2021, 15:32:39] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 15:32:44] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 23-Oca-2021, 19:16:55] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 19:17:1] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 23-Oca-2021, 19:18:10] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 19:18:15] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 23-Oca-2021, 19:26:4] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 19:26:9] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 23-Oca-2021, 19:28:4] | INFO | Ana Sayfa açıldı. |
+[Cmt, 23-Oca-2021, 19:28:8] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme-pink
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |

@@ -42,6 +42,7 @@ function loadQuestion(qid, focus) {
 
         $("#qNumDiv").text("Soru " + q.id);
         $("#question").html(q.text);
+		
         $("#oA").text(q.o1Text);
         $("#oB").text(q.o2Text);
         $("#oC").text(q.o3Text);
@@ -141,7 +142,7 @@ function getFontSize() {
 }
 
 
-function showMarkedQuesitionsPage() {
+function showMarkedQuestionsPage() {
     $(".page-title").css("display", "block");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "block");
@@ -379,7 +380,7 @@ $(function () {
                         });
                     }
                 });
-                showMarkedQuesitionsPage();
+                showMarkedQuestionsPage();
             }
         }
     });
@@ -410,7 +411,7 @@ $(function () {
         });
 
 
-        showMarkedQuesitionsPage();
+        showMarkedQuestionsPage();
     });
                                  
     //Erişilebilirlik düğmesi
@@ -530,3 +531,102 @@ $(function () {
     });*/
 });
 
+$(document).ready(() => {
+	// Get the modal
+        var modal = document.getElementById("finishExamModal");
+        // Get the button that opens the modal
+        var finishButton = document.getElementById("finishButton");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        $("#finishButton").click(() => {
+            modal.style.display = "block";
+			$(".container").attr("aria-hidden","true");
+			
+			$("#hiddenAccessibilityButton").attr("aria-hidden", "true");
+			$("#radioA").attr("aria-hidden", "true");
+			$("#radioB").attr("aria-hidden","true");
+			$("#radioC").attr("aria-hidden","true");
+			$("#radioD").attr("aria-hidden","true");
+			$("#radioE").attr("aria-hidden","true");
+			$("#ismarked").attr("aria-hidden","true");
+			
+			$("#hiddenAccessibilityButton").css("display", "none");
+			$("#radioA").css("display", "none");
+			$("#radioB").css("display", "none");
+			$("#radioC").css("display", "none");
+			$("#radioD").css("display", "none");
+			$("#radioE").css("display", "none");
+			$("#ismarked").css("display", "none");
+			
+            $("#finishExamModalLabel").focus();
+        });
+
+        // When the user clicks on No button, close the modal
+        $("#modalNoButton").click(function() {
+            $("#finishExamModal").css("display","none");
+			$(".container").attr("aria-hidden","false");
+			
+			$("#hiddenAccessibilityButton").attr("aria-hidden", "false");
+			$("#radioA").attr("aria-hidden", "false");
+			$("#radioB").attr("aria-hidden","false");
+			$("#radioC").attr("aria-hidden","false");
+			$("#radioD").attr("aria-hidden","false");
+			$("#radioE").attr("aria-hidden","false");
+			$("#ismarked").attr("aria-hidden","false");
+			
+			$("#hiddenAccessibilityButton").css("display", "block");
+			$("#radioA").css("display", "block");
+			$("#radioB").css("display", "block");
+			$("#radioC").css("display", "block");
+			$("#radioD").css("display", "block");
+			$("#radioE").css("display", "block");
+			$("#ismarked").css("display", "block");
+			
+			$("#finishButton").focus();
+        });
+		
+		// When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+			$(".container").attr("aria-hidden","false");
+			
+			$("#hiddenAccessibilityButton").attr("aria-hidden", "false");
+			$("#radioA").attr("aria-hidden", "false");
+			$("#radioB").attr("aria-hidden","false");
+			$("#radioC").attr("aria-hidden","false");
+			$("#radioD").attr("aria-hidden","false");
+			$("#radioE").attr("aria-hidden","false");
+			$("#ismarked").attr("aria-hidden","false");
+			
+			$("#hiddenAccessibilityButton").css("display", "block");
+			$("#radioA").css("display", "block");
+			$("#radioB").css("display", "block");
+			$("#radioC").css("display", "block");
+			$("#radioD").css("display", "block");
+			$("#radioE").css("display", "block");
+			$("#ismarked").css("display", "block");
+			
+			$("#finishButton").focus();
+        }
+		
+		// When user clicks Yes button
+		$("#modalYesButton").click(() => {
+			$("#finishExamModal").css("display","none");
+			$(".page-title").css("display", "none");
+			$(".container").css("display", "none");
+			$(".marked-questions-page").css("display", "none");
+			$(".finish-page").css("display", "block");
+
+			document.getElementById('finish-span').focus();
+		});
+
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+});

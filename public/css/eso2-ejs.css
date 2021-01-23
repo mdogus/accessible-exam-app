@@ -1456,22 +1456,38 @@ input:checked + .slider .off {
 /* Modal Header */
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: red;/*#5cb85c;*/
   color: white;
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+	padding: 2px 16px;
+	font-size: 24px;
+	font-weight: bold;
+}
 
 /* Modal Footer */
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  padding: 40px 10px;
+  padding-bottom: 16px;
+  /*background-color: #5cb85c;*/
+  /*color: white;*/
+}
+
+/* Buttons on the Modal */
+#modalYesButton, #modalNoButton {
+	/*background-color: black;*/
+	color: #fefefe;
+}
+#modalYesButton:hover, #modalNoButton:hover {
+	/*background-color: black;*/
+	color: white;
 }
 
 /* Modal Content */
 .modal-content {
+	top: 150px;
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -1491,11 +1507,19 @@ input:checked + .slider .off {
 
 /* The Close Button */
 .close {
-  color: #aaa;
+	border: 1px solid white !important;
+  background-color: red !important;
+  color: #fefefe !important;
   float: right;
-  font-size: 28px;
+  font-size: 54px !important;
   font-weight: bold;
+  margin-top: 4px;
+  padding-bottom: 10px;
 }
+.close:hover {
+	border: 1px solid white !important;
+	background-color: black !important;
+	color: white !important;
 
 .close:hover,
 .close:focus {
