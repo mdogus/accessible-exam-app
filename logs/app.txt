@@ -1330,3 +1330,153 @@
 [Cmt, 23-Oca-2021, 19:27:59] | INFO | Server started. |
 [Cmt, 23-Oca-2021, 19:28:7] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
 [Cmt, 23-Oca-2021, 19:28:8] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 15:24:33] | INFO | Server started. |
+[Paz, 24-Oca-2021, 15:25:47] | INFO | Server started. |
+[Paz, 24-Oca-2021, 15:26:15] | INFO | Server started. |
+[Paz, 24-Oca-2021, 15:26:45] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 15:26:50] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 15:27:25] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Paz, 24-Oca-2021, 15:27:43] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: B, Tekrar bakılacak mı: Evet |
+[Paz, 24-Oca-2021, 15:34:30] | INFO | Server started. |
+[Paz, 24-Oca-2021, 15:38:47] | INFO | Server started. |
+[Paz, 24-Oca-2021, 15:39:24] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:11:23] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:25:7] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:26:52] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:27:39] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:28:28] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:29:54] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:35:23] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:48:28] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:49:13] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 16:49:16] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 16:50:13] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 16:50:22] | INFO | Önceki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 16:51:1] | INFO | Server started. |
+[Paz, 24-Oca-2021, 16:51:8] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 16:51:13] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:2:38] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:2:53] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:2:57] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:4:38] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:5:28] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:6:23] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:6:25] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:9:0] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:9:34] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:9:36] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:11:25] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:11:31] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:11:33] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:11:40] | INFO | Önceki Soru düğmesine basıldı. Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:11:42] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:11:48] | INFO | Önceki Soru düğmesine basıldı. Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:12:43] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:12:52] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:12:54] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:13:10] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:14:11] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:14:21] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:14:27] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:14:28] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:21:17] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:22:47] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:23:14] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:24:9] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:24:23] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:24:25] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:24:46] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:25:55] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:26:5] | INFO | Server started. |
+[Paz, 24-Oca-2021, 18:26:13] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:26:16] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 18:26:26] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:26:36] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:26:43] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:26:51] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:26:54] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:26:56] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:28:26] | INFO | Sonraki Soru düğmesine basıldı. |Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:28:36] | INFO | Sonraki Soru düğmesine basıldı. |Soru 8, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:28:43] | INFO | Sonraki Soru düğmesine basıldı. |Soru 9, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:28:54] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:28:56] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 18:30:54] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:8:39] | INFO | Server started. |
+[Paz, 24-Oca-2021, 19:18:38] | INFO | Server started. |
+[Paz, 24-Oca-2021, 19:20:10] | INFO | Server started. |
+[Paz, 24-Oca-2021, 19:20:26] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 19:20:27] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Paz, 24-Oca-2021, 19:20:35] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:20:49] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:21:9] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: E, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:21:11] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:21:14] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:21:19] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:22:35] | INFO | Sonraki Soru düğmesine basıldı. |Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:22:49] | INFO | Sonraki Soru düğmesine basıldı. |Soru 8, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:23:9] | INFO | Sonraki Soru düğmesine basıldı. |Soru 9, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Paz, 24-Oca-2021, 19:23:9] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 10 — Tekrar bakılacak mı: Evet |
+[Pzt, 25-Oca-2021, 13:21:17] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 13:27:34] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 13:27:38] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 13:31:11] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 13:31:13] | INFO | Soruyu Dinle durduruldu. |
+[Pzt, 25-Oca-2021, 13:31:45] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 13:31:47] | INFO | Seçenekleri Dinle durduruldu. |
+[Pzt, 25-Oca-2021, 13:33:25] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Pzt, 25-Oca-2021, 13:35:25] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Pzt, 25-Oca-2021, 13:58:43] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 13:58:59] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 13:59:1] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 13:59:30] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 13:59:36] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 13:59:38] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 14:0:12] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 14:0:23] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 14:0:27] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 14:1:52] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 14:2:33] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 14:2:35] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:45:50] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 15:46:10] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:46:12] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:46:35] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:46:36] | INFO | Soruyu Dinle durduruldu. |
+[Pzt, 25-Oca-2021, 15:46:38] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:46:39] | INFO | Seçenekleri Dinle durduruldu. |
+[Pzt, 25-Oca-2021, 15:48:35] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:48:36] | INFO | Soruyu Dinle durduruldu. |
+[Pzt, 25-Oca-2021, 15:49:9] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 15:49:36] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 15:50:27] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 15:50:42] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 15:50:50] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:50:52] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:51:4] | INFO | Erişilebilirlik (hidden) düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 15:51:15] | INFO | Erişilebilirlik düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:13:17] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 16:13:45] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:13:46] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:13:57] | INFO | Gözden Geçir düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:19:3] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 16:19:13] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:19:21] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:19:22] | INFO | Sınav sayfası açıldı. |
+[Pzt, 25-Oca-2021, 16:20:12] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 16:20:12] | INFO | Sınav sayfası açıldı. |
+[Pzt, 25-Oca-2021, 16:42:30] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 16:43:5] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 16:43:40] | INFO | Server started. |
+[Pzt, 25-Oca-2021, 16:45:30] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:45:32] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Pzt, 25-Oca-2021, 16:45:33] | INFO | Sınav sayfası görüntülendi. |
+[Pzt, 25-Oca-2021, 16:45:42] | INFO | Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz? |
+[Pzt, 25-Oca-2021, 16:45:58] | INFO | Kapat (x) düğmesine basıldı (Modal). |
+[Pzt, 25-Oca-2021, 16:46:0] | INFO | Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz? |
+[Pzt, 25-Oca-2021, 16:46:3] | INFO | Evet düğmesine basıldı (Modal). |
+[Pzt, 25-Oca-2021, 16:46:8] | INFO | Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz? |
+[Pzt, 25-Oca-2021, 16:47:33] | INFO | Evet düğmesine basıldı (Modal). Sınav tamamlandı. |
+[Pzt, 25-Oca-2021, 16:47:33] | INFO | Sınav sayfası görüntülendi. |
+[Pzt, 25-Oca-2021, 16:49:33] | INFO | Sınav sayfası görüntülendi. |
+[Pzt, 25-Oca-2021, 16:50:54] | INFO | Server started. |
