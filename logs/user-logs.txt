@@ -2683,3 +2683,64 @@ Soyad: Doğuş
 Tema Rengi: theme-pink
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 14:22:1] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 14:32:44] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 14:32:57] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 14:38:23] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 14:38:30] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 14:38:35] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 14:41:42] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 14:41:46] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 14:54:44] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 14:54:51] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 15:14:13] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 15:14:17] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 17:57:57] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 17:58:10] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 17:58:20] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 18:35:21] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 18:35:26] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 18:40:9] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 18:54:6] | INFO | Ana Sayfa açıldı. |
+[Çar, 27-Oca-2021, 18:54:11] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Çar, 27-Oca-2021, 18:55:33] | INFO | Ana Sayfa açıldı. |

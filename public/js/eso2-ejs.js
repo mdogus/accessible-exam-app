@@ -275,27 +275,33 @@ $(function () {
         document.getElementById('pageTitleSpan').focus();
     }, 250)
 
-    //Font size
+    // Increase font size
     $("#increaseFont").click(function (e) {
         var fontSize = getFontSize();
+		var newFontSize = fontSize + 2;
         changeFontSize(fontSize + 2);
         // resizeImagesAccordingToFontSize(fontSize);
+		var data = { event: "Yazı Boyutu artırıldı: " + newFontSize };
+		logEvent(data);
     });
-
+	// Decrease font size
     $("#decreaseFont").click(function (e) {
         var fontSize = getFontSize();
+		var newFontSize = fontSize - 2;
         changeFontSize(fontSize - 2);
         // resizeImagesAccordingToFontSize(fontSize);
+		var data = { event: "Yazı Boyutu azaltıldı: " + newFontSize };
+		logEvent(data);
     });
     
-    //set fotn when page loaded
+    //set font when page loaded
     $(document).ready(() => {
         let selectedFontSize = $('#pFontSize').html();
         let fontSize = parseInt(selectedFontSize);
         $('#eso-cont').css("font-size", fontSize + "px");
         $('#eso-cont').css("line-height", (fontSize * 1.4) + "px");
-
-        $('#eso-cont .question-number').css("font-size", fontSize * 1.5 + "px");
+        
+		$('#eso-cont .question-number').css("font-size", fontSize * 1.5 + "px");
         $('#eso-cont .question-number').css("line-height", (fontSize * 1.5 * 1.4) + "px");
         
         $('#eso-cont .remaining-time').css("font-size", fontSize * 1.5 + "px");
@@ -324,8 +330,12 @@ $(function () {
     });
     $('#themes').change(function () {
         let selectedTheme = $('#themes').find(":selected").val();
+		let selectedThemeText = $('#themes').find(":selected").text();
         $("body").removeClass();
         $("body").addClass(selectedTheme);
+		
+		var data = { event: "Tema değiştirildi: " + selectedThemeText };
+		logEvent(data);
     });
     
     //select font
@@ -337,9 +347,13 @@ $(function () {
     });
     $('#fonts').change(function () {
         let selectedFont = $('#fonts').find(":selected").val();
+		let selectedFontText = $('#fonts').find(":selected").html();
         $("#eso-cont").removeClass();
         $("#eso-cont").addClass(selectedFont);
         //$("#eso-cont").addClass("font_" + this.selectedIndex);
+		
+		var data = { event: "Yazı Tipi değiştirildi: " + selectedFontText };
+		logEvent(data);
     });
 
     // Remaining time
@@ -360,7 +374,7 @@ $(function () {
     // key bind
     //Alt + S: Kalan süre
     $(document).keydown(function(event){
-		//console.log(event.keyCode);
+		
 		if(event.altKey === true){
 			if(event.keyCode == 83){
                 //let timeAlert = $("#remainingTimeLabel").text();
@@ -536,12 +550,16 @@ $(function () {
                                  
     // Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
+		var data = { event: "Sınava Dön düğmesine basıldı (Gözden Geçir sayfasında)." };
+		logEvent(data);
         showExamPage();
         document.getElementById('qSummaryDiv').focus();
     });
     //Erişilebilirlik sayfasında Sınava Dön düğmesine basıldığında
     $("#accPageBackToExamButton").click(function (e) {
-        showExamPage();
+        var data = { event: "Sınava Dön düğmesine basıldı (Erişilebilirlik Ayarları sayfasında)." };
+		logEvent(data);
+		showExamPage();
         document.getElementById('qSummaryDiv').focus();
     });
 
