@@ -2744,3 +2744,221 @@ Tema Rengi: theme3
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
 [Çar, 27-Oca-2021, 18:55:33] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 12:32:57] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 12:33:4] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 13:9:56] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 13:10:2] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 14:14:5] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 14:14:10] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 14:16:27] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 14:16:43] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 14:19:28] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 14:19:37] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 14:42:29] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 14:42:44] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 14:46:57] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 14:47:5] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 14:52:37] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 14:52:41] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:7:12] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:7:17] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:8:1] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:8:9] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:8:26] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:8:31] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:11:43] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:11:48] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:13:32] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:13:36] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:18:9] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:18:14] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:27:26] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:27:31] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 15:29:24] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 15:29:30] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 16:38:5] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 16:38:10] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 16:41:5] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 16:41:9] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 17:59:39] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 17:59:44] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:7:58] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:8:6] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:19:27] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:19:32] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:21:12] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:21:16] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:37:7] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:37:13] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:39:49] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:40:3] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:54:11] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:54:29] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:56:21] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:56:25] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 18:58:28] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 18:58:32] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Per, 28-Oca-2021, 18:58:38] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 19:0:46] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 19:0:50] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 19:18:38] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 19:18:42] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 19:22:14] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 19:22:20] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Per, 28-Oca-2021, 19:23:59] | INFO | Ana Sayfa açıldı. |
+[Per, 28-Oca-2021, 19:24:5] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |

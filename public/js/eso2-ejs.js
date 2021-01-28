@@ -81,17 +81,18 @@ function updateSummary(qid) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         let label = "Soru " + q.id + ": Tekrar bakmak istiyorum.";
         let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: " + "Yok" + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
-        
+        var answer = q.answer;
+		var answerLog = answer ? answer + " seçeneği işaretlendi." : "Seçim kaldırıldı.";
         isMarkedLog = "Soru " + q.id + " — Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
         if($("input[name='qValue']:radio").is(":checked")) {
+			var data = { event: answerLog };
+			logEvent(data);
             $("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sum);
-            //qSummary = sum;
         } else {
             $("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sumNotChecked);
-            //qSummary = sumNotChecked;
         }
     }
 }
@@ -196,14 +197,18 @@ var makeRadiosDeselectableByName = function(name) {
         var previousValue = $(this).attr('previousValue');
         var name = $(this).attr('name');
         let qid = getCurrQuestionId();
+		let q = questionArr[qid];
+		var answer = q.answer;
 
         if (previousValue == 'checked') {
-            $(this).removeAttr('checked');
+			var data = { event: "İşaretleme kaldırıldı: " + answer + " seçeneği" };
+			logEvent(data);
+			$(this).removeAttr('checked');
             $(this).attr('previousValue', false);
             $(this).prop("checked", false);
             updateSummary(qid);
         } else {
-            $("input[name="+name+"]:radio").attr('previousValue', false);
+			$("input[name="+name+"]:radio").attr('previousValue', false);
             $(this).attr('previousValue', 'checked');
             answerQuestion();
         }

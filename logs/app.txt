@@ -1591,3 +1591,294 @@
 [Çar, 27-Oca-2021, 18:55:24] | INFO | Server started. |
 [Çar, 27-Oca-2021, 18:55:24] | INFO | Sınava Dön düğmesine basıldı (Erişilebilirlik Ayarları sayfasında). |
 [Çar, 27-Oca-2021, 18:55:24] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 12:32:41] | INFO | Server started. |
+[Per, 28-Oca-2021, 12:33:1] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 12:33:4] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 12:33:5] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 12:35:2] | INFO | Gözden Geçir düğmesine basıldı. |
+[Per, 28-Oca-2021, 12:35:5] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 12:35:9] | INFO | Sınava Dön düğmesine basıldı (Gözden Geçir sayfasında). |
+[Per, 28-Oca-2021, 12:47:2] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Per, 28-Oca-2021, 12:56:44] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 12:58:44] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 13:9:51] | INFO | Server started. |
+[Per, 28-Oca-2021, 13:9:59] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 13:10:2] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:13:36] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:13:57] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:14:8] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:14:10] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:14:11] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:14:36] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:14:40] | INFO | A seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:16:20] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:16:20] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:16:20] | INFO | A seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:16:38] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:16:43] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:16:44] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:17:11] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:17:21] | INFO | A seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:17:23] | INFO | A seçeneğinin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 14:17:29] | INFO | A seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:17:30] | INFO | A seçeneğinin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 14:19:11] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:19:23] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:19:35] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:19:37] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:19:38] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:20:2] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:20:10] | INFO | A seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:22:2] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:26:37] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:28:37] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:38:16] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:39:40] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:40:52] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:42:38] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:42:44] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:42:45] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:43:20] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:43:25] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:43:47] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:43:55] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:44:48] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:44:56] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:46:38] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:46:38] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:47:3] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:47:5] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:47:6] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:47:17] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:47:35] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:47:45] | INFO | B seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:49:17] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:52:23] | INFO | Server started. |
+[Per, 28-Oca-2021, 14:52:40] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:52:41] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 14:52:42] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:52:54] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:52:59] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:53:6] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 14:54:54] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 14:54:59] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 15:6:56] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:7:15] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:7:17] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:7:51] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:8:7] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:8:9] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:8:23] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:8:29] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:8:31] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:8:32] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:8:49] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:9:54] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:9:54] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:11:46] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:11:48] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:11:49] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:12:16] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:13:4] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:13:5] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:13:15] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:13:24] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:13:34] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:13:36] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:13:37] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:13:47] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:15:47] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:18:4] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:18:12] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:18:14] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:18:15] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:18:32] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:20:32] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:27:16] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:27:29] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:27:31] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:27:32] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:27:52] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:27:57] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 15:29:13] | INFO | Server started. |
+[Per, 28-Oca-2021, 15:29:14] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 15:29:14] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:29:27] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:29:30] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 15:29:31] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:29:48] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 15:29:59] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 15:31:15] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 15:31:35] | INFO | B seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 15:31:48] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 16:37:59] | INFO | Server started. |
+[Per, 28-Oca-2021, 16:38:8] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 16:38:9] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 16:38:11] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 16:38:20] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 16:38:29] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 16:38:34] | INFO | B seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 16:38:56] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 16:39:2] | INFO | E seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 16:40:20] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 16:40:59] | INFO | Server started. |
+[Per, 28-Oca-2021, 16:41:7] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 16:41:9] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 16:41:10] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 16:43:10] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 17:56:39] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 17:56:44] | INFO | undefined seçeneğinin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 17:56:46] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 17:56:49] | INFO | C seçeneğinin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 17:56:50] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 17:57:30] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 17:57:35] | INFO | undefined seçeneğinin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 17:57:37] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 17:57:39] | INFO | C seçeneğinin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 17:57:41] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 17:59:30] | INFO | Server started. |
+[Per, 28-Oca-2021, 17:59:30] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 17:59:42] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 17:59:43] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 17:59:44] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 17:59:55] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:0:1] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:0:3] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:0:9] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:0:11] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:1:55] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:7:1] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:7:52] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:8:4] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:8:5] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:8:6] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:8:19] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:8:24] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:9:23] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:9:28] | INFO | C |
+[Per, 28-Oca-2021, 18:9:32] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:9:53] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:9:59] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:10:1] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:10:3] | INFO | C |
+[Per, 28-Oca-2021, 18:10:4] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:11:53] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:14:45] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:15:29] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:18:53] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:19:30] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:19:32] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:19:33] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:19:47] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:19:51] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:19:54] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:19:54] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:19:57] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:19:59] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:21:4] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:21:4] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:21:4] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:21:4] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:21:14] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:21:16] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:21:17] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:21:37] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:21:41] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:21:43] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:21:43] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:21:47] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:21:48] | INFO | E seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:23:37] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:23:41] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:23:43] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:25:37] | INFO | Seçeneğin işareti kaldırıldı. |
+[Per, 28-Oca-2021, 18:25:41] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:26:40] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:28:28] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:37:10] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:37:13] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:37:14] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:38:1] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:39:45] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:39:45] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:40:2] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:40:3] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:40:4] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:40:15] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:40:19] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:40:23] | INFO | E seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:42:15] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:42:19] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:52:31] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:54:27] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:54:29] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:54:30] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:54:38] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:54:43] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:56:17] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:56:18] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:56:23] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:56:24] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:56:25] | INFO | Seçim kaldırıldı. |
+[Per, 28-Oca-2021, 18:56:25] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:56:36] | INFO | Seçim kaldırıldı. |
+[Per, 28-Oca-2021, 18:56:36] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:56:40] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:56:41] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:57:1] | INFO | Seçim kaldırıldı. |
+[Per, 28-Oca-2021, 18:57:1] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:58:14] | INFO | Server started. |
+[Per, 28-Oca-2021, 18:58:14] | INFO | Seçim kaldırıldı. |
+[Per, 28-Oca-2021, 18:58:14] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:58:32] | INFO | Button: Kişisel Bilgi Formu düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:58:36] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:58:38] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 18:58:39] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:58:48] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 18:58:52] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:58:57] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:59:3] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 18:59:7] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:0:41] | INFO | Server started. |
+[Per, 28-Oca-2021, 19:0:41] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:0:41] | INFO | undefined seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:0:49] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:0:50] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:0:51] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:1:1] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:1:18] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:1:36] | INFO | B seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:1:41] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:1:43] | INFO | E seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:3:1] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:18:32] | INFO | Server started. |
+[Per, 28-Oca-2021, 19:18:41] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:18:42] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:18:43] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:18:53] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:18:56] | INFO | B seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:18:57] | INFO | Seçim kaldırıldı. |
+[Per, 28-Oca-2021, 19:19:50] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:19:52] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:20:53] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:20:56] | INFO | B seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:20:57] | INFO | Seçim kaldırıldı. |
+[Per, 28-Oca-2021, 19:22:10] | INFO | Server started. |
+[Per, 28-Oca-2021, 19:22:18] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:22:20] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:22:21] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:22:30] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:22:33] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:22:45] | INFO | Seçim kaldırıldı: C seçeneği |
+[Per, 28-Oca-2021, 19:23:52] | INFO | Server started. |
+[Per, 28-Oca-2021, 19:23:52] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:23:52] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:24:3] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:24:5] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Per, 28-Oca-2021, 19:24:6] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:24:13] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:24:18] | INFO | C seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:24:26] | INFO | D seçeneği işaretlendi. |
+[Per, 28-Oca-2021, 19:24:27] | INFO | İşaretleme kaldırıldı: D seçeneği |
+[Per, 28-Oca-2021, 19:26:13] | INFO | Sınav sayfası görüntülendi. |
+[Per, 28-Oca-2021, 19:26:17] | INFO | Sınav sayfası görüntülendi. |
