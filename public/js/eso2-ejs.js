@@ -167,6 +167,25 @@ function showMarkedQuestionsPage() {
     $(".hidden-accessibility").css("display", "none");
     
     document.getElementById('marked-questions-title').focus();
+	
+	$(".marked-questions-div").html("");
+       
+        var $ul = $("<ul>").appendTo($(".marked-questions-div"));
+        questionArr.forEach(function (q) {
+            if (q.marked) {
+				var selectedQuestion = "Soru " + q.id;
+				var data = { event: selectedQuestion + " düğmesine basıldı. " + selectedQuestion + " görüntülendi." };
+                var $li = $('<li >').appendTo($ul);
+                var $a = $('<a  role="button" href="#' + q.id + '" >').appendTo($li);
+                $a.html("Soru " + q.id);
+
+                $a.click((e) => {
+					logEvent(data);
+                    showExamPage();
+                    loadQuestion($(e.target).html().split(" ")[1]);
+                });
+            }
+        });
 }
 
 function showExamPage() {
@@ -181,14 +200,14 @@ function showExamPage() {
 }
 //show accessibility page
 function showAccessibilityPage() {
-    $(".page-title").css("display", "block");
+	$(".page-title").css("display", "block");
 	$("#remTimeDiv").css("padding-top","10px");
     $(".container").css("display", "none");
     $(".marked-questions-page").css("display", "none");
     $(".accessibility-page").css("display", "block");
     $("#accessibilityButtonDiv").css("display", "none");
     $(".hidden-accessibility").css("display", "none");
-    
+	$("#accessibility-title").html("ERİŞİLEBİLİRLİK AYARLARI");
     document.getElementById('accessibility-title').focus();
 }
 
@@ -377,48 +396,38 @@ $(function () {
     }, 1000);
     
     // key bind
+	//Alt + S: Kalan süre
+    $(document).keydown(function(event){
+		if(event.altKey === true){
+			if(event.keyCode == 69){
+				var data = { event: "Kısayol (Alt + E) tuşuna basıldı. Erişilebilirlik Ayarları sayfası görüntülendi." };
+				logEvent(data);
+				showAccessibilityPage();
+			}
+		}
+	});
     //Alt + S: Kalan süre
     $(document).keydown(function(event){
-		
 		if(event.altKey === true){
 			if(event.keyCode == 83){
                 //let timeAlert = $("#remainingTimeLabel").text();
 				//$("<p role='alert'>$(timeAlert)</p>").appendTo(document.body);
+			var data = { event: "Kısayol (Alt + S) tuşuna basıldı. Kalan süre okundu." };
+			logEvent(data);
                 $("#remainingTimeLabel").attr("role", "alert");
                 setTimeout(function(){
                     $("#remainingTimeLabel").removeAttr("role");
                 }, 100);
-				//alert($("#remainingTimeLabel").text());
 			}
 		}
 	});
-    // Alt + T: Tekrar bakılacak sorular
+    // Alt + G: Gözden geçir sayfası
     $(document).keydown(function(event){
         if(event.altKey === true){
-            if(event.keyCode == 84){
-                $(".container").css("display", "none");
-                $(".marked-questions-page").css("display", "block");
-
-                $(".marked-questions-div").html("");
-
-                document.getElementById('marked-questions-title').focus();
-
-
-                var $ul = $("<ul>").appendTo($(".marked-questions-div"));
-                questionArr.forEach(function (q) {
-                    if (q.marked) {
-
-                        var $li = $('<li >').appendTo($ul);
-                        var $a = $('<a  role="button" href="#' + q.id + '" >').appendTo($li);
-                        $a.html("Soru " + q.id);
-
-                        $a.click((e) => {
-                            showExamPage();
-                            loadQuestion($(e.target).html().split(" ")[1]);
-                        });
-                    }
-                });
-                showMarkedQuestionsPage();
+            if(event.keyCode == 71){
+				var data = { event: "Kısayol (Alt + G) tuşuna basıldı. Gözden Geçir sayfası görüntülendi." };
+				logEvent(data);
+				showMarkedQuestionsPage();
             }
         }
     });
@@ -426,64 +435,24 @@ $(function () {
                                  
     // Tekrar Bakılacak Sorular düğmesine basıldığında
     $("#markedQuestionsButton").click(function (e) {
-        var data = { event: "Gözden Geçir düğmesine basıldı." }
-		$(".container").css("display", "none");
-        $(".marked-questions-page").css("display", "block");
-
-        $(".marked-questions-div").html("");
-
-        document.getElementById('marked-questions-title').focus();
-		logEvent(data);
-        
-        var $ul = $("<ul>").appendTo($(".marked-questions-div"));
-        questionArr.forEach(function (q) {
-            if (q.marked) {
-
-                var $li = $('<li >').appendTo($ul);
-                var $a = $('<a  role="button" href="#' + q.id + '" >').appendTo($li);
-                $a.html("Soru " + q.id);
-
-                $a.click((e) => {
-                    showExamPage();
-                    loadQuestion($(e.target).html().split(" ")[1]);
-                });
-            }
-        });
-
-
-        showMarkedQuestionsPage();
+        var data = { event: "Gözden Geçir düğmesine basıldı." };
+        logEvent(data);
+		showMarkedQuestionsPage();
     });
                                  
     // Erişilebilirlik düğmesi
     $("#accessibilityButton").click(function (e) {
-		var data = { event: "Erişilebilirlik düğmesine basıldı." }
-        $(".page-title").css("display", "block");
-        $(".container").css("display", "none");
-        $(".accessibility-page").css("display", "block");
-        $("#accessibilityButtonDiv").css("display", "none");
-        $(".hidden-accessibility").css("display", "none");
-            
-        $("#accessibility-title").html("ERİŞİLEBİLİRLİK AYARLARI");
-        document.getElementById('accessibility-title').focus();
-            
+		var data = { event: "Erişilebilirlik düğmesine basıldı." };    
         logEvent(data);
 		showAccessibilityPage();
     });
-                                 //Hidden accessibility button
+	//Hidden accessibility button
                                  $("#hiddenAccessibilityButton").click(function (e) {
-									 var data = { event: "Erişilebilirlik (hidden) düğmesine basıldı." }
-                                     $(".page-title").css("display", "block");
-                                     $(".container").css("display", "none");
-                                     $(".accessibility-page").css("display", "block");
-                                     $("#accessibilityButtonDiv").css("display", "none");
-                                     $(".hidden-accessibility").css("display", "none");
-                                         
-                                     $("#accessibility-title").html("ERİŞİLEBİLİRLİK AYARLARI");
-                                     document.getElementById('accessibility-title').focus();
-                                         
+									 var data = { event: "Erişilebilirlik (hidden) düğmesine basıldı." };
                                      logEvent(data);
 									 showAccessibilityPage();
                                  });
+
                                  
     // Soruyu dinle
     $("#listenQuestion").click(function (e) {

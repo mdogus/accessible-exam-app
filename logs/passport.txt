@@ -489,3 +489,17 @@
 [Per, 28-Oca-2021, 19:18:38] | INFO | %s %s %s |
 [Per, 28-Oca-2021, 19:22:14] | INFO | %s %s %s |
 [Per, 28-Oca-2021, 19:23:59] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 13:33:44] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 13:42:55] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 13:44:56] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 14:1:20] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 14:28:19] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 14:40:50] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 14:44:10] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 15:49:6] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 16:14:37] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 16:19:34] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 16:24:22] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 16:35:20] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 16:36:23] | INFO | %s %s %s |
+[Cum, 29-Oca-2021, 16:37:46] | INFO | %s %s %s |
