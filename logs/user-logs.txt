@@ -3048,3 +3048,137 @@ Tema Rengi: theme3
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
 [Cum, 29-Oca-2021, 16:37:46] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 17:31:28] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 17:31:32] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 17:39:6] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 17:39:11] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 17:46:31] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 17:46:35] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 17:48:56] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 17:49:0] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 17:50:1] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 19:13:45] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 19:13:49] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 19:16:33] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 19:16:38] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 19:17:31] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 19:17:36] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 19:20:57] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 19:21:1] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 19:40:53] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 19:41:0] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 19:53:7] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 19:53:11] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 20:8:43] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 20:8:47] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 20:12:28] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 20:12:35] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 20:13:11] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 20:13:16] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 20:29:28] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 20:29:33] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 21:16:44] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 21:16:48] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 21:23:10] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 21:23:14] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 21:28:9] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 21:28:14] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 21:34:9] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 21:34:16] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Cmt, 30-Oca-2021, 21:38:56] | INFO | Ana Sayfa açıldı. |
+[Cmt, 30-Oca-2021, 21:39:0] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |

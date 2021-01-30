@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Open+Sans&family=Orbitron&display=swap');
 
-.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question:hover, .question-header:hover, .bottom-bar:hover,
-
+.btn-footer:hover, .btn-mark:hover, div.secenek-baslik:hover, div.secenek:hover, a#nextQuestion:hover, a#prevQuestion:hover, #markDiv:hover, .question-text:hover, .question-stem:hover, .question-header:hover, .bottom-bar:hover,
 #increaseFont:hover, #decreaseFont:hover, #increaseFont:focus, #decreaseFont:focus, select:hover, button:hover {
-  border: 2px inset red !important;
+    border: 2px inset red !important;
 }
 
 @media (min-width: 1200px) {
@@ -353,6 +352,7 @@ butto
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 #hiddenAccessibilityButtonDiv {
     height: 0;
     width: 0;
@@ -364,7 +364,7 @@ butto
     font-size: 26px;
     font-weight: bold;
     display: table;
-    padding: 2px 1px;
+    padding: 2px 12px;
     border-radius: 10px;
     margin-left: 20px;
     background-color: black;
@@ -378,7 +378,13 @@ butto
     grid-column: 3 / 3;
     justify-self: end;
 }
-
+.question-text {
+    padding: 0px 4px;
+}
+.question-stem {
+    font-weight: bold;
+    padding: 0px 4px;
+}
 /* Fonts */
 @font-face {
     font-family: MEBFont;

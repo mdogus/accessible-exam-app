@@ -43,11 +43,11 @@ function loadQuestion(qid, focus) {
         $("#qNumDiv").text("Soru " + q.id);
         $("#question").html(q.text);
 		
-        $("#oA").text(q.o1Text);
-        $("#oB").text(q.o2Text);
-        $("#oC").text(q.o3Text);
-        $("#oD").text(q.o4Text);
-		$("#oE").text(q.o5Text);
+        $("#oA").html(q.o1Text);
+        $("#oB").html(q.o2Text);
+        $("#oC").html(q.o3Text);
+        $("#oD").html(q.o4Text);
+		$("#oE").html(q.o5Text);
         $("#qAudio").attr("src", q.qAudioSrc);
         $("#oAudio").attr("src", q.oAudioSrc);
         
