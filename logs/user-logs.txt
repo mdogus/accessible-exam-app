@@ -3338,3 +3338,18 @@ Soyad: Doğuş
 Tema Rengi: theme3
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 19:26:29] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 19:26:34] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 19:30:42] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 19:33:45] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 19:33:50] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |

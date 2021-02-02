@@ -2639,3 +2639,32 @@
 [Sal, 2-Şub-2021, 19:13:52] | INFO | Soruyu Dinle durduruldu. |
 [Sal, 2-Şub-2021, 19:13:53] | INFO | Seçenekleri Dinle düğmesine basıldı. |
 [Sal, 2-Şub-2021, 19:13:54] | INFO | Seçenekleri Dinle durduruldu. |
+[Sal, 2-Şub-2021, 19:26:3] | INFO | Server started. |
+[Sal, 2-Şub-2021, 19:26:32] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:26:34] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:26:35] | INFO | Sınav sayfası görüntülendi. |
+[Sal, 2-Şub-2021, 19:26:40] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:26:41] | INFO | Soruyu Dinle durduruldu. |
+[Sal, 2-Şub-2021, 19:26:42] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:26:43] | INFO | Seçenekleri Dinle durduruldu. |
+[Sal, 2-Şub-2021, 19:26:45] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 2-Şub-2021, 19:28:35] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:28:40] | INFO | Sınav sayfası görüntülendi. |
+[Sal, 2-Şub-2021, 19:28:41] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:28:42] | INFO | Soruyu Dinle durduruldu. |
+[Sal, 2-Şub-2021, 19:29:8] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:29:9] | INFO | Seçenekleri Dinle durduruldu. |
+[Sal, 2-Şub-2021, 19:30:35] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 2-Şub-2021, 19:30:40] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:30:41] | INFO | Soruyu Dinle durduruldu. |
+[Sal, 2-Şub-2021, 19:31:9] | INFO | Seçenekleri Dinle durduruldu. |
+[Sal, 2-Şub-2021, 19:33:38] | INFO | Server started. |
+[Sal, 2-Şub-2021, 19:33:49] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:33:50] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Sal, 2-Şub-2021, 19:33:51] | INFO | Sınav sayfası görüntülendi. |
+[Sal, 2-Şub-2021, 19:34:7] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 2-Şub-2021, 19:34:13] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 2-Şub-2021, 19:34:17] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 2-Şub-2021, 19:35:51] | INFO | Sınav sayfası görüntülendi. |
+[Sal, 2-Şub-2021, 19:36:13] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Sal, 2-Şub-2021, 19:36:17] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |

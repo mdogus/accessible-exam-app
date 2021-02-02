@@ -114,12 +114,12 @@ function nextQuestion() {
     loadQuestion(parseInt(id) + 1);
 	
 	// Audio SRC
-	var qid = id + 1;
-	var q = questionArr[qid];
-    $("#qAudio").removeAttr("src");
-	$("#oAudio").removeAttr("src");
-    $("#qAudio").attr("src", q.qAudioSrc);
-	$("#oAudio").attr("src", q.oAudioSrc);
+	//var qid = id + 1;
+	//var q = questionArr[qid];
+    //$("#qAudio").removeAttr("src");
+	//$("#oAudio").removeAttr("src");
+    //$("#qAudio").attr("src", q.qAudioSrc);
+	//$("#oAudio").attr("src", q.oAudioSrc);
 }
 
 function prevQuestion() {
@@ -128,12 +128,12 @@ function prevQuestion() {
     loadQuestion(parseInt(id) - 1);
 	
 	// Audio SRC
-	var qid = id - 1;
-	var q = questionArr[qid];
-    $("#qAudio").removeAttr("src");
-	$("#oAudio").removeAttr("src");
-    $("#qAudio").attr("src", q.qAudioSrc);
-	$("#oAudio").attr("src", q.oAudioSrc);
+	//var qid = id - 1;
+	//var q = questionArr[qid];
+    //$("#qAudio").removeAttr("src");
+	//$("#oAudio").removeAttr("src");
+    //$("#qAudio").attr("src", q.qAudioSrc);
+	//$("#oAudio").attr("src", q.oAudioSrc);
 }
 
 var fontSize = 16;
@@ -502,7 +502,7 @@ $(function () {
             $("#listenQuestion").html("Soruyu Dinle");
         };
             
-        logEvent(data);
+        //logEvent(data);
     });
     // Seçenekleri dinle
     $("#listenOptions").click(function (e) {
@@ -536,7 +536,7 @@ $(function () {
             $("#listenOptions").html("Seçenekleri Dinle");
         };
         
-        logEvent(data);
+        //logEvent(data);
     });
                                  
     // Sınava Dön düğmesine basıldığında
