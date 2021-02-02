@@ -9,7 +9,7 @@ dateFormat = () => {
             month = "Oca";
             break;
         case 1:
-            day = "Şub";
+            month = "Şub";
             break;
         case 2:
             month = "Mar";

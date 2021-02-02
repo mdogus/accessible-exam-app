@@ -4,7 +4,8 @@ var i = 0;
 
 questionArr[++i] = {
     id: i,
-    //text: '<p class="question-text"></p><p class="question-stem"></p>',
+    //1
+	//text: '<p class="question-text"></p><p class="question-stem"></p>',
     text: '<p class="question-text">“Radyo oyunu” 1920\'lerde ilk kez Batı\'da yayınlanmaya başlamıştır. Bu tür, görsel hiçbir ögeye dayanmaz; dinleyicinin oyunu bütünüyle zihninde canlandırmasına bağlı olarak şekillenir. Radyo oyunu, fiziksel mekân ve zaman gerektirmediğinden, özellikle duygulara hitap eden bölümlerde, sahne oyunlarından çok daha etkili olabilir. Örneğin zaman kaydırmalar, geriye dönüş ve ileriye sıçrama teknikleri, mekân değiştirme, gerçeklik ve düş arasında gidip gelmeler, radyo oyununa kendi boyutlarını kazandırır. Sesin yakından ve doğrudan iletilmesi sayesinde oyun ile dinleyici arasındaki iletişim bağı da hızlıca ve zorlanmadan oluşturulur.</p><p class="question-stem">Bu parçada radyo oyunu ile ilgili olarak aşağıdakilerden hangisine <u>değinilmemiştir</u>?</p>',
     o1Text: 'Konusunun ilgi çekici olaylardan seçildiğine',
     o2Text: 'Görsel oyunlardan üstün özelliklerinin olduğuna',
@@ -18,7 +19,8 @@ questionArr[++i] = {
 };
 questionArr[++i] = {
     id: i,
-    text: '<p class="question-text">Eski Mısırlılar ve Yunanlılar tarafından keşfedilen ve doğada en belirgin örneklerine insan vücudunda, ağaç dallarında ve küçücük deniz kabuklarında rastlanılan “altın oran”; araştırmacılar tarafından bir dikdörtgenin boyunun enine olan “en estetik” oranı olarak tanımlanmaktadır.</p><p class="question-stem">Bu cümlede aşağıdaki ses olaylarından hangisi <u>yoktur</u>?</p>',
+    //2
+	text: '<p class="question-text">Eski Mısırlılar ve Yunanlılar tarafından keşfedilen ve doğada en belirgin örneklerine insan vücudunda, ağaç dallarında ve küçücük deniz kabuklarında rastlanılan “altın oran”; araştırmacılar tarafından bir dikdörtgenin boyunun enine olan “en estetik” oranı olarak tanımlanmaktadır.</p><p class="question-stem">Bu cümlede aşağıdaki ses olaylarından hangisi <u>yoktur</u>?</p>',
     o1Text: 'Ünlü düşmesi',
     o2Text: 'Ünsüz benzeşmesi',
     o3Text: 'Ünsüz yumuşaması',
@@ -31,7 +33,8 @@ questionArr[++i] = {
 };
 questionArr[++i] = {
     id: i,
-    text: 'Sıcaktan bunalmış, taze toprağa bulanmış köylüler; arklar, yataklar su ile dolmaya başladığı zaman, büyük bir bayram sevinci duyarlardı. Çocuklar sevinçlerinden bağrışırlar ama en küçükleri ayaklarını suya sokabilir veya kağıttan yapılmış kayıklar yüzdürebi-lirdi. Fakat arklara toprak düşürmemek için dikkat etmek, suyun yolunu kesmemek lazımdı. Kadınlar ve çocuklar, bahçelerde ağaçların altına serilirler ve ıslak, serin havayı zevkle ciğerlerine çekerlerdi. Kat kat örülmüş taş duvarların üzerinden komşu bahçelere hoş sesler yayılırdı. <br aria-hidden="true"><strong>Bu parçanın anlatımında aşağıdakilerden hangisi yoktur?</strong>' ,
+    //3
+	text: '<p class="question-stem">Aşağıdakilerin hangisindeki açıklama, parantez içindeki deyim ile anlamca <u>uyuşmamaktadır</u>?</p>',
     o1Text: 'Değişik duyulardan yararlanma' ,
     o2Text: 'Tanımlamalarla söyleyişte yoğunluk sağlama' ,
     o3Text: 'Betimlemeye başvurma' ,

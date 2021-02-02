@@ -2221,3 +2221,5 @@
 [Cmt, 30-Oca-2021, 21:40:49] | INFO | Server started. |
 [Cmt, 30-Oca-2021, 21:40:49] | INFO | Sınav sayfası görüntülendi. |
 [Cmt, 30-Oca-2021, 21:42:2] | INFO | Server started. |
+[Sal, 2-Şub-2021, 13:5:1] | INFO | Server started. |
+[Sal, 2-Şub-2021, 13:5:12] | INFO | Server started. |
