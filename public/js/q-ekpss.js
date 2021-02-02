@@ -14,8 +14,8 @@ questionArr[++i] = {
     o5Text: 'Farklı anlatım tekniklerinin kullanıldığına',
     answer: undefined,
     marked: false,
-    qAudioSrc: '/test/audio/q01.mp3',
-    oAudioSrc: '/test/audio/o01.mp3'
+    qAudioSrc: '/test/audio/ekpss/q1.mp3',
+    oAudioSrc: '/test/audio/ekpss/o1.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -28,111 +28,118 @@ questionArr[++i] = {
     o5Text: 'Ünsüz düşmesi',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q02.mp3',
-    oAudioSrc: 'audio/o02.mp3'
+    qAudioSrc: 'audio/ekpss/q2.mp3',
+    oAudioSrc: 'audio/ekpss/o2.mp3'
 };
 questionArr[++i] = {
     id: i,
     //3
 	text: '<p class="question-stem">Aşağıdakilerin hangisindeki açıklama, parantez içindeki deyim ile anlamca <u>uyuşmamaktadır</u>?</p>',
-    o1Text: 'Değişik duyulardan yararlanma' ,
-    o2Text: 'Tanımlamalarla söyleyişte yoğunluk sağlama' ,
-    o3Text: 'Betimlemeye başvurma' ,
-    o4Text: 'Amaç-sonuç cümlesine yer verme' ,
-    o5Text: 'Amaç-sonuç cümlesine yer verme' ,
+    o1Text: 'İçinden çıkılması güç bir durumda kalmak. (Açmaza düşmek)',
+    o2Text: 'Çok iyi bilmek, kesin olarak bilmek. (Adı gibi bilmek)',
+    o3Text: 'Bir işin istediği gibi olması için uygun zemin hazırlamak. (Yolunu yapmak)',
+    o4Text: 'Durup dinlendirmeden çalıştırmak. (Soluk aldırmamak)',
+    o5Text: 'Üzüntü ile derin bir nefes almak. (Göğüs germek)',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q3.mp3',
-    oAudioSrc: 'audio/o3.mp3'
+    qAudioSrc: 'audio/ekpss/q3.mp3',
+    oAudioSrc: 'audio/ekpss/o3.mp3'
 };
 questionArr[++i] = {
     id: i,
-    text: 'Artık sis daha da bastırmaya başladı. Her yer daha da karanlık. İstanbul’un denizden ilk görüntüsü görkemli diye anlatılır. Şimdi bana dehşet veriyor. İstanbul’un eteklerinde çırpındım yıllarca. Bazen o sisin İstanbul’un eteklerinden kalktığı da oldu. Ama tepesi hiç görünmedi.<br aria-hidden="true"><strong>Bu parça ile ilgili olarak aşağıdakilerden hangisi söylenemez?</strong>',
-    o1Text: 'insandan doğaya aktarma yapılmıştır' ,
-    o2Text: 'Devrik cümle kullanılmıştır' ,
-    o3Text: 'Anlatılanlar gözleme dayalıdır' ,
-    o4Text: 'Öyküleme tekniği ile yazılmıştır' ,
-    o5Text: 'Öyküleme tekniği ile yazılmıştır' ,
+    //4
+	text: '<p class="question-text">Yapağı adı verilen koyun yününden uzun ve zahmetli bir işleme süreci sonunda üretilen fesin, ibik denen çıkıntısına püskül bağlanırdı. Bu püskülün duruşu, fesi takan kişinin itibarı açısından oldukça önemliydi. İlk zamanlarda bükülmemiş, kalitesiz ipliklerden yapılan püsküller hafif bir rüzgârda darma duman olur ve sahibini maskara ederdi. Bu sebeple fes, halk arasında “püsküllü bela” olarak anılmaya başlandı. Püskülün yarattığı olumsuz durumlar, kısa sürede “püskül tarayıcısı” adında yeni bir sokak mesleğinin doğmasını sağladı. Böylelikle bazı çocuklar sokaklarda, kundura boyacıları gibi, on kuruşa püskül tarayıcılığı yapmaya başladı.</p><p class="question-stem">Bu parçada fes ile ilgili aşağıdakilerden hangisine <u>değinilmemiştir</u>?</p>',
+    o1Text: 'Toplumun belli kesimine ekonomik gelir sağladığına',
+    o2Text: 'Ham maddesine ve zorlu bir üretim sürecinden geçtiğine',
+    o3Text: 'Püskülünün duruşunun, kişinin itibarı üzerinde etkili olduğuna',
+    o4Text: 'Kullanan kişinin mesleğini ve toplumsal statüsünü yansıttığına',
+    o5Text: 'Yeni bir sokak mesleğinin ortaya çıkmasına sebep olduğuna',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q4.mp3',
-    oAudioSrc: 'audio/o4.mp3'
+    qAudioSrc: 'audio/ekpss/q4.mp3',
+    oAudioSrc: 'audio/ekpss/o4.mp3'
 };
 questionArr[++i] = {
     id: i,
-    text: 'Bir roman yazarken hatıralardan faydalanabilirsiniz. Hangi tarzda, hangi ölçüde faydalanacağınızı tercihlerinize göre belirleyebilirsiniz. Esasen geçmişteki her tecrübe, her gözlem, her tanıklık hatıradır. Bazen yazdıklarınız, yaşadıklarınızdan bile daha gerçek olabilir. Peyami Safa, 9. Hariciye Koğuşu için, “Yaşadığım kısımlar daha gerçek.” diyor. Gerçekliğin yansımaları hayatın akışı içinde kısmen gizli kalabilir yahut arka plana kayabilir. <br aria-hidden="true"><strong>Bu parçanın anlatımında aşağıdakilerden hangilerinden yararlanılmıştır?</strong>',
-    o1Text: 'Açıklama - tanık gösterme - benzetme' ,
-    o2Text: 'Tartışma - karşılaştırma - tanımlama' ,
-    o3Text: 'öyküleme - karşılaştırma - benzetme' ,
-    o4Text: 'Açıklama - karşılaştırma - tanık gösterme' ,
-    o5Text: 'Açıklama - karşılaştırma - tanık gösterme' ,
+    //5
+	text: '<p class="question-text">Cennet kuşları, Avustralya\'nın doğusundan Yeni Gine\'ye uzanan bölgede ve çevre adalarda bulunur. Alçak bataklık arazilerden, deniz düzeyinden üç bin beş yüz metre yukarıdaki bulut ormanlarına kadar çok farklı yüksekliklerde yaşar. Yiyecekleri bol, yaşam alanları çeşitli, avcıları da az olan bu kuşlar, evrim geçirerek çeşitlenmiştir. Boyu on altı santimetreden yüz yirmi beş santimetreye kadar ulaşabilen otuz dokuz türü vardır. Tüylerinin rengi türüne göre geniş bir yelpaze içinde değişiklik gösterir.</p><p class="question-stem">Bu parçada söz edilen cennet kuşlarıyla ilgili olarak aşağıdakilerden hangisine <u>değinilmemiştir</u>?</p>',
+    o1Text: 'Yaşam alanlarının bazı niteliklerine',
+    o2Text: 'Türlerinin belirli özelliklerine',
+    o3Text: 'Zamanla değişime uğradığına',
+    o4Text: 'Yiyeceklerini avlanarak elde ettiklerine',
+    o5Text: 'Beslenme olanaklarının yeterliliğine',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q5.mp3',
-    oAudioSrc: 'audio/o5.mp3'
+    qAudioSrc: 'audio/ekpss/q5.mp3',
+    oAudioSrc: 'audio/ekpss/o5.mp3'
 };
 questionArr[++i] = {
     id: i,
-    text: '(I) Başar Başarırın yeni öykü kitabı “Çıktığınız Hevesle İniniz” yazarın on altı yeni öyküsünü okuyucuyla buluşturuyor. <br aria-hidden="true">(II) Başarır, kitabında Türkçenin kaybolmakta olan inceliklerinin peşinden gitmeye çalışıyor. <br aria-hidden="true">(III) Geleneksel öykü kitabı formatına büyük bir yenilik getiren kitapta yer yer gereksiz tekrarlara da düşülmüş. <br aria-hidden="true">(IV) Ayrıca Başarır, “Çıktığınız Hevesle ininiz”de şiirle düz yazıyı etkileyici bir uyumla birleştirmiş. <br aria-hidden="true"><strong>Yukarıda numaralanmış cümlelerin hangisinde sözü edilen eserle ilgili hem olumlu hem olumsuz eleştiri söz konusudur?</strong>' ,
-    o1Text: 'I.' ,
-    o2Text: 'II.' ,
-    o3Text: 'III.' ,
-    o4Text: 'IV.' ,
-    o5Text: 'IV.' ,
+    //6
+	text: '<p class="question-text">Seyit, bir Türk topluluğuyla ilgili yaptığı araştırmada şu bilgilere ulaşmıştır:</p><ul><li><p class="question-text">XI. yüzyılda Bizans ile iyi ilişkiler kurarak Bizans ordusunda paralı askerlik yapmışlardır.</p></li><li><p class="question-text">Malazgirt Savaşı\'nda Selçuklu Devleti\'nin tarafına geçmişlerdir.</p></li><li><p class="question-text">Çaka Bey ile birlikte İstanbul kuşatmasına katılmışlardır.</p></li></ul><p class="question-stem">Buna göre Seyit, aşağıdaki Türk topluluklarından hangisini araştırmıştır?</p>',
+    o1Text: 'Bulgarlar',
+    o2Text: 'Avarlar',
+    o3Text: 'Türgişler',
+    o4Text: 'Peçenekler',
+    o5Text: 'Kıpçaklar',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q6.mp3',
-    oAudioSrc: 'audio/o6.mp3'
+    qAudioSrc: 'audio/ekpss/q6.mp3',
+    oAudioSrc: 'audio/ekpss/o6.mp3'
 };
 questionArr[++i] = {
     id: i,
-    text: '(I) Roman, kişisel veya toplumsal bir serüveni anlattığı için tarihe yakın düşer. <br aria-hidden="true">(II) Olaylara bakarken tarih de roman da açıklama ve yorumlama yöntemlerinden yararlanır ancak ortaya çıkan metin farklı olur. <br aria-hidden="true">(III) Farkı yaratan, daha doğrusu romanı tarihten ayıran nokta bakış açısıdır kuşkusuz. (IV) Roman da tarih de gerçeğe bakar ancak tarihçi gerçeğe bakarken nesnel olmak zorundadır. <br aria-hidden="true"><strong>Bu parçada numaralı cümleler için aşağıdakiler-den hangisi söylenmez?</strong>' ,
-    o1Text: 'I. cümlede yargı gerekçesiyle verilmiştir.' ,
-    o2Text: 'II. cümlede karşılaştırma yapılmıştır.' ,
-    o3Text: 'III. cümlede bir tespitte bulunulmuştur.' ,
-    o4Text: 'IV. cümlede bir zorunluluktan söz edilmiştir.' ,
-    o5Text: 'IV. cümlede bir zorunluluktan söz edilmiştir.' ,
+    //7
+	text: '<p class="question-stem">Doğu vilayetlerinin Ermenilere verilmesini önlemek ve Millî Mücadele\'ye destek vermek amacıyla Erzurum\'da çıkarılan gazete aşağıdakilerden hangisidir?</p>',
+    o1Text: 'İrade-i Milliye',
+    o2Text: 'Hakimiyet-i Milliye',
+    o3Text: 'Albayrak',
+    o4Text: 'Açıksöz',
+    o5Text: 'Gaye-i Milliye',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q7.mp3',
-    oAudioSrc: 'audio/o7.mp3'
+    qAudioSrc: 'audio/ekpss/q7.mp3',
+    oAudioSrc: 'audio/ekpss/o7.mp3'
 };
 questionArr[++i] = {
     id: i,
-    text: '(I) Klasik müzik dünyasının önde gelen aktörlerinin yaşamları ve kariyerlerine odaklanan belgesel yapımlara oldum olası özel bir ilgi duymuşumdur. <br aria-hidden="true">(II) Bu insanların sahne dışındaki yaşamları neye benzer, sanat ve kariyerleri hakkında ne düşünürler, meslektaşları ve eleştirmenlerin onlar hakkındaki izlenimleri nasıldır? <br aria-hidden="true">(III) Bu soruların yanıtlarını bulabilmek için izlerim bu tip belgeselleri. (IV) Yazılı söyleşilerde bulamaz mıyım bu soruların yanıtlarını? <br aria-hidden="true"><strong>Bu parçadaki numaralanmış cümlelerle ilgili olarak aşağıda verilenlerden hangisi yanlıştır?</strong>',
-    o1Text: 'I. cümlede, kişisel bir özellikten bahsedilmiştir' ,
-    o2Text: 'II. cümlede, ele alınan konuyla ilgili sorular sorulmuştur.' ,
-    o3Text: 'III. cümlede, yapılan bir davranışın gerekçesi belirtilmiştir.' ,
-    o4Text: 'IV. cümlede, söyleşinin işlevinde gerçekleşen bir değişiklik ortaya konmuştur.' ,
-    o5Text: 'IV. cümlede, söyleşinin işlevinde gerçekleşen bir değişiklik ortaya konmuştur.' ,
+    //8
+	text: '<p class="question-stem">Aşağıdakilerden hangisi deniz suyundan tuz elde edilen merkezlerden biridir?</p>',
+    o1Text: 'Çamaltı (İzmir)',
+    o2Text: 'Fatsa (Ordu)',
+    o3Text: 'Silifke (Mersin)',
+    o4Text: 'Çınarcık (Yalova)',
+    o5Text: 'Fethiye (Muğla)',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q8.mp3',
-    oAudioSrc: 'audio/o8.mp3'
+    qAudioSrc: 'audio/ekpss/q8.mp3',
+    oAudioSrc: 'audio/ekpss/o8.mp3'
 };
 questionArr[++i] = {
     id: i,
-    text: 'Sıcaktan bunalmış, taze toprağa bulanmış köylüler; arklar, yataklar su ile dolmaya başladığı zaman, büyük bir bayram sevinci duyarlardı. Çocuklar sevinçlerinden bağrışırlar ama en küçükleri ayaklarını suya sokabilir veya kağıttan yapılmış kayıklar yüzdürebi-lirdi. Fakat arklara toprak düşürmemek için dikkat etmek, suyun yolunu kesmemek lazımdı. Kadınlar ve çocuklar, bahçelerde ağaçların altına serilirler ve ıslak, serin havayı zevkle ciğerlerine çekerlerdi. Kat kat örülmüş taş duvarların üzerinden komşu bahçelere hoş sesler yayılırdı.<br aria-hidden="true"><strong>Bu parçanın anlatımında aşağıdakilerden hangisi yoktur?</strong>',
-    o1Text: 'Değişik duyulardan yararlanma' ,
-    o2Text: 'Tanımlamalarla söyleyişte yoğunluk sağlama' ,
-    o3Text: 'Betimlemeye başvurma' ,
-    o4Text: 'Amaç-sonuç cümlesine yer verme' ,
-    o5Text: 'Amaç-sonuç cümlesine yer verme' ,
+    //9
+	text: '<p class="question-stem">Türkiye Cumhuriyeti Anayasası\'na göre, cumhurbaşkanının yurt dışına çıkarak geçici olarak görevinden ayrılması hâlinde yerine aşağıdakilerden hangisi vekâlet eder?</p>',
+    o1Text: 'Türkiye Büyük Millet Meclisi başkanı',
+    o2Text: 'Genelkurmay başkanı',
+    o3Text: 'İçişleri bakanı',
+    o4Text: 'Anayasa Mahkemesi başkanı',
+    o5Text: 'Başbakan',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q9.mp3',
-    oAudioSrc: 'audio/o9.mp3'
+    qAudioSrc: 'audio/ekpss/q9.mp3',
+    oAudioSrc: 'audio/ekpss/o9.mp3'
 };
 questionArr[++i] = {
     id: i,
-    text: 'Abraham Lincoln, kabineye atanması için önerilen biri hakkında yardımcılarına: “Onun yüzünü hiç beğenmiyorum.” dediğinde, yardımcılarından itiraz sesleri yükselir: “Aman, efendim! insan, yüzüyle doğar, ondan sorumlu tutulamaz ki.” Lincoln, itirazlara şu cümleyle cevap verir: “İnsan, kırkından sonra yüzünden sorumludur.” Lincoln, bu sözüyle insanın doğuştan kazandığı karakterini ve iç dünyasını mecburen yüzüne yansıttığını fakat bunu ——— . <br aria-hidden="true"><strong>Bu parçayı aşağıdakilerden hangisiyle sürdürmek uygun olur?</strong>',
-    o1Text: 'anlamanın sezgi gücü gerektirdiğini ortaya koymaktadır.' ,
-    o2Text: 'açıkça belli etmenin insana çok şey kaybettirebi-leceği gerçeğini dile getirmektedir.' ,
-    o3Text: 'doğuracağı sonuçları hesaba katarak gizlemesi gerektiğini iletmektedir.' ,
-    o4Text: 'herkesten başarıyla gizleyebilmesinin hiç de kolay olmadığını anlatmaktadır.' ,
-    o5Text: 'herkesten başarıyla gizleyebilmesinin hiç de kolay olmadığını anlatmaktadır.' ,
+    //10
+	text: '<p class="question-stem">Peki Peki Anladık, Ele Güne Karşı, Mazeretim Var Asabiyim Ben ve Güllerin İçinden şarkılarıyla bilinen müzik grubu aşağıdakilerden hangisidir?</p>',
+    o1Text: 'Kurtalan Ekspres',
+    o2Text: 'Mazhar-Fuat-Özkan',
+    o3Text: 'Grup Gündoğarken',
+    o4Text: 'Ezginin Günlüğü',
+    o5Text: 'Yeni Türkü',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/q10.mp3',
-    oAudioSrc: 'audio/o10.mp3'
+    qAudioSrc: 'audio/ekpss/q10.mp3',
+    oAudioSrc: 'audio/ekpss/o10.mp3'
 };

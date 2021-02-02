@@ -3183,3 +3183,73 @@ Tema Rengi: theme3
 Yazı Tipi: font_10
 Yazı Boyutu: 16 |
 [Sal, 2-Şub-2021, 13:5:55] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 13:11:55] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 13:11:59] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:6:29] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 14:6:32] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:15:4] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 14:15:6] | INFO | Page: Kişisel Bilgi Formu sayfası açıldı. |
+[Sal, 2-Şub-2021, 14:15:17] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:23:36] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 14:23:41] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:24:40] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:28:18] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 14:28:27] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:31:21] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 14:31:26] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:51:27] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 14:51:31] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 14:59:37] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 14:59:45] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme3
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |
+[Sal, 2-Şub-2021, 15:2:34] | INFO | Ana Sayfa açıldı. |
+[Sal, 2-Şub-2021, 15:3:22] | INFO | Accessibility Settings saved successfully!
+Ad: Mustafa
+Soyad: Doğuş
+Tema Rengi: theme1
+Yazı Tipi: font_10
+Yazı Boyutu: 16 |

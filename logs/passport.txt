@@ -524,3 +524,12 @@
 [Cmt, 30-Oca-2021, 21:34:9] | INFO | %s %s %s |
 [Cmt, 30-Oca-2021, 21:38:55] | INFO | %s %s %s |
 [Sal, 2-Şub-2021, 13:5:55] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 13:11:54] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 14:6:29] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 14:15:4] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 14:23:35] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 14:28:18] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 14:31:21] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 14:51:27] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 14:59:37] | INFO | %s %s %s |
+[Sal, 2-Şub-2021, 15:2:34] | INFO | %s %s %s |
