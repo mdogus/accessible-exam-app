@@ -28,8 +28,8 @@ questionArr[++i] = {
     o5Text: 'Ünsüz düşmesi',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q2.mp3',
-    oAudioSrc: 'audio/ekpss/o2.mp3'
+    qAudioSrc: '/test/audio/ekpss/q2.mp3',
+    oAudioSrc: '/test/audio/ekpss/o2.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -42,8 +42,8 @@ questionArr[++i] = {
     o5Text: 'Üzüntü ile derin bir nefes almak. (Göğüs germek)',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q3.mp3',
-    oAudioSrc: 'audio/ekpss/o3.mp3'
+    qAudioSrc: '/test/audio/ekpss/q3.mp3',
+    oAudioSrc: '/test/audio/ekpss/o3.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -56,8 +56,8 @@ questionArr[++i] = {
     o5Text: 'Yeni bir sokak mesleğinin ortaya çıkmasına sebep olduğuna',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q4.mp3',
-    oAudioSrc: 'audio/ekpss/o4.mp3'
+    qAudioSrc: '/test/audio/ekpss/q4.mp3',
+    oAudioSrc: '/test/audio/ekpss/o4.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -70,8 +70,8 @@ questionArr[++i] = {
     o5Text: 'Beslenme olanaklarının yeterliliğine',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q5.mp3',
-    oAudioSrc: 'audio/ekpss/o5.mp3'
+    qAudioSrc: '/test/audio/ekpss/q5.mp3',
+    oAudioSrc: '/test/audio/ekpss/o5.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -84,8 +84,8 @@ questionArr[++i] = {
     o5Text: 'Kıpçaklar',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q6.mp3',
-    oAudioSrc: 'audio/ekpss/o6.mp3'
+    qAudioSrc: '/test/audio/ekpss/q6.mp3',
+    oAudioSrc: '/test/audio/ekpss/o6.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -98,8 +98,8 @@ questionArr[++i] = {
     o5Text: 'Gaye-i Milliye',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q7.mp3',
-    oAudioSrc: 'audio/ekpss/o7.mp3'
+    qAudioSrc: '/test/audio/ekpss/q7.mp3',
+    oAudioSrc: '/test/audio/ekpss/o7.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -112,8 +112,8 @@ questionArr[++i] = {
     o5Text: 'Fethiye (Muğla)',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q8.mp3',
-    oAudioSrc: 'audio/ekpss/o8.mp3'
+    qAudioSrc: '/test/audio/ekpss/q8.mp3',
+    oAudioSrc: '/test/audio/ekpss/o8.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -126,8 +126,8 @@ questionArr[++i] = {
     o5Text: 'Başbakan',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q9.mp3',
-    oAudioSrc: 'audio/ekpss/o9.mp3'
+    qAudioSrc: '/test/audio/ekpss/q9.mp3',
+    oAudioSrc: '/test/audio/ekpss/o9.mp3'
 };
 questionArr[++i] = {
     id: i,
@@ -140,6 +140,6 @@ questionArr[++i] = {
     o5Text: 'Yeni Türkü',
     answer: undefined,
     marked: false,
-    qAudioSrc: 'audio/ekpss/q10.mp3',
-    oAudioSrc: 'audio/ekpss/o10.mp3'
+    qAudioSrc: '/test/audio/ekpss/q10.mp3',
+    oAudioSrc: '/test/audio/ekpss/o10.mp3'
 };

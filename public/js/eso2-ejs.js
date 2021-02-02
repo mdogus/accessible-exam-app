@@ -112,12 +112,28 @@ function nextQuestion() {
     saveQuestion();
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) + 1);
+	
+	// Audio SRC
+	var qid = id + 1;
+	var q = questionArr[qid];
+    $("#qAudio").removeAttr("src");
+	$("#oAudio").removeAttr("src");
+    $("#qAudio").attr("src", q.qAudioSrc);
+	$("#oAudio").attr("src", q.oAudioSrc);
 }
 
 function prevQuestion() {
     saveQuestion();
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) - 1);
+	
+	// Audio SRC
+	var qid = id - 1;
+	var q = questionArr[qid];
+    $("#qAudio").removeAttr("src");
+	$("#oAudio").removeAttr("src");
+    $("#qAudio").attr("src", q.qAudioSrc);
+	$("#oAudio").attr("src", q.oAudioSrc);
 }
 
 var fontSize = 16;
@@ -456,8 +472,9 @@ $(function () {
                                  
     // Soruyu dinle
     $("#listenQuestion").click(function (e) {
-        let audio = document.getElementById("qAudio");
-            var data;
+        //let q = questionArr[qid];
+		let audio = document.getElementById("qAudio");
+        var data;
         if (this.className == "pause") {
             $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
@@ -467,7 +484,7 @@ $(function () {
         } else {
             $("#listenQuestion").attr("class", "pause");
             $("#listenQuestion").html("Durdur");
-            audio.play();
+			audio.play();
             
             data = { event: "Soruyu Dinle düğmesine basıldı." };
         }
@@ -475,15 +492,15 @@ $(function () {
         audio.onplaying = function() {
             $("#listenQuestion").attr("class", "pause");
             $("#listenQuestion").html("Durdur");
-        }
+        };
         audio.onpause = function() {
             $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
-        }
+        };
         audio.onended = function() {
             $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
-        }
+        };
             
         logEvent(data);
     });
@@ -509,15 +526,15 @@ $(function () {
         audioOptions.onplaying = function() {
             $("#listenOptions").attr("class", "pause-options");
             $("#listenOptions").html("Durdur");
-        }
+        };
         audioOptions.onpause = function() {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
-        }
+        };
         audioOptions.onended = function() {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
-        }
+        };
         
         logEvent(data);
     });
