@@ -108,11 +108,14 @@ function answerQuestion() {
 }
 
 function nextQuestion() {
-    
     saveQuestion();
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) + 1);
 	
+	var dataNextQuestion = {
+            event: "Sonraki Soru düğmesine basıldı. |"// + qSummary
+        };
+        logEvent(dataNextQuestion);
 	// Audio SRC
 	//var qid = id + 1;
 	//var q = questionArr[qid];
@@ -269,12 +272,6 @@ $(function () {
     // Next question button
     $("#nextQuestion").click(() => {
         nextQuestion()
-        
-        var data = {
-            event: "Sonraki Soru düğmesine basıldı. |" + qSummary
-        }
-        
-        logEvent(data);
     });
 	
 	// Previous question button
@@ -472,21 +469,22 @@ $(function () {
                                  
     // Soruyu dinle
     $("#listenQuestion").click(function (e) {
-        //let q = questionArr[qid];
+        
 		let audio = document.getElementById("qAudio");
-        var data;
         if (this.className == "pause") {
             $("#listenQuestion").attr("class", "listen");
             $("#listenQuestion").html("Soruyu Dinle");
             audio.pause();
             
-            data = { event: "Soruyu Dinle durduruldu." };
+            var data = { event: "Soruyu Dinle durduruldu." };
+			//logEvent(data);
         } else {
             $("#listenQuestion").attr("class", "pause");
             $("#listenQuestion").html("Durdur");
 			audio.play();
             
-            data = { event: "Soruyu Dinle düğmesine basıldı." };
+            var data = { event: "Soruyu Dinle düğmesine basıldı." };
+			//logEvent(data);
         }
         
         audio.onplaying = function() {
@@ -502,25 +500,25 @@ $(function () {
             $("#listenQuestion").html("Soruyu Dinle");
         };
             
-        //logEvent(data);
     });
     // Seçenekleri dinle
     $("#listenOptions").click(function (e) {
         var audioOptions = document.getElementById("oAudio");
-        var data;
         
         if (this.className == "pause-options") {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
             audioOptions.pause();
             
-            data = { event: "Seçenekleri Dinle durduruldu." };
+            var data = { event: "Seçenekleri Dinle durduruldu." };
+			//logEvent(data);
         } else {
             $("#listenOptions").attr("class", "pause-options");
             $("#listenOptions").html("Durdur");
             audioOptions.play();
             
-            data = { event: "Seçenekleri Dinle düğmesine basıldı." };
+            var data = { event: "Seçenekleri Dinle düğmesine basıldı." };
+			//logEvent(data);
         }
         
         audioOptions.onplaying = function() {
@@ -535,8 +533,6 @@ $(function () {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
         };
-        
-        //logEvent(data);
     });
                                  
     // Sınava Dön düğmesine basıldığında

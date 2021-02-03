@@ -2668,3 +2668,199 @@
 [Sal, 2-Şub-2021, 19:35:51] | INFO | Sınav sayfası görüntülendi. |
 [Sal, 2-Şub-2021, 19:36:13] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
 [Sal, 2-Şub-2021, 19:36:17] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:27:36] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:28:28] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:28:29] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:28:30] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:28:33] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:28:35] | INFO | Soruyu Dinle durduruldu. |
+[Çar, 3-Şub-2021, 12:28:38] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:28:38] | INFO | Seçenekleri Dinle durduruldu. |
+[Çar, 3-Şub-2021, 12:28:41] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:30:30] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:30:33] | INFO | Soruyu Dinle durduruldu. |
+[Çar, 3-Şub-2021, 12:30:35] | INFO | Seçenekleri Dinle düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:30:38] | INFO | Seçenekleri Dinle durduruldu. |
+[Çar, 3-Şub-2021, 12:30:38] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:30:41] | INFO | Soruyu Dinle düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:31:23] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:31:23] | INFO | Soruyu Dinle durduruldu. |
+[Çar, 3-Şub-2021, 12:31:39] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:31:41] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:31:42] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:31:50] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:31:56] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:32:2] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:32:9] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:32:17] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:33:19] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:33:19] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:33:19] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:33:19] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:33:19] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:33:19] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:33:19] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:33:36] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:33:37] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:33:38] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:33:43] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:34:52] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:34:55] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:34:59] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:35:4] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:35:38] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:35:43] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:36:52] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:36:55] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:36:59] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:37:4] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:38:12] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:38:20] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:38:36] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:38:53] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:39:10] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:39:34] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:40:12] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:40:20] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:40:36] | INFO | Sonraki Soru düğmesine basıldı. |Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:41:10] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:42:52] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:42:59] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:43:1] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:43:2] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:43:8] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:43:14] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:43:21] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:43:26] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:43:33] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:45:2] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:45:26] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:46:13] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:46:13] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:46:21] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:46:23] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:46:24] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:46:53] | INFO | Sonraki Soru düğmesine basıldı. |Soru 1, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:47:2] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:47:8] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:47:18] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:47:24] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:48:24] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:48:53] | INFO | Sonraki Soru düğmesine basıldı. |Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:49:2] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:49:8] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:49:18] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:49:24] | INFO | Sonraki Soru düğmesine basıldı. |Soru 4, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:50:24] | INFO | Sonraki Soru düğmesine basıldı. |Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:50:53] | INFO | Sonraki Soru düğmesine basıldı. |Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:51:2] | INFO | Sonraki Soru düğmesine basıldı. |Soru 7, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:51:8] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:51:13] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:51:13] | INFO | Sonraki Soru düğmesine basıldı. |Soru 2, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:51:13] | INFO | Sonraki Soru düğmesine basıldı. |Soru 3, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 12:51:39] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:51:40] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:51:41] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:51:59] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:53:59] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:54:16] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:54:40] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:54:47] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:54:48] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:54:49] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:55:8] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:55:14] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:55:17] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:55:22] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:55:25] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:55:30] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:57:8] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:57:14] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:57:17] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:57:22] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:57:25] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:57:30] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:58:12] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:59:4] | INFO | Server started. |
+[Çar, 3-Şub-2021, 12:59:19] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:59:20] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 12:59:21] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:59:33] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 12:59:37] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:59:43] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:59:47] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:59:50] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 12:59:53] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:1:33] | INFO | Önceki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 13:1:37] | INFO | Önceki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 13:1:43] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:1:47] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:1:50] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:1:53] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:2:14] | INFO | Server started. |
+[Çar, 3-Şub-2021, 13:2:14] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:2:14] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:2:22] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 13:2:23] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 13:2:24] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:2:45] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:3:1] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:3:8] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:3:13] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:3:17] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:3:22] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:3:27] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:5:1] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:5:8] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:5:13] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:5:17] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:5:22] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:5:27] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:10:5] | INFO | Server started. |
+[Çar, 3-Şub-2021, 13:10:19] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 13:10:20] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 13:10:21] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:10:33] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:10:44] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:10:48] | INFO | C seçeneği işaretlendi. |
+[Çar, 3-Şub-2021, 13:10:54] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:10:57] | INFO | B seçeneği işaretlendi. |
+[Çar, 3-Şub-2021, 13:11:4] | INFO | İşaretleme kaldırıldı: B seçeneği |
+[Çar, 3-Şub-2021, 13:12:33] | INFO | C seçeneği işaretlendi. |
+[Çar, 3-Şub-2021, 13:42:14] | INFO | Server started. |
+[Çar, 3-Şub-2021, 13:42:28] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 13:42:30] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 13:42:31] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:42:38] | INFO | Kısayol (Alt + S) tuşuna basıldı. Kalan süre okundu. |
+[Çar, 3-Şub-2021, 13:42:45] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:42:51] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 13:42:54] | INFO | E seçeneği işaretlendi. |
+[Çar, 3-Şub-2021, 13:42:55] | INFO | İşaretleme kaldırıldı: E seçeneği |
+[Çar, 3-Şub-2021, 13:42:57] | INFO | C seçeneği işaretlendi. |
+[Çar, 3-Şub-2021, 13:42:58] | INFO | İşaretleme kaldırıldı: C seçeneği |
+[Çar, 3-Şub-2021, 13:44:45] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:44:51] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 13:44:54] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 13:46:45] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 14:3:55] | INFO | Server started. |
+[Çar, 3-Şub-2021, 14:4:13] | INFO | Button (before the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 14:4:14] | INFO | Button (on the Modal): Sınava Başla düğmesine basıldı. |
+[Çar, 3-Şub-2021, 14:4:15] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 14:4:29] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 14:4:38] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 14:4:40] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 14:4:43] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 2 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 14:4:45] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 14:4:55] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 3 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 14:6:29] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 14:6:38] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 4 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 14:6:40] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 14:6:43] | INFO | Sonraki Soru düğmesine basıldı. | |
+[Çar, 3-Şub-2021, 14:6:45] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 6 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 14:6:55] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 6 — Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 14:8:29] | INFO | Sınav sayfası görüntülendi. |
+[Çar, 3-Şub-2021, 14:8:38] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 1 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 14:8:40] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 2 — Tekrar bakılacak mı: Evet |
+[Çar, 3-Şub-2021, 14:8:43] | INFO | Önceki Soru düğmesine basıldı. Soru 6, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 14:8:45] | INFO | Önceki Soru düğmesine basıldı. Soru 5, Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: Hayır |
+[Çar, 3-Şub-2021, 14:8:55] | INFO | Tekrar Bak düğmesi işaretlendi. Soru 3 — Tekrar bakılacak mı: Evet |
