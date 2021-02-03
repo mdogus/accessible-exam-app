@@ -115,8 +115,8 @@ function nextQuestion() {
 	var dataNextQuestion = {
             event: "Sonraki Soru düğmesine basıldı. |"// + qSummary
         };
-        logEvent(dataNextQuestion);
-	// Audio SRC
+        //logEvent(dataNextQuestion);
+	//Audio SRC
 	//var qid = id + 1;
 	//var q = questionArr[qid];
     //$("#qAudio").removeAttr("src");
