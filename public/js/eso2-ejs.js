@@ -83,18 +83,16 @@ function updateSummary(qid) {
     if (q) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         let label = "Soru " + q.id + ": Tekrar bakmak istiyorum.";
-        let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: " + "Yok" + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
-        var answer = q.answer;
-		var answerLog = answer + " seçeneği işaretlendi.";
-        var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+        let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+		var answerCheckedLog = q.answer + " seçeneği işaretlendi.";
+        //var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
         if($("input[name='qValue']:radio").is(":checked")) {
-			var data = { event: answerLog };
-			//logEvent(data);
+			logEvent(answerCheckedLog);
             $("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sum);
         } else {
-            $("#ismarked").attr("aria-label", label);
+			$("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sumNotChecked);
         }
     }
@@ -240,18 +238,19 @@ var makeRadiosDeselectableByName = function(name) {
     $("input[type='radio']").click(function() {
         var previousValue = $(this).attr('previousValue');
         var name = $(this).attr('name');
-        let qid = getCurrQuestionId();
-		let q = questionArr[qid];
-		var answer = q.answer;
+		let q = getCurrentQuestion();
+		var answerNotCheckedLog = q.answer + " seçeneğinin işareti kaldırıldı.";
 
         if (previousValue == 'checked') {
-			var data = { event: "İşaretleme kaldırıldı: " + answer + " seçeneği" };
-			//logEvent(data);
+			if(typeof (q.answer) !== "undefined") {
+				logEvent(answerNotCheckedLog);
+			}
 			$(this).removeAttr('checked');
             $(this).attr('previousValue', false);
             $(this).prop("checked", false);
             updateSummary(qid);
         } else {
+			//logEvent(q.answer + " seçeneği işaretlendi.");
 			$("input[name="+name+"]:radio").attr('previousValue', false);
             $(this).attr('previousValue', 'checked');
             answerQuestion();
@@ -262,10 +261,12 @@ $(document).ready(() => {
     makeRadiosDeselectableByName("qValue");
 });
 
-function logEvent(data) {
-    $.ajax({
+function logEvent(event) {
+    var data = { event: event };
+	
+	$.ajax({
         type: "POST",
-        url: "/log",
+        url: "/exam",
         data: data
         /*success: function(response) {
             console.log(response);
@@ -297,8 +298,7 @@ $(function () {
 		var q = getCurrentQuestion();
 		var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
-        var data = { event: "Tekrar Bak düğmesi işaretlendi. " + isMarkedLog };
-        logEvent(data);
+        logEvent("Tekrar Bak düğmesi işaretlendi. " + isMarkedLog);
     });
     //Option radios
     //$("#radioA").on("click", answerQuestion);
@@ -473,7 +473,7 @@ $(function () {
 
                                  
     // Soruyu dinle
-    /*$("#listenQuestion").click(function (e) {
+    $("#listenQuestion").click(function (e) {
         
 		let audio = document.getElementById("qAudio");
         if (this.className == "pause") {
@@ -538,7 +538,7 @@ $(function () {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
         };
-    });*/
+    });
                                  
     // Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {

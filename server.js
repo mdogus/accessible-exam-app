@@ -90,6 +90,12 @@ app.post('/log', (req, res) => {
     logger.logger.log("info", body.event);
     let error = {};
 });
+app.post('/exam', (req, res, next) => {
+    const body = req.body;
+    console.log(body.event);
+    logger.logger.log("info", body.event);
+	next();
+});
 
 //Logout
 app.get('/logout', (req, res) => {
