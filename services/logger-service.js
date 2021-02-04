@@ -79,9 +79,9 @@ class LoggerService {
         const logger = winston.createLogger({
             transports: [
                 new winston.transports.Console(),
-                new winston.transports.File({
+                /*new winston.transports.File({
                     filename: `./logs/${route}.txt`
-                }),
+                }),*/
                 new winston.transports.MongoDB({
                     db: "mongodb+srv://user_admin:mKWwIjvbpPU2q8VV@clustereso.qxzto.mongodb.net/eso?retryWrites=true&w=majority",
                     options: { useUnifiedTopology: true },

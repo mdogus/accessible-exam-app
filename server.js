@@ -90,36 +90,6 @@ app.post('/log', (req, res) => {
     logger.logger.log("info", body.event);
     let error = {};
 });
-//Accessibility Settings
-app.post('/access-settings', (req, res) => {
-    console.log(req.body);
-    let newSettings = {
-        "theme": req.body.theme,
-        "fontFamily": req.body.fontfamily,
-        "fontSize": req.body.fontsize
-    };
-    fs.readFile('/config/access-settings.json', 'utf8', (err, data) => {
-        /*if (err) {
-            console.log("Error: Could not read the json file.");
-            return
-        }
-        try {
-            const jsonString = fs.readFileSync('./config/access-settings.json');
-            const settings = JSON.parse(jsonString);
-        } catch(err) {
-          console.log(err)
-          return
-        }*/
-        data = JSON.parse(data);
-        console.log(data);
-        data = JSON.stringify(newSettings);
-        res.end(data);
-        fs.writeFile('/config/access-settings.json', JSON.stringify(data), (err) => {
-            if (err) throw err;
-            console.log('Erişilebilirlik ayarları kaydedildi.');
-        });
-    });
-});
 
 //Logout
 app.get('/logout', (req, res) => {

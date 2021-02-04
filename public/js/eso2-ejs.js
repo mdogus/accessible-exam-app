@@ -2,13 +2,16 @@ var examHour = 1;
 var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
-//logs
-var qSummary = "";
-var isMarkedLog = "";
 
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
     return parseInt(qNumText.split(' ')[1]);
+}
+
+function getCurrentQuestion() {
+	var id = getCurrQuestionId();
+	var q = questionArr[id];
+	return q;
 }
 
 function saveQuestion() {
@@ -20,7 +23,7 @@ function saveQuestion() {
         q.marked = $("#ismarked").is(':checked');
         q.answer = $("input[name=qValue]:checked").val();
         
-        qSummary = sum;
+        var qSummary = sum;
     }
     return qid;
 }
@@ -82,12 +85,12 @@ function updateSummary(qid) {
         let label = "Soru " + q.id + ": Tekrar bakmak istiyorum.";
         let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: " + "Yok" + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         var answer = q.answer;
-		var answerLog = answer ? answer + " seçeneği işaretlendi." : "Seçim kaldırıldı.";
-        isMarkedLog = "Soru " + q.id + " — Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+		var answerLog = answer + " seçeneği işaretlendi.";
+        var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
         if($("input[name='qValue']:radio").is(":checked")) {
 			var data = { event: answerLog };
-			logEvent(data);
+			//logEvent(data);
             $("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sum);
         } else {
@@ -116,6 +119,9 @@ function nextQuestion() {
             event: "Sonraki Soru düğmesine basıldı. |"// + qSummary
         };
         //logEvent(dataNextQuestion);
+var text = $("#qAudio").attr("src").text();
+logEvent(text);
+console.log(text);
 	//Audio SRC
 	//var qid = id + 1;
 	//var q = questionArr[qid];
@@ -199,7 +205,7 @@ function showMarkedQuestionsPage() {
                 $a.html("Soru " + q.id);
 
                 $a.click((e) => {
-					logEvent(data);
+					//logEvent(data);
                     showExamPage();
                     loadQuestion($(e.target).html().split(" ")[1]);
                 });
@@ -240,7 +246,7 @@ var makeRadiosDeselectableByName = function(name) {
 
         if (previousValue == 'checked') {
 			var data = { event: "İşaretleme kaldırıldı: " + answer + " seçeneği" };
-			logEvent(data);
+			//logEvent(data);
 			$(this).removeAttr('checked');
             $(this).attr('previousValue', false);
             $(this).prop("checked", false);
@@ -279,20 +285,19 @@ $(function () {
         prevQuestion();
         
         var data = {
-            event: "Önceki Soru düğmesine basıldı. " + qSummary
+            //event: "Önceki Soru düğmesine basıldı. " + qSummary
         }
         
-        logEvent(data);
+        //logEvent(data);
     });
 	
 	// Mark the question
     $("#ismarked").click(() => {
         markQuestion();
+		var q = getCurrentQuestion();
+		var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
-        var data = {
-            event: "Tekrar Bak düğmesi işaretlendi. " + isMarkedLog
-        }
-        
+        var data = { event: "Tekrar Bak düğmesi işaretlendi. " + isMarkedLog };
         logEvent(data);
     });
     //Option radios
@@ -319,7 +324,7 @@ $(function () {
         changeFontSize(fontSize + 2);
         // resizeImagesAccordingToFontSize(fontSize);
 		var data = { event: "Yazı Boyutu artırıldı: " + newFontSize };
-		logEvent(data);
+		//logEvent(data);
     });
 	// Decrease font size
     $("#decreaseFont").click(function (e) {
@@ -328,7 +333,7 @@ $(function () {
         changeFontSize(fontSize - 2);
         // resizeImagesAccordingToFontSize(fontSize);
 		var data = { event: "Yazı Boyutu azaltıldı: " + newFontSize };
-		logEvent(data);
+		//logEvent(data);
     });
     
     //set font when page loaded
@@ -372,7 +377,7 @@ $(function () {
         $("body").addClass(selectedTheme);
 		
 		var data = { event: "Tema değiştirildi: " + selectedThemeText };
-		logEvent(data);
+		//logEvent(data);
     });
     
     //select font
@@ -390,7 +395,7 @@ $(function () {
         //$("#eso-cont").addClass("font_" + this.selectedIndex);
 		
 		var data = { event: "Yazı Tipi değiştirildi: " + selectedFontText };
-		logEvent(data);
+		//logEvent(data);
     });
 
     // Remaining time
@@ -414,7 +419,7 @@ $(function () {
 		if(event.altKey === true){
 			if(event.keyCode == 69){
 				var data = { event: "Kısayol (Alt + E) tuşuna basıldı. Erişilebilirlik Ayarları sayfası görüntülendi." };
-				logEvent(data);
+				//logEvent(data);
 				showAccessibilityPage();
 			}
 		}
@@ -426,7 +431,7 @@ $(function () {
                 //let timeAlert = $("#remainingTimeLabel").text();
 				//$("<p role='alert'>$(timeAlert)</p>").appendTo(document.body);
 			var data = { event: "Kısayol (Alt + S) tuşuna basıldı. Kalan süre okundu." };
-			logEvent(data);
+			//logEvent(data);
                 $("#remainingTimeLabel").attr("role", "alert");
                 setTimeout(function(){
                     $("#remainingTimeLabel").removeAttr("role");
@@ -439,7 +444,7 @@ $(function () {
         if(event.altKey === true){
             if(event.keyCode == 71){
 				var data = { event: "Kısayol (Alt + G) tuşuna basıldı. Gözden Geçir sayfası görüntülendi." };
-				logEvent(data);
+				//logEvent(data);
 				showMarkedQuestionsPage();
             }
         }
@@ -449,26 +454,26 @@ $(function () {
     // Tekrar Bakılacak Sorular düğmesine basıldığında
     $("#markedQuestionsButton").click(function (e) {
         var data = { event: "Gözden Geçir düğmesine basıldı." };
-        logEvent(data);
+        //logEvent(data);
 		showMarkedQuestionsPage();
     });
                                  
     // Erişilebilirlik düğmesi
     $("#accessibilityButton").click(function (e) {
 		var data = { event: "Erişilebilirlik düğmesine basıldı." };    
-        logEvent(data);
+        //logEvent(data);
 		showAccessibilityPage();
     });
 	//Hidden accessibility button
                                  $("#hiddenAccessibilityButton").click(function (e) {
 									 var data = { event: "Erişilebilirlik (hidden) düğmesine basıldı." };
-                                     logEvent(data);
+                                     //logEvent(data);
 									 showAccessibilityPage();
                                  });
 
                                  
     // Soruyu dinle
-    $("#listenQuestion").click(function (e) {
+    /*$("#listenQuestion").click(function (e) {
         
 		let audio = document.getElementById("qAudio");
         if (this.className == "pause") {
@@ -533,19 +538,19 @@ $(function () {
             $("#listenOptions").attr("class", "listen-options");
             $("#listenOptions").html("Seçenekleri Dinle");
         };
-    });
+    });*/
                                  
     // Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
 		var data = { event: "Sınava Dön düğmesine basıldı (Gözden Geçir sayfasında)." };
-		logEvent(data);
+		//logEvent(data);
         showExamPage();
         document.getElementById('qSummaryDiv').focus();
     });
     //Erişilebilirlik sayfasında Sınava Dön düğmesine basıldığında
     $("#accPageBackToExamButton").click(function (e) {
         var data = { event: "Sınava Dön düğmesine basıldı (Erişilebilirlik Ayarları sayfasında)." };
-		logEvent(data);
+		//logEvent(data);
 		showExamPage();
         document.getElementById('qSummaryDiv').focus();
     });
@@ -564,7 +569,7 @@ $(function () {
 
 $(document).ready(() => {
 	var dataDocReady = { event: "Sınav sayfası görüntülendi." };
-	logEvent(dataDocReady);
+	//logEvent(dataDocReady);
 	// Get the modal
         var modal = document.getElementById("finishExamModal");
         // Get the button that opens the modal
@@ -575,7 +580,7 @@ $(document).ready(() => {
         // When the user clicks on the button, open the modal
         $("#finishButton").click(() => {
 			var data = { event: "Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz?" };
-			logEvent(data);
+			//logEvent(data);
             modal.style.display = "block";
 			$(".container").attr("aria-hidden","true");
 			
@@ -601,7 +606,7 @@ $(document).ready(() => {
         // When the user clicks on No button, close the modal
         $("#modalNoButton").click(function() {
 			var data = { event: "Hayır düğmesine basıldı. Modal kapatıldı." };
-			logEvent(data);
+			//logEvent(data);
             $("#finishExamModal").css("display","none");
 			$(".container").attr("aria-hidden","false");
 			
@@ -627,7 +632,7 @@ $(document).ready(() => {
 		// When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             var data = { event: "Kapat (x) düğmesine basıldı. Modal kapatıldı." };
-			logEvent(data);
+			//logEvent(data);
 			modal.style.display = "none";
 			$(".container").attr("aria-hidden","false");
 			
@@ -653,7 +658,7 @@ $(document).ready(() => {
 		// When user clicks Yes button
 		$("#modalYesButton").click(() => {
 			var data = { event: "Evet düğmesine basıldı (Modal). Sınav tamamlandı." };
-			logEvent(data);
+			//logEvent(data);
 			$("#finishExamModal").css("display","none");
 			$(".page-title").css("display", "none");
 			$(".container").css("display", "none");
