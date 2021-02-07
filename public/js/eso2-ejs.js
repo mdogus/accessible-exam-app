@@ -2,6 +2,9 @@ var examHour = 1;
 var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
+var qSummary;
+var timer;
+var qTimerValue = 0;
 
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
@@ -23,12 +26,24 @@ function saveQuestion() {
         q.marked = $("#ismarked").is(':checked');
         q.answer = $("input[name=qValue]:checked").val();
         
-        var qSummary = sum;
+        qSummary = sum;
     }
     return qid;
 }
 
 function loadQuestion(qid, focus) {
+	setInterval(() => {
+		qTimerValue += 1000;
+        var minutes = Math.floor((qTimerValue % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((qTimerValue % (1000 * 60)) / 1000);
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+		
+        timer = minutes + ':' + seconds;
+
+    }, 1000);
+
 
     $('input[name="qValue"]').prop('checked', false);
     $('#ismarked').prop('checked', false);
@@ -113,20 +128,11 @@ function nextQuestion() {
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) + 1);
 	
-	var dataNextQuestion = {
-            event: "Sonraki Soru düğmesine basıldı. |"// + qSummary
-        };
-        //logEvent(dataNextQuestion);
-var text = $("#qAudio").attr("src").text();
-logEvent(text);
-console.log(text);
-	//Audio SRC
-	//var qid = id + 1;
-	//var q = questionArr[qid];
-    //$("#qAudio").removeAttr("src");
-	//$("#oAudio").removeAttr("src");
-    //$("#qAudio").attr("src", q.qAudioSrc);
-	//$("#oAudio").attr("src", q.oAudioSrc);
+	var nextQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi.";
+	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + timer;
+    logEvent(nextQuestionLog);
+	logEvent(summaryLog);
+	qTimerValue = 0;
 }
 
 function prevQuestion() {
@@ -134,13 +140,11 @@ function prevQuestion() {
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) - 1);
 	
-	// Audio SRC
-	//var qid = id - 1;
-	//var q = questionArr[qid];
-    //$("#qAudio").removeAttr("src");
-	//$("#oAudio").removeAttr("src");
-    //$("#qAudio").attr("src", q.qAudioSrc);
-	//$("#oAudio").attr("src", q.oAudioSrc);
+	var prevQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi.";
+	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + timer;
+    logEvent(prevQuestionLog);
+	logEvent(summaryLog);
+	qTimerValue = 0;
 }
 
 var fontSize = 16;
