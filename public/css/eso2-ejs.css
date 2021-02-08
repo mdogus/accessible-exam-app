@@ -494,7 +494,7 @@ butto
     color: black;
 }
 
-.marked-questions-div a {
+.marked-questions-div a, .unanswered-questions-div a {
     text-decoration: none !important;
 }
 
@@ -539,7 +539,7 @@ body.theme1 {
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme1 #marked-questions-title, .theme1 #accessibility-title, .theme1 #finish-span {
+.theme1 #marked-questions-title, .theme1 #unanswered-questions-title, .theme1 #accessibility-title, .theme1 #finish-span {
     background-color: black;
     color: white;
     /*border: 2px solid white;*/
@@ -625,7 +625,7 @@ body.theme-sepia {
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme-sepia #marked-questions-title, .theme-sepia #accessibility-title, .theme-sepia #finish-span {
+.theme-sepia #marked-questions-title, .theme-sepia #unanswered-questions-title, .theme-sepia #accessibility-title, .theme-sepia #finish-span {
     background-color: black;
     color: #f7e6d4;
 }
@@ -707,7 +707,7 @@ body.theme-lime {
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme-lime #marked-questions-title, .theme-lime #accessibility-title, .theme-lime #finish-span {
+.theme-lime #marked-questions-title, .theme-lime #unanswered-questions-title, .theme-lime #accessibility-title, .theme-lime #finish-span {
     background-color: black;
     color: #4dff4d;
 }
@@ -789,7 +789,7 @@ body.theme-pink {
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme-pink #marked-questions-title, .theme-pink #accessibility-title, .theme-pink #finish-span {
+.theme-pink #marked-questions-title, .theme-pink #unanswered-questions-title, .theme-pink #accessibility-title, .theme-pink #finish-span {
     background-color: black;
     color: #f6ded5;
 }
@@ -871,7 +871,7 @@ body.theme-yellow {
     color: black;
     /*border: 0px solid yellow;*/
 }
-.theme-yellow #marked-questions-title, .theme-yellow #accessibility-title, .theme-yellow #finish-span {
+.theme-yellow #marked-questions-title, .theme-yellow #unanswered-questions-title, .theme-yellow #accessibility-title, .theme-yellow #finish-span {
     background-color: black;
     color: #ffff66;
 }
@@ -951,7 +951,7 @@ body.theme2{
     color: white;
     /*border: 0px solid yellow;*/
 }
-.theme2 #marked-questions-title, .theme2 #accessibility-title, .theme2 #finish-span {
+.theme2 #marked-questions-title, .theme2 #unanswered-questions-title, .theme2 #accessibility-title, .theme2 #finish-span {
     background-color: black;
     color: white;
     border: 2px solid white;
@@ -1032,7 +1032,7 @@ body.theme3 {
     color: yellow;
     /*border: 0px solid yellow;*/
 }
-.theme3 #marked-questions-title, .theme3 #accessibility-title, .theme3 #finish-span {
+.theme3 #marked-questions-title, .theme3 #unanswered-questions-title, .theme3 #accessibility-title, .theme3 #finish-span {
     background-color: black;
     color: yellow;
     border: 2px solid yellow;
@@ -1110,7 +1110,7 @@ body.theme4{
     color: #80ff80;
     /*border: 0px solid yellow;*/
 }
-.theme4 #marked-questions-title, .theme4 #accessibility-title, .theme4 #finish-span {
+.theme4 #marked-questions-title, .theme4 #unanswered-questions-title, .theme4 #accessibility-title, .theme4 #finish-span {
     background-color: black;
     color: #80ff80;
     border: 2px solid #66ff66;
@@ -1157,7 +1157,7 @@ body.theme4{
     width: 100%;
 }
 
-.marked-questions-div li {
+.marked-questions-div li, .unanswered-questions-div li {
     list-style: none;
 }
 
@@ -1274,6 +1274,13 @@ button.back-to-test:before {
     padding-left: 10px;
     padding-right: 20px;
     width: 30px;
+}
+button.back-to-homepage:after {
+    content: '\f101';
+    font-family: FontAwesome;
+    font-size: 28px;
+    font-weight: normal;
+    padding-left: 10px;
 }
 button.decrease-font, button.increase-font {
     padding: 4px;
@@ -1428,7 +1435,7 @@ input:checked + .slider .off {
     padding-bottom: 150px;
     padding-right: 20px;
 }
-#marked-questions-title, #accessibility-title, #finish-span {
+#marked-questions-title, #unanswered-questions-title, #accessibility-title, #finish-span {
     padding: 4px 15px;
 }
 .accessibility-div {

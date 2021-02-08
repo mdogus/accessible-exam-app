@@ -176,8 +176,12 @@
         
         <!-- Marked Questions Page -->
         <div class="marked-questions-page" style="display: none;">
-            <div id="marked-questions-title" tabindex="1" role="heading" style="font-weight:bold;">TEKRAR BAKILACAK SORULAR</div>
+            <!-- marked questions div -->
+			<div id="marked-questions-title" tabindex="1" role="heading" style="font-weight:bold;">TEKRAR BAKILACAK SORULAR</div>
             <div class="marked-questions-div"></div>
+			<!-- unanswered questions div -->
+			<div id="unanswered-questions-title" tabindex="1" role="heading" style="font-weight:bold;">CEVAPLANMAYAN SORULAR</div>
+            <div class="unanswered-questions-div"></div>
             <div class="bottom-bar">
                 <button id="backToExamButton" class="btn-footer back-to-test">Sınava Dön</button>
             </div>
@@ -251,7 +255,8 @@
         </div>
         <!-- Finish Page -->
         <div class="finish-page" style="display: none;">
-            <span id="finish-span" tabindex="1" style="font-weight:bold;">Sınavınız Tamamlandı. Katılımınız için teşekkür ederiz.</span>
+            <p id="finish-span" tabindex="1" style="font-weight:bold;"></p>
+			<button class="back-to-homepage" onclick="location.href='/';" aria-label="Ana Sayfa'ya Dön">Ana Sayfa</button>
         </div>
     </div>
 

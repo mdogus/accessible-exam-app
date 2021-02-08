@@ -3,8 +3,13 @@ var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
 var qSummary;
-var timer;
+var markedQuestionsCount = 0;
+var unansweredQuestionsCount = 0;
+// Timers
+var qTimer;
 var qTimerValue = 0;
+var examTimer;
+var examTimerValue = 0;
 
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
@@ -32,6 +37,7 @@ function saveQuestion() {
 }
 
 function loadQuestion(qid, focus) {
+	// question timer
 	setInterval(() => {
 		qTimerValue += 1000;
         var minutes = Math.floor((qTimerValue % (1000 * 60 * 60)) / (1000 * 60));
@@ -40,12 +46,11 @@ function loadQuestion(qid, focus) {
             seconds = "0" + seconds;
         }
 		
-        timer = minutes + ':' + seconds;
+        qTimer = minutes + ':' + seconds;
 
     }, 1000);
-
-
-    $('input[name="qValue"]').prop('checked', false);
+    
+	$('input[name="qValue"]').prop('checked', false);
     $('#ismarked').prop('checked', false);
     // $('#ismarked').removeAttr('checked');
 
@@ -129,7 +134,7 @@ function nextQuestion() {
     loadQuestion(parseInt(id) + 1);
 	
 	var nextQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi.";
-	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + timer;
+	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + qTimer;
     logEvent(nextQuestionLog);
 	logEvent(summaryLog);
 	qTimerValue = 0;
@@ -141,7 +146,7 @@ function prevQuestion() {
     loadQuestion(parseInt(id) - 1);
 	
 	var prevQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi.";
-	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + timer;
+	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + qTimer;
     logEvent(prevQuestionLog);
 	logEvent(summaryLog);
 	qTimerValue = 0;
@@ -192,27 +197,18 @@ function showMarkedQuestionsPage() {
     $(".accessibility-page").css("display", "none");
     $("#accessibilityButtonDiv").css("display", "none");
     $(".hidden-accessibility").css("display", "none");
-    
     document.getElementById('marked-questions-title').focus();
 	
-	$(".marked-questions-div").html("");
-       
-        var $ul = $("<ul>").appendTo($(".marked-questions-div"));
-        questionArr.forEach(function (q) {
-            if (q.marked) {
-				var selectedQuestion = "Soru " + q.id;
-				var data = { event: selectedQuestion + " düğmesine basıldı. " + selectedQuestion + " görüntülendi." };
-                var $li = $('<li >').appendTo($ul);
-                var $a = $('<a  role="button" href="#' + q.id + '" >').appendTo($li);
-                $a.html("Soru " + q.id);
-
-                $a.click((e) => {
-					//logEvent(data);
-                    showExamPage();
-                    loadQuestion($(e.target).html().split(" ")[1]);
-                });
-            }
-        });
+	//$(".marked-questions-div").html("");
+	//$(".unanswered-questions-div").html("");
+	listMarkedQuestions();
+	listUnansweredQuestions();
+	if(markedQuestionsCount === 0) {
+		$(".marked-questions-div").html("Tekrar bakılacak soru bulunmamaktadır.");
+	}
+	if(unansweredQuestionsCount === 0) {
+		$(".unanswered-questions-div").html("Cevaplanmayan soru bulunmamaktadır.");
+	}
 }
 
 function showExamPage() {
@@ -224,6 +220,49 @@ function showExamPage() {
     $(".hidden-accessibility").css("display", "block");
     
     document.getElementById('qSummaryDiv').focus();
+}
+// List marked questions
+function listMarkedQuestions() {
+	markedQuestionsCount = 0;
+	$(".marked-questions-div").html("");
+	var $ul = $("<ul>").appendTo($(".marked-questions-div"));
+	questionArr.forEach(function (q) {
+            if (q.marked) {
+				markedQuestionsCount += 1;
+				var selectedMarkedQuestion = "Soru " + q.id;
+				var selectedMarkedQuestionLog = "Tekrar Bakılacak Sorular: " + selectedMarkedQuestion + " düğmesine basıldı. " + selectedMarkedQuestion + " görüntülendi.";
+                var $li = $('<li>').appendTo($ul);
+                var $a = $('<a  role="button" href="#' + q.id + '">').appendTo($li);
+                $a.html("Soru " + q.id);
+
+                $a.click((e) => {
+					logEvent(selectedMarkedQuestionLog);
+                    showExamPage();
+                    loadQuestion($(e.target).html().split(" ")[1]);
+                });
+            }
+        });
+}// List unanswered questions
+function listUnansweredQuestions() {
+	unansweredQuestionsCount = 0;
+	$(".unanswered-questions-div").html("");
+	var $ul = $("<ul>").appendTo($(".unanswered-questions-div"));
+	questionArr.forEach(function (q) {
+			if (!q.answer) {
+				unansweredQuestionsCount += 1;
+				var selectedUnansweredQuestion = "Soru " + q.id;
+				var selectedUnansweredQuestionLog = "Cevaplanmamış Sorular: " + selectedUnansweredQuestion + " düğmesine basıldı. " + selectedUnansweredQuestion + " görüntülendi.";
+				var $li = $('<li>').appendTo($ul);
+                var $a = $('<a  role="button" href="#' + q.id + '">').appendTo($li);
+                $a.html("Soru " + q.id);
+
+                $a.click((e) => {
+					logEvent(selectedUnansweredQuestionLog);
+                    showExamPage();
+                    loadQuestion($(e.target).html().split(" ")[1]);
+                });
+            }
+        });
 }
 //show accessibility page
 function showAccessibilityPage() {
@@ -252,7 +291,8 @@ var makeRadiosDeselectableByName = function(name) {
 			$(this).removeAttr('checked');
             $(this).attr('previousValue', false);
             $(this).prop("checked", false);
-            updateSummary(qid);
+            q.answer = undefined;
+			updateSummary(qid);
         } else {
 			//logEvent(q.answer + " seçeneği işaretlendi.");
 			$("input[name="+name+"]:radio").attr('previousValue', false);
@@ -280,7 +320,21 @@ function logEvent(event) {
 }
 
 $(function () {
-    // Next question button
+	// Exam timer
+    setInterval(() => {
+		examTimerValue += 1000;
+        var minutes = Math.floor((examTimerValue % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((examTimerValue % (1000 * 60)) / 1000);
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+		
+        examTimer = minutes + ':' + seconds;
+
+    }, 1000);
+
+	
+	// Next question button
     $("#nextQuestion").click(() => {
         nextQuestion()
     });
@@ -661,13 +715,18 @@ $(document).ready(() => {
 		
 		// When user clicks Yes button
 		$("#modalYesButton").click(() => {
-			var data = { event: "Evet düğmesine basıldı (Modal). Sınav tamamlandı." };
-			//logEvent(data);
+			var modalYesLog = "Evet düğmesine basıldı (Modal). Sınav tamamlandı.";
+			var examTimerLog = "Sınav tamamlama süresi: " + examTimer;
+			var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + qTimer;
+			logEvent(modalYesLog);
+			logEvent(summaryLog);
+			logEvent(examTimerLog);
 			$("#finishExamModal").css("display","none");
 			$(".page-title").css("display", "none");
 			$(".container").css("display", "none");
 			$(".marked-questions-page").css("display", "none");
 			$(".finish-page").css("display", "block");
+			$("#finish-span").html("Sınav tamamlandı. Katılımınız için teşekkür ederiz.<br>Sınavı tamamlama süreniz: " + examTimer);
 
 			document.getElementById('finish-span').focus();
 		});
