@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+
+<header class="container-fluid" style="padding: 0;">
+    <%- include('../partials/header-user-home'); %>
+</header>
+
+<main class="container-fluid">
+<div class="row">
+    <div class="col-sm-8">
+        <div class="jumbotron">
+            <h1 class="display-4 font-raleway" style="font-weight:bold;">Kullanım Kılavuzu</h1>
+            <h5 class="font-raleway" style="font-weight:bold;">Sınava başlamadan önce;</h5>
+			<ul>
+				<li>
+					<p class="lead font-raleway">Sisteme kayıtlı e-posta adresi ve parola ile giriş yapınız.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway">Kişisel Bilgi Formu'nu doldurunuz.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway">Kullanım Kılavuzu'nu yeniden gözden geçiriniz.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway">Ana Sayfa'da Sınava Başla düğmesine basınız. Erişilebilirlik Ayarları diyalog penceresi açılacaktır. Açılan pencerede sınav esnasında kullanmak istediğiniz tema rengi, yazı tipi ve yazı boyutunu seçiniz.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway">Erişilebilirlik Ayarları penceresinde Sınava Başla düğmesine basarak sınava başlayınız.</p>
+				</li>
+			</ul>
+			<h5 class="font-raleway" style="font-weight:bold;">Sınav esnasında;</h5>
+			<ul>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold">Erişilebilirlik düğmesi:</span> Tema rengi, yazı tipi ve yazı boyutunun değiştirilebileceği Erişilebilirlik Ayarları sayfasına yönlendirir.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold">Soru Özeti:</span> Ekran okuyucu kullanıcıları için işaretlenen seçenek ve Tekrar Bakılacak düğmesinin işaretlenip işaretlenmediğine ilişkin bilgi yer almaktadır.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold">Önceki ve Sonraki düğmeleri:</span> Sorular arasında geçiş yapmayı sağlar.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold">Tekrar Bak düğmesi:</span> Evet olarak işaretlenen sorulara daha sonra tekrar bakmayı sağlar.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold">Soruyu Dinle ve Seçenekleri Dinle düğmesi:</span> İnsan sesiyle seslendirilen soru metni ve seçenekleri dinlemeyi sağlar.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold">Gözden Geçir düğmesi:</span> Tekrar Bakılacak Sorular ve Cevaplanmayan Sorular'ın yer aldığı Gözden Geçir sayfasına yönlendirir. Tekrar Bak düğmesi işaretlenen sorular Tekrar Bakılacak Sorular başlığının, boş bırakılan sorular ise Cevaplanmayan Sorular başlığının altında listelenmektedir.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold">Sınavı Bitir düğmesi:</span> Sınavı tamamlamaktadır. Düğmeye basıldığında ekranda "Sınavı bitirmek istediğinizden emin misiniz?" uyarısı görüntülenecektir. Açılan pencerede "Evet" düğmesine basıldığında sınav tamamlanacaktır.</p>
+				</li>
+			</ul>
+			<h5 class="font-raleway" style="font-weight:bold;">Uygulamaya Özgü Klavye Kısayol Tuşları</h5>
+			<ul>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold font-italic">Alt + E:</span> Erişilebilirlik Ayarları sayfasını görüntüler.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold font-italic">Alt + G:</span> Gözden Geçir sayfasını görüntüler.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold font-italic">Alt + K:</span> Ekran okuyucu kullanıcıları için kalan süreyi seslendirir.</p>
+				</li>
+				<li>
+					<p class="lead font-raleway"><span class="font-weight-bold font-italic">Alt + S:</span> Ekran okuyucu kullanıcıları için soru özetini seslendirir.</p>
+				</li>
+			</ul>
+        </div>
+    </div>
+
+    <%- include('../partials/sidebar'); %>
+
+</div>
+</main>
+
+<footer class="container-fluid fixed-bottom">
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

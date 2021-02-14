@@ -1,6 +1,6 @@
 <body class="theme-pink">
-    
-    <div class="sr-only" aria-hidden="true">
+	
+	<div class="sr-only" aria-hidden="true">
         <p id="pTheme"><%= theme %></p>
         <p id="pFont"><%= font %></p>
         <p id="pFontSize"><%= fontSize %></p>
@@ -17,11 +17,17 @@
                 <span id="remainingTime" class="" aria-hidden="true"></span>
                 <span id="remainingTimeSpan" aria-hidden="true"></span>
                 <div class="hiddenLink">
-                    <span id="remainingTimeLabel" aria-hidden="false" role="heading"></span>
+                    <span id="remainingTimeLabel" tabindex="1" aria-hidden="false" role="heading"></span>
                 </div>
             </div>
+			<!-- RemainingTime Alert -->
+			<div id="alertRemainingTimeDiv" class="sr-only" role="alert"></div>
         </div>
         
+		<!-- QSummary Alert -->
+		<div id="alertQSummaryDiv" class="sr-only" role="alert"></div>
+		
+		
         <!-- .container -->
         <div class="container">
             <div>
@@ -152,8 +158,8 @@
         </div>
         
         <!-- The Modal -->
-        <div id="finishExamModal" class="modal" tabindex="-1"  aria-labelledby="finishExamModalLabel" >
-          <div >
+        <div id="finishExamModal" class="modal" tabindex="1"  aria-labelledby="finishExamModalLabel" >
+          <div>
           <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
@@ -167,7 +173,8 @@
               <p aria-hidden="true">Sınavı bitirmek istediğinizden emin misiniz?</p>
             </div>
             <div class="modal-footer">
-              <button id="modalYesButton">Evet</button>
+              <hr aria-hidden="true">
+			  <button id="modalYesButton">Evet</button>
 			  <button id="modalNoButton">Hayır</button>
             </div>
           </div>
@@ -256,7 +263,7 @@
         <!-- Finish Page -->
         <div class="finish-page" style="display: none;">
             <p id="finish-span" tabindex="1" style="font-weight:bold;"></p>
-			<button class="back-to-homepage" onclick="location.href='/';" aria-label="Ana Sayfa'ya Dön">Ana Sayfa</button>
+			<button id="backToHomePageButton" class="back-to-homepage" aria-label="Ana Sayfa'ya Dön">Ana Sayfa</button>
         </div>
     </div>
 

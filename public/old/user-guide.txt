@@ -1,0 +1,29 @@
+Kullanım Kılavuzu
+Sınava başlamadan önce;
+• Sisteme kayıtlı e-posta adresi ve parola ile giriş yapınız. 
+• Kişisel Bilgi Formu'nu doldurunuz.
+• Kullanım Kılavuzu'nu tekrar okuyunuz.
+• Ana Sayfa'da Sınava Başla düğmesine basınız. Erişilebilirlik Ayarları diyalog penceresi açılacaktır. Açılan pencerede sınav esnasında kullanmak istediğiniz tema rengi, yazı tipi ve yazı boyutunu seçiniz. 
+• Sınava Başla düğmesine basarak sınava başlayınız. 
+Sınav esnasında;
+• Erişilebilirlik düğmesi: Tema rengi, yazı tipi ve yazı boyutunun değiştirilebileceği Erişilebilirlik Ayarları sayfasına yönlendirir.
+• Soru Özeti: Ekran okuyucu kullanıcıları için işaretlenen seçenek ve Tekrar Bakılacak düğmesinin işaretlenip işaretlenmediğine ilişkin bilgi yer almaktadır.
+• Önceki ve Sonraki düğmeleri: Sorular arasında geçiş yapmayı sağlar.
+• Tekrar Bak düğmesi: Evet olarak işaretlenen sorulara daha sonra tekrar bakmayı sağlar. 
+• Soruyu Dinle ve Seçenekleri Dinle düğmesi: İnsan sesiyle seslendirilen soru metni ve seçenekleri dinlemeyi sağlar.
+• Gözden Geçir düğmesi: Tekrar Bakılacak Sorular ve Cevaplanmayan Sorular'ın yer aldığı Gözden Geçir sayfasına yönlendirir. Tekrar Bak düğmesi işaretlenen sorular Tekrar Bakılacak Sorular başlığının, boş bırakılan sorular ise Cevaplanmayan Sorular başlığının altında listelenmektedir.
+• Sınavı Bitir düğmesi: Sınavı tamamlamaktadır. Düğmeye basıldığında ekranda "Sınavı bitirmek istediğinizden emin misiniz?" uyarısı görüntülenecektir. Açılan pencerede "Evet" düğmesine basıldığında sınav tamamlanmaktadır.
+
+Uygulamaya Özgü Klavye Kısayol Tuşları
+• Alt + E: Erişilebilirlik Ayarları sayfasını görüntüler.
+• Alt + G: Gözden Geçir sayfasını görüntüler.
+• Alt + K: Ekran okuyucu kullanıcıları için kalan süreyi seslendirir.
+• Alt + Ö: Ekran okuyucu kullanıcıları için soru özetini seslendirir.
+
+Ekran Okuyucu Kullanıcıları İçin Önemli Bilgiler
+• Düğmeler (butonlar): Soruyu Dinle, Seçenekleri Dinle, Erişilebilirlik Ayarları, Gözden Geçir, Sınavı Bitir. 
+Düğmelere JAWS, NVDA ve VoiceOver'da B kısayol tuşuyla erişim sağlanabilmektedir.
+• Onay Kutusu: Tekrar Bak düğmesi. 
+Onay kutularına JAWS'ta ve NVDA'da X, VoiceOver'da C kısayol tuşuyla erişim sağlanabilmektedir.
+• Başlıklar: Kalan Süre, Soru Özeti. 
+Başlıklara JAWS, NVDA ve VoiceOver'da H kısayol tuşuyla erişim sağlanabilmektedir.

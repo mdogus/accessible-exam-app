@@ -1,8 +1,12 @@
+//cd Documents/eso/thawing-bayou-91800
 var examHour = 1;
 var examMinute = 30;
 var numOfGenQuestions = 11;
 var countdowntime = 1000 * 60 * 30;
 var qSummary;
+// alert text
+var alertQSummaryText;
+// counts
 var markedQuestionsCount = 0;
 var unansweredQuestionsCount = 0;
 // Timers
@@ -50,6 +54,7 @@ function loadQuestion(qid, focus) {
 
     }, 1000);
     
+	// Display question
 	$('input[name="qValue"]').prop('checked', false);
     $('#ismarked').prop('checked', false);
     // $('#ismarked').removeAttr('checked');
@@ -107,7 +112,7 @@ function updateSummary(qid) {
 		var answerCheckedLog = q.answer + " seçeneği işaretlendi.";
         //var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
-        if($("input[name='qValue']:radio").is(":checked")) {
+        if ($("input[name='qValue']:radio").is(":checked")) {
 			logEvent(answerCheckedLog);
             $("#ismarked").attr("aria-label", label);
             $("#qSummaryDiv").text(sum);
@@ -145,7 +150,7 @@ function prevQuestion() {
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) - 1);
 	
-	var prevQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi.";
+	var prevQuestionLog = "Önceki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi.";
 	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + qTimer;
     logEvent(prevQuestionLog);
 	logEvent(summaryLog);
@@ -187,7 +192,6 @@ function getFontSize() {
     }
     return parseInt(fontText);
 }
-
 
 function showMarkedQuestionsPage() {
     $(".page-title").css("display", "block");
@@ -294,7 +298,6 @@ var makeRadiosDeselectableByName = function(name) {
             q.answer = undefined;
 			updateSummary(qid);
         } else {
-			//logEvent(q.answer + " seçeneği işaretlendi.");
 			$("input[name="+name+"]:radio").attr('previousValue', false);
             $(this).attr('previousValue', 'checked');
             answerQuestion();
@@ -320,6 +323,10 @@ function logEvent(event) {
 }
 
 $(function () {
+	// Alerts
+	$("#alertQSummaryDiv").hide();
+	$("#alertRemainingTimeDiv").hide();
+	
 	// Exam timer
     setInterval(() => {
 		examTimerValue += 1000;
@@ -332,7 +339,6 @@ $(function () {
         examTimer = minutes + ':' + seconds;
 
     }, 1000);
-
 	
 	// Next question button
     $("#nextQuestion").click(() => {
@@ -342,12 +348,6 @@ $(function () {
 	// Previous question button
     $("#prevQuestion").click(() =>  {
         prevQuestion();
-        
-        var data = {
-            //event: "Önceki Soru düğmesine basıldı. " + qSummary
-        }
-        
-        //logEvent(data);
     });
 	
 	// Mark the question
@@ -358,7 +358,8 @@ $(function () {
         
         logEvent("Tekrar Bak düğmesi işaretlendi. " + isMarkedLog);
     });
-    //Option radios
+    
+	//Option radios
     //$("#radioA").on("click", answerQuestion);
     //$("#radioB").on("click", answerQuestion);
     //$("#radioC").on("click", answerQuestion);
@@ -378,20 +379,30 @@ $(function () {
     // Increase font size
     $("#increaseFont").click(function (e) {
         var fontSize = getFontSize();
-		var newFontSize = fontSize + 2;
+		var newFontSize;
         changeFontSize(fontSize + 2);
         // resizeImagesAccordingToFontSize(fontSize);
-		var data = { event: "Yazı Boyutu artırıldı: " + newFontSize };
-		//logEvent(data);
+		if (fontSize < 36) {
+			newFontSize = fontSize + 2;
+		} else if (fontSize == 36) {
+			newFontSize = 36;
+		}
+		var increaseFontSizeLog = "Yazı Boyutu artırıldı: " + newFontSize;
+		logEvent(increaseFontSizeLog);
     });
 	// Decrease font size
     $("#decreaseFont").click(function (e) {
         var fontSize = getFontSize();
-		var newFontSize = fontSize - 2;
+		var newFontSize;
         changeFontSize(fontSize - 2);
         // resizeImagesAccordingToFontSize(fontSize);
-		var data = { event: "Yazı Boyutu azaltıldı: " + newFontSize };
-		//logEvent(data);
+		if (fontSize > 16) {
+			newFontSize = fontSize - 2;
+		} else if (fontSize == 16) {
+			newFontSize = 16;
+		}
+		var decreaseFontSizeLog = "Yazı Boyutu azaltıldı: " + newFontSize;
+		logEvent(decreaseFontSizeLog);
     });
     
     //set font when page loaded
@@ -421,7 +432,7 @@ $(function () {
         $('#fontSize').html(fontSize + " px");
     });
     
-    //theme
+    // theme
     $(document).ready(() => {
         let selectedTheme = $('#pTheme').html();
         $("body").removeClass();
@@ -434,8 +445,8 @@ $(function () {
         $("body").removeClass();
         $("body").addClass(selectedTheme);
 		
-		var data = { event: "Tema değiştirildi: " + selectedThemeText };
-		//logEvent(data);
+		var selectedThemeLog = "Tema değiştirildi: " + selectedThemeText;
+		logEvent(selectedThemeLog);
     });
     
     //select font
@@ -452,8 +463,8 @@ $(function () {
         $("#eso-cont").addClass(selectedFont);
         //$("#eso-cont").addClass("font_" + this.selectedIndex);
 		
-		var data = { event: "Yazı Tipi değiştirildi: " + selectedFontText };
-		//logEvent(data);
+		var selectedFontLog = "Yazı Tipi değiştirildi: " + selectedFontText;
+		logEvent(selectedFontLog);
     });
 
     // Remaining time
@@ -472,28 +483,39 @@ $(function () {
     }, 1000);
     
     // key bind
-	//Alt + S: Kalan süre
-    $(document).keydown(function(event){
-		if(event.altKey === true){
-			if(event.keyCode == 69){
-				var data = { event: "Kısayol (Alt + E) tuşuna basıldı. Erişilebilirlik Ayarları sayfası görüntülendi." };
-				//logEvent(data);
+	// Alt + E: Erişilebilirlik ayarları
+    $(document).keydown(function(event) {
+		if (event.altKey === true){
+			if (event.keyCode == 69){
+				var shortcutAltPlusELog = "Alt + E kısayol tuşuna basıldı. Erişilebilirlik Ayarları sayfası görüntülendi.";
+				logEvent(shortcutAltPlusELog);
 				showAccessibilityPage();
 			}
 		}
 	});
-    //Alt + S: Kalan süre
+	// Alt + S: Soru özeti
+    $(document).keydown(function(event) {
+		if (event.altKey === true) {
+			if (event.keyCode == 83) {
+				var shortcutAltPlusSLog = "Alt + S kısayol tuşuna basıldı. Soru özeti okundu.";
+				logEvent(shortcutAltPlusSLog);
+				var text = $("#qSummaryDiv").text();
+				$("#alertQSummaryDiv").show().text(text);
+				//$("#alertQSummaryDiv").attr("tabindex","0");
+				$("#alertQSummaryDiv").delay(100).slideUp();
+			}
+		}
+	});
+    // Alt + K: Kalan süre
     $(document).keydown(function(event){
-		if(event.altKey === true){
-			if(event.keyCode == 83){
-                //let timeAlert = $("#remainingTimeLabel").text();
-				//$("<p role='alert'>$(timeAlert)</p>").appendTo(document.body);
-			var data = { event: "Kısayol (Alt + S) tuşuna basıldı. Kalan süre okundu." };
-			//logEvent(data);
-                $("#remainingTimeLabel").attr("role", "alert");
-                setTimeout(function(){
-                    $("#remainingTimeLabel").removeAttr("role");
-                }, 100);
+		if(event.altKey === true) {
+			if(event.keyCode == 75) {
+				var shortcutAltPlusKLog = "Alt + K kısayol tuşuna basıldı. Kalan süre okundu.";
+				logEvent(shortcutAltPlusKLog);
+				var text = $("#remainingTimeLabel").text();
+				$("#alertRemainingTimeDiv").show().text(text);
+				$("#alertRemainingTimeDiv").attr("tabindex","0");
+				$("#alertRemainingTimeDiv").delay(100).slideUp();
 			}
 		}
 	});
@@ -501,35 +523,44 @@ $(function () {
     $(document).keydown(function(event){
         if(event.altKey === true){
             if(event.keyCode == 71){
-				var data = { event: "Kısayol (Alt + G) tuşuna basıldı. Gözden Geçir sayfası görüntülendi." };
-				//logEvent(data);
+				var shortcutAltPlusGLog = "Alt + G tuşuna basıldı. Gözden Geçir sayfası görüntülendi.";
+				logEvent(shortcutAltPlusGLog);
 				showMarkedQuestionsPage();
             }
         }
     });
-
+	
+	// Keyboard events
+	if ($("#remainingTimeLabel").focus()) {
+		$("#remainingTimeLabel").keydown((event) => {
+			console.log(event.keyCode);
+			var remainingTimeLabelKeyDownLog = "Kalan süre okundu (Tab tuşu ile).";
+			//logEvent(remainingTimeLabelKeyDownLog);
+		});
+		//var remainingTimeLabelArrowKeyDownLog = "Kalan süre okundu (Arrow tuşu ile).";
+		//logEvent(remainingTimeLabelArrowKeyDownLog);
+	}
                                  
     // Tekrar Bakılacak Sorular düğmesine basıldığında
     $("#markedQuestionsButton").click(function (e) {
-        var data = { event: "Gözden Geçir düğmesine basıldı." };
-        //logEvent(data);
+        var markedQuestionsButtonLog = "Gözden Geçir düğmesine basıldı.";
+        logEvent(markedQuestionsButtonLog);
 		showMarkedQuestionsPage();
     });
                                  
     // Erişilebilirlik düğmesi
     $("#accessibilityButton").click(function (e) {
-		var data = { event: "Erişilebilirlik düğmesine basıldı." };    
-        //logEvent(data);
+		var accessibilityButtonLog = "Erişilebilirlik düğmesine basıldı.";
+        logEvent(accessibilityButtonLog);
 		showAccessibilityPage();
     });
 	//Hidden accessibility button
                                  $("#hiddenAccessibilityButton").click(function (e) {
-									 var data = { event: "Erişilebilirlik (hidden) düğmesine basıldı." };
-                                     //logEvent(data);
+									 var hiddenAccessibilityButtonLog = "Erişilebilirlik (hidden) düğmesine basıldı.";
+                                     logEvent(hiddenAccessibilityButtonLog);
 									 showAccessibilityPage();
                                  });
 
-                                 
     // Soruyu dinle
     $("#listenQuestion").click(function (e) {
         
@@ -539,15 +570,15 @@ $(function () {
             $("#listenQuestion").html("Soruyu Dinle");
             audio.pause();
             
-            var data = { event: "Soruyu Dinle durduruldu." };
-			//logEvent(data);
+            var listenQuestionPausedLog = "Soruyu Dinle durduruldu.";
+			logEvent(listenQuestionPausedLog);
         } else {
             $("#listenQuestion").attr("class", "pause");
             $("#listenQuestion").html("Durdur");
 			audio.play();
             
-            var data = { event: "Soruyu Dinle düğmesine basıldı." };
-			//logEvent(data);
+            var listenQuestionPlayedLog = "Soruyu Dinle düğmesine basıldı.";
+			logEvent(listenQuestionPlayedLog);
         }
         
         audio.onplaying = function() {
@@ -573,15 +604,15 @@ $(function () {
             $("#listenOptions").html("Seçenekleri Dinle");
             audioOptions.pause();
             
-            var data = { event: "Seçenekleri Dinle durduruldu." };
-			//logEvent(data);
+            var listenOptionsPausedLog = "Seçenekleri Dinle durduruldu.";
+			logEvent(listenOptionsPausedLog);
         } else {
             $("#listenOptions").attr("class", "pause-options");
             $("#listenOptions").html("Durdur");
             audioOptions.play();
             
-            var data = { event: "Seçenekleri Dinle düğmesine basıldı." };
-			//logEvent(data);
+            var listenOptionsPlayedLog = "Seçenekleri Dinle düğmesine basıldı.";
+			logEvent(listenOptionsPlayedLog);
         }
         
         audioOptions.onplaying = function() {
@@ -600,15 +631,15 @@ $(function () {
                                  
     // Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
-		var data = { event: "Sınava Dön düğmesine basıldı (Gözden Geçir sayfasında)." };
-		//logEvent(data);
+		var backToExamButtonLog = "Sınava Dön düğmesine basıldı (Gözden Geçir sayfasında).";
+		logEvent(backToExamButtonLog);
         showExamPage();
         document.getElementById('qSummaryDiv').focus();
     });
     //Erişilebilirlik sayfasında Sınava Dön düğmesine basıldığında
     $("#accPageBackToExamButton").click(function (e) {
-        var data = { event: "Sınava Dön düğmesine basıldı (Erişilebilirlik Ayarları sayfasında)." };
-		//logEvent(data);
+        var accPageBackToExamButtonLog = "Sınava Dön düğmesine basıldı (Erişilebilirlik Ayarları sayfasında).";
+		logEvent(accPageBackToExamButtonLog);
 		showExamPage();
         document.getElementById('qSummaryDiv').focus();
     });
@@ -622,12 +653,11 @@ $(function () {
 
         document.getElementById('finish-span').focus();
     });*/
-		
 });
 
 $(document).ready(() => {
-	var dataDocReady = { event: "Sınav sayfası görüntülendi." };
-	//logEvent(dataDocReady);
+	var examPageReadyLog = "Sınav sayfası görüntülendi.";
+	logEvent(examPageReadyLog);
 	// Get the modal
         var modal = document.getElementById("finishExamModal");
         // Get the button that opens the modal
@@ -637,8 +667,8 @@ $(document).ready(() => {
 
         // When the user clicks on the button, open the modal
         $("#finishButton").click(() => {
-			var data = { event: "Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz?" };
-			//logEvent(data);
+			var finishButtonLog = "Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz?";
+			logEvent(finishButtonLog);
             modal.style.display = "block";
 			$(".container").attr("aria-hidden","true");
 			
@@ -663,8 +693,8 @@ $(document).ready(() => {
 		
         // When the user clicks on No button, close the modal
         $("#modalNoButton").click(function() {
-			var data = { event: "Hayır düğmesine basıldı. Modal kapatıldı." };
-			//logEvent(data);
+			var modalNoButtonLog = "Hayır düğmesine basıldı. Modal kapatıldı.";
+			logEvent(modalNoButtonLog);
             $("#finishExamModal").css("display","none");
 			$(".container").attr("aria-hidden","false");
 			
@@ -689,8 +719,8 @@ $(document).ready(() => {
 		
 		// When the user clicks on <span> (x), close the modal
         span.onclick = function() {
-            var data = { event: "Kapat (x) düğmesine basıldı. Modal kapatıldı." };
-			//logEvent(data);
+            var modalCloseButtonLog = "Kapat (x) düğmesine basıldı. Modal kapatıldı.";
+			logEvent(modalCloseButtonLog);
 			modal.style.display = "none";
 			$(".container").attr("aria-hidden","false");
 			
@@ -717,7 +747,7 @@ $(document).ready(() => {
 		$("#modalYesButton").click(() => {
 			var modalYesLog = "Evet düğmesine basıldı (Modal). Sınav tamamlandı.";
 			var examTimerLog = "Sınav tamamlama süresi: " + examTimer;
-			var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + qTimer;
+			var summaryLog = "Özet: " + (qSummary ? qSummary : "Yok") + ", Harcanan Süre: " + qTimer;
 			logEvent(modalYesLog);
 			logEvent(summaryLog);
 			logEvent(examTimerLog);
@@ -738,4 +768,10 @@ $(document).ready(() => {
                 modal.style.display = "none";
             }
         }
+	
+	$("#backToHomePageButton").click(() => {
+		window.location.href = "/";
+		var backToHomePageButtonLog = "Ana Sayfa'ya Dön düğmesine basıldı.";
+		logEvent(backToHomePageButtonLog);
+	});
 });

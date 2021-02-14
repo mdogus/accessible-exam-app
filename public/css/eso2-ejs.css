@@ -1012,10 +1012,10 @@ body.theme3 {
     /*-webkit-linear-gradient(90deg, rgb(0,0,0) 75%, rgb(255,255,255, 0.5)),
     -webkit-linear-gradient(270deg, white, black 75%);*/
 }
-.theme3 .rmaining-time:hover {
+.theme3 .remaining-time:hover {
     border: 2px solid red;
     background: rgb(33,34,38);
-    color: yellow;
+    color: white;
 }
 .theme3 .question-header, .theme3 .bottom-bar {
     border: 1px solid rgb(120,120,120);
@@ -1090,10 +1090,10 @@ body.theme4{
     background: linear-gradient(0deg, rgb(255,255,255, 0.4), black 25%, black 80%, rgb(255,255,255, 0.4) 90%);
     background: -webkit-linear-gradient(90deg, rgb(255,255,255, 0.4), black 25%, black 80%, rgb(255,255,255, 0.4) 90%);
 }
-.theme4 .rmaining-time:hover {
+.theme4 .remaining-time:hover {
     border: 2px solid red;
-    background: rgb(23,24,28);
-    color: #99ff99;
+    background: rgb(33,34,38);
+    color: white;
 }
 .theme4 .question-header, .theme4 .bottom-bar {
     border: 1px solid rgb(120,120,120);
@@ -1470,7 +1470,7 @@ input:checked + .slider .off {
 .modal-header {
   padding: 2px 16px;
   background-color: red;/*#5cb85c;*/
-  color: white;
+  color: black;
 }
 
 /* Modal Body */
@@ -1478,6 +1478,7 @@ input:checked + .slider .off {
 	padding: 2px 16px;
 	font-size: 24px;
 	font-weight: bold;
+	color: black;
 }
 
 /* Modal Footer */
@@ -1485,8 +1486,11 @@ input:checked + .slider .off {
   padding: 40px 10px;
   padding-bottom: 16px;
   /*background-color: #5cb85c;*/
-  /*color: white;*/
 }
+
+.modal-footer hr {
+	border: 2px solid rgb(199,199,199);
+}	
 
 /* Buttons on the Modal */
 #modalYesButton, #modalNoButton {
@@ -1520,14 +1524,14 @@ input:checked + .slider .off {
 
 /* The Close Button */
 .close {
-	border: 1px solid white !important;
+  border: 1px solid black !important;
   background-color: red !important;
-  color: #fefefe !important;
+  color: black !important;
   float: right;
   font-size: 54px !important;
   font-weight: bold;
   margin-top: 4px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 .close:hover {
 	border: 1px solid white !important;

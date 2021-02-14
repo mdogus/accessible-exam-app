@@ -43,26 +43,32 @@ router.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 
 // Login about page
 router.get('/about', checkNotAuthenticated, function(req, res) {
-    logger.logger.log("info", "Page: Login-Hakkında sayfası açıldı.")
+    logger.logger.log("info", "Login/Hakkında sayfası açıldı.")
     res.render('pages/about');
 });
 
 // User home about page
 router.get('/user-about', checkAuthenticated, function(req, res) {
-    logger.logger.log("info", "Page: Hakkında sayfası açıldı.")
+    logger.logger.log("info", "Hakkında sayfası açıldı.")
     res.render('pages/user-about');
 });
 
 // Login contact page
 router.get('/contact', checkNotAuthenticated, function(req, res) {
-    logger.logger.log("info", "Page: Login-İletişim sayfası açıldı.")
+    logger.logger.log("info", "Login/İletişim sayfası açıldı.")
     res.render('pages/contact');
 });
 
 //User home: Contact page
 router.get('/user/contact', checkAuthenticated, function(req, res) {
-    logger.logger.log("info", "Page: İletişim sayfası açıldı.")
+    logger.logger.log("info", "İletişim sayfası açıldı.")
     res.render('pages/user-contact');
+});
+
+// User home: User guide page
+router.get('/user-guide', checkAuthenticated, function(req, res) {
+    logger.logger.log("info", "Kullanım Kılavuzu sayfası açıldı.");
+    res.render('pages/user-guide');
 });
 
 //Kişisel bilgi formu
@@ -74,12 +80,12 @@ router.get('/user/personal-info', checkAuthenticated, function(req, res) {
         email: req.user.email,
         age: req.user.age
     });
-    logger.logger.log("info", "Page: Kişisel Bilgi Formu sayfası açıldı.")
+    logger.logger.log("info", "Kişisel Bilgi Formu sayfası açıldı.")
 });
 //router.post('/user/save-personal-info', checkAuthenticated, controller.updateUser);
 router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => {
     const user = req.body;
-    const msg = "Personal Info saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.gender + "\nGörme Engeli Durumu: " + user.visualImpairment + "\nOkul: " + user.studentVar1 + ", " + user.studentVar2 + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTechs + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem + "\nİnternet Tarayıcı: " + user.browser;
+    const msg = "Kişisel Bilgi Formu başarıyla kaydedildi.! \nAd: " + user.name + "\nSoyad: " + user.surname + "\nYaş: " + user.age + "\nCinsiyet: " + user.gender + "\nGörme Engeli Durumu: " + user.visualImpairment + "\nOkul: " + user.studentVar1 + ", " + user.studentVar2 + "\nMeslek: " + user.job + "\nKişisel Teknolojier: " + user.personalTechs + "\nYardımcı Teknolojiler: " + user.assistiveTechs + "\nİşletim sistemi: " + user.opSystem + "\nİnternet Tarayıcı: " + user.browser;
     
     msgPersonalInfo = "Kişisel Bilgi Formu kaydedilmiştir. Teşekkür ederiz.";
     
@@ -137,7 +143,52 @@ router.post('/user/save-personal-info', checkAuthenticated, async (req, res) => 
 //Accessibility settings
 router.post('/user/save-acc-settings', checkAuthenticated, async (req, res) => {
     const user = req.body;
-    const msg = "Accessibility Settings saved successfully!\nAd: " + user.name + "\nSoyad: " + user.surname + "\nTema Rengi: " + user.theme + "\nYazı Tipi: " + user.font + "\nYazı Boyutu: " + user.fontSize;
+    const msg = (user) => {
+		var theme;
+		var font;
+		if (user.theme === "theme1") {
+			theme = "Beyaz Üzeri Siyah";
+		} else if (user.theme === "theme-sepia") {
+			theme = "Sepya Üzeri Siyah";
+		} else if (user.theme === "theme-pink") {
+			theme = "Pembe Üzeri Siyah";
+		} else if (user.theme === "theme-yellow") {
+			theme = "Sarı Üzeri Siyah";
+		} else if (user.theme === "theme-lime") {
+			theme = "Yeşil Üzeri Siyah";
+		} else if (user.theme === "theme2") {
+			theme = "Siyah Üzeri Beyaz";
+		} else if (user.theme === "theme3") {
+			theme = "Siyah Üzeri Sarı";
+		} else if (user.theme === "theme4") {
+			theme = "Siyah Üzeri Yeşil";
+		}
+		
+		if (user.font === "font_0") {
+			font = "Arial";
+		} else if (user.font === "font_1") {
+			font = "Arial Black";
+		} else if (user.font === "font_2") {
+			font = "Century Gothic";
+		} else if (user.font === "font_3") {
+			font = "Chalkboard";
+		} else if (user.font === "font_4") {
+			font = "Comic Sans";
+		} else if (user.font === "font_5") {
+			font = "Helvetica";
+		} else if (user.font === "font_6") {
+			font = "Tahoma";
+		} else if (user.font === "font_7") {
+			font = "Times New Roman";
+		} else if (user.font === "font_8") {
+			font = "Trebuchet";
+		} else if (user.font === "font_9") {
+			font = "TTKB Dik Temel Yazı";
+		} else if (user.font === "font_10") {
+			font = "Verdana";
+		}
+		return "Erişilebilirlik Ayarları başarıyla kaydedildi: Ad-Soyad: " + user.name + " " + user.surname + ", Tema Rengi: " + theme + ", Yazı Tipi: " + font + ", Yazı Boyutu: " + user.fontSize;
+	};
     
     try {
         await User.updateOne({ "email": user.email },
@@ -149,8 +200,8 @@ router.post('/user/save-acc-settings', checkAuthenticated, async (req, res) => {
                 logger.logger.log("error", err);
                 res.send(err);
             } else {
-                console.log(msg);
-                logger.logger.log("info", msg)
+                console.log(msg(user));
+                logger.logger.log("info", msg(user))
             }
         });
     } catch {
