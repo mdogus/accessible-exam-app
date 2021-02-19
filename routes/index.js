@@ -65,8 +65,13 @@ router.get('/user/contact', checkAuthenticated, function(req, res) {
     res.render('pages/user-contact');
 });
 
+// Login: User guide page
+router.get('/user-guide', checkNotAuthenticated, function(req, res) {
+    logger.logger.log("info", "Login/Kullanım Kılavuzu sayfası açıldı.");
+    res.render('pages/user-guide');
+});
 // User home: User guide page
-router.get('/user-guide', checkAuthenticated, function(req, res) {
+router.get('/user/user-guide', checkAuthenticated, function(req, res) {
     logger.logger.log("info", "Kullanım Kılavuzu sayfası açıldı.");
     res.render('pages/user-guide');
 });

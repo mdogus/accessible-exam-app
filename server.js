@@ -99,6 +99,7 @@ app.post('/exam', (req, res, next) => {
 
 //Logout
 app.get('/logout', (req, res) => {
-    req.logout();
+    logger.logger.log("info", "Uygulamadan çıkış yapıldı.");
+	req.logout();
     res.redirect('/login');
 });
