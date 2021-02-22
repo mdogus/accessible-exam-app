@@ -14,6 +14,9 @@ var qTimer;
 var qTimerValue = 0;
 var examTimer;
 var examTimerValue = 0;
+// mean
+var nextQCount = 0;
+var qTimerValueSum = 0;
 
 function getCurrQuestionId(){
     let qNumText = $("#qNumDiv").text();
@@ -109,7 +112,7 @@ function updateSummary(qid) {
         let sum = "Soru " + q.id + ", Cevaplanan Seçenek: " + (q.answer ? q.answer : "Yok") + ", Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         let label = "Soru " + q.id + ": Tekrar bakmak istiyorum.";
         let sumNotChecked = "Soru " + q.id + ", Cevaplanan Seçenek: Yok, Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
-		var answerCheckedLog = q.answer + " seçeneği işaretlendi.";
+		var answerCheckedLog = q.answer + " seçeneği işaretlendi. (" + qTimer + ")";
         //var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
         
         if ($("input[name='qValue']:radio").is(":checked")) {
@@ -138,7 +141,17 @@ function nextQuestion() {
     let id = getCurrQuestionId();
     loadQuestion(parseInt(id) + 1);
 	
-	var nextQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi.";
+	var qTimerMean;
+	nextQCount += 1;
+	qTimerValueSum += qTimerValue;
+	var meanValue = qTimerValueSum / nextQCount;
+	var minutes = Math.floor((meanValue % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((meanValue % (1000 * 60)) / 1000);
+	if (seconds < 10) {
+		seconds = "0" + seconds;
+	}
+	qTimerMean = minutes + ':' + seconds;
+	var nextQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi. (Ortalama: " + qTimerMean + ")";
 	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + qTimer;
     logEvent(nextQuestionLog);
 	logEvent(summaryLog);
@@ -234,7 +247,7 @@ function listMarkedQuestions() {
             if (q.marked) {
 				markedQuestionsCount += 1;
 				var selectedMarkedQuestion = "Soru " + q.id;
-				var selectedMarkedQuestionLog = "Tekrar Bakılacak Sorular: " + selectedMarkedQuestion + " düğmesine basıldı. " + selectedMarkedQuestion + " görüntülendi.";
+				var selectedMarkedQuestionLog = "Tekrar Bakılacak Sorular: " + selectedMarkedQuestion + " düğmesine basıldı. " + selectedMarkedQuestion + " görüntülendi. (" + qTimer + ")";
                 var $li = $('<li>').appendTo($ul);
                 var $a = $('<a  role="button" href="#' + q.id + '">').appendTo($li);
                 $a.html("Soru " + q.id);
@@ -255,7 +268,7 @@ function listUnansweredQuestions() {
 			if (!q.answer) {
 				unansweredQuestionsCount += 1;
 				var selectedUnansweredQuestion = "Soru " + q.id;
-				var selectedUnansweredQuestionLog = "Cevaplanmamış Sorular: " + selectedUnansweredQuestion + " düğmesine basıldı. " + selectedUnansweredQuestion + " görüntülendi.";
+				var selectedUnansweredQuestionLog = "Cevaplanmamış Sorular: " + selectedUnansweredQuestion + " düğmesine basıldı. " + selectedUnansweredQuestion + " görüntülendi. (" + qTimer + ")";
 				var $li = $('<li>').appendTo($ul);
                 var $a = $('<a  role="button" href="#' + q.id + '">').appendTo($li);
                 $a.html("Soru " + q.id);
@@ -286,7 +299,7 @@ var makeRadiosDeselectableByName = function(name) {
         var previousValue = $(this).attr('previousValue');
         var name = $(this).attr('name');
 		let q = getCurrentQuestion();
-		var answerNotCheckedLog = q.answer + " seçeneğinin işareti kaldırıldı.";
+		var answerNotCheckedLog = q.answer + " seçeneğinin işareti kaldırıldı. (" + qTimer + ")";
 
         if (previousValue == 'checked') {
 			if(typeof (q.answer) !== "undefined") {
@@ -354,7 +367,7 @@ $(function () {
     $("#ismarked").click(() => {
         markQuestion();
 		var q = getCurrentQuestion();
-		var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır");
+		var isMarkedLog = "Soru " + q.id + ": Tekrar bakılacak mı: " + (q.marked ? "Evet" : "Hayır") + ", (" + qTimer + ")";
         
         logEvent("Tekrar Bak düğmesi işaretlendi. " + isMarkedLog);
     });
@@ -387,7 +400,7 @@ $(function () {
 		} else if (fontSize == 36) {
 			newFontSize = 36;
 		}
-		var increaseFontSizeLog = "Yazı Boyutu artırıldı: " + newFontSize;
+		var increaseFontSizeLog = "Yazı Boyutu artırıldı: " + newFontSize + ", (" + qTimer + ")";
 		logEvent(increaseFontSizeLog);
     });
 	// Decrease font size
@@ -401,7 +414,7 @@ $(function () {
 		} else if (fontSize == 16) {
 			newFontSize = 16;
 		}
-		var decreaseFontSizeLog = "Yazı Boyutu azaltıldı: " + newFontSize;
+		var decreaseFontSizeLog = "Yazı Boyutu azaltıldı: " + newFontSize + ", (" + qTimer + ")";
 		logEvent(decreaseFontSizeLog);
     });
     
@@ -445,7 +458,7 @@ $(function () {
         $("body").removeClass();
         $("body").addClass(selectedTheme);
 		
-		var selectedThemeLog = "Tema değiştirildi: " + selectedThemeText;
+		var selectedThemeLog = "Tema değiştirildi: " + selectedThemeText + ", (" + qTimer + ")";
 		logEvent(selectedThemeLog);
     });
     
@@ -463,7 +476,7 @@ $(function () {
         $("#eso-cont").addClass(selectedFont);
         //$("#eso-cont").addClass("font_" + this.selectedIndex);
 		
-		var selectedFontLog = "Yazı Tipi değiştirildi: " + selectedFontText;
+		var selectedFontLog = "Yazı Tipi değiştirildi: " + selectedFontText + ", (" + qTimer + ")";
 		logEvent(selectedFontLog);
     });
 
@@ -487,7 +500,7 @@ $(function () {
     $(document).keydown(function(event) {
 		if (event.altKey === true){
 			if (event.keyCode == 69){
-				var shortcutAltPlusELog = "Alt + E kısayol tuşuna basıldı. Erişilebilirlik Ayarları sayfası görüntülendi.";
+				var shortcutAltPlusELog = "Alt + E kısayol tuşuna basıldı. Erişilebilirlik Ayarları sayfası görüntülendi. (" + qTimer + ")";
 				logEvent(shortcutAltPlusELog);
 				showAccessibilityPage();
 			}
@@ -497,7 +510,7 @@ $(function () {
     $(document).keydown(function(event) {
 		if (event.altKey === true) {
 			if (event.keyCode == 83) {
-				var shortcutAltPlusSLog = "Alt + S kısayol tuşuna basıldı. Soru özeti okundu.";
+				var shortcutAltPlusSLog = "Alt + S kısayol tuşuna basıldı. Soru özeti okundu. (" + qTimer + ")";
 				logEvent(shortcutAltPlusSLog);
 				var text = $("#qSummaryDiv").text();
 				$("#alertQSummaryDiv").show().text(text);
@@ -510,7 +523,7 @@ $(function () {
     $(document).keydown(function(event){
 		if(event.altKey === true) {
 			if(event.keyCode == 75) {
-				var shortcutAltPlusKLog = "Alt + K kısayol tuşuna basıldı. Kalan süre okundu.";
+				var shortcutAltPlusKLog = "Alt + K kısayol tuşuna basıldı. Kalan süre okundu. (" + qTimer + ")";
 				logEvent(shortcutAltPlusKLog);
 				var text = $("#remainingTimeLabel").text();
 				$("#alertRemainingTimeDiv").show().text(text);
@@ -523,7 +536,7 @@ $(function () {
     $(document).keydown(function(event){
         if(event.altKey === true){
             if(event.keyCode == 71){
-				var shortcutAltPlusGLog = "Alt + G tuşuna basıldı. Gözden Geçir sayfası görüntülendi.";
+				var shortcutAltPlusGLog = "Alt + G tuşuna basıldı. Gözden Geçir sayfası görüntülendi. (" + qTimer + ")";
 				logEvent(shortcutAltPlusGLog);
 				showMarkedQuestionsPage();
             }
@@ -543,20 +556,20 @@ $(function () {
                                  
     // Tekrar Bakılacak Sorular düğmesine basıldığında
     $("#markedQuestionsButton").click(function (e) {
-        var markedQuestionsButtonLog = "Gözden Geçir düğmesine basıldı.";
+        var markedQuestionsButtonLog = "Gözden Geçir düğmesine basıldı. (" + qTimer + ")";
         logEvent(markedQuestionsButtonLog);
 		showMarkedQuestionsPage();
     });
                                  
     // Erişilebilirlik düğmesi
     $("#accessibilityButton").click(function (e) {
-		var accessibilityButtonLog = "Erişilebilirlik düğmesine basıldı.";
+		var accessibilityButtonLog = "Erişilebilirlik düğmesine basıldı. (" + qTimer + ")";
         logEvent(accessibilityButtonLog);
 		showAccessibilityPage();
     });
 	//Hidden accessibility button
                                  $("#hiddenAccessibilityButton").click(function (e) {
-									 var hiddenAccessibilityButtonLog = "Erişilebilirlik (hidden) düğmesine basıldı.";
+									 var hiddenAccessibilityButtonLog = "Erişilebilirlik (hidden) düğmesine basıldı. (" + qTimer + ")";
                                      logEvent(hiddenAccessibilityButtonLog);
 									 showAccessibilityPage();
                                  });
@@ -570,14 +583,14 @@ $(function () {
             $("#listenQuestion").html("Soruyu Dinle");
             audio.pause();
             
-            var listenQuestionPausedLog = "Soruyu Dinle durduruldu.";
+            var listenQuestionPausedLog = "Soruyu Dinle durduruldu. (" + qTimer + ")";
 			logEvent(listenQuestionPausedLog);
         } else {
             $("#listenQuestion").attr("class", "pause");
             $("#listenQuestion").html("Durdur");
 			audio.play();
             
-            var listenQuestionPlayedLog = "Soruyu Dinle düğmesine basıldı.";
+            var listenQuestionPlayedLog = "Soruyu Dinle düğmesine basıldı. (" + qTimer + ")";
 			logEvent(listenQuestionPlayedLog);
         }
         
@@ -604,14 +617,14 @@ $(function () {
             $("#listenOptions").html("Seçenekleri Dinle");
             audioOptions.pause();
             
-            var listenOptionsPausedLog = "Seçenekleri Dinle durduruldu.";
+            var listenOptionsPausedLog = "Seçenekleri Dinle durduruldu. (" + qTimer + ")";
 			logEvent(listenOptionsPausedLog);
         } else {
             $("#listenOptions").attr("class", "pause-options");
             $("#listenOptions").html("Durdur");
             audioOptions.play();
             
-            var listenOptionsPlayedLog = "Seçenekleri Dinle düğmesine basıldı.";
+            var listenOptionsPlayedLog = "Seçenekleri Dinle düğmesine basıldı. (" + qTimer + ")";
 			logEvent(listenOptionsPlayedLog);
         }
         
@@ -631,14 +644,14 @@ $(function () {
                                  
     // Sınava Dön düğmesine basıldığında
     $("#backToExamButton").click(function (e) {
-		var backToExamButtonLog = "Sınava Dön düğmesine basıldı (Gözden Geçir sayfasında).";
+		var backToExamButtonLog = "Sınava Dön düğmesine basıldı (Gözden Geçir sayfasında). (" + qTimer + ")";
 		logEvent(backToExamButtonLog);
         showExamPage();
         document.getElementById('qSummaryDiv').focus();
     });
     //Erişilebilirlik sayfasında Sınava Dön düğmesine basıldığında
     $("#accPageBackToExamButton").click(function (e) {
-        var accPageBackToExamButtonLog = "Sınava Dön düğmesine basıldı (Erişilebilirlik Ayarları sayfasında).";
+        var accPageBackToExamButtonLog = "Sınava Dön düğmesine basıldı (Erişilebilirlik Ayarları sayfasında). (" + qTimer + ")";
 		logEvent(accPageBackToExamButtonLog);
 		showExamPage();
         document.getElementById('qSummaryDiv').focus();
@@ -667,7 +680,7 @@ $(document).ready(() => {
 
         // When the user clicks on the button, open the modal
         $("#finishButton").click(() => {
-			var finishButtonLog = "Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz?";
+			var finishButtonLog = "Sınavı Bitir düğmesine basıldı. Modal görüntülendi: Sınavı bitirmek istediğinizden emin misiniz? (" + qTimer + ")";
 			logEvent(finishButtonLog);
             modal.style.display = "block";
 			$(".container").attr("aria-hidden","true");
@@ -693,7 +706,7 @@ $(document).ready(() => {
 		
         // When the user clicks on No button, close the modal
         $("#modalNoButton").click(function() {
-			var modalNoButtonLog = "Hayır düğmesine basıldı. Modal kapatıldı.";
+			var modalNoButtonLog = "Hayır düğmesine basıldı. Modal kapatıldı. (" + qTimer + ")";
 			logEvent(modalNoButtonLog);
             $("#finishExamModal").css("display","none");
 			$(".container").attr("aria-hidden","false");
@@ -719,7 +732,7 @@ $(document).ready(() => {
 		
 		// When the user clicks on <span> (x), close the modal
         span.onclick = function() {
-            var modalCloseButtonLog = "Kapat (x) düğmesine basıldı. Modal kapatıldı.";
+            var modalCloseButtonLog = "Kapat (x) düğmesine basıldı. Modal kapatıldı. (" + qTimer + ")";
 			logEvent(modalCloseButtonLog);
 			modal.style.display = "none";
 			$(".container").attr("aria-hidden","false");
@@ -745,7 +758,7 @@ $(document).ready(() => {
 		
 		// When user clicks Yes button
 		$("#modalYesButton").click(() => {
-			var modalYesLog = "Evet düğmesine basıldı (Modal). Sınav tamamlandı.";
+			var modalYesLog = "Evet düğmesine basıldı (Modal). Sınav tamamlandı. (" + qTimer + ")";
 			var examTimerLog = "Sınav tamamlama süresi: " + examTimer;
 			var summaryLog = "Özet: " + (qSummary ? qSummary : "Yok") + ", Harcanan Süre: " + qTimer;
 			logEvent(modalYesLog);
