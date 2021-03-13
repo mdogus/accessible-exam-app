@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+
+<header class="container-fluid" style="padding: 0;">
+    <%- include('../partials/header-user-login'); %>
+</header>
+
+<main class="container-fluid">
+<div class="row">
+    <div class="col-sm-8">
+        <div class="jumbotron">
+            <h1 class="display-4 heading-form font-raleway" style="font-weight:bold;">Kayıt Ol</h1>
+			<div class="alert alert-info">
+				<p class="font-raleway" style="font-weight:bold;">
+					Değerli katılımcılar,
+				</p>
+				<p class="font-raleway" style="font-weight:bold;">
+					Sağlayacağınız bilgiler; yalnızca araştırma kapsamında verilerin sınıflandırılması ve analizinde kullanılacaktır, gizli tutlacak ve üçüncü kişiler ile kesinlikle paylaşılmayacaktır. Arıştırmaya yapacağınız katkılar kçin teşekkür ederiz.
+				</p>
+			</div>
+            <form id="userSignUpForm" action="/sign-up" method="POST">
+                <!-- Name -->
+				<div id="alertNameDiv" class="alert alert-danger" role="alert">
+					<h6>Lütfen adınızı belirtiniz.</h6>
+                </div>
+				<div class="form-group">
+                    <label for="inputName">Ad</label>
+                    <input type="text" class="form-control" id="inputName" name="name" aria-describedby="nameHelp" placeholder="Adınızı yazın" required>
+                </div>
+				<!-- Surname -->
+				<div id="alertSurnameDiv" class="alert alert-danger" role="alert">
+					<h6>Lütfen soyadınızı belirtiniz.</h6>
+                </div>
+                <div class="form-group">
+                    <label for="inputSurname">Soyad</label>
+                    <input type="text" class="form-control" id="inputSurname" name="surname" aria-describedby="surnameHelp" placeholder="Soyadınızı yazın" required>
+                </div>
+				<!-- Email -->
+				<div id="alertEmailDiv" class="alert alert-danger" role="alert">
+					<h6>Lütfen e-posta adresinizi belirtiniz.</h6>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">E-posta</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp" placeholder="E-posta adresinizi yazın" required>
+					<small id="emailHelp" class="form-text text-muted">Giriş yapmak için kullanacağınız e-posta adresinizi belirtiniz.</small>
+                </div>
+				<!-- Password -->
+				<div id="alertPasswordDiv" class="alert alert-danger" role="alert">
+					<h6>Lütfen kullanmak istediğiniz parolayı belirtiniz.</h6>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Parola</label>
+                    <input type="password" class="form-control" id="inputPassword" name="password" aria-describedby="passwordHelp" placeholder="Parolanızı girin" required>
+					<small id="passwordHelp" class="form-text text-muted">Giriş yapmak için kullanacağınız parolayı belirtiniz.</small>
+                </div>
+				<!-- Password Again -->
+				<div id="alertPasswordAgainDiv" class="alert alert-danger" role="alert">
+					<h6>Lütfen kullanmak istediğiniz parolayı tekrar yazınız.</h6>
+                </div>
+				<!-- Password Again: if not the same -->
+				<div id="alertPasswordAgainIfNotSameDiv" class="alert alert-danger" role="alert">
+					<h6>Parola uyuşmamaktadır. Lütfen parolayı kontrol ederek tekrar yazınız.</h6>
+                </div>
+				<div class="form-group">
+                    <label for="inputPasswordAgain">Parola (Tekrar)</label>
+                    <input type="password" class="form-control" id="inputPasswordAgain" name="passwordAgain" aria-describedby="passwordAgainHelp" placeholder="Parolanızı tekrar girin" required>
+					<small id="passwordAgainHelp" class="form-text text-muted">Giriş yapmak için kullanacağınız parolayı tekrar yazınız.</small>
+                </div>
+                <button type="submit" id="userSignUpButton" class="btn btn-primary btn-block">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include('../partials/sidebar'); %>
+
+</div>
+</main>
+
+<footer class="container-fluid fixed-bottom">
+    <%- include('../partials/footer'); %>
+</footer>
+
+<!-- Ajax scripts -->
+<%- include('../partials/script-sign-up'); %>
+
+</body>
+</html>

@@ -76,6 +76,34 @@ router.get('/user/user-guide', checkAuthenticated, function(req, res) {
     res.render('pages/user-guide');
 });
 
+// User sign-up page
+router.get('/sign-up', checkNotAuthenticatedAdmin, (req, res) => {
+	console.log("Kayıt Ol sayfası görüntülendi.");
+                logger.logger.log("info", "Kayıt Ol sayfası görüntülendi.");
+    res.render('pages/user-sign-up');
+});
+router.post('/sign-up', checkNotAuthenticatedAdmin, async (req, res) => {
+    const newUser = new User(req.body);
+    
+    try {
+        newUser.save(function(err, doc) {
+            if (err) {
+                console.log(err);
+                logger.logger.log("error", err);
+                res.send(err);
+            } else {
+                console.log("Kullanıcı başarıyla kaydedildi:" + JSON.stringify(req.body.name) + " " + JSON.stringify(req.body.surname));
+                logger.logger.log("info", "Kullanıcı başarıyla kaydedildi: %s %s", JSON.stringify(req.body.name), JSON.stringify(req.body.surname));
+                res.redirect("/login");
+            }
+        });
+    } catch {
+        console.log("Failed to save user.");
+        logger.logger.log("error", "Failed to save user.");
+        res.redirect("/admin/sign-up");
+    }
+});
+
 //Kişisel bilgi formu
 //User home: Personal info page
 router.get('/user/personal-info', checkAuthenticated, function(req, res) {

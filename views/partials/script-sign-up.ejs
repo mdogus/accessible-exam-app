@@ -1,0 +1,144 @@
+<!-- Google jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    /*$("#personalInfoButton").click(function(event) {
+        event.preventDefault();
+        $("#personalInfoButton").css("background-color", "red");
+        
+        var data = {
+            event: "Button: Kişisel Bilgi Formu düğmesine basıldı."
+        };
+        $.ajax({
+            type: "POST",
+            url: "/log",
+            data: data,
+            success: function(response) {
+                console.log("Kişisel Bilgi Formu");
+            }
+        });
+    });*/
+    
+    /*$("#startExamButton").click(function(event) {
+        event.preventDefault();
+        $("#startExamModalButton").css("background-color", "red");
+        
+        $.post("/user/save-acc-settings", $("form#accessibilitySettingsForm").serialize());
+        //$("form#accessibilitySettingsForm").submit();
+        
+        var data = {
+            event: "Button (on the Modal): Sınava Başla düğmesine basıldı."
+        };
+        $.ajax({
+            type: "POST",
+            url: "/log",
+            data: data,
+            success: function(response) {
+                    console.log("Kişisel Bilgi Formu");
+            }
+        });
+        
+        setTimeout(function() {
+            window.location.href = "/exam";
+        }, 500);
+    });*/
+    
+});
+
+$(document).ready(function() {
+    $("#greetingMsg").delay(10000).slideUp(400);
+    $("#msgPersonalInfo").delay(10000).slideUp(400);
+});
+
+$(document).ready(function() {
+    /* Kişisel Bilgi Formu */
+    /* ana sayfadaki yönlendirme düğmesi */
+    $("#personalInfoButton").click((event) => {
+        event.preventDefault();
+        window.location.href = "/user/personal-info";
+    });
+    
+	/* Hide alerts */
+    /* name */
+    $("#alertNameDiv").hide();
+    /* surname */
+    $("#alertSurnameDiv").hide();
+	/* email */
+    $("#alertEmailDiv").hide();
+    /* password */
+    $("#alertPasswordDiv").hide();
+	/* password again */
+    $("#alertPasswordAgainDiv").hide();
+	$("#alertPasswordAgainIfNotSameDiv").hide();
+	
+    /* alerts */
+    $("#userSignUpButton").click(function(e) {
+        
+        /* name */
+        if($("input[name='name']").val() === "") {
+            
+            e.preventDefault();
+            $("#alertNameDiv").show(300);
+            $("#alertNameDiv").attr("tabindex","0");
+            document.getElementById("alertNameDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertNameDiv").delay(10000).slideUp(300);
+            
+            /* surname */
+        } else if($("input[name='surname']").val() === "") {
+          
+            e.preventDefault();
+            $("#alertSurnameDiv").show(300);
+            $("#alertSurnameDiv").attr("tabindex","0");
+            document.getElementById("alertSurnameDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertSurnameDiv").delay(10000).slideUp(300);
+            
+            /* email */
+        } else if($("input[name='email']").val() === "") {
+        
+            e.preventDefault();
+            $("#alertEmailDiv").show(300);
+            $("#alertEmailDiv").attr("tabindex","0");
+            document.getElementById("alertEmailDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertEmailDiv").delay(10000).slideUp(300);
+            
+            /* password */
+        } else if($("input[name='password']").val() === "") {
+            
+            e.preventDefault();
+            $("#alertPasswordDiv").show(300);
+            $("#alertPasswordDiv").attr("tabindex","0");
+            document.getElementById("alertPasswordDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertPasswordDiv").delay(10000).slideUp(300);
+            
+            /* password again: if the field is empty */
+        } else if($("input[name='passwordAgain']").val() === "") {
+            
+            e.preventDefault();
+            $("#alertPasswordAgainDiv").show(300);
+            $("#alertPasswordAgainDiv").attr("tabindex","0");
+            document.getElementById("alertPasswordAgainDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertPasswordAgainDiv").delay(10000).slideUp(300);
+			
+			/* password again: if not the same */
+        } else if($("input[name='password']").val() !== $("input[name='passwordAgain']").val()) {
+			e.preventDefault();
+            $("#alertPasswordAgainIfNotSameDiv").show(300);
+            $("#alertPasswordAgainIfNotSameDiv").attr("tabindex","0");
+            document.getElementById("alertPasswordAgainIfNotSameDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertPasswordAgainIfNotSameDiv").delay(10000).slideUp(300);
+		}
+    });
+});
+
+$(function() {
+    
+});
+</script>
+
+

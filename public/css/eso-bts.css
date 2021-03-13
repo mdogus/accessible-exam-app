@@ -457,3 +457,26 @@ div.filter-blur.dimensions-login {
     width: 100%;
 }
 
+/* buttons */
+button.login:before {
+    content: '\f2f6';
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: normal;
+    padding-right: 15px;
+	/*display: inline-flex;*/
+    /*align-items: center;*/
+}button.sign-up:before {
+    content: '\f234';
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: normal;
+    padding-right: 15px;
+}
+button.admin:before {
+    content: '\f502';
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: normal;
+    padding-right: 15px;
+}

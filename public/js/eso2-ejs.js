@@ -150,8 +150,8 @@ function nextQuestion() {
 	if (seconds < 10) {
 		seconds = "0" + seconds;
 	}
-	qTimerMean = minutes + ':' + seconds;
 	var nextQuestionLog = "Sonraki Soru düğmesine basıldı: Soru " + (id + 1) + " görüntülendi. (Ortalama: " + qTimerMean + ")";
+	qTimerMean = minutes + ':' + seconds;
 	var summaryLog = "Özet: " + qSummary + ", Harcanan Süre: " + qTimer;
     logEvent(nextQuestionLog);
 	logEvent(summaryLog);
