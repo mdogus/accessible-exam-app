@@ -12,14 +12,17 @@
 <main class="container-fluid">
 <div class="row">
     <div class="col-sm-8">
+		<div id="greetingMsg" class="alert alert-info font-raleway" role="alert">
+			<h4 style="font-weight:bold;">Kayıt Ol sayfasına hoş geldiniz!</h4>
+		</div>
         <div class="jumbotron">
-            <h1 class="display-4 heading-form font-raleway" style="font-weight:bold;">Kayıt Ol</h1>
+            <h1 id="signUpHeading" class="display-4 heading-form font-raleway" style="font-weight:bold;" tabindex="0">Kayıt Ol</h1>
 			<div class="alert alert-info">
 				<p class="font-raleway" style="font-weight:bold;">
 					Değerli katılımcılar,
 				</p>
 				<p class="font-raleway" style="font-weight:bold;">
-					Sağlayacağınız bilgiler; yalnızca araştırma kapsamında verilerin sınıflandırılması ve analizinde kullanılacaktır, gizli tutlacak ve üçüncü kişiler ile kesinlikle paylaşılmayacaktır. Arıştırmaya yapacağınız katkılar kçin teşekkür ederiz.
+					Sağlayacağınız bilgiler; yalnızca araştırma kapsamında verilerin sınıflandırılması ve analizinde kullanılacaktır, gizli tutlacak ve üçüncü kişiler ile kesinlikle paylaşılmayacaktır. Araştırmaya yapacağınız katkı kçin teşekkür ederiz.
 				</p>
 			</div>
             <form id="userSignUpForm" action="/sign-up" method="POST">
@@ -38,6 +41,15 @@
                 <div class="form-group">
                     <label for="inputSurname">Soyad</label>
                     <input type="text" class="form-control" id="inputSurname" name="surname" aria-describedby="surnameHelp" placeholder="Soyadınızı yazın" required>
+                </div>
+				<!-- Phone Number -->
+				<div id="alertPhoneNumberDiv" class="alert alert-danger" role="alert">
+					<h6>Lütfen telefon numaranızı belirtiniz.</h6>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone">Telefon Numarası</label>
+                    <input type="tel" class="form-control" id="inputPhone" name="phone" aria-describedby="phoneHelp" placeholder="Telefon numaranızı yazın" pattern="[0-9]{11}" required>
+					<small id="phoneHelp" class="form-text text-muted">Sizinle araştırma hakkında iletişim kurabilmek için telefon numaranızı belirtiniz. Ör: 05321234567</small>
                 </div>
 				<!-- Email -->
 				<div id="alertEmailDiv" class="alert alert-danger" role="alert">

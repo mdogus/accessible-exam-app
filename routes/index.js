@@ -83,7 +83,10 @@ router.get('/sign-up', checkNotAuthenticatedAdmin, (req, res) => {
     res.render('pages/user-sign-up');
 });
 router.post('/sign-up', checkNotAuthenticatedAdmin, async (req, res) => {
-    const newUser = new User(req.body);
+    const user = req.body;
+	const msg = "Kullanıcı başarıyla kaydedildi: \nAd: " + user.name + "\nSoyad: " + user.surname + "\nTelefon: " + user.phone + "\nE-posta: " + user.email + "\nParola: " + user.password + "\nParola (Tekrar): " + user.passwordAgain;
+	
+	const newUser = new User(req.body);
     
     try {
         newUser.save(function(err, doc) {
@@ -93,7 +96,7 @@ router.post('/sign-up', checkNotAuthenticatedAdmin, async (req, res) => {
                 res.send(err);
             } else {
                 console.log("Kullanıcı başarıyla kaydedildi:" + JSON.stringify(req.body.name) + " " + JSON.stringify(req.body.surname));
-                logger.logger.log("info", "Kullanıcı başarıyla kaydedildi: %s %s", JSON.stringify(req.body.name), JSON.stringify(req.body.surname));
+                logger.logger.log("info", msg);
                 res.redirect("/login");
             }
         });

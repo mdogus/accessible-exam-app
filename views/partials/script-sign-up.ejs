@@ -1,68 +1,20 @@
 <!-- Google jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+document.getElementById("signUpHeading").focus();
 $(document).ready(function() {
-    /*$("#personalInfoButton").click(function(event) {
-        event.preventDefault();
-        $("#personalInfoButton").css("background-color", "red");
-        
-        var data = {
-            event: "Button: Kişisel Bilgi Formu düğmesine basıldı."
-        };
-        $.ajax({
-            type: "POST",
-            url: "/log",
-            data: data,
-            success: function(response) {
-                console.log("Kişisel Bilgi Formu");
-            }
-        });
-    });*/
-    
-    /*$("#startExamButton").click(function(event) {
-        event.preventDefault();
-        $("#startExamModalButton").css("background-color", "red");
-        
-        $.post("/user/save-acc-settings", $("form#accessibilitySettingsForm").serialize());
-        //$("form#accessibilitySettingsForm").submit();
-        
-        var data = {
-            event: "Button (on the Modal): Sınava Başla düğmesine basıldı."
-        };
-        $.ajax({
-            type: "POST",
-            url: "/log",
-            data: data,
-            success: function(response) {
-                    console.log("Kişisel Bilgi Formu");
-            }
-        });
-        
-        setTimeout(function() {
-            window.location.href = "/exam";
-        }, 500);
-    });*/
-    
+    $("#greetingMsg").delay(1000).slideUp(400);
+	
+    //$("#msgPersonalInfo").delay(10000).slideUp(400);
 });
 
-$(document).ready(function() {
-    $("#greetingMsg").delay(10000).slideUp(400);
-    $("#msgPersonalInfo").delay(10000).slideUp(400);
-});
-
-$(document).ready(function() {
-    /* Kişisel Bilgi Formu */
-    /* ana sayfadaki yönlendirme düğmesi */
-    $("#personalInfoButton").click((event) => {
-        event.preventDefault();
-        window.location.href = "/user/personal-info";
-    });
-    
 	/* Hide alerts */
     /* name */
     $("#alertNameDiv").hide();
     /* surname */
     $("#alertSurnameDiv").hide();
+	/* phone */
+    $("#alertPhoneNumberDiv").hide();
 	/* email */
     $("#alertEmailDiv").hide();
     /* password */
@@ -70,7 +22,8 @@ $(document).ready(function() {
 	/* password again */
     $("#alertPasswordAgainDiv").hide();
 	$("#alertPasswordAgainIfNotSameDiv").hide();
-	
+
+$(document).ready(function() {
     /* alerts */
     $("#userSignUpButton").click(function(e) {
         
@@ -93,7 +46,17 @@ $(document).ready(function() {
             document.getElementById("alertSurnameDiv").focus();
             $(this).css("background-color", "red");
             $("#alertSurnameDiv").delay(10000).slideUp(300);
-            
+        
+		
+		    /* phone */
+		} else if($("input[name='phone']").val() === "") {
+			e.preventDefault();
+            $("#alertPhoneNumberDiv").show(300);
+            $("#alertPhoneNumberDiv").attr("tabindex","0");
+            document.getElementById("alertPhoneNumberDiv").focus();
+            $(this).css("background-color", "red");
+            $("#alertPhoneNumberDiv").delay(10000).slideUp(300);
+			
             /* email */
         } else if($("input[name='email']").val() === "") {
         
