@@ -184,7 +184,10 @@ function changeFontSize(fontSize) {
         $('#eso-cont .remaining-time').css("line-height", (fontSize * 1.5 * 1.4) + "px");
 
         $('#eso-cont input[type=button]').css("font-size", fontSize + "px");
-        $('#eso-cont input[type=button]').css("line-height", (fontSize * 1.4) + "px");
+        
+		$('#eso-cont textarea').css("font-size", fontSize + "px");
+		$('#eso-cont input[type=button]').css("line-height", (fontSize * 1.4) + "px");
+		$('#eso-cont textarea').css("line-height", (fontSize * 1.4) + "px");
 
         $('#eso-cont button img').css("width", fontSize * 1.2 + "px");
         
@@ -769,7 +772,7 @@ $(document).ready(() => {
 			$(".container").css("display", "none");
 			$(".marked-questions-page").css("display", "none");
 			$(".finish-page").css("display", "block");
-			$("#finish-span").html("Sınav tamamlandı. Katılımınız için teşekkür ederiz.<br>Sınavı tamamlama süreniz: " + examTimer);
+			$("#finish-span").html("Sınav tamamlandı. Katılımınız için teşekkür ederiz.<br>Sınavı tamamlama süreniz: " + examTimer + "<br><br>Lütfen aşağıdaki form aracılığıyla görüşlerinizi belirtiniz.");
 
 			document.getElementById('finish-span').focus();
 		});
@@ -783,8 +786,12 @@ $(document).ready(() => {
         }
 	
 	$("#backToHomePageButton").click(() => {
+		$("#postTestForm").submit();
 		window.location.href = "/";
-		var backToHomePageButtonLog = "Ana Sayfa'ya Dön düğmesine basıldı.";
+		var message;
+		var rate = $("#postTestRate").val();
+		var comments = $("#postTestComments").val();
+		var backToHomePageButtonLog = "Gönder ve Ana Sayfa'ya Dön düğmesine basıldı. Memnuniyet Düzeyi: " + rate + ", Değerlendirmeler: " + comments;
 		logEvent(backToHomePageButtonLog);
 	});
 });

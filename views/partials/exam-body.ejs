@@ -263,7 +263,32 @@
         <!-- Finish Page -->
         <div class="finish-page" style="display: none;">
             <p id="finish-span" tabindex="1" style="font-weight:bold;"></p>
-			<button id="backToHomePageButton" class="back-to-homepage" aria-label="Ana Sayfa'ya Dön">Ana Sayfa</button>
+			<form id="postTestForm" action="/user/post-test" method="POST">
+				<div>
+                    <label id="post-test-rate-label" for="postTestRate" role="heading" style="font-weight:bold;">Uygulamayla ilgili memnuniyetinizi değerlendiriniz (1 en düşük, 10 en yüksek).</label>
+                    <br aria-hidden="true">
+                    <select id="postTestRate" name="rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                    </select>
+                </div>
+				<br aria-hidden="true">
+				<div>
+                    <label id="post-test-comments-label" for="postTestComments" role="heading" style="font-weight:bold;">Uygulamayla ilgili görüşlerinizi belirtiniz. Beğendiğiniz ve beğenmediğiniz şeyler nelerdi? Uygulamanın geliştirilmesine yönelik önerileriniz nelerdir?</label>
+                    <br aria-hidden="true">    
+					<textarea id="postTestComments" name="comments" placeholder="Yazınız" style="padding:4px 8px;width:100%;"></textarea>
+                </div>
+				<br aria-hidden="true">
+			</form>
+			<button id="backToHomePageButton" class="back-to-homepage" aria-label="Gönder ve Ana Sayfa'ya Dön">Gönder ve Ana Sayfa'ya Dön</button>
         </div>
     </div>
 

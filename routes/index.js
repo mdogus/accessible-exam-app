@@ -77,12 +77,12 @@ router.get('/user/user-guide', checkAuthenticated, function(req, res) {
 });
 
 // User sign-up page
-router.get('/sign-up', checkNotAuthenticatedAdmin, (req, res) => {
+router.get('/sign-up', checkNotAuthenticated, (req, res) => {
 	console.log("Kayıt Ol sayfası görüntülendi.");
                 logger.logger.log("info", "Kayıt Ol sayfası görüntülendi.");
     res.render('pages/user-sign-up');
 });
-router.post('/sign-up', checkNotAuthenticatedAdmin, async (req, res) => {
+router.post('/sign-up', checkNotAuthenticated, async (req, res) => {
     const user = req.body;
 	const msg = "Kullanıcı başarıyla kaydedildi: \nAd: " + user.name + "\nSoyad: " + user.surname + "\nTelefon: " + user.phone + "\nE-posta: " + user.email + "\nParola: " + user.password + "\nParola (Tekrar): " + user.passwordAgain;
 	
@@ -103,7 +103,7 @@ router.post('/sign-up', checkNotAuthenticatedAdmin, async (req, res) => {
     } catch {
         console.log("Failed to save user.");
         logger.logger.log("error", "Failed to save user.");
-        res.redirect("/admin/sign-up");
+        res.redirect("/sign-up");
     }
 });
 
@@ -254,6 +254,15 @@ router.get('/exam', checkAuthenticated, function(req, res) {
         font: req.user.font,
         fontSize: req.user.fontSize
     });
+});
+
+// Post Test Form
+router.post('/user/post-test', checkAuthenticated, async (req, res, next) => {
+    const postTestForm = req.body;
+	const msg = "Kullanıcı görüşleri: \nMemnuniyet Düzeyi: " + postTestForm.rate + "\nDeğerlendirmeler: " + postTestForm.comments;
+	console.log(msg);
+	logger.logger.log("info", msg);
+	next();
 });
 
 //User authentication
