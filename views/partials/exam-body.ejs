@@ -58,11 +58,11 @@
                                 </button>
                             </div>
                         </div>
-                        <div id="soruAlaniDiv" class="content">
-                            <div class="soru-ifadesi">
+                        <div id="soruAlaniDiv" class="content"> <!-- begin question div -->
+                            <div class="soru-ifadesi"> <!-- begin question stem div -->
                                 <span class="question" id="question"></span>
-                            </div>
-                            <div class="secenekler">
+                            </div> <!-- end question stem div -->
+                            <div class="secenekler"> <!-- begin answer choices div -->
                                 <div class="answerBox">
                                     <div class="secenek-baslik">
                                         <input id="radioA" type="radio" name="qValue" class="answer-radio left"
@@ -122,8 +122,15 @@
                                         <p><span class="highlighted" id="oE"></span></p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> <!-- end answer choices div -->
+                            <br aria-hidden="true" />
+                            <br aria-hidden="true" />
+                            <br aria-hidden="true" />
+                            <br aria-hidden="true" />
+                            <div> <!-- begin notes -->
+                                <textarea id="notes" name="notes" class="form-control" placeholder="Not ekle..." style="width:100%"></textarea>
+                            </div> <!-- end notes -->
+                        </div> <!-- end question div -->
                     </div>
                     
                     <!-- Footer Button Bar -->
@@ -214,11 +221,10 @@
                     </select>
                 </div>
                 <br aria-hidden="true">
-                <div>
+                <div> <!-- begin fonts -->
                     <label id="fonts-label" for="fonts" role="heading" style="font-weight:bold;">Yazı Tipi:</label>
                     <br aria-hidden="true">
                     <select id="fonts">
-                        <!--optgroup id="fontsGroup"-->
                             <option value="font_0">Arial</option>
                             <option value="font_1">Arial Black</option>
                             <option value="font_2">Century Gothic</option>
@@ -231,12 +237,7 @@
                             <option value="font_9">TTKB Dik Temel Yazı</option>
                             <option value="font_10">Verdana</option>
                     </select>
-                </div>
-                <br aria-hidden="true">
-                <div> <!-- begin font size -->
-                    <textarea id="notes" name="notes" class="form-control" rows="3" cols="">
-                </div>
-                <br aria-hidden="true">
+                </div> <!-- end fonts -->
                 <div> <!-- begin font size -->
                     <div class="nav-button" role="heading">Yazı Büyüklüğü:</div>
                     <br aria-hidden="true">
